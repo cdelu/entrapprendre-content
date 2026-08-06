@@ -107,6 +107,11 @@ Future<void> main(List<String> arguments) async {
     }
 
     catalog['units'] = generatedUnits;
+    final navigation = _buildNavigation(catalog, generatedUnits);
+    catalog
+      ..['navigationSummary'] =
+          '${navigation.length} modules · ${generatedUnits.length} unités'
+      ..['navigation'] = navigation;
     final catalogFile = File(p.join(outputDirectory.path, 'catalog.json'));
     catalogFile.writeAsStringSync(
       '${const JsonEncoder.withIndent('  ').convert(catalog)}\n',
@@ -124,6 +129,85 @@ Future<void> main(List<String> arguments) async {
     stderr.writeln('Génération refusée : $error');
     exitCode = 1;
   }
+}
+
+List<Map<String, Object?>> _buildNavigation(
+  Map<String, Object?> catalog,
+  List<Map<String, Object?>> units,
+) {
+  final rawParts = catalog['parts'];
+  final rawModules = catalog['modules'];
+  if (rawParts is! List<Object?> || rawModules is! List<Object?>) {
+    throw const FormatException(
+      'catalog.parts et catalog.modules doivent être des listes.',
+    );
+  }
+
+  final modulesById = <String, Map<String, Object?>>{
+    for (final module in rawModules.whereType<Map<String, Object?>>())
+      if (module['id'] is String) module['id']! as String: module,
+  };
+  final unitsById = <String, Map<String, Object?>>{
+    for (final unit in units)
+      if (unit['id'] is String) unit['id']! as String: unit,
+  };
+  final navigation = <Map<String, Object?>>[];
+
+  for (final part in rawParts.whereType<Map<String, Object?>>()) {
+    final moduleIds = (part['moduleIds'] as List<Object?>).cast<String>();
+    var partUnitCount = 0;
+    for (final moduleId in moduleIds) {
+      final module = modulesById[moduleId];
+      if (module == null) {
+        throw FormatException(
+            'Module introuvable pendant la génération : $moduleId');
+      }
+      partUnitCount += (module['unitIds'] as List<Object?>).length;
+    }
+
+    for (var moduleIndex = 0; moduleIndex < moduleIds.length; moduleIndex++) {
+      final moduleId = moduleIds[moduleIndex];
+      final module = modulesById[moduleId]!;
+      final unitIds = (module['unitIds'] as List<Object?>).cast<String>();
+      final moduleUnits = <Map<String, Object?>>[];
+
+      for (final unitId in unitIds) {
+        final unit = unitsById[unitId];
+        if (unit == null) {
+          throw FormatException(
+            'Unité introuvable pendant la génération : $unitId',
+          );
+        }
+        final estimatedMinutes = unit['estimatedMinutes'];
+        final hasAudio = unit['hasAudio'] == true;
+        moduleUnits.add({
+          ...unit,
+          'numberLabel': (unit['number']! as int).toString().padLeft(2, '0'),
+          'statusLabel': unit['downloadable'] == true
+              ? 'Prête à télécharger'
+              : 'Contenu à venir',
+          'detailLabel': estimatedMinutes is int
+              ? '$estimatedMinutes min${hasAudio ? ' · audio' : ''}'
+              : unitId,
+        });
+      }
+
+      navigation.add({
+        'id': moduleId,
+        'number': module['number'],
+        'partId': part['id'],
+        'partNumber': part['number'],
+        'partTitle': part['title'],
+        'showPartHeader': moduleIndex == 0,
+        'partDetail': '${moduleIds.length} modules · $partUnitCount unités',
+        'title': module['title'],
+        'detail': '${unitIds.length} unités',
+        'units': moduleUnits,
+      });
+    }
+  }
+
+  return navigation;
 }
 
 String _readTag(List<String> arguments) {
