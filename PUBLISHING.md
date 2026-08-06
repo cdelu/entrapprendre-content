@@ -1,86 +1,80 @@
-# Contrat de publication GitHub
+# GitHub content publishing contract
 
-## Décisions acquises
+## Decisions
 
-- Le dépôt de contenu destiné à l'application doit être public.
-- Les JSON sources restent versionnés dans Git.
-- Les archives téléchargées par les apprenants sont des assets de GitHub
-  Releases, pas des fichiers ordinaires du dépôt et pas des objets Git LFS.
-- Une version publiée est immuable. Toute correction crée un nouveau tag.
-- Le catalogue livré à l'application contient des URLs HTTPS exactes, la taille
-  en octets et la somme SHA-256 de chaque archive.
+- The learner-facing content repository is public.
+- Editable JSON remains versioned in Git.
+- Download archives are GitHub Release assets, not normal repository files or Git LFS objects.
+- Releases are immutable. Every correction uses a new `content-vX.Y.Z` tag.
+- The published catalogue contains exact HTTPS URLs, byte sizes, versions, and SHA-256 hashes.
+- Prereleases are for testing and do not replace the stable `releases/latest` catalogue.
 
-## Dépôt et catalogue courant
+## Repository and stable endpoint
 
-- propriétaire GitHub : `cdelu` ;
-- dépôt public : `entrapprendre-content` ;
-- premier tag recommandé : `content-v0.1.0` ;
-- URL stable du catalogue courant :
-  `https://github.com/cdelu/entrapprendre-content/releases/latest/download/catalog.json`.
+- Owner: `cdelu`
+- Repository: `entrapprendre-content`
+- Stable catalogue:
 
-## Nommage des assets
+```text
+https://github.com/cdelu/entrapprendre-content/releases/latest/download/catalog.json
+```
 
-Pour l'unité `M02-U01` :
+## Assets
+
+For unit `M02-U01`, a release may contain:
 
 ```text
 M02-U01-core-v1.zip
 M02-U01-media-v1.zip
+catalog.json
 ```
 
-Le paquet `core` contient le JSON, l'audio, les transcriptions et les médias
-légers. Le paquet `media` est un supplément facultatif pour la version complète.
+The core package contains unit JSON, audio, transcripts, and lightweight media. The optional media package adds heavier images or video. The initial app download contains neither package.
 
-## URL finale attendue
+## Generated catalogue views
 
-```text
-https://github.com/cdelu/entrapprendre-content/releases/download/content-v0.1.0/M02-U01-core-v1.zip
+Authors edit normalized `parts`, `modules`, and `units`. The builder regenerates all delivery views:
+
+- `navigation` flattens modules in part order, includes a part header only on the first module of each part, and nests ordered unit summaries;
+- `navigationSummary` reports catalogue totals;
+- `progressSegments` contains one entry per unit and marks module boundaries;
+- `packages` describes only successfully built downloadable archives.
+
+Do not hand-edit these derived fields.
+
+## Local build
+
+```powershell
+dart run tool/build_release.dart --tag content-v0.2.2
 ```
 
-Le script de publication remplacera les métadonnées de travail
-`downloadable: false` par les descripteurs de paquet complets uniquement après
-création, mesure et hachage réussis des archives.
+The builder writes a clean tag-specific directory under `dist/` and refuses to overwrite an existing output. A unit becomes downloadable only when its `unit.json` status is `published`. Draft and review units remain visible with `downloadable: false`.
 
-Le fichier publié ajoute aussi une liste `navigation` générée. Elle aplatit les
-modules dans l'ordre des parties, répète l'en-tête de partie uniquement sur le
-premier module et embarque les unités du module. Cette vue est destinée aux
-listes dynamiques FlutterFlow ; elle est toujours reconstruite depuis les listes
-normalisées `parts`, `modules` et `units`, qui restent l'unique format à éditer.
+## Publication workflow
 
-## Construction locale
+Use the GitHub Actions workflow **Publish content release** and supply the new tag plus the prerelease flag. The workflow rebuilds from committed source rather than uploading local `dist/` files.
 
-Le générateur ne modifie jamais les sources. Il crée un dossier propre à chaque
-tag sous `dist/` et refuse de remplacer une sortie existante :
+The release gate runs in this order:
 
-```bash
-dart run tool/build_release.dart --tag content-v0.1.0
-```
+1. validate source content in release mode;
+2. verify the release tag;
+3. build archives in a temporary directory;
+4. validate packaged JSON;
+5. calculate sizes and SHA-256 hashes;
+6. generate `catalog.json`;
+7. create the GitHub Release and upload assets;
+8. publish the stable release atomically.
 
-Une unité n'est ajoutée aux téléchargements que si son `unit.json` porte
-`status: published`. Les unités `draft` ou `review` restent dans le catalogue,
-avec `downloadable: false`. Son paquet léger contient `unit.json` et tous les
-autres fichiers du dossier de l'unité, sauf le sous-dossier `media/`. Si
-`media/` contient des fichiers, ceux-ci forment le paquet complet facultatif.
+A failed step must not change the stable catalogue.
 
-## Publication automatisée
+## Repository workflow
 
-Le workflow GitHub Actions `Publish content release` se lance manuellement. Il
-demande un tag et permet de choisir une prérelease. Une prérelease ne remplace
-pas le catalogue stable résolu par l'URL `releases/latest/download/catalog.json`.
-Le workflow valide et construit de nouveau tous les fichiers sur GitHub avant de
-créer la release ; aucun fichier de `dist/` n'est versionné dans Git.
+For a normal content change:
 
-## Barrière de publication
-
-La publication doit exécuter dans cet ordre :
-
-1. `dart run tool/validate_content.dart --release` (les brouillons valides sont
-   autorisés mais exclus des téléchargements) ;
-2. construction des archives dans un répertoire temporaire ;
-3. validation des JSON inclus ;
-4. calcul des tailles et SHA-256 ;
-5. génération de `dist/catalog.json` ;
-6. création de la GitHub Release ;
-7. envoi des assets ;
-8. publication atomique du nouveau catalogue courant.
-
-Une étape en échec ne doit jamais modifier le catalogue courant.
+1. create a feature branch;
+2. stage only the intended source, schema, or tool files;
+3. commit and push;
+4. open a draft PR, review it, mark it ready, and merge it;
+5. dispatch the release workflow with a new immutable tag;
+6. wait for the workflow to succeed;
+7. download the stable catalogue URL and verify counts, labels, and package metadata before testing the app.
