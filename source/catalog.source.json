@@ -132,6 +132,6 @@
     { "id": "M07-U03", "number": 3, "moduleId": "M07", "title": "Mon argent de départ et d'où il vient", "contentVersion": 1, "downloadable": false, "packageStem": "M06-U12" },
     { "id": "M07-U04", "number": 4, "moduleId": "M07", "title": "Est-ce que ça marche ?", "contentVersion": 1, "downloadable": false, "packageStem": "M06-U13" },
     { "id": "M07-U05", "number": 5, "moduleId": "M07", "title": "Mon dossier complet", "contentVersion": 1, "downloadable": false, "packageStem": "M06-U14" },
-    { "id": "M07-U06", "number": 15, "moduleId": "M07", "title": "Présenter mon plan d'affaires", "contentVersion": 1, "downloadable": false, "packageStem": "M06-U15" }
+    { "id": "M07-U06", "number": 6, "moduleId": "M07", "title": "Présenter mon plan d'affaires", "contentVersion": 1, "downloadable": false, "packageStem": "M06-U15" }
   ]
 }
