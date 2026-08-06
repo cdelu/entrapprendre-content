@@ -36,11 +36,28 @@ Le dépôt gardera les JSON éditables. Les archives contenant JSON, audio, imag
 et vidéos seront publiées comme assets d'une GitHub Release. Une nouvelle
 correction crée une nouvelle version ; une archive publiée n'est jamais écrasée.
 
-Le futur outil de publication générera :
+L'outil de publication génère :
 
 - `<UNIT_ID>-core.zip` : JSON, audio et médias légers ;
 - `<UNIT_ID>-media.zip` : supplément images/vidéos de la version complète ;
 - `catalog.json` : URLs, tailles, versions et sommes SHA-256.
+
+Le générateur est maintenant disponible :
+
+```bash
+dart run tool/build_release.dart --tag content-v0.1.0
+```
+
+Il écrit les fichiers à joindre à la GitHub Release dans
+`dist/content-v0.1.0/`. Le catalogue stable consommé par l'application sera :
+
+```text
+https://github.com/cdelu/entrapprendre-content/releases/latest/download/catalog.json
+```
+
+La publication se lance manuellement depuis l'onglet **Actions** du dépôt avec
+le workflow **Publish content release**. L'option prérelease sert aux essais sans
+changer le catalogue stable utilisé par l'application.
 
 ## État actuel
 

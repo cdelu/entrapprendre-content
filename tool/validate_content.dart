@@ -21,7 +21,7 @@ void main(List<String> arguments) {
   final catalog = _readObject(catalogFile, context);
   if (catalog != null) {
     _validateCatalog(catalog, context);
-    _validateUnitFiles(root, catalog, context, releaseMode: releaseMode);
+    _validateUnitFiles(root, catalog, context);
   }
 
   if (context.errors.isNotEmpty) {
@@ -37,7 +37,7 @@ void main(List<String> arguments) {
 
   stdout.writeln(
     releaseMode
-        ? 'Contenu valide et prêt pour une publication.'
+        ? 'Contenu valide. Les unités non publiées seront exclues de la release.'
         : 'Contenu valide. Les brouillons restent autorisés dans ce mode.',
   );
 }
@@ -208,9 +208,8 @@ void _validatePackages(
 void _validateUnitFiles(
   Directory root,
   Map<String, Object?> catalog,
-  ValidationContext context, {
-  required bool releaseMode,
-}) {
+  ValidationContext context,
+) {
   final summaries = <String, Map<String, Object?>>{};
   for (final unit in _objectList(catalog['units'])) {
     final id = unit['id'];
@@ -239,13 +238,7 @@ void _validateUnitFiles(
     final relativePath = file.path.substring(root.path.length + 1);
     final unit = _readObject(file, context);
     if (unit == null) continue;
-    _validateUnit(
-      unit,
-      relativePath,
-      summaries,
-      context,
-      releaseMode: releaseMode,
-    );
+    _validateUnit(unit, relativePath, summaries, context);
   }
 }
 
@@ -253,9 +246,8 @@ void _validateUnit(
   Map<String, Object?> unit,
   String path,
   Map<String, Map<String, Object?>> summaries,
-  ValidationContext context, {
-  required bool releaseMode,
-}) {
+  ValidationContext context,
+) {
   _expectInteger(unit, 'schemaVersion', path, context, expected: 1);
   final id = _expectIdentifier(unit, 'id', path, context);
   final moduleId = _expectIdentifier(unit, 'moduleId', path, context);
@@ -265,9 +257,6 @@ void _validateUnit(
   final status = _expectText(unit, 'status', path, context);
   if (status != null && !{'draft', 'review', 'published'}.contains(status)) {
     context.error('$path.status', 'valeur inconnue : $status');
-  }
-  if (releaseMode && status != 'published') {
-    context.error('$path.status', 'published obligatoire en mode --release');
   }
   final objectives = _expectStringList(unit, 'objectives', path, context);
   if (objectives.isEmpty) {
