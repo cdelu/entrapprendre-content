@@ -1,0 +1,72 @@
+{
+  "schemaVersion": 1,
+  "id": "M02-U01",
+  "moduleId": "M02",
+  "number": 1,
+  "title": "Les compétences entrepreneuriales",
+  "status": "draft",
+  "estimatedMinutes": 35,
+  "objectives": [
+    "Reconnaître plusieurs qualités d'une personne entreprenante.",
+    "Repérer les qualités que tu as déjà et celles que tu veux développer."
+  ],
+  "blocks": [
+    {
+      "id": "introduction",
+      "kind": "text",
+      "title": "Les qualités s'apprennent",
+      "body": "Une personne entreprenante observe, agit et apprend de ce qui lui arrive. Dans cette unité, tu vas découvrir ces qualités et réfléchir à celles que tu veux renforcer."
+    },
+    {
+      "id": "portrait",
+      "kind": "accordion",
+      "label": "Le portrait · touche chaque partie",
+      "intro": "Imagine une personne entreprenante dans son atelier.",
+      "items": [
+        {
+          "title": "Les yeux",
+          "body": "Elle observe autour d'elle et repère les occasions."
+        },
+        {
+          "title": "Les mains",
+          "body": "Elle passe à l'action et améliore son travail."
+        },
+        {
+          "title": "Les oreilles",
+          "body": "Elle écoute ses clients, ses collègues et ses partenaires."
+        }
+      ]
+    },
+    {
+      "id": "faire_le_point",
+      "kind": "exercise",
+      "title": "Fais le point",
+      "items": [
+        {
+          "id": "qualites_personnelles",
+          "kind": "scale",
+          "group": "Tes qualités personnelles",
+          "options": ["Oui", "Pas encore"],
+          "questions": [
+            {
+              "id": "prendre_initiative",
+              "text": "Est-ce que tu prends parfois l'initiative sans attendre qu'on te le demande ?"
+            }
+          ]
+        },
+        {
+          "id": "qualite_a_travailler",
+          "kind": "textarea",
+          "prompt": "Quelle qualité veux-tu travailler en premier ?",
+          "hint": "Écris une ou deux lignes."
+        }
+      ]
+    },
+    {
+      "id": "a_retenir",
+      "kind": "takeaway",
+      "title": "À retenir",
+      "body": "Les qualités entrepreneuriales ne sont pas des notes. Elles peuvent se développer avec la pratique."
+    }
+  ]
+}

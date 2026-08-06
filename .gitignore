@@ -1,0 +1,5 @@
+.dart_tool/
+dist/*
+!dist/.gitkeep
+*.tmp
+*.zip

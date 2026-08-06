@@ -1,0 +1,129 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://content.entrapprendre.invalid/schema/catalog-v1.json",
+  "title": "Catalogue de cours Entr'Apprendre",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schemaVersion", "course", "parts", "modules", "units"],
+  "properties": {
+    "schemaVersion": { "const": 1 },
+    "catalogVersion": { "type": "integer", "minimum": 1 },
+    "course": { "$ref": "#/$defs/course" },
+    "parts": {
+      "type": "array",
+      "minItems": 1,
+      "items": { "$ref": "#/$defs/part" }
+    },
+    "modules": {
+      "type": "array",
+      "minItems": 1,
+      "items": { "$ref": "#/$defs/module" }
+    },
+    "units": {
+      "type": "array",
+      "minItems": 1,
+      "items": { "$ref": "#/$defs/unitSummary" }
+    }
+  },
+  "$defs": {
+    "identifier": {
+      "type": "string",
+      "pattern": "^[A-Z0-9]+(?:-[A-Z0-9]+)*$"
+    },
+    "nonEmptyText": { "type": "string", "minLength": 1 },
+    "course": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "title", "language", "defaultVariant"],
+      "properties": {
+        "id": { "$ref": "#/$defs/identifier" },
+        "title": { "$ref": "#/$defs/nonEmptyText" },
+        "language": { "type": "string", "pattern": "^[a-z]{2}(?:-[A-Z]{2})?$" },
+        "defaultVariant": { "enum": ["light", "complete"] }
+      }
+    },
+    "part": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "number", "title", "moduleIds"],
+      "properties": {
+        "id": { "$ref": "#/$defs/identifier" },
+        "number": { "type": "integer", "minimum": 1 },
+        "title": { "$ref": "#/$defs/nonEmptyText" },
+        "moduleIds": {
+          "type": "array",
+          "minItems": 1,
+          "items": { "$ref": "#/$defs/identifier" },
+          "uniqueItems": true
+        }
+      }
+    },
+    "module": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "number", "partId", "title", "unitIds"],
+      "properties": {
+        "id": { "$ref": "#/$defs/identifier" },
+        "number": { "type": "integer", "minimum": 1 },
+        "partId": { "$ref": "#/$defs/identifier" },
+        "title": { "$ref": "#/$defs/nonEmptyText" },
+        "unitIds": {
+          "type": "array",
+          "minItems": 1,
+          "items": { "$ref": "#/$defs/identifier" },
+          "uniqueItems": true
+        }
+      }
+    },
+    "package": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["url", "sizeBytes", "sha256"],
+      "properties": {
+        "url": { "type": "string", "format": "uri", "pattern": "^https://" },
+        "sizeBytes": { "type": "integer", "minimum": 1 },
+        "sha256": { "type": "string", "pattern": "^[a-f0-9]{64}$" }
+      }
+    },
+    "unitSummary": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "number",
+        "moduleId",
+        "title",
+        "contentVersion",
+        "downloadable",
+        "packageStem"
+      ],
+      "properties": {
+        "id": { "$ref": "#/$defs/identifier" },
+        "number": { "type": "integer", "minimum": 1 },
+        "moduleId": { "$ref": "#/$defs/identifier" },
+        "title": { "$ref": "#/$defs/nonEmptyText" },
+        "estimatedMinutes": { "type": "integer", "minimum": 1 },
+        "hasAudio": { "type": "boolean" },
+        "contentVersion": { "type": "integer", "minimum": 1 },
+        "downloadable": { "type": "boolean" },
+        "packageStem": { "type": "string", "pattern": "^[A-Z0-9-]+$" },
+        "packages": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["light"],
+          "properties": {
+            "light": { "$ref": "#/$defs/package" },
+            "completeAddon": { "$ref": "#/$defs/package" }
+          }
+        }
+      },
+      "allOf": [
+        {
+          "if": { "properties": { "downloadable": { "const": true } } },
+          "then": { "required": ["packages"] },
+          "else": { "not": { "required": ["packages"] } }
+        }
+      ]
+    }
+  }
+}

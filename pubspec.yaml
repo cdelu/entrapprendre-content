@@ -1,0 +1,7 @@
+name: entrapprendre_content
+description: Validation et publication des contenus Entr'Apprendre.
+publish_to: none
+version: 0.1.0
+
+environment:
+  sdk: ">=3.4.0 <4.0.0"

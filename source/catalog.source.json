@@ -1,0 +1,137 @@
+{
+  "schemaVersion": 1,
+  "catalogVersion": 1,
+  "course": {
+    "id": "ENTRAPPRENDRE",
+    "title": "Entr'Apprendre",
+    "language": "fr",
+    "defaultVariant": "light"
+  },
+  "parts": [
+    {
+      "id": "P01",
+      "number": 1,
+      "title": "Devenir Entreprenant",
+      "moduleIds": ["M01", "M02", "M03", "M04"]
+    },
+    {
+      "id": "P02",
+      "number": 2,
+      "title": "Construire mon Projet",
+      "moduleIds": ["M05", "M06", "M07"]
+    }
+  ],
+  "modules": [
+    {
+      "id": "M01",
+      "number": 1,
+      "partId": "P01",
+      "title": "Qu'est-ce que l'entrepreneuriat ?",
+      "unitIds": ["M01-U01", "M01-U02", "M01-U03", "M01-U04", "M01-U05"]
+    },
+    {
+      "id": "M02",
+      "number": 2,
+      "partId": "P01",
+      "title": "Qui sont les entrepreneurs ?",
+      "unitIds": ["M02-U01", "M02-U02", "M02-U03"]
+    },
+    {
+      "id": "M03",
+      "number": 3,
+      "partId": "P01",
+      "title": "Les qualités personnelles de l'entrepreneur",
+      "unitIds": ["M03-U01", "M03-U02", "M03-U03", "M03-U04"]
+    },
+    {
+      "id": "M04",
+      "number": 4,
+      "partId": "P01",
+      "title": "Les qualités relationnelles de l'entrepreneur",
+      "unitIds": ["M04-U01", "M04-U02", "M04-U03", "M04-U04"]
+    },
+    {
+      "id": "M05",
+      "number": 5,
+      "partId": "P02",
+      "title": "Trouver mon idée",
+      "unitIds": ["M05-U01", "M05-U02", "M05-U03", "M05-U04", "M05-U05", "M05-U06"]
+    },
+    {
+      "id": "M06",
+      "number": 6,
+      "partId": "P02",
+      "title": "Mon marché et mon organisation",
+      "unitIds": [
+        "M06-U01",
+        "M06-U02",
+        "M06-U03",
+        "M06-U04",
+        "M06-U05",
+        "M06-U06",
+        "M06-U07",
+        "M06-U08",
+        "M06-U09"
+      ]
+    },
+    {
+      "id": "M07",
+      "number": 6,
+      "partId": "P02",
+      "title": "Les chiffres de mon entreprise",
+      "unitIds": [
+        "M07-U01",
+        "M07-U02",
+        "M07-U03",
+        "M07-U04",
+        "M07-U05",
+        "M07-U06"
+      ]
+    }
+  ],
+  "units": [
+    { "id": "M01-U01", "number": 1, "moduleId": "M01", "title": "L'importance de l'entrepreneuriat dans la société", "contentVersion": 1, "downloadable": false, "packageStem": "M01-U01" },
+    { "id": "M01-U02", "number": 2, "moduleId": "M01", "title": "Les entreprises dans ta communauté", "contentVersion": 1, "downloadable": false, "packageStem": "M01-U02" },
+    { "id": "M01-U03", "number": 3, "moduleId": "M01", "title": "Les petites entreprises", "contentVersion": 1, "downloadable": false, "packageStem": "M01-U03" },
+    { "id": "M01-U04", "number": 4, "moduleId": "M01", "title": "Les entreprises sociales", "contentVersion": 1, "downloadable": false, "packageStem": "M01-U04" },
+    { "id": "M01-U05", "number": 5, "moduleId": "M01", "title": "Les entreprises vertes", "contentVersion": 1, "downloadable": false, "packageStem": "M01-U05" },
+
+    { "id": "M02-U01", "number": 1, "moduleId": "M02", "title": "Les compétences entrepreneuriales", "estimatedMinutes": 35, "hasAudio": true, "contentVersion": 1, "downloadable": false, "packageStem": "M02-U01" },
+    { "id": "M02-U02", "number": 2, "moduleId": "M02", "title": "Le travail indépendant et l'entrepreneuriat", "contentVersion": 1, "downloadable": false, "packageStem": "M02-U02" },
+    { "id": "M02-U03", "number": 3, "moduleId": "M02", "title": "La motivation de l'entrepreneur", "contentVersion": 1, "downloadable": false, "packageStem": "M02-U03" },
+
+    { "id": "M03-U01", "number": 1, "moduleId": "M03", "title": "Se fixer des objectifs", "contentVersion": 1, "downloadable": false, "packageStem": "M03-U01" },
+    { "id": "M03-U02", "number": 2, "moduleId": "M03", "title": "Gérer son temps", "contentVersion": 1, "downloadable": false, "packageStem": "M03-U02" },
+    { "id": "M03-U03", "number": 3, "moduleId": "M03", "title": "Prendre des décisions", "contentVersion": 1, "downloadable": false, "packageStem": "M03-U03" },
+    { "id": "M03-U04", "number": 4, "moduleId": "M03", "title": "Repérer et gérer les risques", "contentVersion": 1, "downloadable": false, "packageStem": "M03-U04" },
+
+    { "id": "M04-U01", "number": 1, "moduleId": "M04", "title": "Écouter", "contentVersion": 1, "downloadable": false, "packageStem": "M04-U01" },
+    { "id": "M04-U02", "number": 2, "moduleId": "M04", "title": "Négocier", "contentVersion": 1, "downloadable": false, "packageStem": "M04-U02" },
+    { "id": "M04-U03", "number": 3, "moduleId": "M04", "title": "Diriger une équipe", "contentVersion": 1, "downloadable": false, "packageStem": "M04-U03" },
+    { "id": "M04-U04", "number": 4, "moduleId": "M04", "title": "Coopérer et travailler en équipe", "contentVersion": 1, "downloadable": false, "packageStem": "M04-U04" },
+
+    { "id": "M05-U01", "number": 1, "moduleId": "M05", "title": "Qu'est-ce qu'une idée d'entreprise ?", "contentVersion": 1, "downloadable": false, "packageStem": "M05-U01" },
+    { "id": "M05-U02", "number": 2, "moduleId": "M05", "title": "Développer sa créativité", "contentVersion": 1, "downloadable": false, "packageStem": "M05-U02" },
+    { "id": "M05-U03", "number": 3, "moduleId": "M05", "title": "D'où viennent les idées ?", "contentVersion": 1, "downloadable": false, "packageStem": "M05-U03" },
+    { "id": "M05-U04", "number": 4, "moduleId": "M05", "title": "Ma liste d'idées", "contentVersion": 1, "downloadable": false, "packageStem": "M05-U04" },
+    { "id": "M05-U05", "number": 5, "moduleId": "M05", "title": "Choisir la bonne idée", "contentVersion": 1, "downloadable": false, "packageStem": "M05-U05" },
+    { "id": "M05-U06", "number": 6, "moduleId": "M05", "title": "Mon idée d'entreprise en clair", "contentVersion": 1, "downloadable": false, "packageStem": "M05-U06" },
+
+    { "id": "M06-U01", "number": 1, "moduleId": "M06", "title": "Qu'est-ce qu'un plan d'affaires ?", "contentVersion": 1, "downloadable": false, "packageStem": "M06-U01" },
+    { "id": "M06-U02", "number": 2, "moduleId": "M06", "title": "Mes clients et leurs besoins", "contentVersion": 1, "downloadable": false, "packageStem": "M06-U02" },
+    { "id": "M06-U03", "number": 3, "moduleId": "M06", "title": "Mes concurrents et mon avantage", "contentVersion": 1, "downloadable": false, "packageStem": "M06-U03" },
+    { "id": "M06-U04", "number": 4, "moduleId": "M06", "title": "Mon produit ou mon service", "contentVersion": 1, "downloadable": false, "packageStem": "M06-U04" },
+    { "id": "M06-U05", "number": 5, "moduleId": "M06", "title": "Où et comment je vends ?", "contentVersion": 1, "downloadable": false, "packageStem": "M06-U05" },
+    { "id": "M06-U06", "number": 6, "moduleId": "M06", "title": "Mon local et mon matériel", "contentVersion": 1, "downloadable": false, "packageStem": "M06-U06" },
+    { "id": "M06-U07", "number": 7, "moduleId": "M06", "title": "Mes fournisseurs et mes matières", "contentVersion": 1, "downloadable": false, "packageStem": "M06-U07" },
+    { "id": "M06-U08", "number": 8, "moduleId": "M06", "title": "Comment j'organise mon travail", "contentVersion": 1, "downloadable": false, "packageStem": "M06-U08" },
+    { "id": "M06-U09", "number": 9, "moduleId": "M06", "title": "Déclarer mon activité", "contentVersion": 1, "downloadable": false, "packageStem": "M06-U09" },
+    
+    { "id": "M07-U01", "number": 1, "moduleId": "M07", "title": "Combien me coûte un article ?", "contentVersion": 1, "downloadable": false, "packageStem": "M06-U10" },
+    { "id": "M07-U02", "number": 2, "moduleId": "M07", "title": "À quel prix je vends ?", "contentVersion": 1, "downloadable": false, "packageStem": "M06-U11" },
+    { "id": "M07-U03", "number": 3, "moduleId": "M07", "title": "Mon argent de départ et d'où il vient", "contentVersion": 1, "downloadable": false, "packageStem": "M06-U12" },
+    { "id": "M07-U04", "number": 4, "moduleId": "M07", "title": "Est-ce que ça marche ?", "contentVersion": 1, "downloadable": false, "packageStem": "M06-U13" },
+    { "id": "M07-U05", "number": 5, "moduleId": "M07", "title": "Mon dossier complet", "contentVersion": 1, "downloadable": false, "packageStem": "M06-U14" },
+    { "id": "M07-U06", "number": 15, "moduleId": "M07", "title": "Présenter mon plan d'affaires", "contentVersion": 1, "downloadable": false, "packageStem": "M06-U15" }
+  ]
+}
