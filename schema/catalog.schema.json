@@ -29,6 +29,11 @@
       "type": "array",
       "minItems": 1,
       "items": { "$ref": "#/$defs/navigationModule" }
+    },
+    "progressSegments": {
+      "type": "array",
+      "minItems": 1,
+      "items": { "$ref": "#/$defs/progressSegment" }
     }
   },
   "$defs": {
@@ -168,6 +173,15 @@
         "numberLabel": { "$ref": "#/$defs/nonEmptyText" },
         "statusLabel": { "$ref": "#/$defs/nonEmptyText" },
         "detailLabel": { "$ref": "#/$defs/nonEmptyText" }
+      }
+    },
+    "progressSegment": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["moduleNumber", "showModuleDivider"],
+      "properties": {
+        "moduleNumber": { "type": "integer", "minimum": 1 },
+        "showModuleDivider": { "type": "boolean" }
       }
     },
     "navigationModule": {

@@ -111,7 +111,8 @@ Future<void> main(List<String> arguments) async {
     catalog
       ..['navigationSummary'] =
           '${navigation.length} modules · ${generatedUnits.length} unités'
-      ..['navigation'] = navigation;
+      ..['navigation'] = navigation
+      ..['progressSegments'] = _buildProgressSegments(navigation);
     final catalogFile = File(p.join(outputDirectory.path, 'catalog.json'));
     catalogFile.writeAsStringSync(
       '${const JsonEncoder.withIndent('  ').convert(catalog)}\n',
@@ -188,7 +189,9 @@ List<Map<String, Object?>> _buildNavigation(
               : 'Contenu à venir',
           'detailLabel': estimatedMinutes is int
               ? '$estimatedMinutes min${hasAudio ? ' · audio' : ''}'
-              : unitId,
+              : hasAudio
+                  ? 'Audio disponible'
+                  : 'Lecture et activité',
         });
       }
 
@@ -208,6 +211,25 @@ List<Map<String, Object?>> _buildNavigation(
   }
 
   return navigation;
+}
+
+List<Map<String, Object?>> _buildProgressSegments(
+  List<Map<String, Object?>> navigation,
+) {
+  final segments = <Map<String, Object?>>[];
+  for (var moduleIndex = 0; moduleIndex < navigation.length; moduleIndex++) {
+    final module = navigation[moduleIndex];
+    final units = (module['units'] as List<Object?>)
+        .whereType<Map<String, Object?>>()
+        .toList(growable: false);
+    for (var unitIndex = 0; unitIndex < units.length; unitIndex++) {
+      segments.add({
+        'moduleNumber': module['number'],
+        'showModuleDivider': moduleIndex > 0 && unitIndex == 0,
+      });
+    }
+  }
+  return segments;
 }
 
 String _readTag(List<String> arguments) {
