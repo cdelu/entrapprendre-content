@@ -40,6 +40,12 @@ Le script de publication remplacera les métadonnées de travail
 `downloadable: false` par les descripteurs de paquet complets uniquement après
 création, mesure et hachage réussis des archives.
 
+Le fichier publié ajoute aussi une liste `navigation` générée. Elle aplatit les
+modules dans l'ordre des parties, répète l'en-tête de partie uniquement sur le
+premier module et embarque les unités du module. Cette vue est destinée aux
+listes dynamiques FlutterFlow ; elle est toujours reconstruite depuis les listes
+normalisées `parts`, `modules` et `units`, qui restent l'unique format à éditer.
+
 ## Construction locale
 
 Le générateur ne modifie jamais les sources. Il crée un dossier propre à chaque
