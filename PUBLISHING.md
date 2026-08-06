@@ -25,11 +25,12 @@ For unit `M02-U01`, a release may contain:
 
 ```text
 M02-U01-core-v1.zip
+M02-U01-unit-v1.json
 M02-U01-media-v1.zip
 catalog.json
 ```
 
-The core package contains unit JSON, audio, transcripts, and lightweight media. The optional media package adds heavier images or video. The initial app download contains neither package.
+The standalone unit JSON is the lightweight asset read directly by FlutterFlow when a learner opens a unit. The core package contains the same JSON plus lightweight supporting files for a later offline-download flow. The optional media package adds heavier images, audio, or video. The initial app download contains none of these assets.
 
 ## Generated catalogue views
 

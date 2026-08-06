@@ -71,6 +71,14 @@ Future<void> main(List<String> arguments) async {
       }
       if (unit['status'] != 'published') continue;
 
+      // FlutterFlow reads the lesson JSON directly. Keep this lightweight
+      // asset alongside the ZIP packages, which remain useful for a later
+      // explicit offline-download flow.
+      final unitJsonName = '$packageStem-unit-v$contentVersion.json';
+      final unitJsonFile = File(p.join(outputDirectory.path, unitJsonName));
+      unitFile.copySync(unitJsonFile.path);
+      publishedAssets.add(unitJsonName);
+
       final coreFiles = _collectFiles(
         unitDirectory,
         excludeTopLevelDirectory: 'media',
