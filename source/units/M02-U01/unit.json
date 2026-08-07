@@ -5,7 +5,7 @@
   "number": 1,
   "title": "Les compétences entrepreneuriales",
   "status": "published",
-  "estimatedMinutes": 35,
+  "estimatedMinutes": 40,
   "objectives": [
     "Reconnaître plusieurs qualités d'une personne entreprenante.",
     "Repérer les qualités que tu as déjà et celles que tu veux développer."
@@ -67,6 +67,32 @@
       "kind": "takeaway",
       "title": "À retenir",
       "body": "Les qualités entrepreneuriales ne sont pas des notes. Elles peuvent se développer avec la pratique."
+    },
+    {
+      "id": "journal_formation",
+      "kind": "exercise",
+      "title": "Mon journal de formation",
+      "label": "Prends quelques minutes pour garder une trace de ce que tu apprends.",
+      "items": [
+        {
+          "id": "journal_ce_que_je_retiens",
+          "kind": "textarea",
+          "prompt": "Qu’est-ce que tu retiens surtout de cette unité ?",
+          "hint": "Écris une idée importante avec tes propres mots."
+        },
+        {
+          "id": "journal_mon_experience",
+          "kind": "textarea",
+          "prompt": "À quelle situation de ta vie ou de ton travail cela te fait-il penser ?",
+          "hint": "Raconte brièvement un exemple concret."
+        },
+        {
+          "id": "journal_mon_prochain_pas",
+          "kind": "textarea",
+          "prompt": "Quel petit pas veux-tu essayer après cette unité ?",
+          "hint": "Choisis une action simple et réalisable."
+        }
+      ]
     }
   ]
 }
