@@ -97,7 +97,7 @@
     { "id": "M01-U05", "number": 5, "moduleId": "M01", "title": "Les entreprises vertes", "contentVersion": 1, "downloadable": false, "packageStem": "M01-U05" },
 
     { "id": "M02-U01", "number": 1, "moduleId": "M02", "title": "Les compétences entrepreneuriales", "estimatedMinutes": 40, "hasAudio": false, "contentVersion": 2, "downloadable": false, "packageStem": "M02-U01" },
-    { "id": "M02-U02", "number": 2, "moduleId": "M02", "title": "Le travail indépendant et l'entrepreneuriat", "contentVersion": 1, "downloadable": false, "packageStem": "M02-U02" },
+    { "id": "M02-U02", "number": 2, "moduleId": "M02", "title": "Le travail indépendant et l'entrepreneuriat", "estimatedMinutes": 25, "hasAudio": false, "contentVersion": 1, "downloadable": false, "packageStem": "M02-U02" },
     { "id": "M02-U03", "number": 3, "moduleId": "M02", "title": "La motivation de l'entrepreneur", "contentVersion": 1, "downloadable": false, "packageStem": "M02-U03" },
 
     { "id": "M03-U01", "number": 1, "moduleId": "M03", "title": "Se fixer des objectifs", "contentVersion": 1, "downloadable": false, "packageStem": "M03-U01" },

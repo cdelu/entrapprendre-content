@@ -109,49 +109,50 @@
       }
     },
     "flashcardsBlock": {
+      "description": "Cartes recto-verso. title porte le recto, body le verso — même paire que l'accordéon, parce que le lecteur reçoit les deux types dans la même liste items de BlocUnite.",
       "type": "object",
       "additionalProperties": false,
-      "required": ["id", "kind", "cards"],
+      "required": ["id", "kind", "items"],
       "properties": {
         "id": { "$ref": "#/$defs/blockIdentifier" },
         "kind": { "const": "flashcards" },
         "title": { "$ref": "#/$defs/nonEmptyText" },
         "label": { "$ref": "#/$defs/nonEmptyText" },
         "audio": { "$ref": "#/$defs/audio" },
-        "cards": {
+        "items": {
           "type": "array",
           "minItems": 1,
           "items": {
             "type": "object",
             "additionalProperties": false,
-            "required": ["front", "back"],
+            "required": ["title", "body"],
             "properties": {
-              "front": { "$ref": "#/$defs/nonEmptyText" },
-              "back": { "$ref": "#/$defs/nonEmptyText" }
+              "title": { "$ref": "#/$defs/nonEmptyText" },
+              "body": { "$ref": "#/$defs/nonEmptyText" }
             }
           }
         }
       }
     },
     "tabsBlock": {
+      "description": "Onglets. title porte le libellé de l'onglet, body son contenu. Les libellés doivent être distincts : le lecteur repère l'onglet actif par son libellé, faute de pouvoir comparer un index dans une condition FlutterFlow.",
       "type": "object",
       "additionalProperties": false,
-      "required": ["id", "kind", "tabs"],
+      "required": ["id", "kind", "items"],
       "properties": {
         "id": { "$ref": "#/$defs/blockIdentifier" },
         "kind": { "const": "tabs" },
         "title": { "$ref": "#/$defs/nonEmptyText" },
         "label": { "$ref": "#/$defs/nonEmptyText" },
         "audio": { "$ref": "#/$defs/audio" },
-        "tabs": {
+        "items": {
           "type": "array",
           "minItems": 2,
           "items": {
             "type": "object",
             "additionalProperties": false,
-            "required": ["label", "body"],
+            "required": ["title", "body"],
             "properties": {
-              "label": { "$ref": "#/$defs/nonEmptyText" },
               "title": { "$ref": "#/$defs/nonEmptyText" },
               "body": { "$ref": "#/$defs/nonEmptyText" }
             }
