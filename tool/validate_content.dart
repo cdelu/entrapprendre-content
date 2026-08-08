@@ -34,6 +34,8 @@ void main(List<String> arguments) {
   );
   context.errors.addAll(amorce.errors);
 
+  _validerFixturesManifeste(root, context);
+
   final catalogFile = File(
     '${root.path}${Platform.pathSeparator}source'
     '${Platform.pathSeparator}catalog.source.json',
@@ -99,6 +101,73 @@ Set<String> _lireTypesRendus(Directory root, ValidationContext context) {
     context.error(file.path, 'aucun type rendu déclaré : manifeste inutilisable');
   }
   return types;
+}
+
+/// Vérifie que chaque type déclaré rendu pointe vers un vrai bloc de ce type.
+///
+/// Le manifeste affirme deux choses qu'aucun outil ne contrôlait : qu'un type
+/// est rendu par l'application apprenante, et qu'un bloc d'exemple le prouve.
+/// La première ne se vérifie pas d'ici — les deux dépôts sont séparés. La
+/// seconde, si : un `fixturePath` mort signale un manifeste qui a cessé de
+/// décrire le contenu, et c'est le symptôme le plus probable d'une dérive.
+///
+/// Les tests de garde du dépôt applicatif, eux, rejouent une création
+/// synthétique et ne peuvent pas rejouer les scripts de promotion, qui
+/// dépendent de clés de nœuds vivantes. Ce contrôle-ci est donc le seul filet
+/// automatique sur la parité contenu/manifeste.
+void _validerFixturesManifeste(Directory root, ValidationContext context) {
+  final separator = Platform.pathSeparator;
+  final chemin = '${root.path}${separator}schema${separator}support-manifest.json';
+  final manifeste = _readObject(File(chemin), context);
+  final blocs = manifeste?['blocks'];
+  if (blocs is! List) return;
+
+  for (final bloc in blocs) {
+    if (bloc is! Map<String, Object?>) continue;
+    final type = bloc['type'];
+    if (bloc['learnerRendererStatus'] != 'implemented') continue;
+    final fixture = bloc['fixturePath'];
+    if (fixture == null) continue; // audio n'a pas encore d'unité porteuse
+    if (fixture is! String) {
+      context.error('support-manifest.json#$type', 'fixturePath doit être une chaîne');
+      continue;
+    }
+
+    final morceaux = fixture.split('#/blocks/');
+    if (morceaux.length != 2) {
+      context.error(
+        'support-manifest.json#$type',
+        'fixturePath attendu sous la forme <fichier>#/blocks/<index>',
+      );
+      continue;
+    }
+    final fichier = File(
+      '${root.path}$separator${morceaux[0].replaceAll('/', separator)}',
+    );
+    final index = int.tryParse(morceaux[1]);
+    if (index == null) {
+      context.error('support-manifest.json#$type', 'index de bloc illisible');
+      continue;
+    }
+    final unite = _readObject(fichier, context);
+    if (unite == null) continue;
+    final blocsUnite = unite['blocks'];
+    if (blocsUnite is! List || index >= blocsUnite.length) {
+      context.error(
+        'support-manifest.json#$type',
+        'fixturePath pointe au-delà des blocs de ${morceaux[0]}',
+      );
+      continue;
+    }
+    final cible = blocsUnite[index];
+    final kindCible = cible is Map ? cible['kind'] : null;
+    if (kindCible != type) {
+      context.error(
+        'support-manifest.json#$type',
+        'fixturePath pointe sur un bloc « $kindCible », pas « $type »',
+      );
+    }
+  }
 }
 
 Map<String, Object?>? _readObject(File file, ValidationContext context) {
@@ -357,10 +426,59 @@ void _validateUnit(
     if (blockId != null && !blockIds.add(blockId)) {
       context.error('$blockPath.id', 'identifiant de bloc dupliqué : $blockId');
     }
-    _validateBlock(block, blockPath, context, publiee: status == 'published');
+    _validateBlock(block, blockPath, context, publiee: status == 'published',
+        dossierUnite: File(path).parent);
   }
 
   _rejectScoreFields(unit, path, context);
+}
+
+/// `image: {path, alt}`.
+///
+/// `path` reste relatif au dossier de l'unité dans la source : c'est
+/// `tool/build_release.dart` qui le réécrit en URL de release immuable. Une
+/// URL absolue écrite à la main court-circuiterait cette réécriture et
+/// pointerait hors des assets versionnés.
+///
+/// `alt` est obligatoire. Boubacar, le profil qui s'appuie sur l'audio, ne
+/// reçoit rien d'une image sans texte de remplacement.
+void _validateImage(
+  Map<String, Object?> block,
+  String path,
+  Directory dossierUnite,
+  ValidationContext context,
+) {
+  final image = block['image'];
+  if (image is! Map<String, Object?>) {
+    context.error('$path.image', 'objet {path, alt} obligatoire');
+    return;
+  }
+  final chemin = image['path'];
+  if (chemin is! String || chemin.trim().isEmpty) {
+    context.error('$path.image.path', 'texte non vide obligatoire');
+  } else if (chemin.startsWith('http://') || chemin.startsWith('https://')) {
+    context.error(
+      '$path.image.path',
+      'chemin relatif attendu, pas une URL : la release réécrit ce champ',
+    );
+  } else if (!chemin.startsWith('media/')) {
+    context.error(
+      '$path.image.path',
+      'les fichiers d\'une unité vivent dans media/',
+    );
+  } else {
+    // Une coquille doit se voir maintenant, pas à la publication : le
+    // constructeur de release refuse un chemin sans fichier, mais bien plus
+    // tard et loin de l'auteur.
+    final fichier = File(
+      '${dossierUnite.path}${Platform.pathSeparator}'
+      '${chemin.replaceAll('/', Platform.pathSeparator)}',
+    );
+    if (!fichier.existsSync()) {
+      context.error('$path.image.path', 'fichier introuvable : $chemin');
+    }
+  }
+  _expectText(image, 'alt', '$path.image', context);
 }
 
 void _validateBlock(
@@ -368,6 +486,7 @@ void _validateBlock(
   String path,
   ValidationContext context, {
   required bool publiee,
+  required Directory dossierUnite,
 }) {
   final kind = _expectText(block, 'kind', path, context);
 
@@ -426,6 +545,43 @@ void _validateBlock(
             'libellé d\'onglet en double : « $libelle »',
           );
         }
+      }
+    // Les six types d'affichage. Aucun n'ajoute de champ au-delà de
+    // `image` : `label` et `body` portent l'étiquette et l'énoncé d'une idée
+    // forte, la citation et son auteur, la légende d'une image.
+    case 'statement':
+    case 'quote':
+      _expectText(block, 'label', path, context);
+      _expectText(block, 'body', path, context);
+    case 'list':
+      _expectText(block, 'title', path, context);
+      final points = _expectObjectList(block, 'items', path, context);
+      for (var i = 0; i < points.length; i++) {
+        _expectText(points[i], 'body', '$path.items[$i]', context);
+      }
+    case 'image':
+      _expectText(block, 'title', path, context);
+      _validateImage(block, path, dossierUnite, context);
+    case 'process':
+      _expectText(block, 'title', path, context);
+      final etapes = _expectObjectList(block, 'items', path, context);
+      if (etapes.length < 2) {
+        context.error('$path.items', 'au moins deux étapes sont nécessaires');
+      }
+      for (var i = 0; i < etapes.length; i++) {
+        _expectText(etapes[i], 'title', '$path.items[$i]', context);
+        _expectText(etapes[i], 'body', '$path.items[$i]', context);
+      }
+    case 'timeline':
+      _expectText(block, 'title', path, context);
+      final reperes = _expectObjectList(block, 'items', path, context);
+      if (reperes.length < 2) {
+        context.error('$path.items', 'au moins deux repères sont nécessaires');
+      }
+      for (var i = 0; i < reperes.length; i++) {
+        _expectText(reperes[i], 'label', '$path.items[$i]', context);
+        _expectText(reperes[i], 'title', '$path.items[$i]', context);
+        _expectText(reperes[i], 'body', '$path.items[$i]', context);
       }
     case 'truefalse':
       _expectText(block, 'statement', path, context);

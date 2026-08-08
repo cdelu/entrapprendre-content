@@ -53,6 +53,22 @@
         "transcript": { "$ref": "#/$defs/nonEmptyText" }
       }
     },
+    "image": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["path", "alt"],
+      "properties": {
+        "path": {
+          "description": "Chemin relatif dans le dossier de l'unité, ex. media/atelier.jpg. tool/build_release.dart le réécrit en URL de release immuable.",
+          "type": "string",
+          "minLength": 1
+        },
+        "alt": {
+          "description": "Description de l'image pour qui ne la voit pas. Obligatoire : une image sans texte de remplacement ne dit rien à l'apprenant qui écoute.",
+          "$ref": "#/$defs/nonEmptyText"
+        }
+      }
+    },
     "common": {
       "type": "object",
       "required": ["id", "kind"],
@@ -153,6 +169,119 @@
             "additionalProperties": false,
             "required": ["title", "body"],
             "properties": {
+              "title": { "$ref": "#/$defs/nonEmptyText" },
+              "body": { "$ref": "#/$defs/nonEmptyText" }
+            }
+          }
+        }
+      }
+    },
+    "statementBlock": {
+      "description": "Idée forte mise en évidence. label porte l'étiquette (« IDÉE FORTE »), body l'énoncé.",
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "kind", "label", "body"],
+      "properties": {
+        "id": { "$ref": "#/$defs/blockIdentifier" },
+        "kind": { "const": "statement" },
+        "label": { "$ref": "#/$defs/nonEmptyText" },
+        "body": { "$ref": "#/$defs/nonEmptyText" },
+        "audio": { "$ref": "#/$defs/audio" }
+      }
+    },
+    "quoteBlock": {
+      "description": "Citation. body porte les mots cités, label la personne citée.",
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "kind", "body", "label"],
+      "properties": {
+        "id": { "$ref": "#/$defs/blockIdentifier" },
+        "kind": { "const": "quote" },
+        "body": { "$ref": "#/$defs/nonEmptyText" },
+        "label": { "$ref": "#/$defs/nonEmptyText" },
+        "audio": { "$ref": "#/$defs/audio" }
+      }
+    },
+    "listBlock": {
+      "description": "Liste numérotée. Chaque élément ne porte que body : le numéro est calculé à l'affichage.",
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "kind", "title", "items"],
+      "properties": {
+        "id": { "$ref": "#/$defs/blockIdentifier" },
+        "kind": { "const": "list" },
+        "title": { "$ref": "#/$defs/nonEmptyText" },
+        "audio": { "$ref": "#/$defs/audio" },
+        "items": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["body"],
+            "properties": { "body": { "$ref": "#/$defs/nonEmptyText" } }
+          }
+        }
+      }
+    },
+    "imageBlock": {
+      "description": "Image avec légende. body porte la légende ; le texte de remplacement vit dans image.alt.",
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "kind", "title", "image"],
+      "properties": {
+        "id": { "$ref": "#/$defs/blockIdentifier" },
+        "kind": { "const": "image" },
+        "title": { "$ref": "#/$defs/nonEmptyText" },
+        "body": { "$ref": "#/$defs/nonEmptyText" },
+        "image": { "$ref": "#/$defs/image" },
+        "audio": { "$ref": "#/$defs/audio" }
+      }
+    },
+    "processBlock": {
+      "description": "Étapes balayables. Une étape par élément, numérotée à l'affichage.",
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "kind", "title", "items"],
+      "properties": {
+        "id": { "$ref": "#/$defs/blockIdentifier" },
+        "kind": { "const": "process" },
+        "title": { "$ref": "#/$defs/nonEmptyText" },
+        "audio": { "$ref": "#/$defs/audio" },
+        "items": {
+          "type": "array",
+          "minItems": 2,
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["title", "body"],
+            "properties": {
+              "title": { "$ref": "#/$defs/nonEmptyText" },
+              "body": { "$ref": "#/$defs/nonEmptyText" }
+            }
+          }
+        }
+      }
+    },
+    "timelineBlock": {
+      "description": "Chronologie. label porte le repère (« Jour 1 »), puis title et body.",
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "kind", "title", "items"],
+      "properties": {
+        "id": { "$ref": "#/$defs/blockIdentifier" },
+        "kind": { "const": "timeline" },
+        "title": { "$ref": "#/$defs/nonEmptyText" },
+        "audio": { "$ref": "#/$defs/audio" },
+        "items": {
+          "type": "array",
+          "minItems": 2,
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["label", "title", "body"],
+            "properties": {
+              "label": { "$ref": "#/$defs/nonEmptyText" },
               "title": { "$ref": "#/$defs/nonEmptyText" },
               "body": { "$ref": "#/$defs/nonEmptyText" }
             }
@@ -437,6 +566,12 @@
         { "$ref": "#/$defs/accordionBlock" },
         { "$ref": "#/$defs/flashcardsBlock" },
         { "$ref": "#/$defs/tabsBlock" },
+        { "$ref": "#/$defs/statementBlock" },
+        { "$ref": "#/$defs/quoteBlock" },
+        { "$ref": "#/$defs/listBlock" },
+        { "$ref": "#/$defs/imageBlock" },
+        { "$ref": "#/$defs/processBlock" },
+        { "$ref": "#/$defs/timelineBlock" },
         { "$ref": "#/$defs/trueFalseBlock" },
         { "$ref": "#/$defs/choiceBlock" },
         { "$ref": "#/$defs/clozeBlock" },
