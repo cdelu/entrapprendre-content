@@ -5,7 +5,7 @@
   "learnerProjectId": "entr-apprendre-u42dgm",
   "learnerCommitVerified": "Z13JJAh0u1huF9KPk8ws",
   "studioProjectId": "entr-apprendre-studio-tt24i7",
-  "studioCommitVerified": "iq2cJ3HuvOvfDbiV37fI",
+  "studioCommitVerified": "fjCg3TMB2YH82QzVn8GD",
   "statusValues": {
     "implemented": "Câblé et vérifié de bout en bout.",
     "partial": "Une partie des champs rendus est câblée, le reste ne l'est pas. Le détail est dans les notes du type.",
@@ -16,7 +16,8 @@
     "releaseAllowed": "learnerRendererStatus == implemented",
     "studioAuthorable": "studioEditorStatus == implemented",
     "unknownBlocks": "Studio conserve les blocs inconnus à l'import/export sans jamais les produire.",
-    "studioEditorScope": "studioEditorStatus ne décrit que la modification des champs d'un bloc existant. Créer, supprimer et réordonner des blocs n'existe encore dans Studio pour aucun type ; « implemented » ne veut donc pas dire qu'une unité peut être écrite depuis zéro.",
+    "studioEditorScope": "studioEditorStatus décrit la modification des champs, et depuis l'éditeur par pages aussi la création, la suppression et le déplacement des blocs et de leurs éléments. Studio sait donc écrire une unité depuis zéro. Ce qu'il ne sait pas encore : choisir les fichiers média depuis le disque, et écrire le catalogue.",
+    "studioEditeurParPages": "Les champs de saisie vivent sur des pages dédiées — /entete, /bloc, /element — et non dans la liste. FlutterFlow met en cache le contrôleur d'un champ par position de ligne (_childrenModels[index] ??= …), avec une seule réserve par instance de composant pour toute la page : deux listes réclamant les clés 0, 1, 2 recevaient les mêmes contrôleurs, et le premier bloc ouvert remplissait les champs de tous les autres. Une page neuve construit un modèle neuf ; c'est la seule structure qui garantisse que le texte affiché est le texte enregistré.",
     "studioDroppedFields": "Studio ne propose pas un champ marqué dropped, sauf si unit.schema.json l'exige — le seul cas est image.alt. Les deux sens de la règle sont vérifiés par authoring-app/test/app_test.dart, qui lit ce manifeste et le schéma."
   },
   "fieldSemantics": {
