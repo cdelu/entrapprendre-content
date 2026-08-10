@@ -1,0 +1,108 @@
+{
+  "schemaVersion": 1,
+  "id": "M02-U03",
+  "moduleId": "M02",
+  "number": 3,
+  "title": "La motivation de l'entrepreneur",
+  "status": "published",
+  "estimatedMinutes": 20,
+  "objectives": [
+    "Nommer ce qui te pousse à travailler pour toi.",
+    "Reconnaître les moments où la motivation baisse, et quoi faire alors."
+  ],
+  "blocks": [
+    {
+      "id": "idee_forte",
+      "kind": "statement",
+      "label": "IDÉE FORTE",
+      "body": "La motivation ne vient pas toute seule le matin. Elle se prépare la veille."
+    },
+    {
+      "id": "parole_artisane",
+      "kind": "quote",
+      "body": "Le jour où j'ai compris pour qui je travaillais, je me suis levée plus tôt.",
+      "label": "Amina · artisane maroquinière"
+    },
+    {
+      "id": "ce_qui_pousse",
+      "kind": "list",
+      "title": "Ce qui pousse à continuer",
+      "items": [
+        { "body": "Gagner de quoi faire vivre ta famille." },
+        { "body": "Faire un travail dont tu es fier." },
+        { "body": "Apprendre un geste que peu de gens savent faire." },
+        { "body": "Décider toi-même de tes journées." }
+      ]
+    },
+    {
+      "id": "atelier",
+      "kind": "image",
+      "title": "Ton atelier raconte ton travail",
+      "body": "Un plan de travail rangé fait gagner du temps à chaque commande.",
+      "image": {
+        "path": "media/atelier.jpg",
+        "alt": "Un plan de travail de maroquinier avec les outils rangés côte à côte."
+      }
+    },
+    {
+      "id": "retrouver_elan",
+      "kind": "process",
+      "title": "Retrouver l'élan quand il baisse",
+      "items": [
+        {
+          "title": "Nommer",
+          "body": "Dis à voix haute ce qui te pèse. La fatigue, l'argent, un client difficile."
+        },
+        {
+          "title": "Réduire",
+          "body": "Choisis une seule tâche pour aujourd'hui, la plus petite."
+        },
+        {
+          "title": "Finir",
+          "body": "Termine-la avant d'en commencer une autre. Finir remet en marche."
+        }
+      ]
+    },
+    {
+      "id": "semaine_type",
+      "kind": "timeline",
+      "title": "Une semaine où l'envie revient",
+      "items": [
+        {
+          "label": "Lundi",
+          "title": "Ranger l'atelier",
+          "body": "Une heure suffit. Tu vois tout de suite ce qui te manque."
+        },
+        {
+          "label": "Mercredi",
+          "title": "Voir un client",
+          "body": "Écouter une demande réelle remet le travail en perspective."
+        },
+        {
+          "label": "Vendredi",
+          "title": "Regarder ce qui est fait",
+          "body": "Pose les pièces finies devant toi. C'est ta semaine."
+        }
+      ]
+    },
+    {
+      "id": "ta_raison",
+      "kind": "exercise",
+      "title": "Ta raison à toi",
+      "items": [
+        {
+          "id": "raison_principale",
+          "kind": "textarea",
+          "prompt": "Pour qui, ou pour quoi, est-ce que tu travailles ?",
+          "hint": "Une ou deux lignes suffisent."
+        }
+      ]
+    },
+    {
+      "id": "a_retenir",
+      "kind": "takeaway",
+      "title": "À retenir",
+      "body": "La motivation se travaille comme un geste du métier : par petites reprises, pas d'un seul coup."
+    }
+  ]
+}

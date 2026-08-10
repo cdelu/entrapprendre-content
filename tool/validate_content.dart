@@ -2,6 +2,16 @@ import 'dart:convert';
 import 'dart:io';
 
 final class ValidationContext {
+  ValidationContext({required this.releaseMode, required this.typesRendus});
+
+  /// Vrai sous `--release` : la validation devient un contrôle de publication.
+  final bool releaseMode;
+
+  /// Types que le lecteur apprenant sait réellement afficher, lus dans
+  /// `schema/support-manifest.json`. Un type absent d'ici produit une page
+  /// blanche chez l'apprenant, pas une erreur.
+  final Set<String> typesRendus;
+
   final errors = <String>[];
 
   void error(String path, String message) {
@@ -12,7 +22,19 @@ final class ValidationContext {
 void main(List<String> arguments) {
   final releaseMode = arguments.contains('--release');
   final root = File.fromUri(Platform.script).parent.parent;
-  final context = ValidationContext();
+
+  // Le manifeste se lit avant tout le reste : sans lui, le mode release ne
+  // peut pas garantir sa promesse. Le contexte d'amorçage ne sert qu'à
+  // collecter une éventuelle erreur de lecture.
+  final amorce = ValidationContext(releaseMode: releaseMode, typesRendus: {});
+  final typesRendus = _lireTypesRendus(root, amorce);
+  final context = ValidationContext(
+    releaseMode: releaseMode,
+    typesRendus: typesRendus,
+  );
+  context.errors.addAll(amorce.errors);
+
+  _validerFixturesManifeste(root, context);
 
   final catalogFile = File(
     '${root.path}${Platform.pathSeparator}source'
@@ -40,6 +62,117 @@ void main(List<String> arguments) {
         ? 'Contenu valide. Les unités non publiées seront exclues de la release.'
         : 'Contenu valide. Les brouillons restent autorisés dans ce mode.',
   );
+}
+
+/// Types dont `learnerRendererStatus` vaut `implemented` dans le manifeste.
+///
+/// C'est ce qui rend le manifeste exécutable plutôt que documentaire :
+/// promouvoir un type se fait en une ligne, et oublier de le faire empêche la
+/// publication au lieu de livrer un bloc vide.
+Set<String> _lireTypesRendus(Directory root, ValidationContext context) {
+  final separator = Platform.pathSeparator;
+  final file =
+      File('${root.path}${separator}schema${separator}support-manifest.json');
+  final manifeste = _readObject(file, context);
+  if (manifeste == null) {
+    return const {};
+  }
+  final blocs = manifeste['blocks'];
+  if (blocs is! List) {
+    context.error('${file.path}#/blocks', 'doit être une liste');
+    return const {};
+  }
+  final types = <String>{};
+  for (var index = 0; index < blocs.length; index++) {
+    final bloc = blocs[index];
+    if (bloc is! Map<String, Object?>) {
+      context.error('${file.path}#/blocks[$index]', 'doit être un objet');
+      continue;
+    }
+    final type = bloc['type'];
+    if (type is! String) {
+      context.error(
+          '${file.path}#/blocks[$index].type', 'doit être une chaîne');
+      continue;
+    }
+    if (bloc['learnerRendererStatus'] == 'implemented') {
+      types.add(type);
+    }
+  }
+  if (types.isEmpty) {
+    context.error(
+        file.path, 'aucun type rendu déclaré : manifeste inutilisable');
+  }
+  return types;
+}
+
+/// Vérifie que chaque type déclaré rendu pointe vers un vrai bloc de ce type.
+///
+/// Le manifeste affirme deux choses qu'aucun outil ne contrôlait : qu'un type
+/// est rendu par l'application apprenante, et qu'un bloc d'exemple le prouve.
+/// La première ne se vérifie pas d'ici — les deux dépôts sont séparés. La
+/// seconde, si : un `fixturePath` mort signale un manifeste qui a cessé de
+/// décrire le contenu, et c'est le symptôme le plus probable d'une dérive.
+///
+/// Les tests de garde du dépôt applicatif, eux, rejouent une création
+/// synthétique et ne peuvent pas rejouer les scripts de promotion, qui
+/// dépendent de clés de nœuds vivantes. Ce contrôle-ci est donc le seul filet
+/// automatique sur la parité contenu/manifeste.
+void _validerFixturesManifeste(Directory root, ValidationContext context) {
+  final separator = Platform.pathSeparator;
+  final chemin =
+      '${root.path}${separator}schema${separator}support-manifest.json';
+  final manifeste = _readObject(File(chemin), context);
+  final blocs = manifeste?['blocks'];
+  if (blocs is! List) return;
+
+  for (final bloc in blocs) {
+    if (bloc is! Map<String, Object?>) continue;
+    final type = bloc['type'];
+    if (bloc['learnerRendererStatus'] != 'implemented') continue;
+    final fixture = bloc['fixturePath'];
+    if (fixture == null) continue; // audio n'a pas encore d'unité porteuse
+    if (fixture is! String) {
+      context.error(
+          'support-manifest.json#$type', 'fixturePath doit être une chaîne');
+      continue;
+    }
+
+    final morceaux = fixture.split('#/blocks/');
+    if (morceaux.length != 2) {
+      context.error(
+        'support-manifest.json#$type',
+        'fixturePath attendu sous la forme <fichier>#/blocks/<index>',
+      );
+      continue;
+    }
+    final fichier = File(
+      '${root.path}$separator${morceaux[0].replaceAll('/', separator)}',
+    );
+    final index = int.tryParse(morceaux[1]);
+    if (index == null) {
+      context.error('support-manifest.json#$type', 'index de bloc illisible');
+      continue;
+    }
+    final unite = _readObject(fichier, context);
+    if (unite == null) continue;
+    final blocsUnite = unite['blocks'];
+    if (blocsUnite is! List || index >= blocsUnite.length) {
+      context.error(
+        'support-manifest.json#$type',
+        'fixturePath pointe au-delà des blocs de ${morceaux[0]}',
+      );
+      continue;
+    }
+    final cible = blocsUnite[index];
+    final kindCible = cible is Map ? cible['kind'] : null;
+    if (kindCible != type) {
+      context.error(
+        'support-manifest.json#$type',
+        'fixturePath pointe sur un bloc « $kindCible », pas « $type »',
+      );
+    }
+  }
 }
 
 Map<String, Object?>? _readObject(File file, ValidationContext context) {
@@ -298,18 +431,85 @@ void _validateUnit(
     if (blockId != null && !blockIds.add(blockId)) {
       context.error('$blockPath.id', 'identifiant de bloc dupliqué : $blockId');
     }
-    _validateBlock(block, blockPath, context);
+    _validateBlock(block, blockPath, context,
+        publiee: status == 'published', dossierUnite: File(path).parent);
   }
 
   _rejectScoreFields(unit, path, context);
 }
 
+/// `image: {path, alt}`.
+///
+/// `path` reste relatif au dossier de l'unité dans la source : c'est
+/// `tool/build_release.dart` qui le réécrit en URL de release immuable. Une
+/// URL absolue écrite à la main court-circuiterait cette réécriture et
+/// pointerait hors des assets versionnés.
+///
+/// `alt` est obligatoire. Boubacar, le profil qui s'appuie sur l'audio, ne
+/// reçoit rien d'une image sans texte de remplacement.
+void _validateImage(
+  Map<String, Object?> block,
+  String path,
+  Directory dossierUnite,
+  ValidationContext context,
+) {
+  final image = block['image'];
+  if (image is! Map<String, Object?>) {
+    context.error('$path.image', 'objet {path, alt} obligatoire');
+    return;
+  }
+  final chemin = image['path'];
+  if (chemin is! String || chemin.trim().isEmpty) {
+    context.error('$path.image.path', 'texte non vide obligatoire');
+  } else if (chemin.startsWith('http://') || chemin.startsWith('https://')) {
+    context.error(
+      '$path.image.path',
+      'chemin relatif attendu, pas une URL : la release réécrit ce champ',
+    );
+  } else if (!chemin.startsWith('media/')) {
+    context.error(
+      '$path.image.path',
+      'les fichiers d\'une unité vivent dans media/',
+    );
+  } else {
+    // Une coquille doit se voir maintenant, pas à la publication : le
+    // constructeur de release refuse un chemin sans fichier, mais bien plus
+    // tard et loin de l'auteur.
+    final fichier = File(
+      '${dossierUnite.path}${Platform.pathSeparator}'
+      '${chemin.replaceAll('/', Platform.pathSeparator)}',
+    );
+    if (!fichier.existsSync()) {
+      context.error('$path.image.path', 'fichier introuvable : $chemin');
+    }
+  }
+  _expectText(image, 'alt', '$path.image', context);
+}
+
 void _validateBlock(
   Map<String, Object?> block,
   String path,
-  ValidationContext context,
-) {
+  ValidationContext context, {
+  required bool publiee,
+  required Directory dossierUnite,
+}) {
   final kind = _expectText(block, 'kind', path, context);
+
+  // Gel sur ce qui s'affiche. Le schéma décrit plus de types que le lecteur
+  // n'en rend ; les autres produisent une page blanche, sans erreur ni trace.
+  // Hors release on les laisse passer — un brouillon peut préparer un type
+  // pas encore câblé — mais rien d'invisible ne part chez l'apprenant.
+  if (context.releaseMode &&
+      publiee &&
+      kind != null &&
+      !context.typesRendus.contains(kind)) {
+    context.error(
+      '$path.kind',
+      'type « $kind » non pris en charge par le lecteur : il s\'afficherait '
+          'vide. Voir schema/support-manifest.json.',
+    );
+  }
+
   switch (kind) {
     case 'text':
     case 'takeaway':
@@ -320,20 +520,73 @@ void _validateBlock(
         _expectText(items[i], 'title', '$path.items[$i]', context);
         _expectText(items[i], 'body', '$path.items[$i]', context);
       }
+    // `flashcards` et `tabs` partagent la paire {title, body} de l'accordéon :
+    // le lecteur reçoit les trois types dans la même liste `items` de
+    // `BlocUnite`, et n'a pas de champ `front` / `back` / `label` où les
+    // ranger. Une charge utile sous un autre nom serait perdue au parsing et
+    // afficherait un bloc vide.
     case 'flashcards':
-      final cards = _expectObjectList(block, 'cards', path, context);
-      for (var i = 0; i < cards.length; i++) {
-        _expectText(cards[i], 'front', '$path.cards[$i]', context);
-        _expectText(cards[i], 'back', '$path.cards[$i]', context);
+      final cartes = _expectObjectList(block, 'items', path, context);
+      for (var i = 0; i < cartes.length; i++) {
+        _expectText(cartes[i], 'title', '$path.items[$i]', context); // recto
+        _expectText(cartes[i], 'body', '$path.items[$i]', context); // verso
       }
     case 'tabs':
-      final tabs = _expectObjectList(block, 'tabs', path, context);
-      if (tabs.length < 2) {
-        context.error('$path.tabs', 'au moins deux onglets sont nécessaires');
+      final onglets = _expectObjectList(block, 'items', path, context);
+      if (onglets.length < 2) {
+        context.error('$path.items', 'au moins deux onglets sont nécessaires');
       }
-      for (var i = 0; i < tabs.length; i++) {
-        _expectText(tabs[i], 'label', '$path.tabs[$i]', context);
-        _expectText(tabs[i], 'body', '$path.tabs[$i]', context);
+      // Le lecteur repère l'onglet actif par son libellé, faute de pouvoir
+      // comparer un index de liste dans une condition FlutterFlow. Deux
+      // onglets homonymes s'ouvriraient donc ensemble.
+      final libelles = <String>{};
+      for (var i = 0; i < onglets.length; i++) {
+        _expectText(onglets[i], 'title', '$path.items[$i]', context);
+        _expectText(onglets[i], 'body', '$path.items[$i]', context);
+        final libelle = onglets[i]['title'];
+        if (libelle is String && !libelles.add(libelle)) {
+          context.error(
+            '$path.items[$i].title',
+            'libellé d\'onglet en double : « $libelle »',
+          );
+        }
+      }
+    // Les six types d'affichage. Aucun n'ajoute de champ au-delà de
+    // `image` : `label` et `body` portent l'étiquette et l'énoncé d'une idée
+    // forte, la citation et son auteur, la légende d'une image.
+    case 'statement':
+    case 'quote':
+      _expectText(block, 'label', path, context);
+      _expectText(block, 'body', path, context);
+    case 'list':
+      _expectText(block, 'title', path, context);
+      final points = _expectObjectList(block, 'items', path, context);
+      for (var i = 0; i < points.length; i++) {
+        _expectText(points[i], 'body', '$path.items[$i]', context);
+      }
+    case 'image':
+      _expectText(block, 'title', path, context);
+      _validateImage(block, path, dossierUnite, context);
+    case 'process':
+      _expectText(block, 'title', path, context);
+      final etapes = _expectObjectList(block, 'items', path, context);
+      if (etapes.length < 2) {
+        context.error('$path.items', 'au moins deux étapes sont nécessaires');
+      }
+      for (var i = 0; i < etapes.length; i++) {
+        _expectText(etapes[i], 'title', '$path.items[$i]', context);
+        _expectText(etapes[i], 'body', '$path.items[$i]', context);
+      }
+    case 'timeline':
+      _expectText(block, 'title', path, context);
+      final reperes = _expectObjectList(block, 'items', path, context);
+      if (reperes.length < 2) {
+        context.error('$path.items', 'au moins deux repères sont nécessaires');
+      }
+      for (var i = 0; i < reperes.length; i++) {
+        _expectText(reperes[i], 'label', '$path.items[$i]', context);
+        _expectText(reperes[i], 'title', '$path.items[$i]', context);
+        _expectText(reperes[i], 'body', '$path.items[$i]', context);
       }
     case 'truefalse':
       _expectText(block, 'statement', path, context);

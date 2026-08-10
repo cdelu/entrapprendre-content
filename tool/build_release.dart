@@ -71,12 +71,31 @@ Future<void> main(List<String> arguments) async {
       }
       if (unit['status'] != 'published') continue;
 
+      // Chaque fichier de `media/` part aussi comme asset de release
+      // directement adressable, et le JSON publié voit ses chemins relatifs
+      // réécrits en URL immuables.
+      //
+      // C'est ce qui rend `image` et `audio` utilisables : les widgets natifs
+      // Image et AudioPlayer veulent une URL joignable, alors que l'archive
+      // `media` ne sert qu'au téléchargement hors ligne différé. La source, elle,
+      // garde des chemins relatifs — elle reste lisible et déplaçable.
+      final mediaUrls = _publishMediaAssets(
+        unitDirectory: unitDirectory,
+        outputDirectory: outputDirectory,
+        packageStem: packageStem,
+        tag: tag,
+        publishedAssets: publishedAssets,
+      );
+      final unitPublie = _rewriteMediaPaths(unit, mediaUrls, unitId);
+
       // FlutterFlow reads the lesson JSON directly. Keep this lightweight
       // asset alongside the ZIP packages, which remain useful for a later
       // explicit offline-download flow.
       final unitJsonName = '$packageStem-unit-v$contentVersion.json';
       final unitJsonFile = File(p.join(outputDirectory.path, unitJsonName));
-      unitFile.copySync(unitJsonFile.path);
+      unitJsonFile.writeAsStringSync(
+        '${const JsonEncoder.withIndent('  ').convert(unitPublie)}\n',
+      );
       publishedAssets.add(unitJsonName);
 
       final coreFiles = _collectFiles(
@@ -297,6 +316,70 @@ void _writeZip(File destination, Directory unitDirectory, List<File> files) {
     modified: _fixedZipTimestamp,
   );
   destination.writeAsBytesSync(bytes, flush: true);
+}
+
+/// Copie chaque fichier de `media/` comme asset de release et renvoie la table
+/// « chemin relatif dans la source → URL immuable ».
+///
+/// Le nom d'asset est préfixé par le radical de l'unité, parce que les assets
+/// d'une release partagent un espace de noms plat : deux unités avec un
+/// `media/atelier.jpg` s'écraseraient l'une l'autre.
+Map<String, String> _publishMediaAssets({
+  required Directory unitDirectory,
+  required Directory outputDirectory,
+  required String packageStem,
+  required String tag,
+  required List<String> publishedAssets,
+}) {
+  final urls = <String, String>{};
+  final mediaDirectory = Directory(p.join(unitDirectory.path, 'media'));
+  if (!mediaDirectory.existsSync()) return urls;
+
+  for (final file in _collectFiles(mediaDirectory)) {
+    final relatif =
+        p.relative(file.path, from: unitDirectory.path).replaceAll(r'\', '/');
+    final assetName =
+        '$packageStem-${relatif.substring('media/'.length).replaceAll('/', '-')}';
+    file.copySync(p.join(outputDirectory.path, assetName));
+    publishedAssets.add(assetName);
+    urls[relatif] =
+        'https://github.com/$_owner/$_repository/releases/download/$tag/$assetName';
+  }
+  return urls;
+}
+
+/// Réécrit `audio.path` et `image.path` de chaque bloc en URL de release.
+///
+/// Un chemin sans asset correspondant est une erreur franche : livrer un JSON
+/// qui pointe vers un fichier absent donnerait une image cassée ou un lecteur
+/// audio muet chez l'apprenant, sans rien dans les journaux.
+Map<String, Object?> _rewriteMediaPaths(
+  Map<String, Object?> unit,
+  Map<String, String> mediaUrls,
+  String unitId,
+) {
+  final copie = jsonDecode(jsonEncode(unit)) as Map<String, Object?>;
+  final blocs = copie['blocks'];
+  if (blocs is! List) return copie;
+
+  for (final bloc in blocs) {
+    if (bloc is! Map) continue;
+    for (final champ in const ['audio', 'image']) {
+      final media = bloc[champ];
+      if (media is! Map) continue;
+      final chemin = media['path'];
+      if (chemin is! String || chemin.isEmpty) continue;
+      final url = mediaUrls[chemin];
+      if (url == null) {
+        throw StateError(
+          '$unitId, bloc ${bloc['id']} : $champ.path « $chemin » '
+          'ne correspond à aucun fichier de media/.',
+        );
+      }
+      media['path'] = url;
+    }
+  }
+  return copie;
 }
 
 Map<String, Object?> _packageDescriptor(String tag, File file) {

@@ -1,0 +1,418 @@
+{
+  "manifestVersion": 1,
+  "title": "Manifeste de prise en charge des types de contenu Entr'Apprendre",
+  "summary": "Source de vérité partagée entre le schéma, l'application apprenante et Studio. Un type n'est autorisé en release que si learnerRendererStatus vaut implemented.",
+  "learnerProjectId": "entr-apprendre-u42dgm",
+  "learnerCommitVerified": "Z13JJAh0u1huF9KPk8ws",
+  "statusValues": {
+    "implemented": "Câblé et vérifié de bout en bout.",
+    "prototype": "Existe dans le projet mais n'est pas relié au chemin JSON.",
+    "absent": "N'existe pas."
+  },
+  "rules": {
+    "releaseAllowed": "learnerRendererStatus == implemented",
+    "studioAuthorable": "studioEditorStatus == implemented",
+    "unknownBlocks": "Studio conserve les blocs inconnus à l'import/export sans jamais les produire."
+  },
+  "fieldSemantics": {
+    "rendered": "Valeur qui atteint réellement l'écran de l'apprenant.",
+    "structural": "Utilisée comme clé ou pour le contrôle de flux, jamais affichée.",
+    "conditional": "Affichée seulement si la condition indiquée est vraie.",
+    "dropped": "Acceptée par le schéma mais jamais affichée. Studio ne doit pas proposer ces champs."
+  },
+  "blocks": [
+    {
+      "type": "text",
+      "contractVersion": 1,
+      "schemaStatus": "implemented",
+      "learnerRendererStatus": "implemented",
+      "studioEditorStatus": "absent",
+      "studioPreviewStatus": "absent",
+      "runtimeCarried": true,
+      "learnerWidget": "BlocTexteUnite",
+      "fixturePath": "source/units/M02-U01/unit.json#/blocks/0",
+      "fields": {
+        "rendered": ["title", "body"],
+        "structural": ["id", "kind"],
+        "dropped": ["label"]
+      }
+    },
+    {
+      "type": "accordion",
+      "contractVersion": 1,
+      "schemaStatus": "implemented",
+      "learnerRendererStatus": "implemented",
+      "studioEditorStatus": "absent",
+      "studioPreviewStatus": "absent",
+      "runtimeCarried": true,
+      "learnerWidget": "BlocAccordeonUnite",
+      "fixturePath": "source/units/M02-U01/unit.json#/blocks/1",
+      "fields": {
+        "rendered": ["label", "intro", "items[].title", "items[].body"],
+        "structural": ["id", "kind"],
+        "dropped": ["title"]
+      },
+      "notes": "L'en-tête vient de label, pas de title. C'est la seule exception parmi les types pris en charge."
+    },
+    {
+      "type": "exercise",
+      "contractVersion": 1,
+      "schemaStatus": "implemented",
+      "learnerRendererStatus": "implemented",
+      "studioEditorStatus": "absent",
+      "studioPreviewStatus": "absent",
+      "runtimeCarried": true,
+      "learnerWidget": "BlocExerciceUnite",
+      "fixturePath": "source/units/M02-U01/unit.json#/blocks/2",
+      "fields": {
+        "rendered": ["title", "items[]"],
+        "structural": ["id", "kind"],
+        "conditional": {
+          "label": "Affiché uniquement si id == 'journal_formation' (condition codée en dur dans le lecteur)."
+        }
+      },
+      "itemTypes": ["textarea", "scale"],
+      "notes": "Le journal de formation est un bloc exercise ordinaire, pas un type distinct."
+    },
+    {
+      "type": "takeaway",
+      "contractVersion": 1,
+      "schemaStatus": "implemented",
+      "learnerRendererStatus": "implemented",
+      "studioEditorStatus": "absent",
+      "studioPreviewStatus": "absent",
+      "runtimeCarried": true,
+      "learnerWidget": "BlocRetenirUnite",
+      "fixturePath": "source/units/M02-U01/unit.json#/blocks/3",
+      "fields": {
+        "rendered": ["title", "body"],
+        "structural": ["id", "kind"],
+        "dropped": ["label"]
+      }
+    },
+    {
+      "type": "flashcards",
+      "contractVersion": 2,
+      "schemaStatus": "implemented",
+      "learnerRendererStatus": "implemented",
+      "studioEditorStatus": "absent",
+      "studioPreviewStatus": "absent",
+      "runtimeCarried": true,
+      "learnerWidget": "BlocCartesUnite",
+      "fixturePath": "source/units/M02-U02/unit.json#/blocks/1",
+      "galleryPrototype": "EaBlocCarteRetournee",
+      "fields": {
+        "rendered": ["title", "items[].title", "items[].body"],
+        "structural": ["id", "kind"],
+        "dropped": ["label"]
+      },
+      "notes": "contractVersion 2 : cards[].front / cards[].back sont devenus items[].title / items[].body. Le lecteur reçoit tous les types dans la même liste items de BlocUnite ; une charge utile sous un autre nom serait perdue au parsing. Chaque carte est rendue par le composant EaCarteRetournable, isolé parce qu'un FlippableCard ne peut pas être généré dynamiquement."
+    },
+    {
+      "type": "tabs",
+      "contractVersion": 2,
+      "schemaStatus": "implemented",
+      "learnerRendererStatus": "implemented",
+      "studioEditorStatus": "absent",
+      "studioPreviewStatus": "absent",
+      "runtimeCarried": true,
+      "learnerWidget": "BlocOngletsUnite",
+      "fixturePath": "source/units/M02-U02/unit.json#/blocks/0",
+      "galleryPrototype": "EaBlocOnglets",
+      "fields": {
+        "rendered": ["title", "items[].title", "items[].body"],
+        "structural": ["id", "kind"],
+        "dropped": ["label"]
+      },
+      "constraints": [
+        "Les libellés d'onglet (items[].title) doivent être distincts dans un même bloc.",
+        "Un seul onglet actif à la fois par unité, tous blocs confondus."
+      ],
+      "notes": "contractVersion 2 : tabs[].label / tabs[].body sont devenus items[].title / items[].body. TabBar attend une liste Dart résolue à la compilation, donc les onglets pilotés par les données passent par un sélecteur de puces plus un corps masqué par onglet. La condition de visibilité ne sait lire ni un index de liste ni un état de composant : l'onglet actif est un état d'application repéré par libellé, d'où les deux contraintes ci-dessus."
+    },
+    {
+      "type": "statement",
+      "contractVersion": 1,
+      "schemaStatus": "implemented",
+      "learnerRendererStatus": "implemented",
+      "studioEditorStatus": "absent",
+      "studioPreviewStatus": "absent",
+      "runtimeCarried": true,
+      "learnerWidget": "BlocDeclarationUnite",
+      "fixturePath": "source/units/M02-U03/unit.json#/blocks/0",
+      "galleryPrototype": "EaBlocDeclaration",
+      "fields": {
+        "rendered": ["label", "body"],
+        "structural": ["id", "kind"],
+        "dropped": ["title"]
+      },
+      "notes": "label porte l'étiquette (« IDÉE FORTE »), body l'énoncé."
+    },
+    {
+      "type": "quote",
+      "contractVersion": 1,
+      "schemaStatus": "implemented",
+      "learnerRendererStatus": "implemented",
+      "studioEditorStatus": "absent",
+      "studioPreviewStatus": "absent",
+      "runtimeCarried": true,
+      "learnerWidget": "BlocCitationUnite",
+      "fixturePath": "source/units/M02-U03/unit.json#/blocks/1",
+      "galleryPrototype": "EaBlocCitation",
+      "fields": {
+        "rendered": ["body", "label"],
+        "structural": ["id", "kind"],
+        "dropped": ["title"]
+      },
+      "notes": "body porte les mots cités, label la personne citée. label est réemployé plutôt que d'ajouter un champ qui ne servirait qu'ici."
+    },
+    {
+      "type": "list",
+      "contractVersion": 1,
+      "schemaStatus": "implemented",
+      "learnerRendererStatus": "implemented",
+      "studioEditorStatus": "absent",
+      "studioPreviewStatus": "absent",
+      "runtimeCarried": true,
+      "learnerWidget": "BlocListeUnite",
+      "fixturePath": "source/units/M02-U03/unit.json#/blocks/2",
+      "galleryPrototype": "EaBlocListe",
+      "fields": {
+        "rendered": ["title", "items[].body"],
+        "structural": ["id", "kind"],
+        "dropped": ["label"]
+      },
+      "notes": "Le numéro de chaque point est calculé à l'affichage, pas stocké."
+    },
+    {
+      "type": "image",
+      "contractVersion": 1,
+      "schemaStatus": "implemented",
+      "learnerRendererStatus": "implemented",
+      "studioEditorStatus": "absent",
+      "studioPreviewStatus": "absent",
+      "runtimeCarried": true,
+      "learnerWidget": "BlocImageUnite",
+      "fixturePath": "source/units/M02-U03/unit.json#/blocks/3",
+      "galleryPrototype": "EaBlocImage",
+      "fields": {
+        "rendered": ["title", "image.path", "body"],
+        "structural": ["id", "kind"],
+        "dropped": ["label", "image.alt"]
+      },
+      "constraints": [
+        "image.path est relatif et vit sous media/ ; la release le réécrit en URL immuable.",
+        "image.alt est obligatoire dans la source même si aucun widget ne l'affiche encore."
+      ],
+      "notes": "body porte la légende. image.alt est exigé par le schéma mais aucun widget ne le rend : c'est une dette assumée, pas un oubli — le champ doit exister avant qu'un lecteur d'écran ou un mode audio puisse s'en servir."
+    },
+    {
+      "type": "process",
+      "contractVersion": 1,
+      "schemaStatus": "implemented",
+      "learnerRendererStatus": "implemented",
+      "studioEditorStatus": "absent",
+      "studioPreviewStatus": "absent",
+      "runtimeCarried": true,
+      "learnerWidget": "BlocProcessusUnite",
+      "fixturePath": "source/units/M02-U03/unit.json#/blocks/4",
+      "galleryPrototype": "EaBlocProcessus",
+      "fields": {
+        "rendered": ["title", "items[].title", "items[].body"],
+        "structural": ["id", "kind"],
+        "dropped": ["label"]
+      },
+      "notes": "Étapes balayables dans un PageView. La maquette portait une icône différente par étape, écrite en dur ; elle a disparu au passage aux données, faute de vouloir faire saisir des noms d'icônes Material aux auteurs. La pastille numérotée reste."
+    },
+    {
+      "type": "timeline",
+      "contractVersion": 1,
+      "schemaStatus": "implemented",
+      "learnerRendererStatus": "implemented",
+      "studioEditorStatus": "absent",
+      "studioPreviewStatus": "absent",
+      "runtimeCarried": true,
+      "learnerWidget": "BlocChronologieUnite",
+      "fixturePath": "source/units/M02-U03/unit.json#/blocks/5",
+      "galleryPrototype": "EaBlocChronologie",
+      "fields": {
+        "rendered": ["title", "items[].label", "items[].title", "items[].body"],
+        "structural": ["id", "kind"],
+        "dropped": ["label"]
+      },
+      "notes": "items[].label porte le repère (« Jour 1 »). C'est le seul type qui utilise ElementBlocUnite.label, ajouté pour lui."
+    },
+    {
+      "type": "truefalse",
+      "contractVersion": 1,
+      "schemaStatus": "implemented",
+      "learnerRendererStatus": "absent",
+      "studioEditorStatus": "absent",
+      "studioPreviewStatus": "absent",
+      "runtimeCarried": false,
+      "learnerWidget": null,
+      "fixturePath": null,
+      "notes": "statement, answer, feedbackTrue et feedbackFalse n'existent pas dans la structure BlocUnite."
+    },
+    {
+      "type": "choice",
+      "contractVersion": 1,
+      "schemaStatus": "implemented",
+      "learnerRendererStatus": "absent",
+      "studioEditorStatus": "absent",
+      "studioPreviewStatus": "absent",
+      "runtimeCarried": false,
+      "learnerWidget": null,
+      "fixturePath": null,
+      "notes": "prompt, options et expectedOptionId n'existent pas au niveau bloc dans BlocUnite."
+    },
+    {
+      "type": "cloze",
+      "contractVersion": 1,
+      "schemaStatus": "implemented",
+      "learnerRendererStatus": "absent",
+      "studioEditorStatus": "absent",
+      "studioPreviewStatus": "absent",
+      "runtimeCarried": false,
+      "learnerWidget": null,
+      "fixturePath": null,
+      "notes": "text et gaps n'existent pas dans la structure BlocUnite."
+    }
+  ],
+  "exerciseItems": [
+    {
+      "type": "textarea",
+      "contractVersion": 1,
+      "schemaStatus": "implemented",
+      "learnerRendererStatus": "implemented",
+      "studioEditorStatus": "absent",
+      "studioPreviewStatus": "absent",
+      "runtimeCarried": true,
+      "learnerWidget": "ExerciceTexteUnite (EaChampSaisie, modeTexte)",
+      "fixturePath": "source/units/M02-U01/unit.json#/blocks/2/items/1",
+      "fields": {
+        "rendered": ["prompt"],
+        "structural": ["id", "kind"],
+        "dropped": ["hint"]
+      },
+      "notes": "hint existe dans la structure ElementBlocUnite mais EaChampSaisie n'a aucun paramètre correspondant. Les indices rédigés dans M02-U01 n'atteignent jamais l'apprenant."
+    },
+    {
+      "type": "scale",
+      "contractVersion": 1,
+      "schemaStatus": "implemented",
+      "learnerRendererStatus": "implemented",
+      "studioEditorStatus": "absent",
+      "studioPreviewStatus": "absent",
+      "runtimeCarried": true,
+      "learnerWidget": "ExerciceEchelleUnite (EaChampSaisie, modeEchelle)",
+      "fixturePath": "source/units/M02-U01/unit.json#/blocks/2/items/0",
+      "fields": {
+        "rendered": ["group", "options", "questions[].text"],
+        "structural": ["id", "questions[].id", "kind"]
+      }
+    },
+    {
+      "type": "choice",
+      "contractVersion": 1,
+      "schemaStatus": "implemented",
+      "learnerRendererStatus": "absent",
+      "studioEditorStatus": "absent",
+      "studioPreviewStatus": "absent",
+      "runtimeCarried": false,
+      "learnerWidget": null,
+      "fixturePath": null,
+      "notes": "Aucune branche de visibilité pour kind == choice dans les deux lecteurs."
+    },
+    {
+      "type": "cloze",
+      "contractVersion": 1,
+      "schemaStatus": "implemented",
+      "learnerRendererStatus": "absent",
+      "studioEditorStatus": "absent",
+      "studioPreviewStatus": "absent",
+      "runtimeCarried": false,
+      "learnerWidget": null,
+      "fixturePath": null,
+      "notes": "text et gaps n'existent pas dans la structure ElementBlocUnite."
+    },
+    {
+      "type": "table",
+      "contractVersion": 1,
+      "schemaStatus": "implemented",
+      "learnerRendererStatus": "absent",
+      "studioEditorStatus": "absent",
+      "studioPreviewStatus": "absent",
+      "runtimeCarried": false,
+      "learnerWidget": null,
+      "fixturePath": null,
+      "notes": "columns, rows et addRows n'existent pas dans la structure ElementBlocUnite."
+    },
+    {
+      "type": "journal",
+      "contractVersion": 1,
+      "schemaStatus": "implemented",
+      "learnerRendererStatus": "absent",
+      "studioEditorStatus": "absent",
+      "studioPreviewStatus": "absent",
+      "runtimeCarried": false,
+      "learnerWidget": null,
+      "fixturePath": null,
+      "notes": "moods et fields n'existent pas dans la structure ElementBlocUnite. Le journal de formation en production utilise des items textarea, pas ce type."
+    },
+    {
+      "type": "fieldwork",
+      "contractVersion": 1,
+      "schemaStatus": "implemented",
+      "learnerRendererStatus": "absent",
+      "studioEditorStatus": "absent",
+      "studioPreviewStatus": "absent",
+      "runtimeCarried": false,
+      "learnerWidget": null,
+      "fixturePath": null,
+      "notes": "instructions et fields n'existent pas dans la structure ElementBlocUnite."
+    }
+  ],
+  "capabilities": [
+    {
+      "type": "audio",
+      "contractVersion": 1,
+      "schemaStatus": "implemented",
+      "learnerRendererStatus": "implemented",
+      "studioEditorStatus": "absent",
+      "studioPreviewStatus": "absent",
+      "runtimeCarried": true,
+      "learnerWidget": "LecteurAudioBlocUnite (AudioPlayer natif)",
+      "fixturePath": null,
+      "fields": {
+        "rendered": ["audio.path"],
+        "dropped": ["audio.transcript"]
+      },
+      "notes": "Le lecteur audio existe dans les deux lecteurs mais aucune unité ne fournit encore de chemin réel. audio.transcript est dans la structure AudioBlocUnite sans widget associé. Le contrat d'asset audio direct reste à implémenter dans tool/build_release.dart."
+    }
+  ],
+  "galleryPrototypesWithoutContract": [
+    { "component": "EaBlocTexte", "relatedType": "text" },
+    { "component": "EaBlocDeclaration", "relatedType": null },
+    { "component": "EaBlocCitation", "relatedType": null },
+    { "component": "EaBlocListe", "relatedType": null },
+    { "component": "EaBlocImage", "relatedType": null },
+    { "component": "EaBlocAccordeon", "relatedType": "accordion" },
+    { "component": "EaBlocGraphiqueEtiquete", "relatedType": null },
+    { "component": "EaBlocProcessus", "relatedType": null },
+    { "component": "EaBlocTri", "relatedType": null },
+    { "component": "EaBlocChronologie", "relatedType": null }
+  ],
+  "promotedPrototypes": [
+    {
+      "component": "EaBlocOnglets",
+      "type": "tabs",
+      "learnerCommits": ["h52UT9wfcDGCn6gJi1iu", "2gnS1Xm44S22pLUto7gk", "dhX2mJ6YUcMzNNoXfEZU"]
+    },
+    {
+      "component": "EaBlocCarteRetournee",
+      "type": "flashcards",
+      "learnerCommits": ["h52UT9wfcDGCn6gJi1iu", "p9ibTeRbS069OHIFapJH", "2gnS1Xm44S22pLUto7gk", "dhX2mJ6YUcMzNNoXfEZU"]
+    }
+  ]
+}

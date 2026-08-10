@@ -1,0 +1,91 @@
+{
+  "schemaVersion": 1,
+  "id": "M02-U02",
+  "moduleId": "M02",
+  "number": 2,
+  "title": "Le travail indépendant et l'entrepreneuriat",
+  "status": "published",
+  "estimatedMinutes": 25,
+  "objectives": [
+    "Distinguer le travail indépendant de l'entrepreneuriat.",
+    "Nommer les mots qui reviennent quand on parle de son activité."
+  ],
+  "blocks": [
+    {
+      "id": "deux_chemins",
+      "kind": "tabs",
+      "title": "Deux façons de travailler pour soi",
+      "items": [
+        {
+          "title": "Travailleur indépendant",
+          "body": "Tu vends ton propre travail. Tu fixes tes prix et tu choisis tes clients. Ton atelier tourne surtout grâce à tes mains."
+        },
+        {
+          "title": "Entrepreneur",
+          "body": "Tu fais grandir une activité au-delà de tes mains. Tu confies du travail à d'autres, tu achètes de la matière à l'avance, tu prends des risques calculés."
+        },
+        {
+          "title": "Les deux à la fois",
+          "body": "Beaucoup d'artisans commencent seuls, puis prennent un apprenti. On passe d'un chemin à l'autre petit à petit."
+        }
+      ]
+    },
+    {
+      "id": "mots_du_metier",
+      "kind": "flashcards",
+      "title": "Les mots du métier · touche la carte pour voir la réponse",
+      "items": [
+        {
+          "title": "Un client",
+          "body": "La personne qui achète ton travail et qui te paie."
+        },
+        {
+          "title": "Un fournisseur",
+          "body": "La personne qui te vend le cuir, le fil ou les outils."
+        },
+        {
+          "title": "Une charge",
+          "body": "Ce que tu dépenses pour travailler : matière, loyer, transport."
+        },
+        {
+          "title": "Une marge",
+          "body": "Ce qu'il te reste quand tu as payé toutes tes charges."
+        }
+      ]
+    },
+    {
+      "id": "ton_chemin",
+      "kind": "exercise",
+      "title": "Et toi ?",
+      "items": [
+        {
+          "id": "chemin_actuel",
+          "kind": "textarea",
+          "prompt": "Aujourd'hui, tu te vois plutôt sur quel chemin ? Explique en quelques mots."
+        },
+        {
+          "id": "envie_grandir",
+          "kind": "scale",
+          "group": "Faire grandir ton activité",
+          "options": ["Oui", "Pas encore"],
+          "questions": [
+            {
+              "id": "confier_travail",
+              "text": "As-tu déjà confié une partie de ton travail à quelqu'un d'autre ?"
+            },
+            {
+              "id": "acheter_avance",
+              "text": "T'arrive-t-il d'acheter de la matière avant d'avoir une commande ?"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "a_retenir",
+      "kind": "takeaway",
+      "title": "À retenir",
+      "body": "Travailler pour soi et faire grandir une activité ne demandent pas les mêmes gestes. Les deux sont respectables, et on peut passer de l'un à l'autre."
+    }
+  ]
+}
