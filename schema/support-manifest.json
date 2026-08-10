@@ -5,7 +5,7 @@
   "learnerProjectId": "entr-apprendre-u42dgm",
   "learnerCommitVerified": "Z13JJAh0u1huF9KPk8ws",
   "studioProjectId": "entr-apprendre-studio-tt24i7",
-  "studioCommitVerified": "uFtuhdKW1mO4yQrmQAND",
+  "studioCommitVerified": "iq2cJ3HuvOvfDbiV37fI",
   "statusValues": {
     "implemented": "Câblé et vérifié de bout en bout.",
     "partial": "Une partie des champs rendus est câblée, le reste ne l'est pas. Le détail est dans les notes du type.",
@@ -64,7 +64,7 @@
       "contractVersion": 1,
       "schemaStatus": "implemented",
       "learnerRendererStatus": "implemented",
-      "studioEditorStatus": "partial",
+      "studioEditorStatus": "implemented",
       "studioPreviewStatus": "absent",
       "runtimeCarried": true,
       "learnerWidget": "BlocExerciceUnite",
@@ -77,7 +77,7 @@
         }
       },
       "itemTypes": ["textarea", "scale"],
-      "notes": "Le journal de formation est un bloc exercise ordinaire, pas un type distinct. studioEditorStatus vaut partial : le titre du bloc et l'invite d'un item textarea se modifient, mais une échelle non — ses questions et ses options ne sont que comptées à l'import, pas retenues. Studio l'annonce dans l'éditeur au lieu de laisser croire à un item vide."
+      "notes": "Le journal de formation est un bloc exercise ordinaire, pas un type distinct."
     },
     {
       "type": "takeaway",
@@ -307,7 +307,7 @@
       "contractVersion": 1,
       "schemaStatus": "implemented",
       "learnerRendererStatus": "implemented",
-      "studioEditorStatus": "partial",
+      "studioEditorStatus": "implemented",
       "studioPreviewStatus": "absent",
       "runtimeCarried": true,
       "learnerWidget": "ExerciceEchelleUnite (EaChampSaisie, modeEchelle)",
@@ -316,7 +316,7 @@
         "rendered": ["group", "options", "questions[].text"],
         "structural": ["id", "questions[].id", "kind"]
       },
-      "notes": "studioEditorStatus vaut partial : aucun des trois champs rendus ne se modifie encore. Le modèle plat de Studio ne retient que le nombre de questions et d'options (nbQuestions, nbOptions), calculé à l'import pour l'affichage. Les aplatir en listes éditables est la prochaine étape ; d'ici là, réécrire une unité contenant une échelle en perdrait le contenu, et l'éditeur le signale."
+      "notes": "Les trois champs rendus se modifient dans Studio. options et questions sont tenus comme du texte — une option par ligne, une question par ligne sous la forme « identifiant | question » — plutôt que par une liste plate de plus, qui aurait demandé un troisième niveau de liste imbriquée à l'écran. L'identifiant est montré à l'auteur, et non fabriqué à l'export, parce qu'il sert de clé aux réponses déjà enregistrées par les apprenants."
     },
     {
       "type": "choice",
