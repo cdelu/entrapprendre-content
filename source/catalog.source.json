@@ -127,11 +127,11 @@
     { "id": "M06-U08", "number": 8, "moduleId": "M06", "title": "Comment j'organise mon travail", "contentVersion": 1, "downloadable": false, "packageStem": "M06-U08" },
     { "id": "M06-U09", "number": 9, "moduleId": "M06", "title": "Déclarer mon activité", "contentVersion": 1, "downloadable": false, "packageStem": "M06-U09" },
     
-    { "id": "M07-U01", "number": 1, "moduleId": "M07", "title": "Combien me coûte un article ?", "contentVersion": 1, "downloadable": false, "packageStem": "M06-U10" },
-    { "id": "M07-U02", "number": 2, "moduleId": "M07", "title": "À quel prix je vends ?", "contentVersion": 1, "downloadable": false, "packageStem": "M06-U11" },
-    { "id": "M07-U03", "number": 3, "moduleId": "M07", "title": "Mon argent de départ et d'où il vient", "contentVersion": 1, "downloadable": false, "packageStem": "M06-U12" },
-    { "id": "M07-U04", "number": 4, "moduleId": "M07", "title": "Est-ce que ça marche ?", "contentVersion": 1, "downloadable": false, "packageStem": "M06-U13" },
-    { "id": "M07-U05", "number": 5, "moduleId": "M07", "title": "Mon dossier complet", "contentVersion": 1, "downloadable": false, "packageStem": "M06-U14" },
-    { "id": "M07-U06", "number": 6, "moduleId": "M07", "title": "Présenter mon plan d'affaires", "contentVersion": 1, "downloadable": false, "packageStem": "M06-U15" }
+    { "id": "M07-U01", "number": 1, "moduleId": "M07", "title": "Combien me coûte un article ?", "contentVersion": 1, "downloadable": false, "packageStem": "M07-U01" },
+    { "id": "M07-U02", "number": 2, "moduleId": "M07", "title": "À quel prix je vends ?", "contentVersion": 1, "downloadable": false, "packageStem": "M07-U02" },
+    { "id": "M07-U03", "number": 3, "moduleId": "M07", "title": "Mon argent de départ et d'où il vient", "contentVersion": 1, "downloadable": false, "packageStem": "M07-U03" },
+    { "id": "M07-U04", "number": 4, "moduleId": "M07", "title": "Est-ce que ça marche ?", "contentVersion": 1, "downloadable": false, "packageStem": "M07-U04" },
+    { "id": "M07-U05", "number": 5, "moduleId": "M07", "title": "Mon dossier complet", "contentVersion": 1, "downloadable": false, "packageStem": "M07-U05" },
+    { "id": "M07-U06", "number": 6, "moduleId": "M07", "title": "Présenter mon plan d'affaires", "contentVersion": 1, "downloadable": false, "packageStem": "M07-U06" }
   ]
 }

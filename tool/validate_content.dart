@@ -264,13 +264,26 @@ void _validateCatalog(Map<String, Object?> catalog, ValidationContext context) {
     _expectInteger(unit, 'number', itemPath, context, minimum: 1);
     _expectText(unit, 'title', itemPath, context);
     _expectInteger(unit, 'contentVersion', itemPath, context, minimum: 1);
-    _expectText(unit, 'packageStem', itemPath, context);
+    final packageStem = _expectText(unit, 'packageStem', itemPath, context);
     final moduleId = _expectIdentifier(unit, 'moduleId', itemPath, context);
     if (moduleId != null && !moduleIds.contains(moduleId)) {
       context.error('$itemPath.moduleId', 'module inconnu : $moduleId');
     }
     if (id != null && moduleId != null && !id.startsWith('$moduleId-')) {
       context.error(itemPath, "$id n'appartient pas au module $moduleId");
+    }
+    // Le radical nomme les assets d'une release, qui partagent un espace de
+    // noms plat. Un radical emprunté à un autre module produit des fichiers
+    // trompeurs et, pire, peut entrer en collision : les six unités de M07
+    // portaient des radicaux M06-U10 à M06-U15, que M06 aurait fini par
+    // réclamer en atteignant sa dixième unité.
+    if (packageStem != null &&
+        moduleId != null &&
+        !packageStem.startsWith('$moduleId-')) {
+      context.error(
+        '$itemPath.packageStem',
+        'radical « $packageStem » hors du module $moduleId',
+      );
     }
     final downloadable = _expectBoolean(
       unit,
