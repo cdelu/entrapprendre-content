@@ -5,7 +5,7 @@
   "learnerProjectId": "entr-apprendre-u42dgm",
   "learnerCommitVerified": "Z13JJAh0u1huF9KPk8ws",
   "studioProjectId": "entr-apprendre-studio-tt24i7",
-  "studioCommitVerified": "fjCg3TMB2YH82QzVn8GD",
+  "studioCommitVerified": "fGlU9SMxBeHDuhQxsOTw",
   "statusValues": {
     "implemented": "Câblé et vérifié de bout en bout.",
     "partial": "Une partie des champs rendus est câblée, le reste ne l'est pas. Le détail est dans les notes du type.",
@@ -16,7 +16,8 @@
     "releaseAllowed": "learnerRendererStatus == implemented",
     "studioAuthorable": "studioEditorStatus == implemented",
     "unknownBlocks": "Studio conserve les blocs inconnus à l'import/export sans jamais les produire.",
-    "studioEditorScope": "studioEditorStatus décrit la modification des champs, et depuis l'éditeur par pages aussi la création, la suppression et le déplacement des blocs et de leurs éléments. Studio sait donc écrire une unité depuis zéro. Ce qu'il ne sait pas encore : choisir les fichiers média depuis le disque, et écrire le catalogue.",
+    "studioEditorScope": "studioEditorStatus décrit la modification des champs, et depuis l'éditeur par pages aussi la création, la suppression et le déplacement des blocs et de leurs éléments. Studio sait écrire une unité depuis zéro, médias compris. Ce qu'il ne sait pas encore : écrire le catalogue.",
+    "studioMedia": "Studio ne peut pas écrire dans la copie de travail : il tient les octets du fichier choisi en mémoire de session, écrit media/<nom> dans le bloc, et rend un zip contenant unit.json et le dossier media/, à déballer dans source/units/. Le contrat de release est inchangé — build_release.dart lit toujours le fichier depuis le dépôt. Les octets ne sont pas persistés : un mp3 encodé approche le mégaoctet et le stockage local d'un navigateur déborde vers cinq. Le nom est normalisé au choix, parce qu'il finit dans une URL.",
     "studioEditeurParPages": "Les champs de saisie vivent sur des pages dédiées — /entete, /bloc, /element — et non dans la liste. FlutterFlow met en cache le contrôleur d'un champ par position de ligne (_childrenModels[index] ??= …), avec une seule réserve par instance de composant pour toute la page : deux listes réclamant les clés 0, 1, 2 recevaient les mêmes contrôleurs, et le premier bloc ouvert remplissait les champs de tous les autres. Une page neuve construit un modèle neuf ; c'est la seule structure qui garantisse que le texte affiché est le texte enregistré.",
     "studioDroppedFields": "Studio ne propose pas un champ marqué dropped, sauf si unit.schema.json l'exige — le seul cas est image.alt. Les deux sens de la règle sont vérifiés par authoring-app/test/app_test.dart, qui lit ce manifeste et le schéma."
   },
