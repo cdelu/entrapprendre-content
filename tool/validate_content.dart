@@ -71,7 +71,8 @@ void main(List<String> arguments) {
 /// publication au lieu de livrer un bloc vide.
 Set<String> _lireTypesRendus(Directory root, ValidationContext context) {
   final separator = Platform.pathSeparator;
-  final file = File('${root.path}${separator}schema${separator}support-manifest.json');
+  final file =
+      File('${root.path}${separator}schema${separator}support-manifest.json');
   final manifeste = _readObject(file, context);
   if (manifeste == null) {
     return const {};
@@ -90,7 +91,8 @@ Set<String> _lireTypesRendus(Directory root, ValidationContext context) {
     }
     final type = bloc['type'];
     if (type is! String) {
-      context.error('${file.path}#/blocks[$index].type', 'doit être une chaîne');
+      context.error(
+          '${file.path}#/blocks[$index].type', 'doit être une chaîne');
       continue;
     }
     if (bloc['learnerRendererStatus'] == 'implemented') {
@@ -98,7 +100,8 @@ Set<String> _lireTypesRendus(Directory root, ValidationContext context) {
     }
   }
   if (types.isEmpty) {
-    context.error(file.path, 'aucun type rendu déclaré : manifeste inutilisable');
+    context.error(
+        file.path, 'aucun type rendu déclaré : manifeste inutilisable');
   }
   return types;
 }
@@ -117,7 +120,8 @@ Set<String> _lireTypesRendus(Directory root, ValidationContext context) {
 /// automatique sur la parité contenu/manifeste.
 void _validerFixturesManifeste(Directory root, ValidationContext context) {
   final separator = Platform.pathSeparator;
-  final chemin = '${root.path}${separator}schema${separator}support-manifest.json';
+  final chemin =
+      '${root.path}${separator}schema${separator}support-manifest.json';
   final manifeste = _readObject(File(chemin), context);
   final blocs = manifeste?['blocks'];
   if (blocs is! List) return;
@@ -129,7 +133,8 @@ void _validerFixturesManifeste(Directory root, ValidationContext context) {
     final fixture = bloc['fixturePath'];
     if (fixture == null) continue; // audio n'a pas encore d'unité porteuse
     if (fixture is! String) {
-      context.error('support-manifest.json#$type', 'fixturePath doit être une chaîne');
+      context.error(
+          'support-manifest.json#$type', 'fixturePath doit être une chaîne');
       continue;
     }
 
@@ -426,8 +431,8 @@ void _validateUnit(
     if (blockId != null && !blockIds.add(blockId)) {
       context.error('$blockPath.id', 'identifiant de bloc dupliqué : $blockId');
     }
-    _validateBlock(block, blockPath, context, publiee: status == 'published',
-        dossierUnite: File(path).parent);
+    _validateBlock(block, blockPath, context,
+        publiee: status == 'published', dossierUnite: File(path).parent);
   }
 
   _rejectScoreFields(unit, path, context);

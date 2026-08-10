@@ -336,10 +336,10 @@ Map<String, String> _publishMediaAssets({
   if (!mediaDirectory.existsSync()) return urls;
 
   for (final file in _collectFiles(mediaDirectory)) {
-    final relatif = p
-        .relative(file.path, from: unitDirectory.path)
-        .replaceAll(r'\', '/');
-    final assetName = '$packageStem-${relatif.substring('media/'.length).replaceAll('/', '-')}';
+    final relatif =
+        p.relative(file.path, from: unitDirectory.path).replaceAll(r'\', '/');
+    final assetName =
+        '$packageStem-${relatif.substring('media/'.length).replaceAll('/', '-')}';
     file.copySync(p.join(outputDirectory.path, assetName));
     publishedAssets.add(assetName);
     urls[relatif] =
