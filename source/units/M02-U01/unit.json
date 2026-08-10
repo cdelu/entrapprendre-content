@@ -15,7 +15,11 @@
       "id": "introduction",
       "kind": "text",
       "title": "Les qualités s'apprennent",
-      "body": "Une personne entreprenante observe, agit et apprend de ce qui lui arrive. Dans cette unité, tu vas découvrir ces qualités et réfléchir à celles que tu veux renforcer."
+      "body": "Une personne entreprenante observe, agit et apprend de ce qui lui arrive. Dans cette unité, tu vas découvrir ces qualités et réfléchir à celles que tu veux renforcer.",
+      "audio": {
+        "path": "media/file_example_MP3_700KB.mp3",
+        "transcript": "Audio d'introduction de l'unité."
+      }
     },
     {
       "id": "portrait",

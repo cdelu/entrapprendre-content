@@ -44,7 +44,8 @@ Future<void> main() async {
       '${Platform.pathSeparator}units${Platform.pathSeparator}M02-U01'
       '${Platform.pathSeparator}unit.json',
     );
-    final unit = jsonDecode(unitFile.readAsStringSync()) as Map<String, Object?>;
+    final unit =
+        jsonDecode(unitFile.readAsStringSync()) as Map<String, Object?>;
     final blocks = unit['blocks'] as List<Object?>;
     (blocks.first as Map<String, Object?>)['audio'] = {
       'path': 'media/smoke.mp3',
@@ -64,6 +65,7 @@ Future<void> main() async {
     final summary = summaries.firstWhere(
       (item) => (item as Map<String, Object?>)['id'] == 'M02-U01',
     ) as Map<String, Object?>;
+    final contentVersion = summary['contentVersion'] as int;
     summary.remove('hasAudio'); // Builder must derive this as true.
     catalogFile.writeAsStringSync(
       '${const JsonEncoder.withIndent('  ').convert(catalog)}\n',
@@ -85,14 +87,13 @@ Future<void> main() async {
       '${Platform.pathSeparator}$_tag',
     );
     final generatedUnit = jsonDecode(
-          File('${output.path}${Platform.pathSeparator}M02-U01-unit-v2.json')
-              .readAsStringSync(),
-        )
-        as Map<String, Object?>;
+      File(
+        '${output.path}${Platform.pathSeparator}M02-U01-unit-v$contentVersion.json',
+      ).readAsStringSync(),
+    ) as Map<String, Object?>;
     final generatedBlocks = generatedUnit['blocks'] as List<Object?>;
-    final audio =
-        (generatedBlocks.first as Map<String, Object?>)['audio']
-            as Map<String, Object?>;
+    final audio = (generatedBlocks.first as Map<String, Object?>)['audio']
+        as Map<String, Object?>;
     final path = audio['path'];
     final expectedUrl =
         'https://github.com/cdelu/entrapprendre-content/releases/download/'
@@ -101,10 +102,9 @@ Future<void> main() async {
       throw StateError('URL audio inattendue : $path');
     }
     final generatedCatalog = jsonDecode(
-          File('${output.path}${Platform.pathSeparator}catalog.json')
-              .readAsStringSync(),
-        )
-        as Map<String, Object?>;
+      File('${output.path}${Platform.pathSeparator}catalog.json')
+          .readAsStringSync(),
+    ) as Map<String, Object?>;
     final generatedSummary = (generatedCatalog['units'] as List<Object?>)
         .cast<Map<String, Object?>>()
         .firstWhere((item) => item['id'] == 'M02-U01');
@@ -113,7 +113,8 @@ Future<void> main() async {
     }
     if (!File('${output.path}${Platform.pathSeparator}M02-U01-smoke.mp3')
         .existsSync()) {
-      throw StateError('L’asset audio direct n’a pas été copié dans la release.');
+      throw StateError(
+          'L’asset audio direct n’a pas été copié dans la release.');
     }
     stdout.writeln('Audio delivery smoke test passed.');
   } finally {
