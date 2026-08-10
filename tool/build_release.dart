@@ -45,7 +45,6 @@ Future<void> main(List<String> arguments) async {
       final summary = Map<String, Object?>.from(rawUnit)
         ..['downloadable'] = false
         ..remove('packages');
-      generatedUnits.add(summary);
 
       final unitId = summary['id'];
       final contentVersion = summary['contentVersion'];
@@ -60,7 +59,10 @@ Future<void> main(List<String> arguments) async {
         p.join(root.path, 'source', 'units', unitId),
       );
       final unitFile = File(p.join(unitDirectory.path, 'unit.json'));
-      if (!unitFile.existsSync()) continue;
+      if (!unitFile.existsSync()) {
+        generatedUnits.add(summary);
+        continue;
+      }
 
       final unit = _readObject(unitFile);
       if (unit['id'] != unitId) {
@@ -69,6 +71,10 @@ Future<void> main(List<String> arguments) async {
           'id ${unit['id']} différent de $unitId.',
         );
       }
+      // Keep the learner-facing catalogue honest even when an author forgets
+      // to toggle the summary flag by hand. The unit JSON is authoritative.
+      summary['hasAudio'] = _unitContainsAudio(unit);
+      generatedUnits.add(summary);
       if (unit['status'] != 'published') continue;
 
       // Chaque fichier de `media/` part aussi comme asset de release
@@ -238,6 +244,14 @@ List<Map<String, Object?>> _buildNavigation(
   }
 
   return navigation;
+}
+
+bool _unitContainsAudio(Map<String, Object?> unit) {
+  final blocks = unit['blocks'];
+  if (blocks is! List) return false;
+  return blocks.any(
+    (block) => block is Map<String, Object?> && block['audio'] != null,
+  );
 }
 
 List<Map<String, Object?>> _buildProgressSegments(

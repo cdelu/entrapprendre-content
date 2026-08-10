@@ -30,7 +30,7 @@ M02-U01-media-v3.zip       optional
 M02-U01-view-01.mp3        optional direct audio asset
 ```
 
-The standalone unit JSON is read directly by FlutterFlow. The core package contains unit JSON and lightweight supporting files, excluding top-level `media/`. The optional media package contains heavier media. Direct audio assets are the recommended next contract for the current network AudioPlayer but have not yet been implemented end to end.
+The standalone unit JSON is read directly by FlutterFlow. The core package contains unit JSON and lightweight supporting files, excluding top-level `media/`. The optional media package contains heavier media. Every referenced audio file is also uploaded as a directly addressable release asset, and the generated unit JSON points the native network AudioPlayer at that immutable URL.
 
 ## Derived catalogue views
 
@@ -50,6 +50,18 @@ dart run tool/build_release.dart --tag content-v0.4.0
 ```
 
 The builder writes a clean tag-specific directory under `dist/` and refuses to overwrite it. Draft and review units remain in catalogue navigation with `downloadable: false`; only published units produce downloadable assets.
+
+To exercise the media delivery contract without modifying source content, run:
+
+```powershell
+dart run tool/smoke_audio_delivery.dart
+```
+
+The smoke test creates a temporary unit copy, validates a relative audio path,
+builds a release, checks the immutable audio URL in the generated unit JSON,
+checks that `hasAudio` is derived from the unit, and confirms the direct asset
+is present. It uses opaque test bytes, so a real MP3 is still required for the
+final native-player playback check.
 
 ## GitHub Actions publication
 

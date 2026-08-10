@@ -32,6 +32,7 @@ https://github.com/cdelu/entrapprendre-content/releases/latest/download/catalog.
 dart analyze
 dart run tool/validate_content.dart
 dart run tool/validate_content.dart --release
+dart run tool/smoke_audio_delivery.dart
 ```
 
 Release validation permits valid draft/review catalogue entries but packages only units whose unit document is `published`.

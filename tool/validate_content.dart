@@ -412,6 +412,7 @@ void _validateUnit(
   if (blocks.isEmpty) {
     context.error('$path.blocks', 'au moins un bloc est obligatoire');
   }
+  final hasAudio = blocks.any((block) => block['audio'] != null);
 
   if (id != null) {
     final summary = summaries[id];
@@ -426,6 +427,13 @@ void _validateUnit(
       }
       if (summary['title'] != title) {
         context.error('$path.title', 'diffère du catalogue');
+      }
+      final declaredHasAudio = summary['hasAudio'];
+      if (declaredHasAudio is bool && declaredHasAudio != hasAudio) {
+        context.error(
+          '$path.audio',
+          'hasAudio du catalogue devrait être $hasAudio',
+        );
       }
     }
     final folderName = File(
@@ -499,6 +507,62 @@ void _validateImage(
   _expectText(image, 'alt', '$path.image', context);
 }
 
+/// `audio: {path, transcript}`.
+///
+/// Audio follows the same source/release split as images: authors keep a
+/// relative path under `media/`, while the release builder rewrites it to a
+/// directly addressable immutable GitHub Release URL.
+void _validateAudio(
+  Map<String, Object?> block,
+  String path,
+  Directory dossierUnite,
+  ValidationContext context,
+) {
+  final audio = block['audio'];
+  if (audio == null) return;
+  if (audio is! Map<String, Object?>) {
+    context.error('$path.audio', 'objet {path, transcript} obligatoire');
+    return;
+  }
+
+  final chemin = audio['path'];
+  if (chemin is! String || chemin.trim().isEmpty) {
+    context.error('$path.audio.path', 'texte non vide obligatoire');
+  } else if (chemin.startsWith('http://') || chemin.startsWith('https://')) {
+    context.error(
+      '$path.audio.path',
+      'chemin relatif attendu, pas une URL : la release réécrit ce champ',
+    );
+  } else if (!chemin.startsWith('media/')) {
+    context.error(
+      '$path.audio.path',
+      'les fichiers audio d\'une unité vivent dans media/',
+    );
+  } else if (chemin.split('/').contains('..')) {
+    context.error(
+      '$path.audio.path',
+      'le chemin audio ne peut pas remonter hors de media/',
+    );
+  } else {
+    final fichier = File(
+      '${dossierUnite.path}${Platform.pathSeparator}'
+      '${chemin.replaceAll('/', Platform.pathSeparator)}',
+    );
+    if (!fichier.existsSync()) {
+      context.error('$path.audio.path', 'fichier introuvable : $chemin');
+    }
+  }
+
+  final transcript = audio['transcript'];
+  if (transcript != null &&
+      (transcript is! String || transcript.trim().isEmpty)) {
+    context.error(
+      '$path.audio.transcript',
+      's\'il est présent, le transcript doit être un texte non vide',
+    );
+  }
+}
+
 void _validateBlock(
   Map<String, Object?> block,
   String path,
@@ -507,6 +571,7 @@ void _validateBlock(
   required Directory dossierUnite,
 }) {
   final kind = _expectText(block, 'kind', path, context);
+  _validateAudio(block, path, dossierUnite, context);
 
   // Gel sur ce qui s'affiche. Le schéma décrit plus de types que le lecteur
   // n'en rend ; les autres produisent une page blanche, sans erreur ni trace.
