@@ -6,6 +6,8 @@ Repository: [cdelu/entrapprendre-content](https://github.com/cdelu/entrapprendre
 
 ## Structure
 
+- `source/courses.json` - vocational-training formations offered by the learner profile selector.
+
 - `source/catalog.source.json` — normalized course, parts, modules, and unit summaries.
 - `source/units/<UNIT_ID>/unit.json` — ordered pedagogical blocks for a unit.
 - `schema/` — JSON contracts.
@@ -25,6 +27,11 @@ The learner app uses:
 ```text
 https://github.com/cdelu/entrapprendre-content/releases/latest/download/catalog.json
 ```
+
+During development, the profile selector reads the editable list from the
+`chore/studio-editor-status` branch so it can be tested before that content
+change is merged to `main`. Future app versions should point the endpoint at
+their own course-list JSON source.
 
 ## Validate
 
