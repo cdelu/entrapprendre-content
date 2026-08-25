@@ -387,16 +387,16 @@
       "contractVersion": 1,
       "schemaStatus": "implemented",
       "learnerRendererStatus": "implemented",
-      "studioEditorStatus": "implemented",
+      "studioEditorStatus": "partial",
       "studioPreviewStatus": "absent",
       "runtimeCarried": true,
       "learnerWidget": "LecteurAudioBlocUnite (AudioPlayer natif)",
       "fixturePath": null,
       "fields": {
-        "rendered": ["audio.path"],
-        "dropped": ["audio.transcript"]
+        "rendered": ["audio.path", "audio.tracks.<language>.path"],
+        "dropped": ["audio.transcript", "audio.tracks.<language>.transcript"]
       },
-      "notes": "Le lecteur audio existe dans les deux lecteurs. La source utilise un chemin relatif sous media/ ; la release publie chaque fichier comme asset direct, réécrit audio.path en URL immuable et conserve aussi l'audio dans le paquet media optionnel. audio.transcript est porté par le contrat mais n'est pas encore affiché."
+      "notes": "Le lecteur audio existe dans les deux lecteurs. La source accepte encore audio.path (piste française historique) ou audio.tracks.fr, audio.tracks.ha et audio.tracks.dje. La release publie chaque fichier comme asset direct et réécrit les chemins en URL immuable. Le lecteur choisit une seule piste selon la langue audio de l'apprenant et ne télécharge que cette piste ; si elle manque, il retombe sur fr puis sur la première piste disponible. Les transcripts sont portés par le contrat mais ne sont pas encore affichés."
     }
   ],
   "galleryPrototypesWithoutContract": [

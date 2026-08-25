@@ -27,6 +27,7 @@
       "number": 1,
       "partId": "P01",
       "title": "Qu'est-ce que l'entrepreneuriat ?",
+      "generatesCertificate": true,
       "unitIds": ["M01-U01", "M01-U02", "M01-U03", "M01-U04", "M01-U05"]
     },
     {
@@ -34,12 +35,14 @@
       "number": 2,
       "partId": "P01",
       "title": "Qui sont les entrepreneurs ?",
+      "generatesCertificate": true,
       "unitIds": ["M02-U01", "M02-U02", "M02-U03"]
     },
     {
       "id": "M03",
       "number": 3,
       "partId": "P01",
+      "generatesCertificate": true,
       "title": "Les qualités personnelles de l'entrepreneur",
       "unitIds": ["M03-U01", "M03-U02", "M03-U03", "M03-U04"]
     },
@@ -47,6 +50,7 @@
       "id": "M04",
       "number": 4,
       "partId": "P01",
+      "generatesCertificate": true,
       "title": "Les qualités relationnelles de l'entrepreneur",
       "unitIds": ["M04-U01", "M04-U02", "M04-U03", "M04-U04"]
     },
@@ -54,6 +58,7 @@
       "id": "M05",
       "number": 5,
       "partId": "P02",
+      "generatesCertificate": true,
       "title": "Trouver mon idée",
       "unitIds": ["M05-U01", "M05-U02", "M05-U03", "M05-U04", "M05-U05", "M05-U06"]
     },
@@ -61,6 +66,7 @@
       "id": "M06",
       "number": 6,
       "partId": "P02",
+      "generatesCertificate": true,
       "title": "Mon marché et mon organisation",
       "unitIds": [
         "M06-U01",
@@ -78,6 +84,7 @@
       "id": "M07",
       "number": 7,
       "partId": "P02",
+      "generatesCertificate": true,
       "title": "Les chiffres de mon entreprise",
       "unitIds": [
         "M07-U01",

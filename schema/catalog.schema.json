@@ -72,12 +72,13 @@
     "module": {
       "type": "object",
       "additionalProperties": false,
-      "required": ["id", "number", "partId", "title", "unitIds"],
+      "required": ["id", "number", "partId", "title", "unitIds", "generatesCertificate"],
       "properties": {
         "id": { "$ref": "#/$defs/identifier" },
         "number": { "type": "integer", "minimum": 1 },
         "partId": { "$ref": "#/$defs/identifier" },
         "title": { "$ref": "#/$defs/nonEmptyText" },
+        "generatesCertificate": { "type": "boolean" },
         "unitIds": {
           "type": "array",
           "minItems": 1,
@@ -197,6 +198,7 @@
         "partDetail",
         "title",
         "detail",
+        "generatesCertificate",
         "units"
       ],
       "properties": {
@@ -209,6 +211,7 @@
         "partDetail": { "$ref": "#/$defs/nonEmptyText" },
         "title": { "$ref": "#/$defs/nonEmptyText" },
         "detail": { "$ref": "#/$defs/nonEmptyText" },
+        "generatesCertificate": { "type": "boolean" },
         "units": {
           "type": "array",
           "minItems": 1,

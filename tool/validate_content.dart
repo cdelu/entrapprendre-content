@@ -244,6 +244,7 @@ void _validateCatalog(Map<String, Object?> catalog, ValidationContext context) {
     _expectIdentifier(module, 'id', itemPath, context);
     _expectInteger(module, 'number', itemPath, context, minimum: 1);
     _expectText(module, 'title', itemPath, context);
+    _expectBoolean(module, 'generatesCertificate', itemPath, context);
     final partId = _expectIdentifier(module, 'partId', itemPath, context);
     if (partId != null && !partIds.contains(partId)) {
       context.error('$itemPath.partId', 'partie inconnue : $partId');
@@ -507,11 +508,12 @@ void _validateImage(
   _expectText(image, 'alt', '$path.image', context);
 }
 
-/// `audio: {path, transcript}`.
+/// `audio: {path, transcript}` or `audio: {tracks: {fr, ha, dje}}`.
 ///
-/// Audio follows the same source/release split as images: authors keep a
-/// relative path under `media/`, while the release builder rewrites it to a
-/// directly addressable immutable GitHub Release URL.
+/// Audio follows the same source/release split as images: authors keep
+/// relative paths under `media/`, while the release builder rewrites them to
+/// directly addressable immutable GitHub Release URLs. The legacy single-track
+/// shape remains valid and is treated as French by the learner app.
 void _validateAudio(
   Map<String, Object?> block,
   String path,
@@ -521,26 +523,81 @@ void _validateAudio(
   final audio = block['audio'];
   if (audio == null) return;
   if (audio is! Map<String, Object?>) {
-    context.error('$path.audio', 'objet {path, transcript} obligatoire');
+    context.error(
+      '$path.audio',
+      'objet {path, transcript} ou {tracks} obligatoire',
+    );
     return;
   }
 
   final chemin = audio['path'];
+  final tracks = audio['tracks'];
+  if (chemin != null && tracks != null) {
+    context.error(
+      '$path.audio',
+      'choisir une piste unique (path) ou des pistes par langue (tracks)',
+    );
+    return;
+  }
+  if (tracks != null) {
+    if (tracks is! Map<String, Object?> || tracks.isEmpty) {
+      context.error(
+        '$path.audio.tracks',
+        'au moins une piste parmi fr, ha et dje est obligatoire',
+      );
+      return;
+    }
+    for (final entry in tracks.entries) {
+      if (!const {'fr', 'ha', 'dje'}.contains(entry.key)) {
+        context.error(
+          '$path.audio.tracks.${entry.key}',
+          'langue audio inconnue : utiliser fr, ha ou dje',
+        );
+        continue;
+      }
+      final track = entry.value;
+      if (track is! Map<String, Object?>) {
+        context.error(
+          '$path.audio.tracks.${entry.key}',
+          'objet {path, transcript} obligatoire',
+        );
+        continue;
+      }
+      _validateAudioTrack(
+        track,
+        '$path.audio.tracks.${entry.key}',
+        dossierUnite,
+        context,
+      );
+    }
+    return;
+  }
+
+  _validateAudioTrack(audio, '$path.audio', dossierUnite, context);
+}
+
+void _validateAudioTrack(
+  Map<String, Object?> audio,
+  String path,
+  Directory dossierUnite,
+  ValidationContext context,
+) {
+  final chemin = audio['path'];
   if (chemin is! String || chemin.trim().isEmpty) {
-    context.error('$path.audio.path', 'texte non vide obligatoire');
+    context.error('$path.path', 'texte non vide obligatoire');
   } else if (chemin.startsWith('http://') || chemin.startsWith('https://')) {
     context.error(
-      '$path.audio.path',
+      '$path.path',
       'chemin relatif attendu, pas une URL : la release réécrit ce champ',
     );
   } else if (!chemin.startsWith('media/')) {
     context.error(
-      '$path.audio.path',
+      '$path.path',
       'les fichiers audio d\'une unité vivent dans media/',
     );
   } else if (chemin.split('/').contains('..')) {
     context.error(
-      '$path.audio.path',
+      '$path.path',
       'le chemin audio ne peut pas remonter hors de media/',
     );
   } else {
@@ -549,7 +606,7 @@ void _validateAudio(
       '${chemin.replaceAll('/', Platform.pathSeparator)}',
     );
     if (!fichier.existsSync()) {
-      context.error('$path.audio.path', 'fichier introuvable : $chemin');
+      context.error('$path.path', 'fichier introuvable : $chemin');
     }
   }
 
@@ -557,7 +614,7 @@ void _validateAudio(
   if (transcript != null &&
       (transcript is! String || transcript.trim().isEmpty)) {
     context.error(
-      '$path.audio.transcript',
+      '$path.transcript',
       's\'il est présent, le transcript doit être un texte non vide',
     );
   }

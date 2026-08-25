@@ -238,6 +238,7 @@ List<Map<String, Object?>> _buildNavigation(
         'partDetail': '${moduleIds.length} modules · $partUnitCount unités',
         'title': module['title'],
         'detail': '${unitIds.length} unités',
+        'generatesCertificate': module['generatesCertificate'] == true,
         'units': moduleUnits,
       });
     }
@@ -362,7 +363,8 @@ Map<String, String> _publishMediaAssets({
   return urls;
 }
 
-/// Réécrit `audio.path` et `image.path` de chaque bloc en URL de release.
+/// Réécrit `audio.path`, `audio.tracks.*.path` et `image.path` de chaque bloc
+/// en URL de release.
 ///
 /// Un chemin sans asset correspondant est une erreur franche : livrer un JSON
 /// qui pointe vers un fichier absent donnerait une image cassée ou un lecteur
@@ -378,22 +380,53 @@ Map<String, Object?> _rewriteMediaPaths(
 
   for (final bloc in blocs) {
     if (bloc is! Map) continue;
-    for (final champ in const ['audio', 'image']) {
-      final media = bloc[champ];
-      if (media is! Map) continue;
-      final chemin = media['path'];
-      if (chemin is! String || chemin.isEmpty) continue;
-      final url = mediaUrls[chemin];
-      if (url == null) {
-        throw StateError(
-          '$unitId, bloc ${bloc['id']} : $champ.path « $chemin » '
-          'ne correspond à aucun fichier de media/.',
-        );
+    final image = bloc['image'];
+    if (image is Map) {
+      _rewriteOneMediaPath(
+        image,
+        mediaUrls,
+        '$unitId, bloc ${bloc['id']} : image.path',
+      );
+    }
+
+    final audio = bloc['audio'];
+    if (audio is! Map) continue;
+    final tracks = audio['tracks'];
+    if (tracks is Map) {
+      for (final entry in tracks.entries) {
+        final track = entry.value;
+        if (track is Map) {
+          _rewriteOneMediaPath(
+            track,
+            mediaUrls,
+            '$unitId, bloc ${bloc['id']} : audio.tracks.${entry.key}.path',
+          );
+        }
       }
-      media['path'] = url;
+    } else {
+      _rewriteOneMediaPath(
+        audio,
+        mediaUrls,
+        '$unitId, bloc ${bloc['id']} : audio.path',
+      );
     }
   }
   return copie;
+}
+
+void _rewriteOneMediaPath(
+  Map media,
+  Map<String, String> mediaUrls,
+  String label,
+) {
+  final chemin = media['path'];
+  if (chemin is! String || chemin.isEmpty) return;
+  final url = mediaUrls[chemin];
+  if (url == null) {
+    throw StateError(
+        '$label « $chemin » ne correspond pas à un fichier de media/.');
+  }
+  media['path'] = url;
 }
 
 Map<String, Object?> _packageDescriptor(String tag, File file) {

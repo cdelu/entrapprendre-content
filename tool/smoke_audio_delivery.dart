@@ -48,8 +48,11 @@ Future<void> main() async {
         jsonDecode(unitFile.readAsStringSync()) as Map<String, Object?>;
     final blocks = unit['blocks'] as List<Object?>;
     (blocks.first as Map<String, Object?>)['audio'] = {
-      'path': 'media/smoke.mp3',
-      'transcript': 'Test audio de livraison.',
+      'tracks': {
+        'fr': {'path': 'media/smoke-fr.mp3', 'transcript': 'Audio français.'},
+        'ha': {'path': 'media/smoke-ha.mp3', 'transcript': 'Audio hausa.'},
+        'dje': {'path': 'media/smoke-dje.mp3', 'transcript': 'Audio zarma.'},
+      },
     };
     unitFile.writeAsStringSync(
       '${const JsonEncoder.withIndent('  ').convert(unit)}\n',
@@ -76,6 +79,10 @@ Future<void> main() async {
       '${Platform.pathSeparator}units${Platform.pathSeparator}M02-U01'
       '${Platform.pathSeparator}media',
     )..createSync(recursive: true);
+    for (final language in ['fr', 'ha', 'dje']) {
+      File('${mediaDirectory.path}${Platform.pathSeparator}smoke-$language.mp3')
+          .writeAsBytesSync(List<int>.generate(64, (index) => index));
+    }
     File('${mediaDirectory.path}${Platform.pathSeparator}smoke.mp3')
         .writeAsBytesSync(List<int>.generate(64, (index) => index));
 
@@ -94,12 +101,22 @@ Future<void> main() async {
     final generatedBlocks = generatedUnit['blocks'] as List<Object?>;
     final audio = (generatedBlocks.first as Map<String, Object?>)['audio']
         as Map<String, Object?>;
-    final path = audio['path'];
-    final expectedUrl =
-        'https://github.com/cdelu/entrapprendre-content/releases/download/'
-        '$_tag/M02-U01-smoke.mp3';
-    if (path != expectedUrl) {
-      throw StateError('URL audio inattendue : $path');
+    final tracks = audio['tracks'] as Map<String, Object?>;
+    for (final language in ['fr', 'ha', 'dje']) {
+      final track = tracks[language] as Map<String, Object?>;
+      final expectedUrl =
+          'https://github.com/cdelu/entrapprendre-content/releases/download/'
+          '$_tag/M02-U01-smoke-$language.mp3';
+      if (track['path'] != expectedUrl) {
+        throw StateError(
+          'URL audio inattendue pour $language : ${track['path']}',
+        );
+      }
+      if (!File(
+        '${output.path}${Platform.pathSeparator}M02-U01-smoke-$language.mp3',
+      ).existsSync()) {
+        throw StateError('Asset audio manquant pour $language.');
+      }
     }
     final generatedCatalog = jsonDecode(
       File('${output.path}${Platform.pathSeparator}catalog.json')

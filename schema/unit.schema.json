@@ -44,7 +44,7 @@
       "pattern": "^[a-z0-9]+(?:_[a-z0-9]+)*$"
     },
     "nonEmptyText": { "type": "string", "minLength": 1 },
-    "audio": {
+    "audioTrack": {
       "type": "object",
       "additionalProperties": false,
       "required": ["path"],
@@ -56,6 +56,40 @@
         },
         "transcript": { "$ref": "#/$defs/nonEmptyText" }
       }
+    },
+    "audio": {
+      "oneOf": [
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["path"],
+          "properties": {
+            "path": {
+              "type": "string",
+              "minLength": 1,
+              "pattern": "^media/[^?#]+\\.(mp3|wav|m4a|ogg|aac|flac|opus)$"
+            },
+            "transcript": { "$ref": "#/$defs/nonEmptyText" }
+          }
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["tracks"],
+          "properties": {
+            "tracks": {
+              "type": "object",
+              "minProperties": 1,
+              "additionalProperties": false,
+              "properties": {
+                "fr": { "$ref": "#/$defs/audioTrack" },
+                "ha": { "$ref": "#/$defs/audioTrack" },
+                "dje": { "$ref": "#/$defs/audioTrack" }
+              }
+            }
+          }
+        }
+      ]
     },
     "image": {
       "type": "object",

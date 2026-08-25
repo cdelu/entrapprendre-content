@@ -32,11 +32,41 @@ M02-U01-view-01.mp3        optional direct audio asset
 
 The standalone unit JSON is read directly by FlutterFlow. The core package contains unit JSON and lightweight supporting files, excluding top-level `media/`. The optional media package contains heavier media. Every referenced audio file is also uploaded as a directly addressable release asset, and the generated unit JSON points the native network AudioPlayer at that immutable URL.
 
+### Audio languages
+
+An audio-capable block may keep the legacy single-track shape:
+
+```json
+"audio": { "path": "media/introduction-fr.mp3", "transcript": "…" }
+```
+
+New content should use language tracks when available:
+
+```json
+"audio": {
+  "tracks": {
+    "fr":  { "path": "media/introduction-fr.mp3" },
+    "ha":  { "path": "media/introduction-ha.mp3" },
+    "dje": { "path": "media/introduction-dje.mp3" }
+  }
+}
+```
+
+The codes are `fr` (French), `ha` (Hausa), and `dje` (Zarma). A release
+publishes every declared track, while the learner chooses one track before
+downloading and caches only that track. If a selected track is absent, the
+learner falls back to French and then to the first declared track.
+
 ## Derived catalogue views
 
-Authors edit normalized `parts`, `modules`, and `units`. The builder regenerates:
+Authors edit normalized `parts`, `modules`, and `units`. Each module carries
+`generatesCertificate` (`true` or `false`), which is copied into the derived
+navigation. The learner only lists an attestation after every unit in a module
+is complete and this flag is true. The builder regenerates:
 
-- `navigation` — modules in part order, part metadata on every module, `showPartHeader` on each part’s first module, and nested unit summaries;
+- `navigation` — modules in part order, part metadata on every module,
+  `showPartHeader` on each part’s first module, `generatesCertificate`, and
+  nested unit summaries;
 - `navigationSummary` — catalogue totals;
 - `progressSegments` — one entry per unit with module-boundary metadata;
 - `packages` — descriptors for successfully built archives.

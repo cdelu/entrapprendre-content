@@ -18,6 +18,10 @@ Repository: [cdelu/entrapprendre-content](https://github.com/cdelu/entrapprendre
 
 Stable IDs such as `M02` and `M02-U01` must remain unchanged when titles or order change. Downloads and local learner progress depend on them. IDs are internal and never learner-facing.
 
+Every module also declares `generatesCertificate`. Studio edits this flag and
+the release builder copies it to `catalog.json`; it is the catalogue source of
+truth for the learner's certificate list.
+
 ## Current release
 
 The current stable release is [`content-v0.3.1`](https://github.com/cdelu/entrapprendre-content/releases/tag/content-v0.3.1). It contains seven modules, 37 unit summaries, and the remotely loadable `M02-U01` reference unit.
@@ -66,5 +70,11 @@ The builder creates `dist/content-v0.4.0/` and refuses to overwrite an existing 
 The unit schema recognizes more content kinds than the learner app currently renders. Studio and content authors must use the shared support manifest once it is introduced, not schema presence alone.
 
 Current learner runtime support: text, accordion, takeaway, exercise with textarea/scale items, training-journal use of the exercise structure, and optional block audio.
+
+Audio can be authored as one legacy track (`audio.path`, treated as French) or
+as language tracks under `audio.tracks.fr`, `audio.tracks.ha`, and
+`audio.tracks.dje` (French, Hausa, and Zarma). The learner stores only the
+track selected in its settings, so a unit download never fetches the other
+language files.
 
 See `PUBLISHING.md` for the release contract and the parent `AUTHORING_APP_HANDOFF.md` for the planned backendless Studio workflow.
