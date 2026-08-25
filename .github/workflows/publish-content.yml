@@ -10,14 +10,21 @@ on:
       prerelease:
         description: Publish without replacing the stable latest catalogue
         required: true
-        default: false
-        type: boolean
+      default: false
+      type: boolean
+  push:
+    tags:
+      - 'content-v*'
+
+env:
+  RELEASE_TAG: ${{ github.event_name == 'workflow_dispatch' && inputs.tag || github.ref_name }}
+  PRERELEASE: ${{ github.event_name == 'workflow_dispatch' && inputs.prerelease || false }}
 
 permissions:
   contents: write
 
 concurrency:
-  group: content-release-${{ inputs.tag }}
+  group: content-release-${{ github.event_name == 'workflow_dispatch' && inputs.tag || github.ref_name }}
   cancel-in-progress: false
 
 jobs:
@@ -46,8 +53,6 @@ jobs:
         run: dart run tool/validate_content.dart --release
 
       - name: Validate release tag
-        env:
-          RELEASE_TAG: ${{ inputs.tag }}
         run: |
           if [[ ! "$RELEASE_TAG" =~ ^content-v[0-9]+\.[0-9]+\.[0-9]+(-[0-9A-Za-z.-]+)?$ ]]; then
             echo "Invalid release tag: $RELEASE_TAG" >&2
@@ -55,15 +60,11 @@ jobs:
           fi
 
       - name: Build release assets
-        env:
-          RELEASE_TAG: ${{ inputs.tag }}
         run: dart run tool/build_release.dart --tag "$RELEASE_TAG"
 
       - name: Publish GitHub Release
         env:
           GH_TOKEN: ${{ github.token }}
-          RELEASE_TAG: ${{ inputs.tag }}
-          PRERELEASE: ${{ inputs.prerelease }}
         run: |
           release_args=(
             release create "$RELEASE_TAG"
