@@ -1,0 +1,169 @@
+{
+  "schemaVersion": 1,
+  "id": "M01-U01",
+  "moduleId": "M01",
+  "number": 1,
+  "title": "L'importance de l'entrepreneuriat dans la société",
+  "status": "published",
+  "estimatedMinutes": 30,
+  "objectives": [
+    "Comprendre pourquoi l'entrepreneuriat fait avancer la société.",
+    "Savoir que tout le monde peut entreprendre : femmes, hommes et personnes en situation de handicap.",
+    "Réfléchir à ton attitude d'entrepreneur.",
+    "Connaître les rôles des entreprises dans la société."
+  ],
+  "blocks": [
+    {
+      "id": "moteur_developpement",
+      "kind": "text",
+      "title": "Un moteur pour la société",
+      "body": "L'entrepreneuriat, c'est le fait de créer et de faire vivre une entreprise. En créant des entreprises, les entrepreneurs créent des emplois, apportent des idées nouvelles et font vivre leur région. Ils répondent aux besoins des gens, parfois avec de nouveaux produits, de nouveaux services ou de nouvelles façons de travailler."
+    },
+    {
+      "id": "autonomie",
+      "kind": "text",
+      "title": "Bon pour toi et pour ta communauté",
+      "body": "Entreprendre t'aide aussi à devenir autonome et à prendre des initiatives. C'est bon pour l'économie, mais aussi pour la vie de ta communauté."
+    },
+    {
+      "id": "pour_tout_le_monde",
+      "kind": "text",
+      "title": "Entreprendre, c'est pour tout le monde",
+      "body": "L'entrepreneuriat n'est réservé à personne. Les femmes, les hommes et les personnes en situation de handicap peuvent tous entreprendre, chacun à sa manière. Cette diversité est une richesse : elle apporte des points de vue, des idées et des solutions différentes, adaptées à chaque réalité. C'est pourquoi il faut soutenir toutes et tous dans leur envie d'entreprendre."
+    },
+    {
+      "id": "types_entreprises",
+      "kind": "text",
+      "title": "Des entreprises de toutes sortes",
+      "body": "Les entreprises n'ont pas toutes la même forme ni la même taille. Cela dépend de leur but et de leur façon de fonctionner. Dans ce module, tu vas découvrir trois types d'entreprises : les petites entreprises, les entreprises sociales et les entreprises vertes, qu'on appelle aussi entreprises durables."
+    },
+    {
+      "id": "attitude_consigne",
+      "kind": "text",
+      "title": "As-tu une attitude d'entrepreneur ?",
+      "body": "Réponds aux questions suivantes en pensant à ta vie, à ta famille, à ta communauté et à ce que tu as vécu. Écris avec tes mots, comme tu parles. Il n'y a pas de bonne ou de mauvaise réponse."
+    },
+    {
+      "id": "attitude_entrepreneur",
+      "kind": "exercise",
+      "title": "Mon attitude d'entrepreneur",
+      "items": [
+        {
+          "id": "fierte",
+          "kind": "textarea",
+          "prompt": "De quoi es-tu le plus fier ou la plus fière d'avoir réussi ces cinq dernières années ? Par exemple : terminer une formation, aider ta famille, démarrer un petit travail."
+        },
+        {
+          "id": "savoir_faire",
+          "kind": "textarea",
+          "prompt": "Qu'est-ce que tu sais très bien faire ? Cela peut être un métier, un savoir-faire ou une activité que tu maîtrises."
+        },
+        {
+          "id": "initiatives",
+          "kind": "textarea",
+          "prompt": "Aimes-tu prendre des initiatives et créer des choses ? Dis si tu aimes essayer de nouvelles idées ou résoudre des problèmes par toi-même, et pourquoi."
+        },
+        {
+          "id": "proverbe",
+          "kind": "textarea",
+          "prompt": "Quel proverbe ou quelle phrase connue pourrais-tu choisir pour montrer que tu as les qualités d'un entrepreneur ? Par exemple : « Qui ne risque rien n'a rien », ou une autre phrase que tu connais."
+        },
+        {
+          "id": "problemes_sociaux",
+          "kind": "textarea",
+          "prompt": "En tant qu'entrepreneur dans ta communauté, comment pourrais-tu aider à résoudre les problèmes sociaux ? Par exemple : créer des emplois, aider les jeunes, organiser des activités pour la santé ou l'éducation."
+        },
+        {
+          "id": "proteger_environnement",
+          "kind": "textarea",
+          "prompt": "En tant qu'entrepreneur, comment pourrais-tu aider à protéger l'environnement dans ta communauté ? Par exemple : encourager le recyclage, planter des arbres, utiliser des techniques propres dans ton activité."
+        }
+      ]
+    },
+    {
+      "id": "role_entreprises",
+      "kind": "flashcards",
+      "title": "Le rôle des entreprises dans la société · touche la carte pour voir l'explication",
+      "items": [
+        {
+          "title": "Les produits et les services",
+          "body": "Les entreprises fabriquent et vendent ce dont les gens ont besoin : de la nourriture, des vêtements, ou des services comme la coiffure ou la réparation. L'entrepreneur cherche ce que les gens veulent et le leur fournit."
+        },
+        {
+          "title": "La création d'emplois",
+          "body": "Les entreprises donnent du travail à ceux qui en cherchent. Elles aident ainsi à réduire la pauvreté, car elles offrent une chance de gagner sa vie."
+        },
+        {
+          "title": "Le revenu",
+          "body": "Les travailleurs reçoivent un salaire. Les chefs d'entreprise gagnent aussi de l'argent grâce à leur activité."
+        },
+        {
+          "title": "Les impôts",
+          "body": "Les entreprises paient des impôts à l'État. Cet argent sert à construire des écoles, des hôpitaux et des routes, et à offrir des services utiles à tous."
+        },
+        {
+          "title": "Les investissements",
+          "body": "Pour produire ou offrir des services, les entreprises achètent des bâtiments, des machines et d'autres outils. Investir, c'est dépenser de l'argent aujourd'hui pour mieux travailler demain."
+        },
+        {
+          "title": "La formation",
+          "body": "Les entreprises aident les gens à apprendre de nouvelles compétences, grâce à la formation et à l'expérience du travail."
+        },
+        {
+          "title": "L'innovation",
+          "body": "Innover, c'est trouver du nouveau. Les entreprises trouvent de nouvelles idées, de nouveaux produits ou de nouvelles façons de travailler pour améliorer la vie des gens."
+        },
+        {
+          "title": "Les devises étrangères",
+          "body": "Les devises étrangères, c'est l'argent des autres pays. Quand une entreprise vend ses produits à l'étranger, elle fait entrer cet argent dans le pays. Cela aide le pays à acheter ce dont il a besoin."
+        }
+      ]
+    },
+    {
+      "id": "a_retenir",
+      "kind": "takeaway",
+      "title": "À retenir",
+      "body": "L'entrepreneuriat fait avancer la société : il crée des emplois, des revenus et des idées nouvelles. Il est ouvert à toutes et à tous, femmes, hommes et personnes en situation de handicap. Il existe plusieurs types d'entreprises : petites, sociales et vertes."
+    },
+    {
+      "id": "journal_formation",
+      "kind": "exercise",
+      "title": "Mon journal de formation",
+      "label": "Prends quelques minutes pour garder une trace de ce que tu as appris.",
+      "items": [
+        {
+          "id": "journal_ce_que_je_retiens",
+          "kind": "textarea",
+          "prompt": "Quel rôle des entreprises dans la société t'a le plus marqué ? Pourquoi ?"
+        },
+        {
+          "id": "journal_reussi",
+          "kind": "textarea",
+          "prompt": "Qu'est-ce que tu as bien réussi ou bien compris ?"
+        },
+        {
+          "id": "journal_difficile",
+          "kind": "textarea",
+          "prompt": "Qu'est-ce qui a été difficile pour toi ?"
+        },
+        {
+          "id": "journal_mon_prochain_pas",
+          "kind": "textarea",
+          "prompt": "Quel petit pas vas-tu faire cette semaine pour prendre une initiative, à l'atelier ou dans ta communauté ?"
+        },
+        {
+          "id": "journal_ressenti",
+          "kind": "scale",
+          "group": "Comment je me sens",
+          "options": ["Pas à l'aise", "Moyen", "À l'aise", "Très à l'aise"],
+          "questions": [
+            {
+              "id": "ressenti_unite",
+              "text": "Comment te sens-tu après cette unité ?"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

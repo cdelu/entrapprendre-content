@@ -1,0 +1,140 @@
+{
+  "schemaVersion": 1,
+  "id": "M01-U03",
+  "moduleId": "M01",
+  "number": 3,
+  "title": "Les petites entreprises",
+  "status": "published",
+  "estimatedMinutes": 30,
+  "objectives": [
+    "Connaître les difficultés des petites entreprises.",
+    "Connaître les points forts des petites entreprises.",
+    "Analyser la situation de Moussa et lui proposer des idées pour développer son atelier."
+  ],
+  "blocks": [
+    {
+      "id": "introduction",
+      "kind": "text",
+      "title": "Petite, mais pleine de forces",
+      "body": "Beaucoup d'artisans du cuir commencent par une petite entreprise : un atelier, quelques outils, quelques clients. Une petite entreprise rencontre des difficultés, mais elle a aussi de vrais points forts. Les connaître t'aide à mieux t'organiser."
+    },
+    {
+      "id": "forces_difficultes",
+      "kind": "tabs",
+      "title": "Les petites entreprises · choisis un onglet",
+      "items": [
+        {
+          "title": "Les difficultés",
+          "body": "Le manque d'argent : la banque prête difficilement sans garantie, c'est-à-dire sans un bien qu'elle peut prendre si on ne rembourse pas. Les employés : il est dur de bien les payer et de garder les meilleurs. Des coûts plus élevés : elle achète en petite quantité, donc plus cher. Peu de produits : si l'un ne se vend pas, c'est un gros problème. Pas encore connue : elle doit toujours faire ses preuves."
+        },
+        {
+          "title": "Les points forts",
+          "body": "Proche des clients : elle les connaît bien et peut s'occuper de chacun personnellement. Une forte motivation : la personne qui la dirige met tout son cœur dans son travail, car sa réussite est personnelle. La flexibilité : elle peut changer vite ses produits pour suivre les besoins des clients. Des décisions rapides : il y a moins de règles, alors on décide plus simplement et plus vite."
+        }
+      ]
+    },
+    {
+      "id": "moussa_parcours",
+      "kind": "text",
+      "title": "L'atelier de Moussa, à Niamey",
+      "body": "Moussa est un jeune Nigérien formé aux métiers du cuir au Centre des Métiers du Cuir et d'Art du Niger, le CMCAN. Il n'a pas trouvé d'emploi salarié stable. Alors il s'est installé à Niamey comme artisan maroquinier indépendant. Avec quelques outils de base, il fabrique et répare des sacs, des sandales, des ceintures et des portefeuilles."
+    },
+    {
+      "id": "moussa_clients",
+      "kind": "text",
+      "title": "Ses clients et son travail",
+      "body": "Moussa achète ses matières premières auprès de tanneurs et de revendeurs locaux. Ses clients sont des voisins, des amis, des commerçants, et des personnes rencontrées en foire ou sur les réseaux sociaux. Il travaille de longues heures. Il explique : « Si je ne respecte pas les délais ou si la qualité n'est pas bonne, le client ira voir un autre artisan. »"
+    },
+    {
+      "id": "moussa_declaration",
+      "kind": "text",
+      "title": "Une activité pas encore déclarée",
+      "body": "Moussa n'a pas encore déclaré son activité aux autorités, c'est-à-dire qu'il ne l'a pas fait enregistrer officiellement. Il pense qu'elle est encore trop petite. Il a peur des démarches, des coûts et des taxes. Il dit : « Pour le moment, j'arrive à vendre, alors je ne vois pas l'utilité de déclarer mon activité. »"
+    },
+    {
+      "id": "moussa_projets",
+      "kind": "text",
+      "title": "Ce que Moussa commence à comprendre",
+      "body": "Pourtant, Moussa aimerait développer son atelier, améliorer ses produits et vendre sur de plus grands marchés. Peu à peu, il comprend qu'une meilleure organisation et une démarche officielle pourraient l'aider. Il gagnerait la confiance des clients, pourrait travailler avec des boutiques, et ses revenus seraient plus sûrs."
+    },
+    {
+      "id": "questions_moussa",
+      "kind": "exercise",
+      "title": "Questions sur l'atelier de Moussa",
+      "items": [
+        {
+          "id": "moussa_lancement",
+          "kind": "textarea",
+          "prompt": "Comment Moussa a-t-il lancé son activité de maroquinerie à Niamey ?"
+        },
+        {
+          "id": "moussa_raisons",
+          "kind": "textarea",
+          "prompt": "Pourquoi n'a-t-il pas encore déclaré son activité aux autorités ?"
+        },
+        {
+          "id": "moussa_mon_avis",
+          "kind": "textarea",
+          "prompt": "Es-tu d'accord avec les raisons que donne Moussa pour ne pas déclarer son activité ? Pourquoi ?"
+        },
+        {
+          "id": "moussa_idees",
+          "kind": "textarea",
+          "prompt": "Propose des idées pour aider Moussa à mieux gérer et développer son atelier, pour que son travail grandisse et reste stable."
+        }
+      ]
+    },
+    {
+      "id": "se_renseigner",
+      "kind": "text",
+      "title": "Pour en savoir plus",
+      "body": "Les démarches pour déclarer une activité ne sont pas les mêmes pour tout le monde. Si tu te poses des questions, renseigne-toi auprès de ton formateur ou de ta formatrice."
+    },
+    {
+      "id": "a_retenir",
+      "kind": "takeaway",
+      "title": "À retenir",
+      "body": "Une petite entreprise a des difficultés : peu d'argent, des coûts plus élevés, peu de produits. Mais elle a aussi des forces : elle est proche de ses clients, motivée, flexible et rapide. Bien s'organiser l'aide à grandir et à gagner la confiance des clients."
+    },
+    {
+      "id": "journal_formation",
+      "kind": "exercise",
+      "title": "Mon journal de formation",
+      "label": "Prends quelques minutes pour garder une trace de ce que tu as appris.",
+      "items": [
+        {
+          "id": "journal_ce_que_je_retiens",
+          "kind": "textarea",
+          "prompt": "Quel point fort des petites entreprises pourras-tu utiliser dans ton futur atelier ? Comment ?"
+        },
+        {
+          "id": "journal_reussi",
+          "kind": "textarea",
+          "prompt": "Qu'est-ce que tu as bien réussi ou bien compris ?"
+        },
+        {
+          "id": "journal_difficile",
+          "kind": "textarea",
+          "prompt": "Qu'est-ce qui a été difficile pour toi ?"
+        },
+        {
+          "id": "journal_mon_prochain_pas",
+          "kind": "textarea",
+          "prompt": "Quel petit pas vas-tu faire cette semaine pour mieux organiser ton travail, comme Moussa voudrait le faire ?"
+        },
+        {
+          "id": "journal_ressenti",
+          "kind": "scale",
+          "group": "Comment je me sens",
+          "options": ["Pas à l'aise", "Moyen", "À l'aise", "Très à l'aise"],
+          "questions": [
+            {
+              "id": "ressenti_unite",
+              "text": "Comment te sens-tu après cette unité ?"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

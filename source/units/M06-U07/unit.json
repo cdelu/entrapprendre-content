@@ -1,0 +1,306 @@
+{
+  "schemaVersion": 1,
+  "id": "M06-U07",
+  "moduleId": "M06",
+  "number": 7,
+  "title": "Mes fournisseurs et mes matières",
+  "status": "published",
+  "estimatedMinutes": 40,
+  "objectives": [
+    "Trier tes matières entre celles qui comptent dans chaque article et les dépenses de l'atelier.",
+    "Choisir tes fournisseurs en regardant plus que le prix.",
+    "Acheter mieux et garder la bonne quantité de stock.",
+    "Conserver tes matières en bon état."
+  ],
+  "blocks": [
+    {
+      "id": "introduction",
+      "kind": "text",
+      "title": "Toutes les matières ne se comptent pas pareil",
+      "body": "Pour produire, tu achètes des matières. Mais toutes ces dépenses ne se comportent pas de la même façon, et tu les compteras différemment plus tard. Pour les trier, une seule question suffit."
+    },
+    {
+      "id": "question_de_tri",
+      "kind": "statement",
+      "label": "LA QUESTION DE TRI",
+      "body": "Si je fabrique deux fois plus, est-ce que j'achète deux fois plus de cette matière ?"
+    },
+    {
+      "id": "reponse_oui",
+      "kind": "text",
+      "title": "Si la réponse est oui",
+      "body": "Alors cette matière compte dans le coût de chaque article, c'est-à-dire dans ce que tu dépenses pour fabriquer un article. Elle entre dans l'article que tu vends. Voici ces matières, selon les métiers."
+    },
+    {
+      "id": "matieres_par_metier",
+      "kind": "accordion",
+      "label": "Les matières de chaque article",
+      "intro": "Touche chaque métier pour voir ses matières. Le fil, la colle et la teinture s'utilisent en si petites quantités qu'on les range plutôt dans les frais de l'atelier.",
+      "items": [
+        {
+          "title": "Tannerie",
+          "body": "Des peaux brutes, des produits de tannage, du sel et de la chaux, de l'eau."
+        },
+        {
+          "title": "Maroquinerie",
+          "body": "Du cuir de chèvre, de mouton ou de bovin, du tissu de doublure, du fil, de la colle à cuir, des boucles, des fermetures, des rivets et des boutons pression."
+        },
+        {
+          "title": "Cordonnerie et botterie",
+          "body": "Du cuir épais, des semelles, des talons, des renforts, de la colle spéciale chaussure, du fil renforcé, des lacets et des œillets."
+        },
+        {
+          "title": "Finition, pour tous les métiers",
+          "body": "Des teintures, des cires, des huiles et des crèmes d'entretien."
+        },
+        {
+          "title": "Présentation, pour tous les métiers",
+          "body": "Des étiquettes, des sachets ou des pochettes."
+        }
+      ]
+    },
+    {
+      "id": "reponse_non",
+      "kind": "text",
+      "title": "Si la réponse est non",
+      "body": "Alors c'est une dépense de l'atelier, pas de l'article. Par exemple : le papier abrasif, les lames de cutter, les aiguilles, le savon, les chiffons, les cartes de visite. Tu en achètes de temps en temps, que tu fabriques dix sacs ou trente."
+    },
+    {
+      "id": "conseil_pratique",
+      "kind": "text",
+      "title": "Un conseil pratique",
+      "body": "Pour les grosses matières, comme le cuir, les semelles ou les boucles, mesure exactement ce qu'il faut pour un article : c'est là qu'est l'essentiel de ton coût. Pour les toutes petites quantités, comme un peu de colle, de fil ou de teinture, ne compte pas au centimètre. Range-les avec les dépenses de l'atelier : tu perds un peu de précision, mais tu gagnes beaucoup de simplicité."
+    },
+    {
+      "id": "chutes",
+      "kind": "statement",
+      "label": "PENSE À TES CHUTES",
+      "body": "Tes chutes de coupe sont des matières gratuites, déjà chez toi. Utilise-les pour tes petits articles."
+    },
+    {
+      "id": "choisir_fournisseurs",
+      "kind": "list",
+      "title": "Choisir un fournisseur : regarde six choses, pas seulement le prix",
+      "items": [
+        {
+          "body": "Le prix, bien sûr."
+        },
+        {
+          "body": "La qualité, et surtout sa régularité. Un cuir excellent une fois sur deux ne vaut rien pour toi : tes clients verront la différence."
+        },
+        {
+          "body": "La disponibilité : a-t-il toujours de la marchandise en réserve, ce qu'on appelle du stock, ou faut-il attendre trois semaines ?"
+        },
+        {
+          "body": "La distance : un fournisseur loin te coûte du transport et du temps à chaque achat."
+        },
+        {
+          "body": "Les conditions de paiement : faut-il tout payer d'avance, ou accepte-t-il que tu paies un peu plus tard ?"
+        },
+        {
+          "body": "Sa parole : livre-t-il ce qu'il a promis, à la date promise ?"
+        }
+      ]
+    },
+    {
+      "id": "deux_fournisseurs",
+      "kind": "text",
+      "title": "Toujours deux fournisseurs",
+      "body": "Pour ta matière principale, aie toujours deux fournisseurs. Si tu dépends d'un seul et qu'il ferme, augmente ses prix ou n'a plus de stock, ton atelier s'arrête. C'est exactement le genre de menace que tu as notée dans ton FFOM, dans l'unité « Choisir la bonne idée »."
+    },
+    {
+      "id": "negocier_fournisseur",
+      "kind": "text",
+      "title": "Négocier avec ton fournisseur",
+      "body": "Tu as appris à négocier dans l'unité « Négocier ». C'est ici que ça sert le plus. Un fournisseur préfère souvent t'accorder autre chose qu'une baisse de prix : un peu plus de marchandise, un délai pour payer, ou la livraison. Cherche un accord où vous gagnez tous les deux, car tu reviendras chez lui chaque mois."
+    },
+    {
+      "id": "grandes_quantites",
+      "kind": "text",
+      "title": "Acheter en grande quantité ?",
+      "body": "Quand tu achètes beaucoup d'un coup, le prix de chaque pièce baisse. Mais attention : ton argent dort dans le stock, et un cuir mal conservé s'abîme. Fais de gros achats seulement pour ce que tu es sûr d'utiliser."
+    },
+    {
+      "id": "acheter_a_plusieurs",
+      "kind": "text",
+      "title": "Acheter à plusieurs",
+      "body": "Quand on démarre, acheter à plusieurs est souvent la meilleure solution. À trois ou quatre artisans, vous obtenez le prix du gros, vous partagez le transport, et vous pesez plus face au fournisseur. C'est même le principal intérêt d'un groupement ou d'une coopérative d'artisans : acheter ensemble, et parfois partager une machine."
+    },
+    {
+      "id": "combien_de_stock",
+      "kind": "text",
+      "title": "Combien de stock garder ?",
+      "body": "Trop peu de stock, et tu t'arrêtes de travailler ou tu refuses une commande. Trop de stock, et ton argent dort : il te manquera pour autre chose. La bonne mesure, c'est de quoi produire ce que tu as prévu pour les prochaines semaines, plus une réserve de ce qui est difficile à trouver."
+    },
+    {
+      "id": "conserver_matieres",
+      "kind": "accordion",
+      "label": "Garder tes matières en bon état",
+      "intro": "Une matière abîmée, c'est de l'argent perdu, et ça arrive vite. Touche chaque ligne pour voir comment l'éviter.",
+      "items": [
+        {
+          "title": "Le cuir",
+          "body": "Garde-le dans un endroit sec, à l'abri du soleil direct et de l'humidité. Pose-le à plat, ou roule-le sans faire de pli."
+        },
+        {
+          "title": "Les colles et les teintures",
+          "body": "Ferme-les bien, garde-les loin de la chaleur et colle une étiquette dessus. Une teinture dont on ne sait plus la couleur ne sert plus à rien."
+        },
+        {
+          "title": "Les outils",
+          "body": "Nettoie-les après chaque usage. Une lame propre coupe mieux et dure plus longtemps."
+        },
+        {
+          "title": "Le rangement",
+          "body": "Range tout au même endroit, toujours le même. Tu l'as vu dans l'unité « Gérer son temps » : un atelier rangé fait gagner des heures."
+        }
+      ]
+    },
+    {
+      "id": "matieres_consigne",
+      "kind": "text",
+      "title": "Fais la liste de tes matières",
+      "body": "Pour chaque matière, écris comment elle s'achète (au mètre, à la pièce, au kilo, au litre…), son prix et où l'acheter. Pose-toi aussi la question de tri. Garde bien ces prix : tu t'en serviras pour calculer ce que coûte un article."
+    },
+    {
+      "id": "mes_matieres",
+      "kind": "exercise",
+      "title": "Mes matières",
+      "items": [
+        {
+          "id": "matieres_article",
+          "kind": "textarea",
+          "prompt": "Les matières que tu achètes en plus grande quantité quand tu produis plus : pour chacune, écris comment elle s'achète, son prix et où l'acheter."
+        },
+        {
+          "id": "matieres_atelier",
+          "kind": "textarea",
+          "prompt": "Les petites matières et fournitures de l'atelier, qui n'augmentent pas quand tu produis plus : pour chacune, écris comment elle s'achète, son prix et où l'acheter."
+        }
+      ]
+    },
+    {
+      "id": "fournisseurs_consigne",
+      "kind": "text",
+      "title": "Compare tes fournisseurs",
+      "body": "Choisis tes deux matières principales. Pour chacune, compare deux fournisseurs. Payer comptant veut dire payer tout de suite. Payer à crédit veut dire payer plus tard, avec l'accord du fournisseur."
+    },
+    {
+      "id": "mes_fournisseurs",
+      "kind": "exercise",
+      "title": "Mes fournisseurs",
+      "items": [
+        {
+          "id": "matiere1_fournisseur_a",
+          "kind": "textarea",
+          "prompt": "Ta première matière principale, premier fournisseur : écris le nom de la matière, le nom et le lieu du fournisseur, et son prix."
+        },
+        {
+          "id": "matiere1_fournisseur_a_conditions",
+          "kind": "textarea",
+          "prompt": "Chez ce premier fournisseur, la qualité est-elle régulière ? A-t-il toujours du stock ? Est-il loin ? Paies-tu comptant ou à crédit ?"
+        },
+        {
+          "id": "matiere1_fournisseur_b",
+          "kind": "textarea",
+          "prompt": "La même matière, deuxième fournisseur : nom et lieu, prix, qualité régulière ou non, stock, distance, paiement comptant ou à crédit."
+        },
+        {
+          "id": "matiere2_fournisseur_a",
+          "kind": "textarea",
+          "prompt": "Ta deuxième matière principale, premier fournisseur : écris le nom de la matière, le nom et le lieu du fournisseur, et son prix."
+        },
+        {
+          "id": "matiere2_fournisseur_a_conditions",
+          "kind": "textarea",
+          "prompt": "Chez ce premier fournisseur, la qualité est-elle régulière ? A-t-il toujours du stock ? Est-il loin ? Paies-tu comptant ou à crédit ?"
+        },
+        {
+          "id": "matiere2_fournisseur_b",
+          "kind": "textarea",
+          "prompt": "La même matière, deuxième fournisseur : nom et lieu, prix, qualité régulière ou non, stock, distance, paiement comptant ou à crédit."
+        },
+        {
+          "id": "choix_fournisseurs",
+          "kind": "textarea",
+          "prompt": "Quels fournisseurs choisis-tu ? Pourquoi ?"
+        }
+      ]
+    },
+    {
+      "id": "stock_consigne",
+      "kind": "text",
+      "title": "Prépare ton stock de départ",
+      "body": "De quoi as-tu besoin pour produire pendant tes premières semaines ? Pour chaque matière, calcule le prix total : c'est le prix d'une unité multiplié par la quantité. Par exemple, le prix d'une peau multiplié par le nombre de peaux."
+    },
+    {
+      "id": "mon_stock_de_depart",
+      "kind": "exercise",
+      "title": "Mon stock de départ",
+      "items": [
+        {
+          "id": "stock_depart_liste",
+          "kind": "textarea",
+          "prompt": "Pour chaque matière de ton stock de départ, écris la quantité et le prix total."
+        },
+        {
+          "id": "stock_depart_total",
+          "kind": "textarea",
+          "prompt": "Additionne les prix : quel est le total de ton stock de départ ?"
+        }
+      ]
+    },
+    {
+      "id": "piece_du_dossier",
+      "kind": "text",
+      "title": "Pour ton dossier",
+      "body": "Recopie tes réponses et range-les dans ta chemise : c'est la pièce « Mes fournisseurs et mes matières ». Le total de ton stock de départ servira à calculer ton argent de départ, dans l'unité « Mon argent de départ et d'où il vient »."
+    },
+    {
+      "id": "a_retenir",
+      "kind": "takeaway",
+      "title": "À retenir",
+      "body": "Pour trier tes matières, demande-toi : si je produis deux fois plus, est-ce que j'en achète deux fois plus ? Le fournisseur le moins cher n'est pas toujours le meilleur : regarde aussi la régularité, la disponibilité et la parole donnée. Aie deux fournisseurs pour ta matière principale. Acheter à plusieurs donne le prix du gros. Ne garde ni trop ni trop peu de stock, et conserve bien tes matières."
+    },
+    {
+      "id": "journal_formation",
+      "kind": "exercise",
+      "title": "Mon journal de formation",
+      "label": "Prends quelques minutes pour garder une trace de ce que tu as appris.",
+      "items": [
+        {
+          "id": "journal_ce_que_je_retiens",
+          "kind": "textarea",
+          "prompt": "Qu'est-ce que tu retiens sur le choix de tes fournisseurs et de tes matières ?"
+        },
+        {
+          "id": "journal_reussi",
+          "kind": "textarea",
+          "prompt": "Qu'est-ce que tu as bien réussi ou bien compris ?"
+        },
+        {
+          "id": "journal_difficile",
+          "kind": "textarea",
+          "prompt": "Qu'est-ce qui a été difficile pour toi ?"
+        },
+        {
+          "id": "journal_mon_prochain_pas",
+          "kind": "textarea",
+          "prompt": "Quel petit pas vas-tu faire cette semaine ? Par exemple : demander le prix du cuir chez un deuxième fournisseur, ou mieux ranger tes matières."
+        },
+        {
+          "id": "journal_ressenti",
+          "kind": "scale",
+          "group": "Comment je me sens",
+          "options": ["Pas à l'aise", "Moyen", "À l'aise", "Très à l'aise"],
+          "questions": [
+            {
+              "id": "ressenti_unite",
+              "text": "Comment te sens-tu après cette unité ?"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

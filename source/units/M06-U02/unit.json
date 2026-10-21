@@ -1,0 +1,254 @@
+{
+  "schemaVersion": 1,
+  "id": "M06-U02",
+  "moduleId": "M06",
+  "number": 2,
+  "title": "Mes clients et leurs besoins",
+  "status": "published",
+  "estimatedMinutes": 30,
+  "objectives": [
+    "Comprendre pourquoi « tout le monde » n'est pas une réponse.",
+    "Ranger tes clients possibles en groupes.",
+    "Choisir le groupe de clients par lequel commencer.",
+    "Décrire ce que veulent vraiment tes clients."
+  ],
+  "blocks": [
+    {
+      "id": "tout_le_monde",
+      "kind": "text",
+      "title": "Personne ne vend à tout le monde",
+      "body": "Demande à dix jeunes qui se lancent qui sont leurs clients. Neuf te répondront « tout le monde ». C'est la réponse la plus courante, et la plus dangereuse."
+    },
+    {
+      "id": "pourquoi_dangereux",
+      "kind": "text",
+      "title": "Pourquoi c'est dangereux",
+      "body": "Si tes clients sont tout le monde, tu ne sais pas quel modèle fabriquer, à quel prix le vendre, où t'installer, ni comment te faire connaître. Un sac pour un élève et un porte-documents pour un fonctionnaire ne sont pas le même produit. Ils n'ont pas le même prix et ne se vendent pas au même endroit."
+    },
+    {
+      "id": "idee_forte",
+      "kind": "statement",
+      "label": "IDÉE FORTE",
+      "body": "Mieux vaut bien servir un petit groupe de clients que mal servir tout le monde."
+    },
+    {
+      "id": "groupes_clients",
+      "kind": "text",
+      "title": "Range tes clients en groupes",
+      "body": "Tes clients ne se ressemblent pas. Regroupe-les par familles, selon ce qu'ils veulent et ce qu'ils peuvent payer. On appelle ça des groupes de clients. Tu entendras peut-être aussi le mot « segmentation » : c'est la même chose."
+    },
+    {
+      "id": "groupes_ramatou",
+      "kind": "accordion",
+      "label": "Les groupes de clients de Ramatou",
+      "intro": "Voici comment Ramatou a rangé ses clients possibles. Touche chaque groupe pour voir qui ils sont, ce qu'ils veulent et ce qu'ils peuvent payer.",
+      "items": [
+        {
+          "title": "Les gens du quartier",
+          "body": "Des femmes et des hommes qui achètent pour eux-mêmes. Ils veulent des sacs, des ceintures et des portefeuilles solides et pratiques. Ils paient un prix juste : ni cher, ni bas de gamme."
+        },
+        {
+          "title": "Les élèves et les étudiants",
+          "body": "Des jeunes en cours ou en formation. Ils veulent des sacs simples, des trousses, des porte-documents, des modèles modernes. Ils paient peu : ils comptent chaque franc."
+        },
+        {
+          "title": "Les employés de bureau",
+          "body": "Des fonctionnaires, des enseignants, des agents. Ils veulent des porte-documents, des sacs de travail, des ceintures sobres et bien finies. Ils paient plus cher, si la finition est bonne."
+        },
+        {
+          "title": "Les revendeurs et les boutiques",
+          "body": "Ceux qui achètent pour revendre. Ils veulent des quantités régulières et des modèles qui se vendent bien. Ils paient un prix de gros, mais leurs commandes sont plus grosses."
+        }
+      ]
+    },
+    {
+      "id": "avantages_groupes",
+      "kind": "text",
+      "title": "Chaque groupe a ses avantages",
+      "body": "Les élèves sont nombreux, mais ils paient peu. Les employés de bureau paient mieux, mais ils sont plus exigeants. Les revendeurs commandent en gros, mais ils négocient dur."
+    },
+    {
+      "id": "par_lequel_commencer",
+      "kind": "text",
+      "title": "Par quel groupe commencer ?",
+      "body": "Tu ne peux pas servir tous les groupes dès le premier jour. Choisis-en un ou deux pour démarrer. Pour choisir, pose-toi trois questions."
+    },
+    {
+      "id": "trois_questions",
+      "kind": "process",
+      "title": "Trois questions pour choisir",
+      "items": [
+        {
+          "title": "Puis-je les atteindre facilement ?",
+          "body": "Un groupe qui passe devant chez toi vaut mieux qu'un groupe à l'autre bout de la ville."
+        },
+        {
+          "title": "Paient-ils correctement ?",
+          "body": "Beaucoup de clients qui paient très peu, ce n'est pas une bonne affaire."
+        },
+        {
+          "title": "Est-ce que je sais faire ce qu'ils veulent ?",
+          "body": "Inutile de viser les employés de bureau si tu ne maîtrises pas encore les finitions soignées."
+        }
+      ]
+    },
+    {
+      "id": "choix_ramatou",
+      "kind": "text",
+      "title": "Le choix de Ramatou",
+      "body": "Ramatou a commencé par les gens de son quartier et les employés de bureau. Les premiers étaient à sa porte. Les seconds payaient bien ses finitions. Elle est venue aux revendeurs plus tard, quand elle a pu produire en quantité."
+    },
+    {
+      "id": "ce_que_veulent_clients",
+      "kind": "text",
+      "title": "Ce que veulent vraiment tes clients",
+      "body": "Attention : ce que tu trouves beau n'est pas forcément ce que le client veut. Pour chaque groupe, il y a trois choses à découvrir."
+    },
+    {
+      "id": "trois_choses",
+      "kind": "list",
+      "title": "Trois choses à découvrir pour chaque groupe",
+      "items": [
+        {
+          "body": "Ce dont ils ont besoin. Par exemple, un sac solide qui tient trois ans, ou une sandale confortable pour marcher toute la journée."
+        },
+        {
+          "body": "Ce qu'ils préfèrent : la couleur, le modèle, la taille, le délai, l'emballage."
+        },
+        {
+          "body": "Ce qu'ils sont prêts à payer. Le chiffre, pas ton impression."
+        }
+      ]
+    },
+    {
+      "id": "demander_clients",
+      "kind": "text",
+      "title": "Pour le savoir, demande",
+      "body": "La seule façon de le savoir, c'est de demander aux clients. Tu l'as déjà fait pendant ton enquête de terrain, dans l'unité « Choisir la bonne idée ». Reprends tes notes : elles servent maintenant."
+    },
+    {
+      "id": "combien_clients",
+      "kind": "text",
+      "title": "Combien de clients y a-t-il ?",
+      "body": "Pas besoin de compter précisément. Il faut juste vérifier qu'il y en a assez. Regarde autour de toi. Combien de familles dans ton quartier ? Combien de personnes au marché un jour d'affluence ? Combien d'élèves dans l'école voisine ? Combien de boutiques pourraient revendre tes articles ?"
+    },
+    {
+      "id": "ordre_grandeur",
+      "kind": "statement",
+      "label": "UN ORDRE DE GRANDEUR SUFFIT",
+      "body": "Un ordre de grandeur, c'est un chiffre à peu près juste. Ce qui compte, c'est de savoir si tu parles de trente clients possibles ou de trois mille."
+    },
+    {
+      "id": "groupes_consigne",
+      "kind": "text",
+      "title": "À toi : tes groupes de clients",
+      "body": "Décris tes groupes de clients possibles, comme Ramatou. Pour chaque groupe, écris qui ils sont, ce qu'ils veulent, ce qu'ils peuvent payer, et combien ils sont à peu près. Remplis au moins deux groupes."
+    },
+    {
+      "id": "mes_groupes_clients",
+      "kind": "exercise",
+      "title": "Mes groupes de clients",
+      "items": [
+        {
+          "id": "groupe_clients_1",
+          "kind": "textarea",
+          "prompt": "Groupe 1 : écris qui ils sont, ce qu'ils veulent, ce qu'ils peuvent payer, et combien ils sont à peu près."
+        },
+        {
+          "id": "groupe_clients_2",
+          "kind": "textarea",
+          "prompt": "Groupe 2 : écris qui ils sont, ce qu'ils veulent, ce qu'ils peuvent payer, et combien ils sont à peu près."
+        },
+        {
+          "id": "groupe_clients_3",
+          "kind": "textarea",
+          "prompt": "Groupe 3, si tu en as un : écris qui ils sont, ce qu'ils veulent, ce qu'ils peuvent payer, et combien ils sont à peu près."
+        },
+        {
+          "id": "groupe_clients_4",
+          "kind": "textarea",
+          "prompt": "Groupe 4, si tu en as un : écris qui ils sont, ce qu'ils veulent, ce qu'ils peuvent payer, et combien ils sont à peu près."
+        }
+      ]
+    },
+    {
+      "id": "par_qui_je_commence",
+      "kind": "exercise",
+      "title": "Par qui je commence",
+      "items": [
+        {
+          "id": "groupe_principal",
+          "kind": "textarea",
+          "prompt": "Quel groupe vas-tu servir en premier ?"
+        },
+        {
+          "id": "groupe_principal_pourquoi",
+          "kind": "textarea",
+          "prompt": "Pourquoi celui-là ? Est-il facile à atteindre ? Paie-t-il correctement ? Sais-tu faire ce qu'il veut ?"
+        },
+        {
+          "id": "groupe_plus_tard",
+          "kind": "textarea",
+          "prompt": "Quel groupe gardes-tu pour plus tard, quand ton entreprise aura grandi ?"
+        },
+        {
+          "id": "groupe_principal_attentes",
+          "kind": "textarea",
+          "prompt": "Pour ton groupe principal, quelles sont les trois choses qui comptent le plus à ses yeux ?"
+        }
+      ]
+    },
+    {
+      "id": "ranger_dossier",
+      "kind": "text",
+      "title": "Pour ton dossier",
+      "body": "Recopie tes réponses sur papier et range-les dans ta chemise. C'est la pièce « Mes clients et leurs besoins » de ton dossier."
+    },
+    {
+      "id": "a_retenir",
+      "kind": "takeaway",
+      "title": "À retenir",
+      "body": "« Mes clients, c'est tout le monde » n'est pas une réponse. Range tes clients en groupes, selon ce qu'ils veulent et ce qu'ils peuvent payer. Commence par un ou deux groupes faciles à atteindre, qui paient correctement et que tu sais servir. Ce que veut le client compte plus que ce que tu trouves beau. Trente ou trois mille clients, ce n'est pas la même entreprise."
+    },
+    {
+      "id": "journal_formation",
+      "kind": "exercise",
+      "title": "Mon journal de formation",
+      "label": "Prends quelques minutes pour garder une trace de ce que tu as appris.",
+      "items": [
+        {
+          "id": "journal_ce_que_je_retiens",
+          "kind": "textarea",
+          "prompt": "Qu'est-ce que tu retiens sur la façon de choisir tes clients ?"
+        },
+        {
+          "id": "journal_reussi",
+          "kind": "textarea",
+          "prompt": "Qu'est-ce que tu as bien réussi ou bien compris ?"
+        },
+        {
+          "id": "journal_difficile",
+          "kind": "textarea",
+          "prompt": "Qu'est-ce qui a été difficile pour toi ?"
+        },
+        {
+          "id": "journal_mon_prochain_pas",
+          "kind": "textarea",
+          "prompt": "Cette semaine, à quel client de ton groupe principal vas-tu demander ce qu'il veut et ce qu'il est prêt à payer ?"
+        },
+        {
+          "id": "journal_ressenti",
+          "kind": "scale",
+          "group": "Comment je me sens",
+          "options": ["Pas à l'aise", "Moyen", "À l'aise", "Très à l'aise"],
+          "questions": [
+            {
+              "id": "ressenti_unite",
+              "text": "Comment te sens-tu après cette unité ?"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

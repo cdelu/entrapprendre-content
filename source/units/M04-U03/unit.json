@@ -1,0 +1,279 @@
+{
+  "schemaVersion": 1,
+  "id": "M04-U03",
+  "moduleId": "M04",
+  "number": 3,
+  "title": "Diriger une équipe",
+  "status": "published",
+  "estimatedMinutes": 35,
+  "objectives": [
+    "Reconnaître quatre styles de direction.",
+    "Choisir le style qui convient à chaque situation.",
+    "Observer comment un responsable dirige son équipe.",
+    "Faire la différence entre un leader et un gestionnaire."
+  ],
+  "blocks": [
+    {
+      "id": "styles_intro",
+      "kind": "text",
+      "title": "Les styles de direction",
+      "body": "Chaque responsable a sa façon de guider une équipe. Voici quatre styles de direction. Pour chacun, tu vas voir ce que le responsable dit et comment il se comporte. Touche chaque onglet pour découvrir un style."
+    },
+    {
+      "id": "quatre_styles",
+      "kind": "tabs",
+      "title": "Quatre façons de diriger",
+      "items": [
+        {
+          "title": "Démocratique",
+          "body": "Elle dit : « Chacun doit dire ce qu'il pense, nous sommes tous égaux. » « Je comprends ton idée, elle est très bonne ! » « Résumons, pour que tout le monde soit clair. » « On n'est pas d'accord ? On en reparlera ensemble. » « Votons : tous les avis comptent. » Son attitude : elle sourit, elle est amicale, elle regarde les gens. Elle se penche en avant pour expliquer et ouvre les mains en parlant."
+        },
+        {
+          "title": "Autoritaire",
+          "body": "Il dit : « C'est moi seul qui décide. » « Lève la main pour parler. » « On arrête ce sujet, on perd du temps. » « Revenons au point principal. » « On fait comme je dis, pas de discussion. » Son attitude : ses gestes sont brusques ou fermes. Il pointe du doigt. Il a l'air pressé ou froid. Il tient souvent un stylo ou un document."
+        },
+        {
+          "title": "Laisser-faire",
+          "body": "Il dit : « Souley, prends les choses en main, fais ton travail. » « Faites comme vous voulez, je n'interviens pas. » « Bonne chance à tous, à bientôt ! » Son attitude : il participe peu à la discussion. Il regarde ailleurs ou regarde son téléphone. Il laisse les autres décider."
+        },
+        {
+          "title": "Bureaucratique",
+          "body": "Il dit : « Voici les règles à suivre. Aminata, à toi de parler. » « Ne parle pas hors de ton tour, Idrissa. » « Restez dans l'ordre du jour. » « Suivez la procédure. » Son attitude : il regarde souvent sa montre ou son programme. Il s'agace si les règles ne sont pas respectées. Il donne la parole aux gens un par un."
+        }
+      ]
+    },
+    {
+      "id": "changer_de_style",
+      "kind": "text",
+      "title": "Changer de style selon la situation",
+      "body": "Aucun style n'est bon dans toutes les situations. Un bon responsable change de façon de faire. Il est plus démocratique quand il cherche des idées, plus autoritaire en cas d'urgence ou de danger. Il laisse faire quand son équipe a de l'expérience et sait ce qu'elle doit faire. L'important, c'est de passer d'un style à l'autre au bon moment."
+    },
+    {
+      "id": "observation_consigne",
+      "kind": "text",
+      "title": "Observe un responsable au travail",
+      "body": "En classe, vous menez un petit projet en groupe de 4 ou 5, avec un responsable, et quelqu'un observe comment l'équipe travaille. Ici, tu fais l'observation seul. Choisis un vrai responsable que tu peux regarder diriger : ton patron d'atelier, ton formateur, un chef d'équipe en stage, un responsable d'association."
+    },
+    {
+      "id": "observer_responsable",
+      "kind": "exercise",
+      "title": "J'observe un responsable",
+      "items": [
+        {
+          "id": "qui_observe",
+          "kind": "textarea",
+          "prompt": "Qui as-tu observé, et dans quelle situation ? Quel travail l'équipe devait-elle faire ?"
+        },
+        {
+          "id": "grille_equipe",
+          "kind": "scale",
+          "group": "L'équipe",
+          "options": ["Pas du tout", "Un peu", "Plutôt", "Tout à fait"],
+          "questions": [
+            {
+              "id": "idees_originales",
+              "text": "L'équipe a cherché des idées originales pour régler le problème."
+            },
+            {
+              "id": "tous_participent",
+              "text": "L'équipe a fait participer tous ses membres."
+            },
+            {
+              "id": "bien_ensemble",
+              "text": "L'équipe a bien travaillé ensemble."
+            }
+          ]
+        },
+        {
+          "id": "grille_responsable",
+          "kind": "scale",
+          "group": "Le responsable",
+          "options": ["Pas du tout", "Un peu", "Plutôt", "Tout à fait"],
+          "questions": [
+            {
+              "id": "organise_travail",
+              "text": "Il a organisé le travail et les informations."
+            },
+            {
+              "id": "methode_claire",
+              "text": "Il a suivi une méthode claire."
+            },
+            {
+              "id": "encourage_equipe",
+              "text": "Il a encouragé et motivé son équipe."
+            },
+            {
+              "id": "parle_clairement",
+              "text": "Il a parlé clairement."
+            },
+            {
+              "id": "favorise_equipe",
+              "text": "Il a favorisé le travail d'équipe."
+            },
+            {
+              "id": "assume_resultat",
+              "text": "Il a assumé le résultat final."
+            }
+          ]
+        },
+        {
+          "id": "methode_suivie",
+          "kind": "textarea",
+          "prompt": "Quelle méthode le responsable a-t-il suivie pour organiser le travail ?"
+        },
+        {
+          "id": "comment_motive",
+          "kind": "textarea",
+          "prompt": "Comment a-t-il motivé son équipe ?"
+        },
+        {
+          "id": "ordres_fermes",
+          "kind": "textarea",
+          "prompt": "A-t-il donné des ordres ou des consignes fermes ? Quel effet cela a-t-il eu : plutôt bon ou plutôt mauvais ?"
+        },
+        {
+          "id": "travail_ou_personnes",
+          "kind": "textarea",
+          "prompt": "S'est-il occupé plutôt du travail à faire, ou plutôt des personnes de l'équipe ?"
+        },
+        {
+          "id": "manque_temps",
+          "kind": "textarea",
+          "prompt": "Le manque de temps a-t-il changé sa façon de faire ? Comment ?"
+        },
+        {
+          "id": "style_utilise",
+          "kind": "textarea",
+          "prompt": "Parmi les quatre styles, lequel a-t-il utilisé le plus : démocratique, autoritaire, laisser-faire ou bureaucratique ? À quoi l'as-tu vu ?"
+        },
+        {
+          "id": "a_sa_place",
+          "kind": "textarea",
+          "prompt": "Qu'est-ce qui a bien marché ? Qu'est-ce qui a moins bien marché ? Si tu étais à sa place, que ferais-tu pareil, et que ferais-tu autrement ?"
+        }
+      ]
+    },
+    {
+      "id": "leader_gestionnaire",
+      "kind": "text",
+      "title": "Leader ou gestionnaire ?",
+      "body": "Un leader montre la direction : il imagine où aller et il donne envie de le suivre. Un gestionnaire fait tourner les choses : il organise, il applique les décisions, il veille aux règles. Les deux sont utiles, et une même personne peut être les deux à la fois."
+    },
+    {
+      "id": "vrai_faux_consigne",
+      "kind": "text",
+      "title": "Vrai ou faux ?",
+      "body": "Lis chaque phrase et décide si elle est vraie ou fausse. Si tu penses qu'elle est fausse, essaie de la corriger dans ta tête. Ensuite, touche la carte pour vérifier. Ce n'est pas un test : c'est pour t'entraîner."
+    },
+    {
+      "id": "leader_ou_gestionnaire",
+      "kind": "flashcards",
+      "title": "Leader ou gestionnaire · touche la carte pour voir la réponse",
+      "items": [
+        {
+          "title": "Une même personne peut être à la fois leader et gestionnaire.",
+          "body": "Vrai. Les deux rôles se complètent. Un chef d'atelier joue souvent les deux rôles."
+        },
+        {
+          "title": "On naît gestionnaire, mais on apprend à devenir leader.",
+          "body": "Faux. Les deux s'apprennent. Personne ne naît gestionnaire ou leader."
+        },
+        {
+          "title": "C'est le leader qui applique les décisions prises.",
+          "body": "Faux. C'est le gestionnaire qui applique les décisions et qui organise. Le leader, lui, montre la direction."
+        },
+        {
+          "title": "On suit un leader parce qu'on le choisit, pas parce qu'on y est obligé.",
+          "body": "Vrai. C'est la grande différence avec un chef qui donne des ordres : on suit un leader parce qu'on le veut bien."
+        },
+        {
+          "title": "Le leader imagine une nouvelle direction, le gestionnaire la met en œuvre.",
+          "body": "Vrai. C'est exactement la différence entre les deux rôles."
+        },
+        {
+          "title": "Le leader dirige les gens en faisant respecter des règles et des procédures.",
+          "body": "Faux. Faire respecter les règles, c'est le rôle du gestionnaire. Le leader motive et donne envie de le suivre."
+        },
+        {
+          "title": "Un gestionnaire peut aussi devenir un leader.",
+          "body": "Vrai. Les deux capacités se développent, et rien n'empêche d'avoir les deux."
+        },
+        {
+          "title": "Le leader motive, innove et communique clairement.",
+          "body": "Vrai. Ce sont trois choses importantes que fait un leader. Innover veut dire apporter des idées nouvelles."
+        },
+        {
+          "title": "Le gestionnaire s'occupe surtout de l'organisation et des règles.",
+          "body": "Vrai. Il organise, il applique les décisions et il veille aux règles."
+        },
+        {
+          "title": "Être leader, c'est avoir le pouvoir d'embaucher ou de renvoyer quelqu'un.",
+          "body": "Faux. Ce pouvoir est celui du patron, pas du leader. On peut être leader sans pouvoir embaucher ni renvoyer personne. Et on peut être patron sans être leader."
+        }
+      ]
+    },
+    {
+      "id": "moi_responsable",
+      "kind": "exercise",
+      "title": "Et toi, quel responsable serais-tu ?",
+      "items": [
+        {
+          "id": "difference_mes_mots",
+          "kind": "textarea",
+          "prompt": "Avec tes mots, explique la différence entre un leader et un gestionnaire."
+        },
+        {
+          "id": "mon_style",
+          "kind": "textarea",
+          "prompt": "Si tu dirigeais un jour ton propre atelier, quel style de direction voudrais-tu utiliser le plus souvent ? Dans quelle situation changerais-tu de style ?"
+        }
+      ]
+    },
+    {
+      "id": "a_retenir",
+      "kind": "takeaway",
+      "title": "À retenir",
+      "body": "Il existe plusieurs façons de diriger : démocratique, autoritaire, laisser-faire, bureaucratique. Aucune n'est bonne partout : un bon responsable choisit selon la situation. Le leader montre la direction, le gestionnaire organise. Les deux rôles s'apprennent."
+    },
+    {
+      "id": "journal_formation",
+      "kind": "exercise",
+      "title": "Mon journal de formation",
+      "label": "Prends quelques minutes pour garder une trace de ce que tu as appris.",
+      "items": [
+        {
+          "id": "journal_ce_que_je_retiens",
+          "kind": "textarea",
+          "prompt": "Qu'est-ce que tu retiens sur la façon de diriger une équipe ? Quel style t'a le plus parlé ?"
+        },
+        {
+          "id": "journal_reussi",
+          "kind": "textarea",
+          "prompt": "Qu'est-ce que tu as bien réussi ou bien compris ?"
+        },
+        {
+          "id": "journal_difficile",
+          "kind": "textarea",
+          "prompt": "Qu'est-ce qui a été difficile pour toi ?"
+        },
+        {
+          "id": "journal_mon_prochain_pas",
+          "kind": "textarea",
+          "prompt": "Cette semaine, dans un travail en groupe, quel petit geste de leader peux-tu essayer ? Par exemple : encourager quelqu'un, proposer une idée, aider à organiser le travail."
+        },
+        {
+          "id": "journal_ressenti",
+          "kind": "scale",
+          "group": "Comment je me sens",
+          "options": ["Pas à l'aise", "Moyen", "À l'aise", "Très à l'aise"],
+          "questions": [
+            {
+              "id": "ressenti_unite",
+              "text": "Comment te sens-tu après cette unité ?"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

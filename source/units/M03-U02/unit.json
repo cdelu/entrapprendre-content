@@ -1,0 +1,226 @@
+{
+  "schemaVersion": 1,
+  "id": "M03-U02",
+  "moduleId": "M03",
+  "number": 2,
+  "title": "Gérer son temps",
+  "status": "published",
+  "estimatedMinutes": 35,
+  "objectives": [
+    "Comprendre qu'on n'a jamais le temps de tout faire et qu'il faut choisir.",
+    "Connaître dix conseils pour bien gérer ton temps.",
+    "Planifier ta journée avec les priorités A, B et C.",
+    "Faire le bilan de ta journée pour mieux t'organiser."
+  ],
+  "blocks": [
+    {
+      "id": "jeu_du_temps",
+      "kind": "text",
+      "title": "En classe : le jeu du temps",
+      "body": "En classe, tu joues au jeu du temps avec ton groupe. Chaque activité rapporte des points : faire voler un avion en papier, chanter une chanson nigérienne, convaincre quelqu'un d'un autre groupe de vous rejoindre… Mais vous n'avez que 5 minutes, et il est impossible de tout faire. Ensemble, vous devez choisir quoi faire."
+    },
+    {
+      "id": "lecon_du_jeu",
+      "kind": "text",
+      "title": "Ce que le jeu nous apprend",
+      "body": "On n'a jamais le temps de tout faire. Bien gérer son temps, c'est choisir ce qui compte le plus et commencer par là. C'est la même idée que les priorités A, B et C que tu vas voir plus loin."
+    },
+    {
+      "id": "reflexion_jeu",
+      "kind": "exercise",
+      "title": "Repense au jeu du temps",
+      "items": [
+        {
+          "id": "choix_activites",
+          "kind": "textarea",
+          "prompt": "Comment ton groupe a-t-il choisi les activités ? Avez-vous commencé par celles qui rapportaient le plus de points, ou par les plus rapides ?"
+        },
+        {
+          "id": "temps_perdu",
+          "kind": "textarea",
+          "prompt": "Avez-vous perdu du temps à hésiter ou à vous organiser ? Raconte."
+        },
+        {
+          "id": "rejouer_autrement",
+          "kind": "textarea",
+          "prompt": "Si tu rejouais, que ferais-tu autrement ? Et dans ta vie de tous les jours, par quoi commences-tu ta journée ?"
+        }
+      ]
+    },
+    {
+      "id": "dix_conseils",
+      "kind": "list",
+      "title": "Dix conseils pour bien gérer ton temps",
+      "items": [
+        {
+          "body": "Planifie ta journée. Chaque matin, écris ce que tu veux vraiment faire, par exemple « finir mon sac en cours de couture » ou « préparer mon matériel ». N'oublie pas tes grands objectifs, comme réussir ton diplôme ou ouvrir ton atelier."
+        },
+        {
+          "body": "Commence par le plus important. Fais d'abord la tâche la plus importante ou la plus difficile, quand tu as encore de l'énergie. Les tâches faciles peuvent attendre la fin de la journée."
+        },
+        {
+          "body": "Travaille en équipe et partage. En groupe, répartissez les tâches. Si un camarade peut faire une chose presque aussi bien que toi, laisse-le faire. Tout le monde progresse, et tu te concentres sur l'essentiel."
+        },
+        {
+          "body": "Garde ton espace rangé. Range toujours tes outils et tes papiers au même endroit. Un atelier bien tenu fait gagner du temps."
+        },
+        {
+          "body": "Apprends à dire non. Quand on te demande de l'aide et que tu n'as pas le temps, refuse gentiment. Tu évites ainsi d'en avoir trop sur les bras."
+        },
+        {
+          "body": "Fixe-toi des délais. Donne-toi une heure limite pour chaque tâche, par exemple « je finis ce travail avant 11 h », et essaie de la respecter."
+        },
+        {
+          "body": "Travaille par blocs. Pour les tâches importantes, garde 2 ou 3 heures sans être dérangé. Par exemple, la pratique le matin et la théorie l'après-midi."
+        },
+        {
+          "body": "Utilise bien le téléphone. Pour régler vite un problème, appelle directement la personne au lieu d'attendre une réponse écrite."
+        },
+        {
+          "body": "Prends des notes. Garde toujours un carnet sur toi pour noter les idées, les rendez-vous et les choses à faire. Ainsi, tu n'oublies rien."
+        },
+        {
+          "body": "Décide vite. Ne perds pas trop de temps à hésiter : décider, c'est déjà avancer."
+        }
+      ]
+    },
+    {
+      "id": "astuce_abc",
+      "kind": "text",
+      "title": "L'astuce A, B, C",
+      "body": "Une astuce simple relie tous ces conseils. Chaque matin, fais la liste de ce que tu as à faire, et donne une lettre à chaque tâche. A : très important, à faire en priorité. B : important, à faire si possible. C : moins important, seulement s'il reste du temps."
+    },
+    {
+      "id": "ma_journee_consigne",
+      "kind": "text",
+      "title": "Prépare ta journée",
+      "body": "Prépare ta liste la veille au soir ou le matin. Choisis les tâches les plus importantes du jour. Commence toujours par les tâches A. Le soir, reviens ici et écris « fait » à côté de chaque tâche terminée : tu verras tes progrès."
+    },
+    {
+      "id": "ma_journee",
+      "kind": "exercise",
+      "title": "Ma journée",
+      "items": [
+        {
+          "id": "tache_1",
+          "kind": "textarea",
+          "prompt": "Tâche 1 : écris la tâche, l'heure prévue et sa priorité (A, B ou C)."
+        },
+        {
+          "id": "tache_2",
+          "kind": "textarea",
+          "prompt": "Tâche 2 : écris la tâche, l'heure prévue et sa priorité (A, B ou C)."
+        },
+        {
+          "id": "tache_3",
+          "kind": "textarea",
+          "prompt": "Tâche 3 : écris la tâche, l'heure prévue et sa priorité (A, B ou C)."
+        },
+        {
+          "id": "tache_4",
+          "kind": "textarea",
+          "prompt": "Tâche 4 : écris la tâche, l'heure prévue et sa priorité (A, B ou C)."
+        },
+        {
+          "id": "tache_5",
+          "kind": "textarea",
+          "prompt": "Tâche 5 : écris la tâche, l'heure prévue et sa priorité (A, B ou C)."
+        },
+        {
+          "id": "rendez_vous",
+          "kind": "textarea",
+          "prompt": "As-tu des rendez-vous importants aujourd'hui (stage, entretien, réunion…) ? Pour chacun, écris l'heure, le lieu et avec qui."
+        },
+        {
+          "id": "autres_choses",
+          "kind": "textarea",
+          "prompt": "Quelles autres choses as-tu à faire (courses, appels, révisions…) ? Pour chacune, écris sa priorité : A, B ou C."
+        }
+      ]
+    },
+    {
+      "id": "bilan_consigne",
+      "kind": "text",
+      "title": "Le soir : comment as-tu utilisé ton temps ?",
+      "body": "À la fin de la journée, repense à ce que tu as fait, heure par heure, de 8 h à 16 h 30 : cours, atelier, pause, trajet… Pour chaque moment, note ce que tu as appris ou terminé. Ensuite, regarde ta journée avec un œil critique."
+    },
+    {
+      "id": "bilan_journee",
+      "kind": "exercise",
+      "title": "Comment j'ai utilisé mon temps aujourd'hui",
+      "items": [
+        {
+          "id": "matin",
+          "kind": "textarea",
+          "prompt": "Le matin, de 8 h à 12 h : qu'as-tu fait, heure par heure ? Qu'as-tu appris ou terminé ?"
+        },
+        {
+          "id": "apres_midi",
+          "kind": "textarea",
+          "prompt": "L'après-midi, de 12 h à 16 h 30 : qu'as-tu fait, heure par heure ? Qu'as-tu appris ou terminé ?"
+        },
+        {
+          "id": "programme_marche",
+          "kind": "textarea",
+          "prompt": "Ton programme a-t-il bien marché ? Explique."
+        },
+        {
+          "id": "temps_prevu",
+          "kind": "textarea",
+          "prompt": "As-tu passé plus ou moins de temps que prévu sur certaines tâches ? Lesquelles ?"
+        },
+        {
+          "id": "changer_demain",
+          "kind": "textarea",
+          "prompt": "Qu'est-ce que tu changerais pour mieux t'organiser demain ?"
+        }
+      ]
+    },
+    {
+      "id": "a_retenir",
+      "kind": "takeaway",
+      "title": "À retenir",
+      "body": "Tu n'auras jamais le temps de tout faire. Chaque matin, fais ta liste, classe tes tâches en A, B ou C, et commence par les A. Le soir, regarde ce qui a marché pour faire mieux le lendemain."
+    },
+    {
+      "id": "journal_formation",
+      "kind": "exercise",
+      "title": "Mon journal de formation",
+      "label": "Prends quelques minutes pour garder une trace de ce que tu as appris.",
+      "items": [
+        {
+          "id": "journal_ce_que_je_retiens",
+          "kind": "textarea",
+          "prompt": "Quel conseil pour gérer ton temps vas-tu garder en tête ? Pourquoi ?"
+        },
+        {
+          "id": "journal_reussi",
+          "kind": "textarea",
+          "prompt": "Qu'est-ce que tu as bien réussi ou bien compris ?"
+        },
+        {
+          "id": "journal_difficile",
+          "kind": "textarea",
+          "prompt": "Qu'est-ce qui a été difficile pour toi ?"
+        },
+        {
+          "id": "journal_mon_prochain_pas",
+          "kind": "textarea",
+          "prompt": "Cette semaine, quel jour vas-tu préparer ta liste de tâches A, B, C la veille au soir ?"
+        },
+        {
+          "id": "journal_ressenti",
+          "kind": "scale",
+          "group": "Comment je me sens",
+          "options": ["Pas à l'aise", "Moyen", "À l'aise", "Très à l'aise"],
+          "questions": [
+            {
+              "id": "ressenti_unite",
+              "text": "Comment te sens-tu après cette unité ?"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

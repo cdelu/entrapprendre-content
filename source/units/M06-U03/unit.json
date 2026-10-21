@@ -1,0 +1,309 @@
+{
+  "schemaVersion": 1,
+  "id": "M06-U03",
+  "moduleId": "M06",
+  "number": 3,
+  "title": "Mes concurrents et mon avantage",
+  "status": "published",
+  "estimatedMinutes": 35,
+  "objectives": [
+    "Reconnaître tous tes concurrents, même ceux qu'on oublie.",
+    "Observer ce que font tes concurrents et repérer ce qu'ils font mal.",
+    "Choisir ton avantage et le dire en une phrase."
+  ],
+  "blocks": [
+    {
+      "id": "concurrent_definition",
+      "kind": "text",
+      "title": "Un concurrent, c'est qui ?",
+      "body": "Ton concurrent, c'est tout endroit où ton client pourrait aller au lieu de venir chez toi. Ce n'est pas seulement l'artisan installé à côté."
+    },
+    {
+      "id": "quatre_concurrents",
+      "kind": "list",
+      "title": "Quatre sortes de concurrents",
+      "items": [
+        {
+          "body": "Les autres artisans qui font le même travail que toi."
+        },
+        {
+          "body": "Les vendeurs d'articles importés au marché. Leurs modèles sont variés et souvent moins chers, même si la qualité ne suit pas."
+        },
+        {
+          "body": "Les boutiques et les revendeurs. Ils présentent mieux leurs articles et touchent des clients qui n'iraient pas dans un atelier."
+        },
+        {
+          "body": "Le client qui n'achète rien du tout. C'est celui qu'on oublie toujours. Quelqu'un qui garde son vieux sac deux ans de plus, c'est une vente perdue, comme s'il était allé chez un autre."
+        }
+      ]
+    },
+    {
+      "id": "pas_un_ennemi",
+      "kind": "statement",
+      "label": "UN CONCURRENT N'EST PAS UN ENNEMI",
+      "body": "La plupart accepteront de te parler. Une heure avec un artisan installé t'apprendra plus qu'une semaine à réfléchir seul."
+    },
+    {
+      "id": "connaitre_concurrents",
+      "kind": "text",
+      "title": "Va voir tes concurrents",
+      "body": "Va les voir, regarde et note. Cinq choses suffisent : ce qu'ils vendent, à quel prix, avec quelle qualité, comment ils attirent les clients, et ce qu'on leur reproche."
+    },
+    {
+      "id": "concurrents_ramatou",
+      "kind": "accordion",
+      "label": "Ce que Ramatou a observé",
+      "intro": "Ramatou est allée voir ses concurrents. Touche chacun pour voir ce qu'elle a noté.",
+      "items": [
+        {
+          "title": "Les maroquiniers du quartier",
+          "body": "Ils vendent des sacs et des ceintures simples. Leurs prix sont bas : entre 3 000 et 3 500 FCFA. Leur qualité est irrégulière. On leur reproche des finitions bâclées et des délais pas respectés."
+        },
+        {
+          "title": "Les vendeurs d'articles importés",
+          "body": "Ils vendent beaucoup de modèles, des sacs et des sandales. Leurs prix sont très bas : 2 000 FCFA. Leur qualité est faible. On leur reproche que leurs articles s'abîment en quelques mois."
+        },
+        {
+          "title": "Les boutiques d'accessoires en ville",
+          "body": "Leurs articles sont bien présentés. Leurs prix sont élevés : 8 000 FCFA et plus. Leur qualité est bonne. On leur reproche d'être trop chères pour la plupart des gens."
+        }
+      ]
+    },
+    {
+      "id": "concurrents_consigne",
+      "kind": "text",
+      "title": "À toi d'observer",
+      "body": "Reprends tes notes de l'enquête de terrain. Si besoin, complète-les par une visite. Décris au moins trois concurrents. Pour chacun, écris ce qu'il vend, ses prix, sa qualité, et ce qu'on lui reproche."
+    },
+    {
+      "id": "mes_concurrents",
+      "kind": "exercise",
+      "title": "Mes concurrents",
+      "items": [
+        {
+          "id": "concurrent_1",
+          "kind": "textarea",
+          "prompt": "Concurrent 1 : qui est-il ? Écris ce qu'il vend, ses prix, sa qualité, et ce qu'on lui reproche."
+        },
+        {
+          "id": "concurrent_2",
+          "kind": "textarea",
+          "prompt": "Concurrent 2 : qui est-il ? Écris ce qu'il vend, ses prix, sa qualité, et ce qu'on lui reproche."
+        },
+        {
+          "id": "concurrent_3",
+          "kind": "textarea",
+          "prompt": "Concurrent 3 : qui est-il ? Écris ce qu'il vend, ses prix, sa qualité, et ce qu'on lui reproche."
+        },
+        {
+          "id": "concurrents_autres",
+          "kind": "textarea",
+          "prompt": "As-tu d'autres concurrents ? Écris pour chacun ce qu'il vend, ses prix, sa qualité, et ce qu'on lui reproche."
+        }
+      ]
+    },
+    {
+      "id": "chercher_trous",
+      "kind": "text",
+      "title": "Chercher les trous",
+      "body": "Ce que tes concurrents ne font pas, c'est ta place. On appelle ça un « trou » : un besoin des clients que personne ne remplit bien. Pour le trouver, regarde ce que les clients reprochent, et ce que personne ne propose."
+    },
+    {
+      "id": "trous_ramatou",
+      "kind": "list",
+      "title": "Les quatre trous repérés par Ramatou",
+      "items": [
+        {
+          "body": "Peu d'articles à la fois bien finis et abordables."
+        },
+        {
+          "body": "Des délais souvent longs."
+        },
+        {
+          "body": "Presque aucune possibilité de commander un modèle précis."
+        },
+        {
+          "body": "Personne qui montre ses produits sur les réseaux sociaux."
+        }
+      ]
+    },
+    {
+      "id": "trous_consigne",
+      "kind": "text",
+      "title": "Les trous sont déjà dans tes notes",
+      "body": "Reprends tes notes de l'enquête de terrain et les plaintes que tu avais recueillies. Les trous y sont déjà écrits. D'après ce que tu as vu et entendu, note trois choses que tes concurrents ne font pas, ou font mal."
+    },
+    {
+      "id": "trous_marche",
+      "kind": "exercise",
+      "title": "Les trous du marché",
+      "items": [
+        {
+          "id": "trou_1",
+          "kind": "textarea",
+          "prompt": "Premier trou : qu'est-ce que tes concurrents ne font pas, ou font mal ?"
+        },
+        {
+          "id": "trou_2",
+          "kind": "textarea",
+          "prompt": "Deuxième trou : qu'est-ce que tes concurrents ne font pas, ou font mal ?"
+        },
+        {
+          "id": "trou_3",
+          "kind": "textarea",
+          "prompt": "Troisième trou : qu'est-ce que tes concurrents ne font pas, ou font mal ?"
+        }
+      ]
+    },
+    {
+      "id": "avantage_definition",
+      "kind": "text",
+      "title": "Ton avantage",
+      "body": "Ton avantage, c'est la raison pour laquelle un client va venir chez toi plutôt qu'ailleurs. Tu dois pouvoir la dire en une seule phrase."
+    },
+    {
+      "id": "avantages_possibles",
+      "kind": "flashcards",
+      "title": "Sept avantages possibles · touche la carte pour voir l'explication",
+      "items": [
+        {
+          "title": "La qualité",
+          "body": "Tes finitions tiennent, tes coutures ne lâchent pas."
+        },
+        {
+          "title": "Le délai",
+          "body": "Tu livres quand tu l'as promis, ou tu rends le travail le jour même."
+        },
+        {
+          "title": "La proximité",
+          "body": "Tu es là où le client passe déjà."
+        },
+        {
+          "title": "Le service",
+          "body": "Tu conseilles, tu répares après la vente, tu reprends l'article si ça ne va pas."
+        },
+        {
+          "title": "La personnalisation",
+          "body": "Tu fais le modèle, la couleur ou la taille que le client demande."
+        },
+        {
+          "title": "La confiance",
+          "body": "On te connaît, on parle bien de toi."
+        },
+        {
+          "title": "Le prix",
+          "body": "Tu vends moins cher. Attention : c'est l'avantage le plus dangereux."
+        }
+      ]
+    },
+    {
+      "id": "piege_prix_bas",
+      "kind": "text",
+      "title": "Attention au prix bas",
+      "body": "Le prix bas est l'avantage le plus facile à trouver, et le plus dangereux. Si tu baisses ton prix, ton concurrent baissera le sien, et vous perdrez tous les deux. Et tu ne pourras jamais vendre moins cher que ce que ton article te coûte."
+    },
+    {
+      "id": "vendre_a_perte",
+      "kind": "text",
+      "title": "Vendre à perte sans le savoir",
+      "body": "Tu calculeras ce que te coûte un article dans l'étude financière, avec l'unité « Combien me coûte un article ? ». Beaucoup découvrent à ce moment-là qu'ils vendaient à perte, c'est-à-dire moins cher que ce que l'article leur coûtait."
+    },
+    {
+      "id": "avantages_solides",
+      "kind": "text",
+      "title": "Les avantages solides",
+      "body": "Les avantages solides sont ceux qu'un concurrent ne peut pas copier du jour au lendemain : ton savoir-faire, ta parole tenue, ta réputation."
+    },
+    {
+      "id": "phrase_ramatou",
+      "kind": "statement",
+      "label": "L'AVANTAGE DE RAMATOU EN UNE PHRASE",
+      "body": "« Je fais des articles bien finis, à un prix que les gens du quartier peuvent payer, et je rends le travail à la date promise. »"
+    },
+    {
+      "id": "avantage_consigne",
+      "kind": "text",
+      "title": "Trouve ton avantage",
+      "body": "Parmi les sept avantages, choisis les deux ou trois que tu peux vraiment offrir. Sois honnête : un avantage que tu n'as pas encore ne compte pas. Pour chacun, explique pourquoi c'est vrai dans ton cas. Puis résume ton avantage en une phrase."
+    },
+    {
+      "id": "mon_avantage",
+      "kind": "exercise",
+      "title": "Mon avantage",
+      "items": [
+        {
+          "id": "avantage_1",
+          "kind": "textarea",
+          "prompt": "Premier avantage : lequel est-ce, et pourquoi est-ce vrai dans ton cas ?"
+        },
+        {
+          "id": "avantage_2",
+          "kind": "textarea",
+          "prompt": "Deuxième avantage : lequel est-ce, et pourquoi est-ce vrai dans ton cas ?"
+        },
+        {
+          "id": "avantage_3",
+          "kind": "textarea",
+          "prompt": "Troisième avantage, si tu en as un : lequel est-ce, et pourquoi est-ce vrai dans ton cas ?"
+        },
+        {
+          "id": "avantage_phrase",
+          "kind": "textarea",
+          "prompt": "Maintenant, résume ton avantage en une seule phrase, comme Ramatou."
+        }
+      ]
+    },
+    {
+      "id": "phrase_par_coeur",
+      "kind": "text",
+      "title": "Apprends ta phrase par cœur",
+      "body": "Tu la répéteras à chaque client, à chaque fournisseur, et le jour où tu présenteras ton dossier. Recopie ensuite tes réponses sur papier et range-les dans ta chemise : c'est la pièce « Mes concurrents et mon avantage »."
+    },
+    {
+      "id": "a_retenir",
+      "kind": "takeaway",
+      "title": "À retenir",
+      "body": "Un concurrent, c'est partout où ton client pourrait aller, y compris nulle part. Va voir tes concurrents : ils t'apprendront plus que n'importe quel livre. Ce qu'ils font mal, c'est ta place. Le prix bas est le plus mauvais avantage : facile à copier, et il te ruine. Ton avantage doit tenir en une phrase que tu sais réciter."
+    },
+    {
+      "id": "journal_formation",
+      "kind": "exercise",
+      "title": "Mon journal de formation",
+      "label": "Prends quelques minutes pour garder une trace de ce que tu as appris.",
+      "items": [
+        {
+          "id": "journal_ce_que_je_retiens",
+          "kind": "textarea",
+          "prompt": "Qu'est-ce que tu retiens sur tes concurrents et sur ton avantage ?"
+        },
+        {
+          "id": "journal_reussi",
+          "kind": "textarea",
+          "prompt": "Qu'est-ce que tu as bien réussi ou bien compris ?"
+        },
+        {
+          "id": "journal_difficile",
+          "kind": "textarea",
+          "prompt": "Qu'est-ce qui a été difficile pour toi ?"
+        },
+        {
+          "id": "journal_mon_prochain_pas",
+          "kind": "textarea",
+          "prompt": "Cette semaine, quel concurrent vas-tu aller voir, ou à qui vas-tu dire ta phrase d'avantage ?"
+        },
+        {
+          "id": "journal_ressenti",
+          "kind": "scale",
+          "group": "Comment je me sens",
+          "options": ["Pas à l'aise", "Moyen", "À l'aise", "Très à l'aise"],
+          "questions": [
+            {
+              "id": "ressenti_unite",
+              "text": "Comment te sens-tu après cette unité ?"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

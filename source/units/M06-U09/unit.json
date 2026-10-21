@@ -1,0 +1,321 @@
+{
+  "schemaVersion": 1,
+  "id": "M06-U09",
+  "moduleId": "M06",
+  "number": 9,
+  "title": "Déclarer mon activité",
+  "status": "published",
+  "estimatedMinutes": 35,
+  "objectives": [
+    "Peser ce que donne et ce que coûte le fait de rester non déclaré.",
+    "Connaître les formes possibles pour exercer ton activité.",
+    "Savoir où te renseigner pour déclarer ton activité.",
+    "Préparer tes démarches, étape par étape."
+  ],
+  "blocks": [
+    {
+      "id": "choix_de_moussa",
+      "kind": "text",
+      "title": "Le choix de Moussa",
+      "body": "Souviens-toi de Moussa, le maroquinier de l'unité « Les petites entreprises ». Il travaillait bien et avait des clients, mais il n'avait pas déclaré son activité. Il avait peur des démarches, des coûts et des taxes. Il disait : « Pour le moment, j'arrive à vendre, alors je ne vois pas l'utilité de déclarer mon activité. »"
+    },
+    {
+      "id": "un_calcul",
+      "kind": "text",
+      "title": "Un calcul à bien faire",
+      "body": "Déclarer ton activité, c'est la faire enregistrer officiellement auprès des autorités. Beaucoup d'artisans ne le font pas, comme Moussa. Ce n'est pas de la mauvaise volonté : c'est un calcul. Et pour bien le faire, il faut connaître les deux côtés."
+    },
+    {
+      "id": "rester_non_declare",
+      "kind": "tabs",
+      "title": "Rester non déclaré",
+      "items": [
+        {
+          "title": "Ce que ça donne",
+          "body": "Aucune démarche, aucun frais, aucune taxe à payer. Quand on démarre avec presque rien, c'est un vrai soulagement."
+        },
+        {
+          "title": "Ce que tu perds",
+          "body": "Pas de prêt : une microfinance ou une banque demande presque toujours des papiers. Pas de gros clients : une boutique, une entreprise, une école ou un projet ne peuvent pas t'acheter sans facture, et les marchés publics, c'est-à-dire les commandes de l'État ou des communes, te sont fermés. Pas de foires officielles, ni d'appels à projets, ni de concours de plan d'affaires."
+        },
+        {
+          "title": "Ce que tu risques",
+          "body": "Aucune protection : si un client ne te paie pas, tu n'as aucun papier pour réclamer ton dû. Et la peur : tu travailles en craignant un contrôle. Cette peur t'empêche de grandir, de mettre une pancarte, de te faire connaître."
+        }
+      ]
+    },
+    {
+      "id": "survivre_grandir",
+      "kind": "statement",
+      "label": "EN RÉSUMÉ",
+      "body": "Rester non déclaré permet de survivre, mais empêche de grandir. C'est ce que Moussa a fini par comprendre."
+    },
+    {
+      "id": "formes_possibles",
+      "kind": "accordion",
+      "label": "Les formes possibles",
+      "intro": "Il y a trois cas, du plus simple au plus engageant. Touche chaque forme pour la découvrir.",
+      "items": [
+        {
+          "title": "Le statut d'entreprenant",
+          "body": "C'est la porte d'entrée faite pour quelqu'un comme toi. L'entreprenant est un entrepreneur individuel : une personne qui exerce en son nom une activité commerciale, artisanale, agricole ou civile. Une simple déclaration suffit, et les obligations de comptabilité sont réduites. Ce statut est réservé aux petites activités : au-delà d'un certain chiffre d'affaires, c'est-à-dire le total de tes ventes, il faut passer à une autre forme."
+        },
+        {
+          "title": "L'entreprise individuelle",
+          "body": "Tu es seul propriétaire : tu décides de tout et tu gardes tous les bénéfices, c'est-à-dire ce qui reste quand tout est payé. C'est la forme la plus courante pour un artisan qui grandit. Attention : tes biens personnels et ceux de l'entreprise ne sont pas séparés. En cas de dettes, c'est toi qui réponds."
+        },
+        {
+          "title": "À plusieurs : le groupement ou la coopérative",
+          "body": "C'est utile quand plusieurs artisans veulent acheter ensemble, partager une machine, vendre ensemble ou peser davantage face aux fournisseurs et aux gros clients. Chacun garde son atelier, mais vous êtes plus forts ensemble. Beaucoup d'appuis et de projets s'adressent d'abord aux groupements."
+        }
+      ]
+    },
+    {
+      "id": "obligations",
+      "kind": "list",
+      "title": "Une fois déclaré : ce qu'il faut savoir avant, pas après",
+      "items": [
+        {
+          "body": "Des impôts et des taxes, selon ton statut et ton chiffre d'affaires."
+        },
+        {
+          "body": "Une patente ou une autorisation d'exercer, selon ton activité et ta commune."
+        },
+        {
+          "body": "Tenir tes comptes : au minimum un cahier où tu notes l'argent qui rentre et l'argent qui sort. Tu devrais le faire de toute façon."
+        },
+        {
+          "body": "Des obligations envers tes employés, si tu en as : les déclarer, les payer correctement, veiller à leur sécurité."
+        },
+        {
+          "body": "Parfois une assurance, surtout si tu loues un local."
+        }
+      ]
+    },
+    {
+      "id": "guichet_unique",
+      "kind": "text",
+      "title": "Où te renseigner",
+      "body": "Au Niger, les démarches pour créer une entreprise passent par un guichet unique, c'est-à-dire un seul bureau qui regroupe les formalités. C'est le Centre de Formalités des Entreprises, le CFE, de la Chambre de Commerce et d'Industrie du Niger. Son but est de rendre les démarches plus simples."
+    },
+    {
+      "id": "maison_entreprise",
+      "kind": "text",
+      "title": "La Maison de l'Entreprise",
+      "body": "Le CFE fait partie de la Maison de l'Entreprise, installée à la Chambre de commerce. Sa mission est justement d'aider à créer, à formaliser et à développer les entreprises. Formaliser une activité, c'est la mettre en règle avec l'administration."
+    },
+    {
+      "id": "autres_contacts",
+      "kind": "text",
+      "title": "D'autres personnes peuvent t'aider",
+      "body": "Renseigne-toi aussi à ta mairie, aux services des impôts de ta commune, au CMCAN et auprès de l'association interprofessionnelle de la filière. Ils connaissent les démarches et savent qui accompagne les jeunes artisans. Les règles et les frais peuvent changer : ton formateur te donnera les adresses, les papiers à fournir et les frais qui s'appliquent aujourd'hui dans ta région."
+    },
+    {
+      "id": "decision_par_etapes",
+      "kind": "process",
+      "title": "Pas tout le premier jour : le chemin le plus courant",
+      "items": [
+        {
+          "title": "Démarrer petit",
+          "body": "Tu commences petit, et tu vérifies que ton activité tient."
+        },
+        {
+          "title": "Déclarer quand il le faut",
+          "body": "Dès que tu vises des clients qui demandent des factures, un prêt ou une foire, tu déclares ton activité. Souvent, on commence par le statut le plus simple."
+        },
+        {
+          "title": "Grandir",
+          "body": "Quand ton activité grandit, tu passes à une forme plus complète."
+        }
+      ]
+    },
+    {
+      "id": "ne_pas_repousser",
+      "kind": "statement",
+      "label": "NE REPOUSSE PAS SANS FIN",
+      "body": "Ce qu'il ne faut pas faire, c'est toujours se dire « plus tard », comme Moussa pendant des années. On finit par refuser des commandes qu'on aurait pu prendre."
+    },
+    {
+      "id": "situation_consigne",
+      "kind": "text",
+      "title": "Fais le point sur ta situation",
+      "body": "Réponds à ces quatre questions par « Oui » ou « Non ». Ce n'est pas un test et il n'y a pas de note. Si tu réponds « Oui » au moins une fois, tu as intérêt à déclarer ton activité."
+    },
+    {
+      "id": "ma_situation",
+      "kind": "exercise",
+      "title": "Ma situation",
+      "items": [
+        {
+          "id": "besoins_declaration",
+          "kind": "scale",
+          "group": "Mes besoins",
+          "options": ["Oui", "Non"],
+          "questions": [
+            {
+              "id": "besoin_factures",
+              "text": "Pour tes clients principaux, as-tu besoin de donner des factures ?"
+            },
+            {
+              "id": "besoin_pret",
+              "text": "Vas-tu avoir besoin d'un prêt dans les deux prochaines années ?"
+            },
+            {
+              "id": "besoin_foires",
+              "text": "Veux-tu participer à des foires, des concours ou des appels à projets ?"
+            },
+            {
+              "id": "besoin_employer",
+              "text": "Comptes-tu employer quelqu'un ?"
+            }
+          ]
+        },
+        {
+          "id": "interet_declarer",
+          "kind": "textarea",
+          "prompt": "Alors, as-tu intérêt à déclarer ton activité ? Pourquoi ?"
+        }
+      ]
+    },
+    {
+      "id": "demarches_consigne",
+      "kind": "text",
+      "title": "Va te renseigner",
+      "body": "Cet exercice se fait dehors, pas en classe. Va te renseigner auprès du CFE de la Chambre de commerce, de ta mairie, des services des impôts ou de ton centre de formation. Puis note ici ce que tu as trouvé."
+    },
+    {
+      "id": "mes_demarches",
+      "kind": "exercise",
+      "title": "Mes démarches",
+      "items": [
+        {
+          "id": "forme_choisie",
+          "kind": "textarea",
+          "prompt": "Quelle forme choisis-tu pour démarrer ?"
+        },
+        {
+          "id": "ou_aller",
+          "kind": "textarea",
+          "prompt": "Où dois-tu aller pour faire tes démarches ?"
+        },
+        {
+          "id": "papiers_a_fournir",
+          "kind": "textarea",
+          "prompt": "Quels papiers dois-tu fournir ?"
+        },
+        {
+          "id": "cout_demarches",
+          "kind": "textarea",
+          "prompt": "Combien coûtent les démarches ?"
+        },
+        {
+          "id": "duree_demarches",
+          "kind": "textarea",
+          "prompt": "Combien de temps prennent les démarches ?"
+        },
+        {
+          "id": "payer_ensuite",
+          "kind": "textarea",
+          "prompt": "Que devras-tu payer ensuite, par exemple une taxe ou une patente ?"
+        },
+        {
+          "id": "quand_declarer",
+          "kind": "textarea",
+          "prompt": "Quand comptes-tu faire tes démarches ?"
+        }
+      ]
+    },
+    {
+      "id": "plusieurs_consigne",
+      "kind": "text",
+      "title": "Et à plusieurs ?",
+      "body": "En classe, vous discutez en groupe : que pourriez-vous faire ensemble plutôt que chacun de son côté ? Par exemple : acheter du cuir, partager une machine, louer un local, tenir un stand à une foire, ou répondre à une grosse commande."
+    },
+    {
+      "id": "et_a_plusieurs",
+      "kind": "exercise",
+      "title": "Ce que nous pourrions faire ensemble",
+      "items": [
+        {
+          "id": "idee_ensemble_1",
+          "kind": "textarea",
+          "prompt": "Écris une première chose que tu pourrais faire avec d'autres artisans."
+        },
+        {
+          "id": "idee_ensemble_2",
+          "kind": "textarea",
+          "prompt": "Écris une deuxième idée."
+        },
+        {
+          "id": "idee_ensemble_3",
+          "kind": "textarea",
+          "prompt": "Écris une troisième idée."
+        }
+      ]
+    },
+    {
+      "id": "piece_du_dossier",
+      "kind": "text",
+      "title": "Pour ton dossier",
+      "body": "Recopie tes réponses et range-les dans ta chemise : c'est la pièce « Déclarer mon activité ». Les frais que tu as notés serviront à calculer ton argent de départ, dans l'unité « Mon argent de départ et d'où il vient »."
+    },
+    {
+      "id": "ou_tu_en_es",
+      "kind": "text",
+      "title": "Où tu en es",
+      "body": "Ton étude technique est terminée. Tu sais où tu vas travailler, avec quel matériel et quelles matières, comment tu t'organises, et sous quelle forme tu vas exercer."
+    },
+    {
+      "id": "etude_financiere",
+      "kind": "text",
+      "title": "La suite : l'étude financière",
+      "body": "Il reste la partie la plus importante : l'étude financière. Tu vas enfin savoir ce que te coûte un article, à quel prix le vendre, de combien d'argent tu as besoin pour démarrer, et si ton activité peut te faire vivre."
+    },
+    {
+      "id": "a_retenir",
+      "kind": "takeaway",
+      "title": "À retenir",
+      "body": "Rester non déclaré permet de survivre, mais empêche de grandir : pas de prêt, pas de gros clients, pas de foires, et la peur du contrôle. Le statut d'entreprenant est la porte d'entrée la plus simple. À plusieurs, on achète mieux et on pèse davantage. Déclarer amène des obligations : renseigne-toi avant, au CFE de la Chambre de commerce ou auprès de ton centre de formation."
+    },
+    {
+      "id": "journal_formation",
+      "kind": "exercise",
+      "title": "Mon journal de formation",
+      "label": "Prends quelques minutes pour garder une trace de ce que tu as appris.",
+      "items": [
+        {
+          "id": "journal_ce_que_je_retiens",
+          "kind": "textarea",
+          "prompt": "Qu'est-ce que tu retiens sur le fait de déclarer ton activité ?"
+        },
+        {
+          "id": "journal_reussi",
+          "kind": "textarea",
+          "prompt": "Qu'est-ce que tu as bien réussi ou bien compris ?"
+        },
+        {
+          "id": "journal_difficile",
+          "kind": "textarea",
+          "prompt": "Qu'est-ce qui a été difficile pour toi ?"
+        },
+        {
+          "id": "journal_mon_prochain_pas",
+          "kind": "textarea",
+          "prompt": "Quel petit pas vas-tu faire cette semaine ? Par exemple : demander à ton formateur où se trouve le CFE, ou noter une question à poser sur les démarches."
+        },
+        {
+          "id": "journal_ressenti",
+          "kind": "scale",
+          "group": "Comment je me sens",
+          "options": ["Pas à l'aise", "Moyen", "À l'aise", "Très à l'aise"],
+          "questions": [
+            {
+              "id": "ressenti_unite",
+              "text": "Comment te sens-tu après cette unité ?"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

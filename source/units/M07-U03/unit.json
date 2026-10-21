@@ -1,0 +1,427 @@
+{
+  "schemaVersion": 1,
+  "id": "M07-U03",
+  "moduleId": "M07",
+  "number": 3,
+  "title": "Mon argent de départ et d'où il vient",
+  "status": "published",
+  "estimatedMinutes": 45,
+  "objectives": [
+    "Distinguer l'argent pour t'installer et l'argent pour tourner en attendant les ventes.",
+    "Calculer ton argent de départ, puis chercher une version allégée.",
+    "Trouver d'où viendra cet argent et ce que tu devras rembourser.",
+    "Savoir quelles questions poser avant d'accepter un prêt."
+  ],
+  "blocks": [
+    {
+      "id": "deux_sortes_intro",
+      "kind": "text",
+      "title": "Deux sortes d'argent",
+      "body": "Pour démarrer, il te faut de l'argent pour deux choses différentes. La première, tout le monde y pense. La seconde, on l'oublie presque toujours."
+    },
+    {
+      "id": "deux_sortes",
+      "kind": "tabs",
+      "title": "L'argent de départ",
+      "items": [
+        {
+          "title": "Pour t'installer",
+          "body": "Ce sont les achats du départ : le matériel, l'aménagement de ton coin de travail, la caution du local, les frais de déclaration, le transport de tes affaires. Tu ne les paies qu'une fois."
+        },
+        {
+          "title": "Pour tourner",
+          "body": "C'est l'argent qui te permet de vivre et de travailler avant que les ventes rentrent. Le premier mois, tu achètes du cuir, tu fabriques, mais tu vends peu : personne ne te connaît encore. Il te faut du stock, de quoi payer tes frais et de quoi manger, pendant deux ou trois mois."
+        }
+      ]
+    },
+    {
+      "id": "atelier_vide",
+      "kind": "statement",
+      "label": "LA MACHINE EST LÀ, L'ATELIER EST VIDE",
+      "body": "Un jeune réunit juste assez pour acheter sa machine. Deux semaines plus tard, il n'a plus un franc pour acheter du cuir. C'est là que beaucoup de projets meurent."
+    },
+    {
+      "id": "combien_de_mois",
+      "kind": "text",
+      "title": "Combien de mois faut-il prévoir ?",
+      "body": "Compte le temps qu'il te faudra pour que tes ventes paient tes dépenses : rarement moins de deux mois, souvent trois. Sois honnête. Prévoir trop court est l'erreur la plus fréquente, et la plus grave."
+    },
+    {
+      "id": "version_complete",
+      "kind": "process",
+      "title": "L'exemple de Ramatou : la version complète",
+      "items": [
+        {
+          "title": "Pour s'installer",
+          "body": "Machine à coudre le cuir d'occasion : 180 000 FCFA. Table de coupe et outils : 40 000 FCFA. Aménagement du coin de travail : 15 000 FCFA. Frais de déclaration : 15 000 FCFA. 180 000 + 40 000 + 15 000 + 15 000 = 250 000 FCFA."
+        },
+        {
+          "title": "Pour tourner pendant 3 mois",
+          "body": "Stock de matières de départ : 45 000 FCFA. Frais de l'atelier pour 3 mois : 45 000 FCFA. De quoi vivre pendant 3 mois : 180 000 FCFA. 45 000 + 45 000 + 180 000 = 270 000 FCFA."
+        },
+        {
+          "title": "D'où viennent les 45 000 FCFA de frais",
+          "body": "Chaque mois, ses frais de l'atelier, sans ce qu'elle veut gagner, sont de 18 800 FCFA. Ici, elle ne compte pas les 3 800 FCFA mis de côté pour le matériel : 18 800 − 3 800 = 15 000 FCFA par mois. Pour 3 mois : 15 000 × 3 = 45 000 FCFA."
+        },
+        {
+          "title": "Le total",
+          "body": "250 000 + 270 000 = 520 000 FCFA."
+        }
+      ]
+    },
+    {
+      "id": "version_allegee",
+      "kind": "process",
+      "title": "L'exemple de Ramatou : la version allégée",
+      "items": [
+        {
+          "title": "Pour s'installer",
+          "body": "Pas de machine : elle coudra à la main au début. Table de coupe et outils : 40 000 FCFA. Aménagement minimal : 5 000 FCFA. Frais de déclaration : 15 000 FCFA. 40 000 + 5 000 + 15 000 = 60 000 FCFA."
+        },
+        {
+          "title": "Pour tourner pendant 2 mois",
+          "body": "Petit stock de matières : 20 000 FCFA. Frais de l'atelier pour 2 mois : 20 000 FCFA. De quoi vivre pendant 2 mois : 60 000 FCFA. 20 000 + 20 000 + 60 000 = 100 000 FCFA."
+        },
+        {
+          "title": "Le total",
+          "body": "60 000 + 100 000 = 160 000 FCFA."
+        }
+      ]
+    },
+    {
+      "id": "choix_ramatou",
+      "kind": "text",
+      "title": "Le choix de Ramatou",
+      "body": "Ramatou n'avait pas 520 000 FCFA, et personne n'allait les lui prêter. Elle a choisi la version allégée : coudre à la main, un aménagement minimal, un petit stock, et fabriquer seulement sur commande. Elle a réuni 160 000 FCFA : 100 000 FCFA d'économies et 60 000 FCFA prêtés par sa famille. Sa famille ne lui demande pas de remboursement chaque mois. Six mois plus tard, elle a acheté sa machine avec ses bénéfices."
+    },
+    {
+      "id": "petit_projet",
+      "kind": "statement",
+      "label": "LA BONNE FAÇON DE FAIRE",
+      "body": "Un projet à 160 000 FCFA qui démarre vaut bien mieux qu'un projet à 520 000 FCFA qui reste dans un cahier."
+    },
+    {
+      "id": "mon_installation_consigne",
+      "kind": "text",
+      "title": "À toi de calculer",
+      "body": "Écris chaque montant, puis ton calcul. Si une ligne ne te concerne pas, écris 0. Pour l'argent pour tourner, compte tes frais de l'atelier sans ce que tu veux gagner et sans la somme mise de côté pour le matériel. Ce que tu veux gagner va dans la ligne « de quoi vivre »."
+    },
+    {
+      "id": "argent_installation",
+      "kind": "exercise",
+      "title": "Mon argent pour m'installer",
+      "items": [
+        {
+          "id": "depart_materiel",
+          "kind": "textarea",
+          "prompt": "Le matériel à acheter, vu dans l'unité « Mon local et mon matériel ». Écris le montant."
+        },
+        {
+          "id": "depart_amenagement",
+          "kind": "textarea",
+          "prompt": "L'aménagement de ton lieu de travail. Écris le montant."
+        },
+        {
+          "id": "depart_caution_local",
+          "kind": "textarea",
+          "prompt": "La caution du local, si tu en loues un. Écris le montant."
+        },
+        {
+          "id": "depart_frais_declaration",
+          "kind": "textarea",
+          "prompt": "Les frais de déclaration, vus dans l'unité « Déclarer mon activité ». Écris le montant."
+        },
+        {
+          "id": "depart_transport_installation",
+          "kind": "textarea",
+          "prompt": "Le transport et l'installation. Écris le montant."
+        },
+        {
+          "id": "depart_autre_installation",
+          "kind": "textarea",
+          "prompt": "Autre chose pour t'installer ? Écris ce que c'est et le montant."
+        },
+        {
+          "id": "depart_sous_total_installation",
+          "kind": "textarea",
+          "prompt": "Le sous-total pour t'installer. Écris ton calcul : additionne toutes les lignes."
+        }
+      ]
+    },
+    {
+      "id": "argent_tourner",
+      "kind": "exercise",
+      "title": "Mon argent pour tourner, et mon total",
+      "items": [
+        {
+          "id": "depart_stock_matieres",
+          "kind": "textarea",
+          "prompt": "Le stock de matières de départ, vu dans l'unité « Mes fournisseurs et mes matières ». Écris le montant."
+        },
+        {
+          "id": "depart_frais_atelier",
+          "kind": "textarea",
+          "prompt": "Les frais de l'atelier pendant les premiers mois. Écris ton calcul : frais par mois × nombre de mois."
+        },
+        {
+          "id": "depart_de_quoi_vivre",
+          "kind": "textarea",
+          "prompt": "De quoi vivre pendant les premiers mois. Écris ton calcul : ce qu'il te faut par mois × nombre de mois."
+        },
+        {
+          "id": "depart_sous_total_tourner",
+          "kind": "textarea",
+          "prompt": "Le sous-total pour tourner. Écris ton calcul : additionne les trois lignes."
+        },
+        {
+          "id": "depart_total",
+          "kind": "textarea",
+          "prompt": "Le total de ton argent de départ. Écris ton calcul : sous-total pour t'installer + sous-total pour tourner."
+        }
+      ]
+    },
+    {
+      "id": "reduire_besoin",
+      "kind": "list",
+      "title": "Comment réduire ton argent de départ",
+      "items": [
+        {
+          "body": "Reporter les gros achats. Demande-toi : « Puis-je travailler sans cette machine, même plus lentement ? »"
+        },
+        {
+          "body": "Acheter d'occasion, en faisant examiner le matériel par quelqu'un du métier."
+        },
+        {
+          "body": "Louer ou partager une machine plutôt que l'acheter."
+        },
+        {
+          "body": "Commencer chez toi au lieu de louer un local : pas de loyer, pas de caution."
+        },
+        {
+          "body": "Fabriquer sur commande, pour ne pas bloquer ton argent dans du stock qui ne se vend pas."
+        },
+        {
+          "body": "Acheter tes matières à plusieurs, avec d'autres artisans."
+        },
+        {
+          "body": "Garder une activité à côté les premiers mois. Il te faudra moins d'argent pour vivre."
+        }
+      ]
+    },
+    {
+      "id": "version_allegee_consigne",
+      "kind": "text",
+      "body": "Refais ton calcul en cherchant le montant le plus bas qui te permette quand même de démarrer. Sers-toi des idées ci-dessus."
+    },
+    {
+      "id": "ma_version_allegee",
+      "kind": "exercise",
+      "title": "Ma version allégée",
+      "items": [
+        {
+          "id": "allegee_installation",
+          "kind": "textarea",
+          "prompt": "Pour t'installer : écris le montant de la version complète, celui de la version allégée, et ce que tu as changé."
+        },
+        {
+          "id": "allegee_tourner",
+          "kind": "textarea",
+          "prompt": "Pour tourner : écris le montant de la version complète, celui de la version allégée, et ce que tu as changé."
+        },
+        {
+          "id": "allegee_total",
+          "kind": "textarea",
+          "prompt": "Le total de ta version allégée. Écris ton calcul."
+        },
+        {
+          "id": "allegee_choix",
+          "kind": "textarea",
+          "prompt": "Quelle version choisis-tu, et pourquoi ?"
+        }
+      ]
+    },
+    {
+      "id": "sources_argent",
+      "kind": "accordion",
+      "label": "D'où vient l'argent",
+      "intro": "Voici huit sources possibles. Touche chacune pour savoir ce qu'il faut savoir.",
+      "items": [
+        {
+          "title": "Ton épargne",
+          "body": "La meilleure : rien à rembourser, personne à convaincre. Commence à mettre de côté dès aujourd'hui, même de petites sommes."
+        },
+        {
+          "title": "Ta famille",
+          "body": "Souvent le premier appui. Mettez-vous d'accord clairement : est-ce un don ou un prêt ? À rembourser quand ? Une dispute d'argent dans une famille est très difficile à réparer."
+        },
+        {
+          "title": "Tes amis",
+          "body": "Même règle qu'avec la famille : écrivez ce qui est convenu, même sur une simple feuille."
+        },
+        {
+          "title": "Une institution de microfinance",
+          "body": "Elle prête aux petites activités. Elle demande une activité déclarée, parfois une garantie, et presque toujours des remboursements réguliers."
+        },
+        {
+          "title": "Une coopérative de crédit",
+          "body": "Souvent plus facile d'accès, surtout si tu es membre d'un groupement d'artisans."
+        },
+        {
+          "title": "Un programme d'appui",
+          "body": "Certains projets, concours de plan d'affaires ou programmes pour les jeunes accordent des subventions, c'est-à-dire de l'argent qu'on ne rembourse pas, ou du matériel. Renseigne-toi au CMCAN."
+        },
+        {
+          "title": "Ton fournisseur",
+          "body": "S'il te laisse du temps pour payer tes matières, c'est un crédit gratuit. Négocie-le."
+        },
+        {
+          "title": "Un associé",
+          "body": "Il apporte de l'argent, mais tu partages avec lui les décisions et les bénéfices."
+        }
+      ]
+    },
+    {
+      "id": "avant_pret",
+      "kind": "process",
+      "title": "Avant d'accepter un prêt : quatre questions",
+      "items": [
+        {
+          "title": "Combien vais-je rembourser en tout ?",
+          "body": "Pas seulement la somme prêtée : il faut ajouter les intérêts, c'est-à-dire le prix que tu paies pour emprunter. Un prêt de 100 000 FCFA peut se rembourser 115 000 FCFA, ou davantage."
+        },
+        {
+          "title": "Combien par mois, et pendant combien de temps ?",
+          "body": "C'est ce chiffre qui compte, parce qu'il tombera tous les mois, que tu vendes ou non."
+        },
+        {
+          "title": "Que se passe-t-il si je ne peux pas payer ?",
+          "body": "Que demande-t-on en garantie ? Qui d'autre est engagé avec moi ?"
+        },
+        {
+          "title": "Mon activité peut-elle vraiment rembourser ?",
+          "body": "Tu le calculeras dans l'unité « Est-ce que ça marche ? ». Si la réponse est non, n'emprunte pas. Un prêt ne sauve pas un projet qui ne gagne pas d'argent : il l'enfonce. Souviens-toi de Mamadou, dans l'unité « Qu'est-ce qu'une idée d'entreprise ? »."
+        }
+      ]
+    },
+    {
+      "id": "emprunter_pour_produire",
+      "kind": "statement",
+      "label": "UNE RÈGLE SIMPLE",
+      "body": "N'emprunte que pour ce qui te fera produire ou vendre davantage. Emprunter pour vivre, sans que ton activité progresse, c'est reculer."
+    },
+    {
+      "id": "sources_consigne",
+      "kind": "text",
+      "body": "Pour chaque source, écris le montant, puis s'il faut rembourser et à quelles conditions. Si tu n'utilises pas une source, écris 0."
+    },
+    {
+      "id": "mes_sources",
+      "kind": "exercise",
+      "title": "D'où viendra mon argent",
+      "items": [
+        {
+          "id": "source_epargne",
+          "kind": "textarea",
+          "prompt": "Ton épargne : écris le montant. Ici, rien à rembourser."
+        },
+        {
+          "id": "source_famille",
+          "kind": "textarea",
+          "prompt": "Ta famille : écris le montant. Est-ce un don ou un prêt ? Si c'est un prêt, quand et comment rembourseras-tu ?"
+        },
+        {
+          "id": "source_amis",
+          "kind": "textarea",
+          "prompt": "Tes amis : écris le montant, et ce qui est convenu pour le remboursement."
+        },
+        {
+          "id": "source_microfinance",
+          "kind": "textarea",
+          "prompt": "Une microfinance ou une coopérative : écris le montant, et les conditions de remboursement."
+        },
+        {
+          "id": "source_programme_appui",
+          "kind": "textarea",
+          "prompt": "Un programme d'appui : écris le montant ou le matériel, et les conditions."
+        },
+        {
+          "id": "source_autre",
+          "kind": "textarea",
+          "prompt": "Une autre source ? Écris laquelle, le montant, et s'il faut rembourser."
+        },
+        {
+          "id": "source_total",
+          "kind": "textarea",
+          "prompt": "Le total de tes sources. Écris ton calcul : additionne tous les montants."
+        },
+        {
+          "id": "source_couvre_besoin",
+          "kind": "textarea",
+          "prompt": "Ce total couvre-t-il ton argent de départ ? Écris les deux montants, puis oui ou non."
+        },
+        {
+          "id": "source_si_manque",
+          "kind": "textarea",
+          "prompt": "Si ce n'est pas assez : vas-tu réduire encore ton projet, ou chercher plus d'argent ? Comment ?"
+        },
+        {
+          "id": "remboursement_par_mois",
+          "kind": "textarea",
+          "prompt": "Combien devras-tu rembourser chaque mois, en tout ? Écris ton calcul. Tu en auras besoin dans l'unité « Est-ce que ça marche ? »."
+        }
+      ]
+    },
+    {
+      "id": "piece_dossier",
+      "kind": "text",
+      "title": "Pour ton dossier",
+      "body": "Recopie tes réponses sur papier et range-les dans ta chemise : c'est la pièce « Mon argent de départ ». Garde bien le montant à rembourser chaque mois : il servira dans l'unité suivante."
+    },
+    {
+      "id": "a_retenir",
+      "kind": "takeaway",
+      "title": "À retenir",
+      "body": "Il faut de l'argent pour t'installer, et de l'argent pour tourner pendant deux ou trois mois, en attendant les ventes. Un petit projet qui démarre vaut mieux qu'un grand projet qui reste dans un cahier. Avec la famille comme avec les amis, écrivez ce qui est convenu. Avant un prêt, demande combien en tout, combien par mois, quelle garantie, et si ton activité peut rembourser."
+    },
+    {
+      "id": "journal_formation",
+      "kind": "exercise",
+      "title": "Mon journal de formation",
+      "label": "Prends quelques minutes pour garder une trace de ce que tu as appris.",
+      "items": [
+        {
+          "id": "journal_ce_que_je_retiens",
+          "kind": "textarea",
+          "prompt": "Qu'est-ce que tu retiens le plus sur l'argent de départ ? Pourquoi ?"
+        },
+        {
+          "id": "journal_reussi",
+          "kind": "textarea",
+          "prompt": "Qu'est-ce que tu as bien réussi ou bien compris ?"
+        },
+        {
+          "id": "journal_difficile",
+          "kind": "textarea",
+          "prompt": "Qu'est-ce qui a été difficile pour toi ?"
+        },
+        {
+          "id": "journal_mon_prochain_pas",
+          "kind": "textarea",
+          "prompt": "Quel petit pas vas-tu faire cette semaine ? Par exemple : mettre de côté une petite somme, ou te renseigner au CMCAN sur un programme d'appui."
+        },
+        {
+          "id": "journal_ressenti",
+          "kind": "scale",
+          "group": "Comment je me sens",
+          "options": ["Pas à l'aise", "Moyen", "À l'aise", "Très à l'aise"],
+          "questions": [
+            {
+              "id": "ressenti_unite",
+              "text": "Comment te sens-tu après cette unité ?"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

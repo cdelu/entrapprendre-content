@@ -1,0 +1,300 @@
+{
+  "schemaVersion": 1,
+  "id": "M06-U01",
+  "moduleId": "M06",
+  "number": 1,
+  "title": "Qu'est-ce qu'un plan d'affaires ?",
+  "status": "published",
+  "estimatedMinutes": 25,
+  "objectives": [
+    "Comprendre à quoi sert un plan d'affaires.",
+    "Connaître les trois études et le résumé qui le composent.",
+    "Savoir où chercher les informations dont tu as besoin.",
+    "Préparer ton dossier de projet et ton plan de recherche."
+  ],
+  "blocks": [
+    {
+      "id": "introduction_module",
+      "kind": "text",
+      "title": "Mon marché et mon organisation",
+      "body": "Dans ce module, tu poses les fondations de ton entreprise. Tu vas connaître tes clients, repérer tes concurrents et trouver ton avantage sur eux. Puis tu vas organiser ton activité : ton produit, ton lieu de travail, ton matériel, tes fournisseurs, ta façon de travailler, et les démarches pour déclarer ton activité."
+    },
+    {
+      "id": "but_module",
+      "kind": "statement",
+      "label": "LE BUT DU MODULE",
+      "body": "À la fin, tu sauras exactement comment ton entreprise va fonctionner, avant même d'avoir dépensé un franc."
+    },
+    {
+      "id": "plan_affaires_definition",
+      "kind": "text",
+      "title": "Un plan d'affaires, c'est quoi ?",
+      "body": "Un plan d'affaires est un document qui décrit ton projet d'entreprise. Il dit ce que tu vas vendre, à qui, comment, avec quel argent, et ce que tu espères gagner. Il sert à trois choses."
+    },
+    {
+      "id": "trois_usages",
+      "kind": "process",
+      "title": "À quoi sert ton plan d'affaires",
+      "items": [
+        {
+          "title": "Décider",
+          "body": "C'est le plus important. En remplissant ton plan, tu découvres des choses que tu ignorais : ton prix est trop bas, il te faut plus d'argent que prévu, ou au contraire ton idée tient très bien la route. Mieux vaut le découvrir sur le papier que trois mois plus tard, avec un prêt à rembourser."
+        },
+        {
+          "title": "Organiser",
+          "body": "Le plan te dit de quoi tu as besoin, dans quel ordre et à quel moment. Sans plan, on achète ses matières avant d'avoir cherché les clients, comme Mamadou."
+        },
+        {
+          "title": "Convaincre",
+          "body": "Quand tu demandes de l'aide à ta famille, un délai à un fournisseur, un prêt à une microfinance ou une place à un concours, ce document parle pour toi. Un projet écrit inspire confiance. Un projet raconté de mémoire, beaucoup moins."
+        }
+      ]
+    },
+    {
+      "id": "premier_lecteur",
+      "kind": "statement",
+      "label": "RETIENS BIEN",
+      "body": "Le premier lecteur de ton plan d'affaires, c'est toi. Beaucoup de gens croient que c'est un papier pour la banque. Non : c'est d'abord ta façon de vérifier toi-même que ton projet tient debout."
+    },
+    {
+      "id": "contenu_plan",
+      "kind": "tabs",
+      "title": "Ce que contient ton plan d'affaires · trois études et un résumé",
+      "items": [
+        {
+          "title": "Étude de marché",
+          "body": "Elle répond à une question : y a-t-il des clients ? Tu y décris tes clients, tes concurrents, ton produit, et où et comment tu vends."
+        },
+        {
+          "title": "Étude technique",
+          "body": "Elle répond à une question : suis-je capable de produire ? Tu y décris ton local et ton matériel, tes fournisseurs, ton organisation, et la déclaration de ton activité."
+        },
+        {
+          "title": "Étude financière",
+          "body": "Elle répond à une question : est-ce que j'y gagne de l'argent ? Tu y calcules combien te coûte un article, à quel prix tu vends, ton argent de départ, et si ton activité marche."
+        },
+        {
+          "title": "Le résumé",
+          "body": "Tu l'écris en dernier, quand tu connais toutes les réponses, mais tu le places au début. C'est la première page que lira une microfinance, et souvent la seule si elle est mal écrite. Ta fiche d'idée d'entreprise en est déjà le brouillon."
+        }
+      ]
+    },
+    {
+      "id": "etude_qui_dit_non",
+      "kind": "text",
+      "title": "Si une étude répond non",
+      "body": "Si l'une des trois études répond non, il faut revoir le projet. Ce n'est pas un échec : c'est justement à ça qu'elles servent."
+    },
+    {
+      "id": "construire_pas_a_pas",
+      "kind": "text",
+      "title": "Ton plan, partie par partie",
+      "body": "Tu ne vas pas écrire ton plan d'un seul coup. Chaque unité de ce module te fait remplir une partie. À la fin, tu rassembleras le tout."
+    },
+    {
+      "id": "chemise_projet",
+      "kind": "text",
+      "title": "Ta chemise de projet",
+      "body": "Dès aujourd'hui, prends une chemise ou un cahier réservé à ton projet. Ranges-y chaque fiche au fur et à mesure. Ta fiche d'idée d'entreprise est la pièce numéro un. Évite les feuilles volantes : après tant d'heures de travail, une feuille perdue, c'est un exercice à refaire."
+    },
+    {
+      "id": "recopier_sur_papier",
+      "kind": "text",
+      "title": "Du téléphone au papier",
+      "body": "Ce que tu écris dans l'application ne va pas tout seul dans ta chemise. Après chaque unité, recopie tes réponses sur papier et range-les dans ton dossier."
+    },
+    {
+      "id": "ou_trouver_informations",
+      "kind": "accordion",
+      "label": "Où trouver les informations",
+      "intro": "Un plan d'affaires ne s'écrit pas de tête. La plupart des réponses se cherchent auprès de quelqu'un. Touche chaque ligne pour voir où chercher.",
+      "items": [
+        {
+          "title": "Le prix des matières premières",
+          "body": "Chez les tanneurs, chez les fournisseurs et au marché."
+        },
+        {
+          "title": "Les prix pratiqués pour tes produits",
+          "body": "Dans les boutiques, sur le marché et chez d'autres artisans."
+        },
+        {
+          "title": "Ce que veulent les clients",
+          "body": "Auprès des clients eux-mêmes."
+        },
+        {
+          "title": "Le prix d'un local ou d'une place au marché",
+          "body": "Auprès des propriétaires et des vendeurs déjà installés."
+        },
+        {
+          "title": "Les démarches pour déclarer ton activité",
+          "body": "Au CFE de la Chambre de commerce, à la mairie, aux services des impôts et au CMCAN."
+        },
+        {
+          "title": "Les conditions d'un prêt",
+          "body": "Auprès des institutions de microfinance et des coopératives."
+        },
+        {
+          "title": "Les appuis et les formations possibles",
+          "body": "Au CMCAN, auprès des associations d'artisans et des projets."
+        }
+      ]
+    },
+    {
+      "id": "garder_contacts",
+      "kind": "text",
+      "title": "Tes contacts servent encore",
+      "body": "Tu as déjà commencé ce travail avec ton enquête de terrain, dans l'unité « Choisir la bonne idée ». Garde les contacts que tu avais notés : tu vas les rappeler."
+    },
+    {
+      "id": "plan_recherche_consigne",
+      "kind": "text",
+      "title": "Ton plan de recherche",
+      "body": "Pour ton projet, qu'est-ce qu'il te reste à découvrir ? Pour chaque chose, note où ou auprès de qui tu iras chercher, et quand. Par exemple : le prix d'une peau de chèvre, chez un tanneur, samedi matin."
+    },
+    {
+      "id": "plan_recherche",
+      "kind": "exercise",
+      "title": "Mon plan de recherche",
+      "items": [
+        {
+          "id": "recherche_1",
+          "kind": "textarea",
+          "prompt": "Première chose à découvrir. Écris ce que tu dois savoir, où ou auprès de qui tu iras chercher, et quand."
+        },
+        {
+          "id": "recherche_2",
+          "kind": "textarea",
+          "prompt": "Deuxième chose à découvrir. Écris ce que tu dois savoir, où ou auprès de qui tu iras chercher, et quand."
+        },
+        {
+          "id": "recherche_3",
+          "kind": "textarea",
+          "prompt": "Troisième chose à découvrir. Écris ce que tu dois savoir, où ou auprès de qui tu iras chercher, et quand."
+        },
+        {
+          "id": "recherche_autres",
+          "kind": "textarea",
+          "prompt": "As-tu d'autres choses à découvrir ? Écris-les ici, avec où et quand tu iras chercher."
+        }
+      ]
+    },
+    {
+      "id": "pieces_dossier",
+      "kind": "list",
+      "title": "Les pièces de ton dossier",
+      "items": [
+        {
+          "body": "Ma fiche d'idée d'entreprise. Tu l'as déjà faite dans l'unité « Mon idée d'entreprise en clair »."
+        },
+        {
+          "body": "Mes clients et leurs besoins."
+        },
+        {
+          "body": "Mes concurrents et mon avantage."
+        },
+        {
+          "body": "Mon produit ou mon service."
+        },
+        {
+          "body": "Où et comment je vends."
+        },
+        {
+          "body": "Mon local et mon matériel."
+        },
+        {
+          "body": "Mes fournisseurs et mes matières."
+        },
+        {
+          "body": "Mon organisation du travail."
+        },
+        {
+          "body": "Déclarer mon activité."
+        },
+        {
+          "body": "Ce que me coûte un article."
+        },
+        {
+          "body": "Mon prix de vente."
+        },
+        {
+          "body": "Mon argent de départ."
+        },
+        {
+          "body": "Est-ce que ça marche ?"
+        },
+        {
+          "body": "Mon résumé."
+        }
+      ]
+    },
+    {
+      "id": "dossier_consigne",
+      "kind": "text",
+      "title": "Prépare ta chemise",
+      "body": "Écris cette liste sur ta chemise ou sur la première page de ton cahier. Chaque fois que tu ranges une pièce, coche-la sur le papier. Pour l'instant, une seule pièce est prête : ta fiche d'idée d'entreprise."
+    },
+    {
+      "id": "mon_dossier",
+      "kind": "exercise",
+      "title": "Mon dossier de projet",
+      "items": [
+        {
+          "id": "dossier_support",
+          "kind": "textarea",
+          "prompt": "Qu'as-tu choisi pour ranger ton projet : une chemise ou un cahier ? As-tu écrit dessus la liste des pièces ?"
+        },
+        {
+          "id": "dossier_fiche_idee",
+          "kind": "textarea",
+          "prompt": "Ta fiche d'idée d'entreprise est la pièce numéro un. Est-elle rangée dans ton dossier ? Y a-t-il quelque chose à corriger dedans ?"
+        }
+      ]
+    },
+    {
+      "id": "a_retenir",
+      "kind": "takeaway",
+      "title": "À retenir",
+      "body": "Un plan d'affaires sert d'abord à décider, ensuite à organiser, enfin à convaincre. Son premier lecteur, c'est toi. Il a trois études, marché, technique et financière, et un résumé écrit en dernier. On ne le remplit pas de tête : chaque chiffre se cherche auprès de quelqu'un. Garde tout dans une seule chemise."
+    },
+    {
+      "id": "journal_formation",
+      "kind": "exercise",
+      "title": "Mon journal de formation",
+      "label": "Prends quelques minutes pour garder une trace de ce que tu as appris.",
+      "items": [
+        {
+          "id": "journal_ce_que_je_retiens",
+          "kind": "textarea",
+          "prompt": "Qu'est-ce que tu retiens sur le plan d'affaires et ses trois études ?"
+        },
+        {
+          "id": "journal_reussi",
+          "kind": "textarea",
+          "prompt": "Qu'est-ce que tu as bien réussi ou bien compris ?"
+        },
+        {
+          "id": "journal_difficile",
+          "kind": "textarea",
+          "prompt": "Qu'est-ce qui a été difficile pour toi ?"
+        },
+        {
+          "id": "journal_mon_prochain_pas",
+          "kind": "textarea",
+          "prompt": "Quelle information de ton plan de recherche vas-tu aller chercher cette semaine, et auprès de qui ?"
+        },
+        {
+          "id": "journal_ressenti",
+          "kind": "scale",
+          "group": "Comment je me sens",
+          "options": ["Pas à l'aise", "Moyen", "À l'aise", "Très à l'aise"],
+          "questions": [
+            {
+              "id": "ressenti_unite",
+              "text": "Comment te sens-tu après cette unité ?"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

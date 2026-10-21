@@ -1,0 +1,201 @@
+{
+  "schemaVersion": 1,
+  "id": "M04-U04",
+  "moduleId": "M04",
+  "number": 4,
+  "title": "Coopérer et travailler en équipe",
+  "status": "published",
+  "estimatedMinutes": 30,
+  "objectives": [
+    "Comprendre pourquoi une équipe avance mieux quand chacun aide les autres.",
+    "Tirer les leçons du jeu de l'atelier en chaîne.",
+    "Repérer ce que tu peux apporter à ton équipe et oser demander de l'aide."
+  ],
+  "blocks": [
+    {
+      "id": "force_equipe",
+      "kind": "text",
+      "title": "La force de l'équipe",
+      "body": "Dans une équipe, chacun fait bien son propre travail. Mais chacun doit aussi être prêt à donner et à recevoir de l'aide, pour atteindre le but commun. Un bon équipier accepte les idées, les conseils et même les critiques des autres. Et il aide en retour : il partage une idée, donne un conseil ou un coup de main."
+    },
+    {
+      "id": "sans_entraide",
+      "kind": "text",
+      "body": "Si personne ne veut aider les autres, l'équipe a du mal à atteindre son but, et le travail de chacun devient plus difficile. Dans une entreprise, personne ne doit avoir peur de demander de l'aide."
+    },
+    {
+      "id": "attelage",
+      "kind": "text",
+      "title": "Comme un attelage",
+      "body": "Une équipe, c'est un peu comme des animaux attelés à une charrette. Si l'un tire moins, les autres doivent tirer plus fort, et la charrette avance de travers. Quand quelqu'un a une difficulté, les autres l'aident pour que le groupe continue d'avancer. Chacun doit y mettre de l'énergie et de la bonne volonté."
+    },
+    {
+      "id": "atelier_en_chaine",
+      "kind": "text",
+      "title": "En classe : l'atelier en chaîne",
+      "body": "En classe, tu joues à l'atelier en chaîne. Chaque groupe de cinq est un petit atelier. Il doit fabriquer 12 enveloppes en papier en 10 minutes. Une enveloppe est acceptée si elle est bien mesurée, découpée droit, pliée proprement et collée des deux côtés, assez solide pour qu'on glisse une feuille dedans."
+    },
+    {
+      "id": "postes",
+      "kind": "list",
+      "title": "Les cinq postes de l'atelier",
+      "items": [
+        {
+          "body": "La personne qui mesure et trace."
+        },
+        {
+          "body": "La personne qui découpe."
+        },
+        {
+          "body": "La personne qui plie et colle."
+        },
+        {
+          "body": "La personne qui contrôle la qualité."
+        },
+        {
+          "body": "La personne qui compte et empile les enveloppes finies."
+        }
+      ]
+    },
+    {
+      "id": "deux_tours",
+      "kind": "process",
+      "title": "Le jeu se joue en deux tours",
+      "items": [
+        {
+          "title": "Premier tour : chacun à son poste",
+          "body": "Règle stricte : tu fais seulement ton propre travail. Tu n'aides personne et personne ne t'aide. Au bout de 10 minutes, on compte les enveloppes acceptées."
+        },
+        {
+          "title": "Deuxième tour : on s'entraide",
+          "body": "Même travail, même durée. Mais cette fois, vous pouvez vous parler, vous aider et vous réorganiser comme vous voulez. Au bout de 10 minutes, on compte à nouveau."
+        },
+        {
+          "title": "On compare",
+          "body": "Le groupe compare les résultats des deux tours et discute de ce qui a changé."
+        }
+      ]
+    },
+    {
+      "id": "reflexion_consigne",
+      "kind": "text",
+      "body": "Après avoir joué en classe, réponds aux questions suivantes pour toi-même. Si tu n'as pas encore joué, reviens ici après le jeu."
+    },
+    {
+      "id": "lecons_atelier",
+      "kind": "exercise",
+      "title": "Ce que le jeu m'a appris",
+      "items": [
+        {
+          "id": "nombre_enveloppes",
+          "kind": "textarea",
+          "prompt": "Écris combien d'enveloppes ton groupe a fait accepter au premier tour, puis au deuxième tour. Combien en avez-vous fabriqué de plus au deuxième tour ?"
+        },
+        {
+          "id": "deborde_attendait",
+          "kind": "textarea",
+          "prompt": "Au premier tour, qui était débordé ? Qui attendait sans rien faire ? Et toi, comment te sentais-tu à ton poste ?"
+        },
+        {
+          "id": "change_deuxieme_tour",
+          "kind": "textarea",
+          "prompt": "Qu'est-ce que vous avez changé au deuxième tour ? Qui est allé aider qui ?"
+        },
+        {
+          "id": "une_personne_bloque",
+          "kind": "textarea",
+          "prompt": "Que se passe-t-il pour tout l'atelier quand une seule personne n'arrive pas à suivre ?"
+        },
+        {
+          "id": "poste_surcharge",
+          "kind": "textarea",
+          "prompt": "Dans un vrai atelier de cuir, quel poste risque d'être le plus surchargé ? Pourquoi ?"
+        },
+        {
+          "id": "une_seule_machine",
+          "kind": "textarea",
+          "prompt": "Pour aller plus loin : dans beaucoup d'ateliers, tout le monde partage une seule machine à coudre ou une seule presse. S'entraider ne suffit plus, il faut aussi s'organiser autour de la machine. Comment ferais-tu ?"
+        }
+      ]
+    },
+    {
+      "id": "mon_equipe_consigne",
+      "kind": "text",
+      "title": "Et dans ton équipe ?",
+      "body": "Repense à un travail que tu as fait en groupe, ici au centre ou en stage. Puis réponds aux questions."
+    },
+    {
+      "id": "mon_equipe",
+      "kind": "exercise",
+      "title": "L'entraide dans mon équipe",
+      "items": [
+        {
+          "id": "besoin_aide",
+          "kind": "textarea",
+          "prompt": "À quel moment une personne de l'équipe a-t-elle eu besoin d'aide ? Qu'est-ce qui bloquait ? Comment l'a-t-on aidée, ou pas ?"
+        },
+        {
+          "id": "mon_point_fort",
+          "kind": "textarea",
+          "prompt": "Quelle aide, toi, peux-tu apporter aux autres ? Quel est ton point fort ?"
+        },
+        {
+          "id": "freins_demander",
+          "kind": "textarea",
+          "prompt": "Qu'est-ce qui empêche parfois de demander de l'aide ? Par exemple : la honte, la peur de déranger, la peur de paraître incapable."
+        },
+        {
+          "id": "regle_entraide",
+          "kind": "textarea",
+          "prompt": "Trouve une règle simple que ton groupe pourrait adopter pour mieux s'entraider la prochaine fois."
+        }
+      ]
+    },
+    {
+      "id": "a_retenir",
+      "kind": "takeaway",
+      "title": "À retenir",
+      "body": "Une équipe avance quand chacun fait bien son travail et accepte de donner et de recevoir de l'aide. Si une seule personne n'arrive pas à suivre, tout l'atelier ralentit. N'aie pas peur de demander de l'aide, et propose la tienne."
+    },
+    {
+      "id": "journal_formation",
+      "kind": "exercise",
+      "title": "Mon journal de formation",
+      "label": "Prends quelques minutes pour garder une trace de ce que tu as appris.",
+      "items": [
+        {
+          "id": "journal_ce_que_je_retiens",
+          "kind": "textarea",
+          "prompt": "Qu'est-ce que tu retiens sur l'entraide dans une équipe ?"
+        },
+        {
+          "id": "journal_reussi",
+          "kind": "textarea",
+          "prompt": "Qu'est-ce que tu as bien réussi ou bien compris ?"
+        },
+        {
+          "id": "journal_difficile",
+          "kind": "textarea",
+          "prompt": "Qu'est-ce qui a été difficile pour toi ?"
+        },
+        {
+          "id": "journal_mon_prochain_pas",
+          "kind": "textarea",
+          "prompt": "Cette semaine, à qui vas-tu proposer ton aide, ou à qui vas-tu oser demander de l'aide ?"
+        },
+        {
+          "id": "journal_ressenti",
+          "kind": "scale",
+          "group": "Comment je me sens",
+          "options": ["Pas à l'aise", "Moyen", "À l'aise", "Très à l'aise"],
+          "questions": [
+            {
+              "id": "ressenti_unite",
+              "text": "Comment te sens-tu après cette unité ?"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

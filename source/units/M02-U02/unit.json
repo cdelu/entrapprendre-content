@@ -5,79 +5,178 @@
   "number": 2,
   "title": "Le travail indépendant et l'entrepreneuriat",
   "status": "published",
-  "estimatedMinutes": 25,
+  "estimatedMinutes": 30,
   "objectives": [
-    "Distinguer le travail indépendant de l'entrepreneuriat.",
-    "Nommer les mots qui reviennent quand on parle de son activité."
+    "Réfléchir aux métiers que tu aimerais exercer, comme salarié ou à ton compte.",
+    "Comprendre comment ton métier change ta façon de vivre.",
+    "Connaître les avantages et les difficultés du travail à ton compte."
   ],
   "blocks": [
     {
-      "id": "deux_chemins",
-      "kind": "tabs",
-      "title": "Deux façons de travailler pour soi",
-      "items": [
-        {
-          "title": "Travailleur indépendant",
-          "body": "Tu vends ton propre travail. Tu fixes tes prix et tu choisis tes clients. Ton atelier tourne surtout grâce à tes mains."
-        },
-        {
-          "title": "Entrepreneur",
-          "body": "Tu fais grandir une activité au-delà de tes mains. Tu confies du travail à d'autres, tu achètes de la matière à l'avance, tu prends des risques calculés."
-        },
-        {
-          "title": "Les deux à la fois",
-          "body": "Beaucoup d'artisans commencent seuls, puis prennent un apprenti. On passe d'un chemin à l'autre petit à petit."
-        }
-      ]
+      "id": "introduction",
+      "kind": "text",
+      "title": "Salarié ou à ton compte ?",
+      "body": "Après ta formation, tu peux travailler de deux façons. Comme salarié, tu es employé par quelqu'un qui te verse un salaire. Comme indépendant, tu travailles à ton compte : tu es ton propre patron. Dans cette unité, tu vas réfléchir à ce qui te convient le mieux."
     },
     {
-      "id": "mots_du_metier",
-      "kind": "flashcards",
-      "title": "Les mots du métier · touche la carte pour voir la réponse",
-      "items": [
-        {
-          "title": "Un client",
-          "body": "La personne qui achète ton travail et qui te paie."
-        },
-        {
-          "title": "Un fournisseur",
-          "body": "La personne qui te vend le cuir, le fil ou les outils."
-        },
-        {
-          "title": "Une charge",
-          "body": "Ce que tu dépenses pour travailler : matière, loyer, transport."
-        },
-        {
-          "title": "Une marge",
-          "body": "Ce qu'il te reste quand tu as payé toutes tes charges."
-        }
-      ]
-    },
-    {
-      "id": "ton_chemin",
+      "id": "metiers_apres_formation",
       "kind": "exercise",
-      "title": "Et toi ?",
+      "title": "Quel travail aimerais-tu faire ?",
       "items": [
         {
-          "id": "chemin_actuel",
+          "id": "metier_1",
           "kind": "textarea",
-          "prompt": "Aujourd'hui, tu te vois plutôt sur quel chemin ? Explique en quelques mots."
+          "prompt": "Écris un premier métier que tu aimerais exercer après ta formation. Préfères-tu le faire comme salarié ou à ton compte ?"
         },
         {
-          "id": "envie_grandir",
-          "kind": "scale",
-          "group": "Faire grandir ton activité",
-          "options": ["Oui", "Pas encore"],
-          "questions": [
-            {
-              "id": "confier_travail",
-              "text": "As-tu déjà confié une partie de ton travail à quelqu'un d'autre ?"
-            },
-            {
-              "id": "acheter_avance",
-              "text": "T'arrive-t-il d'acheter de la matière avant d'avoir une commande ?"
-            }
-          ]
+          "id": "metier_2",
+          "kind": "textarea",
+          "prompt": "Écris un deuxième métier que tu aimerais exercer. Préfères-tu le faire comme salarié ou à ton compte ?"
+        },
+        {
+          "id": "metier_3",
+          "kind": "textarea",
+          "prompt": "Écris un troisième métier que tu aimerais exercer. Préfères-tu le faire comme salarié ou à ton compte ?"
+        }
+      ]
+    },
+    {
+      "id": "metier_et_vie",
+      "kind": "text",
+      "title": "Ton métier change ta vie",
+      "body": "Ce qui compte le plus pour toi, et ce qui t'intéresse, peut t'aider à choisir ton métier. Car le travail que tu choisis a des effets sur toute ta vie : l'endroit où tu habites, ce que tu gagnes, tes horaires, tes amis, ta famille et même ton caractère."
+    },
+    {
+      "id": "effets_metier",
+      "kind": "accordion",
+      "label": "Six effets du métier sur ta vie",
+      "intro": "Touche chaque effet pour le découvrir.",
+      "items": [
+        {
+          "title": "L'endroit où tu vis",
+          "body": "Certains métiers t'obligent à habiter à un endroit précis. Un maraîcher doit vivre près de ses champs. Un artisan du cuir a intérêt à s'installer là où passent les clients, près d'un marché ou en ville."
+        },
+        {
+          "title": "Ton niveau de vie",
+          "body": "L'argent que tu gagnes change ta façon de vivre. À toi de décider quelle place l'argent prend dans tes priorités."
+        },
+        {
+          "title": "Ton rythme de vie",
+          "body": "Aïcha est infirmière. Elle travaille souvent la nuit et dort le jour. C'est dur, mais elle gagne mieux sa vie et elle aime aider les gens. Salissou est commerçant. Il travaille plus de 50 heures par semaine et voyage beaucoup. Ça lui plaît, car il aime découvrir de nouveaux endroits."
+        },
+        {
+          "title": "Tes amitiés",
+          "body": "Beaucoup de tes collègues deviendront des amis. Mais tu peux aussi perdre le contact avec certains de tes amis d'aujourd'hui."
+        },
+        {
+          "title": "Ta vie de famille",
+          "body": "Salimata tient un restaurant. Elle se lève très tôt avec son mari pour acheter les produits et préparer le service. Leurs enfants prennent le bus seuls pour aller à l'école, car les parents ne peuvent pas les accompagner."
+        },
+        {
+          "title": "Ton caractère",
+          "body": "Certains métiers mettent plus de pression que d'autres. Cette pression peut te rendre nerveux ou irritable."
+        }
+      ]
+    },
+    {
+      "id": "a_toi_de_choisir",
+      "kind": "statement",
+      "label": "À TOI DE CHOISIR",
+      "body": "Toi seul peux décider comment tu veux vivre. Choisis un métier qui correspond à ce qui compte le plus pour toi."
+    },
+    {
+      "id": "raisons_consigne",
+      "kind": "text",
+      "title": "Pour quelqu'un d'autre ou à ton compte ?",
+      "body": "Il n'y a pas de bon ou de mauvais choix : tout dépend de toi. Réfléchis aux deux possibilités. Pour chacune, écris trois ou quatre raisons qui te viennent à l'esprit. Ensuite, compare tes deux listes."
+    },
+    {
+      "id": "raisons_choix",
+      "kind": "exercise",
+      "title": "Mes raisons",
+      "items": [
+        {
+          "id": "raisons_salarie",
+          "kind": "textarea",
+          "prompt": "Écris trois ou quatre raisons de travailler pour quelqu'un d'autre, comme salarié."
+        },
+        {
+          "id": "raisons_a_mon_compte",
+          "kind": "textarea",
+          "prompt": "Écris trois ou quatre raisons de travailler à ton compte."
+        },
+        {
+          "id": "liste_qui_me_ressemble",
+          "kind": "textarea",
+          "prompt": "Compare tes deux listes. Laquelle te ressemble le plus ? Pourquoi ?"
+        }
+      ]
+    },
+    {
+      "id": "avantages",
+      "kind": "accordion",
+      "label": "Les avantages du travail à ton compte",
+      "intro": "Touche chaque avantage pour le découvrir.",
+      "items": [
+        {
+          "title": "La satisfaction personnelle",
+          "body": "Tu passes tes journées à faire ce que tu aimes. Si tu aimes travailler le cuir, tu peux ouvrir ton propre atelier de maroquinerie."
+        },
+        {
+          "title": "L'indépendance",
+          "body": "Tu es ton propre chef. Tu utilises ton savoir-faire comme tu veux, et tu prends tes décisions sans demander l'accord de quelqu'un."
+        },
+        {
+          "title": "Le bénéfice",
+          "body": "Le bénéfice, c'est l'argent qui reste quand toutes les dépenses sont payées. Il revient au propriétaire. À ton compte, plus tu fais d'efforts, plus tes revenus peuvent augmenter. Ce n'est pas toujours le cas quand on est salarié."
+        },
+        {
+          "title": "La reconnaissance",
+          "body": "Tes clients et les gens du quartier apprennent à te connaître. Beaucoup d'indépendants sont fiers de voir leur nom sur leur boutique ou sur leur enseigne."
+        },
+        {
+          "title": "La souplesse",
+          "body": "Tu montes une activité qui te ressemble, selon tes goûts et tes capacités. Si tu travailles chez toi ou près de chez toi, tu peux aussi mieux combiner ton travail et ta vie de famille."
+        }
+      ]
+    },
+    {
+      "id": "difficultes",
+      "kind": "accordion",
+      "label": "Les difficultés du travail à ton compte",
+      "intro": "Touche chaque difficulté pour la découvrir.",
+      "items": [
+        {
+          "title": "Le risque de perdre ton argent",
+          "body": "L'argent que tu mets pour démarrer ton activité s'appelle le capital. Si l'entreprise marche, les bénéfices peuvent être bons. Si elle échoue, tu peux perdre cet argent, et même tes économies ou celles de ta famille."
+        },
+        {
+          "title": "Un revenu irrégulier",
+          "body": "Un salarié reçoit un salaire fixe. À ton compte, ce que tu gagnes peut changer d'un mois à l'autre et d'une année à l'autre."
+        },
+        {
+          "title": "De longues journées",
+          "body": "Beaucoup d'indépendants sont les premiers arrivés et les derniers partis. Tes horaires dépendent de tes clients, pas de tes envies."
+        },
+        {
+          "title": "Les tâches ennuyeuses",
+          "body": "Tu dois aussi faire des tâches que tu n'aimes pas, surtout si tu n'as pas encore les moyens d'employer quelqu'un."
+        },
+        {
+          "title": "La solitude",
+          "body": "Tu dois garder de bonnes relations avec tes clients, tes employés et tes fournisseurs. Parfois, il faut négocier ou rappeler quelqu'un à l'ordre. Tu peux te sentir plus seul que quand tu es salarié."
+        }
+      ]
+    },
+    {
+      "id": "avantages_difficultes_pour_toi",
+      "kind": "exercise",
+      "title": "Et pour toi ?",
+      "items": [
+        {
+          "id": "avantage_difficulte_qui_compte",
+          "kind": "textarea",
+          "prompt": "Quel avantage te donne le plus envie de travailler à ton compte ? Quelle difficulté te fait le plus réfléchir ? Explique en quelques mots."
         }
       ]
     },
@@ -85,7 +184,47 @@
       "id": "a_retenir",
       "kind": "takeaway",
       "title": "À retenir",
-      "body": "Travailler pour soi et faire grandir une activité ne demandent pas les mêmes gestes. Les deux sont respectables, et on peut passer de l'un à l'autre."
+      "body": "Salarié ou à ton compte : il n'y a pas de mauvais choix. Travailler à ton compte apporte de la liberté et peut rapporter plus, mais il faut accepter des risques et un revenu irrégulier. Choisis ce qui correspond le mieux à ce qui compte pour toi."
+    },
+    {
+      "id": "journal_formation",
+      "kind": "exercise",
+      "title": "Mon journal de formation",
+      "label": "Prends quelques minutes pour garder une trace de ce que tu as appris.",
+      "items": [
+        {
+          "id": "journal_ce_que_je_retiens",
+          "kind": "textarea",
+          "prompt": "Qu'est-ce que tu retiens sur le choix entre travailler comme salarié et travailler à ton compte ?"
+        },
+        {
+          "id": "journal_reussi",
+          "kind": "textarea",
+          "prompt": "Qu'est-ce que tu as bien réussi ou bien compris ?"
+        },
+        {
+          "id": "journal_difficile",
+          "kind": "textarea",
+          "prompt": "Qu'est-ce qui a été difficile pour toi ?"
+        },
+        {
+          "id": "journal_mon_prochain_pas",
+          "kind": "textarea",
+          "prompt": "Quel petit pas vas-tu faire cette semaine pour mieux connaître le métier qui t'attire ? Par exemple, poser des questions à un artisan qui travaille à son compte."
+        },
+        {
+          "id": "journal_ressenti",
+          "kind": "scale",
+          "group": "Comment je me sens",
+          "options": ["Pas à l'aise", "Moyen", "À l'aise", "Très à l'aise"],
+          "questions": [
+            {
+              "id": "ressenti_unite",
+              "text": "Comment te sens-tu après cette unité ?"
+            }
+          ]
+        }
+      ]
     }
   ]
 }

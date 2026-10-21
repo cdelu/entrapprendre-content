@@ -1,0 +1,348 @@
+{
+  "schemaVersion": 1,
+  "id": "M05-U03",
+  "moduleId": "M05",
+  "number": 3,
+  "title": "D'où viennent les idées ?",
+  "status": "published",
+  "estimatedMinutes": 50,
+  "objectives": [
+    "Connaître six endroits où chercher une idée d'entreprise.",
+    "Comprendre la chaîne de valeurs du cuir et les places qu'elle offre.",
+    "Distinguer quatre façons de gagner sa vie avec le même métier.",
+    "Chercher des idées sur le terrain, en écoutant et en observant."
+  ],
+  "blocks": [
+    {
+      "id": "introduction",
+      "kind": "text",
+      "title": "Où chercher ?",
+      "body": "Une bonne idée d'entreprise ne tombe pas du ciel. Elle se cherche, et toujours aux mêmes endroits. En voici six."
+    },
+    {
+      "id": "six_sources",
+      "kind": "accordion",
+      "label": "Six endroits où trouver une idée",
+      "intro": "Touche chaque endroit pour le découvrir.",
+      "items": [
+        {
+          "title": "Ton métier",
+          "body": "C'est le point de départ le plus solide. Tu sais faire quelque chose que la plupart des gens ne savent pas faire. Une entreprise bâtie sur un savoir-faire que tu maîtrises tient bien mieux qu'une activité que tu découvres. Demande-toi : qu'est-ce que je fais le mieux ? Qu'est-ce que j'aime faire ? Ton idée se trouve souvent là où les deux se rejoignent."
+        },
+        {
+          "title": "Ce que les gens n'arrivent pas à trouver",
+          "body": "Les gens autour de toi sont tes futurs clients. Écoute-les se plaindre : « Mon sac s'est déchiré et personne ne sait le réparer correctement. » « Je ne trouve pas de sandales à ma taille. » « Les ceintures du marché sont toutes les mêmes. » « Le cartable de mon fils s'abîme en un an. » « Il n'y a pas de cordonnier près du marché. » « Il y a des ordures partout dans la rue. » Chacune décrit un besoin que personne ne satisfait. Ramatou a entendu ce genre de plaintes avant de se lancer."
+        },
+        {
+          "title": "Ce qui manque dans ton quartier",
+          "body": "Fais le tour de ton quartier ou de ta ville. Compte : combien d'ateliers de cordonnerie ? Combien de vendeurs de sacs ? Combien de tanneurs ? Compare avec une ville plus grande où tu es déjà allé. Ce qui existe là-bas et pas chez toi, c'est peut-être une place à prendre. Attention : s'il y a déjà dix vendeurs de sandales identiques, n'y va pas. C'est ce qui est arrivé à Mamadou."
+        },
+        {
+          "title": "Les chutes et les déchets",
+          "body": "Ce que les autres jettent peut devenir ta matière première, souvent gratuite ou presque. Dans un atelier de cuir, les chutes de coupe partent à la poubelle. Pourtant, elles suffisent pour faire des porte-clés, des étuis, des bracelets, de petites semelles. Ailleurs, ce sont les sacs plastique, le métal ou le bois."
+        },
+        {
+          "title": "Ce qui vient de loin",
+          "body": "Regarde les articles vendus au marché. Lesquels viennent d'ailleurs ? Un produit importé coûte cher : il faut payer le transport, les taxes, et la marge de plusieurs intermédiaires. La marge, c'est ce que chaque vendeur garde pour lui sur le prix. Si tu fabriques ce produit sur place avec une qualité correcte, tu peux le vendre moins cher. Et l'argent reste au pays."
+        },
+        {
+          "title": "La chaîne de valeurs",
+          "body": "C'est l'outil le plus utile pour un apprenti du cuir. Un sac ne naît pas dans l'atelier : il passe par une longue suite de métiers, depuis l'animal jusqu'au client. À chaque étape, quelqu'un ajoute de la valeur au produit, et gagne de l'argent. Découvre cette chaîne juste après."
+        }
+      ]
+    },
+    {
+      "id": "chaine_valeurs",
+      "kind": "process",
+      "title": "La chaîne de valeurs du cuir, de l'animal au client",
+      "items": [
+        {
+          "title": "La peau, chez le boucher",
+          "body": "Tout commence avec l'animal. Le boucher retire la peau. Une peau brute vaut peu de chose."
+        },
+        {
+          "title": "Le collecteur",
+          "body": "Il rassemble les peaux et les fait passer à l'étape suivante."
+        },
+        {
+          "title": "Le tanneur",
+          "body": "Il transforme la peau brute en cuir. Une fois tannée, la peau vaut davantage."
+        },
+        {
+          "title": "L'artisan",
+          "body": "Il coupe, coud et finit le cuir pour en faire des sacs, des sandales, des ceintures. Un sac bien fini vaut beaucoup plus que la peau de départ."
+        },
+        {
+          "title": "Le vendeur",
+          "body": "Il fait arriver le produit fini jusqu'au client."
+        }
+      ]
+    },
+    {
+      "id": "valeur_ajoutee",
+      "kind": "text",
+      "title": "Plus tu avances, plus la valeur grandit",
+      "body": "Chaque étape ajoute de la valeur, mais pas la même. La valeur ajoutée, c'est ce que ton travail ajoute au prix du produit. Plus tu avances dans la chaîne, plus elle est grande. Mais plus il faut aussi de savoir-faire et d'outils."
+    },
+    {
+      "id": "toutes_les_places",
+      "kind": "text",
+      "title": "Tu peux te placer partout",
+      "body": "Premier enseignement : tu peux te placer à n'importe quelle étape de la chaîne. Collecter des peaux, tanner, fabriquer, vendre. Ce n'est pas forcément l'étape où tu as été formé."
+    },
+    {
+      "id": "metiers_autour",
+      "kind": "text",
+      "title": "Regarde aussi autour de la chaîne",
+      "body": "Deuxième enseignement : les métiers autour de la chaîne ont souvent moins de concurrents que la fabrication. Réparer, récupérer les chutes, fournir aux artisans du fil, de la colle et des boucles, transporter la marchandise au marché. Beaucoup d'artisans se bousculent pour vendre des sandales. Presque personne ne pense à leur vendre leurs fournitures."
+    },
+    {
+      "id": "quatre_facons",
+      "kind": "tabs",
+      "title": "Quatre façons de gagner ta vie avec le même métier",
+      "items": [
+        {
+          "title": "Fabriquer",
+          "body": "Tu transformes des matières en produits : des sacs, des sandales, des ceintures."
+        },
+        {
+          "title": "Rendre un service",
+          "body": "Tu fais quelque chose pour les gens, sans forcément vendre un objet : réparer des chaussures, tanner les peaux de quelqu'un d'autre, transporter sa marchandise."
+        },
+        {
+          "title": "Revendre au détail",
+          "body": "Tu achètes des produits finis et tu les revends un par un aux clients."
+        },
+        {
+          "title": "Fournir les autres",
+          "body": "Tu vends aux artisans ce dont ils ont besoin pour travailler : du cuir, du fil, de la colle, des boucles, des outils."
+        }
+      ]
+    },
+    {
+      "id": "changer_de_facon",
+      "kind": "text",
+      "title": "Une formation, quatre entreprises",
+      "body": "À chaque place de la chaîne, tu peux travailler de ces quatre façons. Avec une seule formation en cuir, quatre entreprises très différentes s'offrent donc à toi. Si tu bloques sur ton idée, change de façon. Demande-toi : « Et si je vendais au lieu de fabriquer ? »"
+    },
+    {
+      "id": "ecoute_consigne",
+      "kind": "text",
+      "title": "Écoute les gens",
+      "body": "Pendant une semaine, ouvre bien les oreilles. Dans ta famille, chez tes voisins, avec les clients, au marché : écoute quand les gens se plaignent de quelque chose qui manque, qui coûte trop cher ou qui marche mal. Note cinq plaintes. Pour chacune, écris une activité possible."
+    },
+    {
+      "id": "ecoute_les_gens",
+      "kind": "exercise",
+      "title": "Ce que j'ai entendu autour de moi",
+      "items": [
+        {
+          "id": "plainte_1",
+          "kind": "textarea",
+          "prompt": "Première plainte : écris ce que tu as entendu, puis l'idée d'activité que ça te donne."
+        },
+        {
+          "id": "plainte_2",
+          "kind": "textarea",
+          "prompt": "Deuxième plainte : écris ce que tu as entendu, puis l'idée d'activité que ça te donne."
+        },
+        {
+          "id": "plainte_3",
+          "kind": "textarea",
+          "prompt": "Troisième plainte : écris ce que tu as entendu, puis l'idée d'activité que ça te donne."
+        },
+        {
+          "id": "plainte_4",
+          "kind": "textarea",
+          "prompt": "Quatrième plainte : écris ce que tu as entendu, puis l'idée d'activité que ça te donne."
+        },
+        {
+          "id": "plainte_5",
+          "kind": "textarea",
+          "prompt": "Cinquième plainte : écris ce que tu as entendu, puis l'idée d'activité que ça te donne."
+        }
+      ]
+    },
+    {
+      "id": "chaine_consigne",
+      "kind": "text",
+      "title": "La chaîne de valeurs de ton métier",
+      "body": "En classe, vous reprenez en groupe la chaîne du cuir avec ce que vous connaissez de votre région. Pour chaque étape, cherche qui fait ce travail chez vous et combien coûte le produit à cette étape. Demande les vrais prix à des gens du métier. Ton formateur peut t'aider."
+    },
+    {
+      "id": "chaine_de_mon_metier",
+      "kind": "exercise",
+      "title": "La chaîne du cuir chez nous",
+      "items": [
+        {
+          "id": "chaine_peau_boucher",
+          "kind": "textarea",
+          "prompt": "La peau, chez le boucher : qui fait ce travail chez vous ? Combien coûte une peau à cette étape ? Écris le prix en FCFA."
+        },
+        {
+          "id": "chaine_collecteur",
+          "kind": "textarea",
+          "prompt": "Le collecteur : qui fait ce travail chez vous ? Combien coûte une peau à cette étape ? Écris le prix en FCFA."
+        },
+        {
+          "id": "chaine_tanneur",
+          "kind": "textarea",
+          "prompt": "Le tanneur : qui fait ce travail chez vous ? Combien coûte le cuir tanné ? Écris le prix en FCFA."
+        },
+        {
+          "id": "chaine_artisan",
+          "kind": "textarea",
+          "prompt": "L'artisan : qui fait ce travail chez vous ? Combien coûte un article fini quand il sort de l'atelier ? Écris le nom de l'article et son prix en FCFA."
+        },
+        {
+          "id": "chaine_vendeur",
+          "kind": "textarea",
+          "prompt": "Le vendeur : qui fait ce travail chez vous ? Combien le client paie-t-il cet article ? Écris le prix en FCFA."
+        }
+      ]
+    },
+    {
+      "id": "chaine_reflexion",
+      "kind": "exercise",
+      "title": "Ce que la chaîne m'apprend",
+      "items": [
+        {
+          "id": "plus_forte_hausse",
+          "kind": "textarea",
+          "prompt": "Entre quelles deux étapes le prix augmente-t-il le plus ? Pourquoi, à ton avis ?"
+        },
+        {
+          "id": "savoir_faire_outils",
+          "kind": "textarea",
+          "prompt": "Quelle étape demande le plus de savoir-faire ? Et laquelle demande le plus d'outils ?"
+        },
+        {
+          "id": "ma_place_chaine",
+          "kind": "textarea",
+          "prompt": "À quelle étape voudrais-tu te placer ? Pourquoi ?"
+        },
+        {
+          "id": "metier_manquant",
+          "kind": "textarea",
+          "prompt": "Parmi les métiers autour de la chaîne, comme la réparation, le recyclage, les fournitures ou le transport, lequel manque le plus chez vous ?"
+        },
+        {
+          "id": "ma_facon_de_faire",
+          "kind": "textarea",
+          "prompt": "À la place que tu as choisie, quelle façon de faire te conviendrait le mieux : fabriquer, rendre un service, revendre ou fournir les autres ? Pourquoi ?"
+        }
+      ]
+    },
+    {
+      "id": "tour_quartier_consigne",
+      "kind": "text",
+      "title": "Le tour du quartier",
+      "body": "En petits groupes, vous sortez faire le tour de votre quartier ou des environs du marché. Comptez toutes les activités liées au cuir que vous voyez. Pendant la sortie ou juste après, note ici combien tu en as vu de chaque sorte."
+    },
+    {
+      "id": "tour_du_quartier",
+      "kind": "exercise",
+      "title": "Ce que j'ai compté dans le quartier",
+      "items": [
+        {
+          "id": "nombre_cordonneries",
+          "kind": "textarea",
+          "prompt": "Les ateliers de cordonnerie : combien en as-tu vu ? Écris le nombre."
+        },
+        {
+          "id": "nombre_maroquineries",
+          "kind": "textarea",
+          "prompt": "Les fabricants de sacs et de maroquinerie : combien en as-tu vu ? Écris le nombre."
+        },
+        {
+          "id": "nombre_vendeurs_cuir",
+          "kind": "textarea",
+          "prompt": "Les vendeurs d'articles en cuir : combien en as-tu vu ? Écris le nombre."
+        },
+        {
+          "id": "nombre_reparateurs",
+          "kind": "textarea",
+          "prompt": "Les réparateurs de chaussures : combien en as-tu vu ? Écris le nombre."
+        },
+        {
+          "id": "nombre_tanneurs",
+          "kind": "textarea",
+          "prompt": "Les tanneurs : combien en as-tu vu ? Écris le nombre."
+        },
+        {
+          "id": "nombre_fournisseurs",
+          "kind": "textarea",
+          "prompt": "Les vendeurs de fournitures pour artisans : combien en as-tu vu ? Écris le nombre."
+        }
+      ]
+    },
+    {
+      "id": "tour_quartier_bilan",
+      "kind": "exercise",
+      "title": "Après le tour du quartier",
+      "items": [
+        {
+          "id": "beaucoup_de_monde",
+          "kind": "textarea",
+          "prompt": "Dans quelles activités y a-t-il beaucoup de monde ?"
+        },
+        {
+          "id": "presque_personne",
+          "kind": "textarea",
+          "prompt": "Dans quelles activités n'y a-t-il presque personne ?"
+        },
+        {
+          "id": "activites_absentes",
+          "kind": "textarea",
+          "prompt": "Écris trois activités qui existent ailleurs mais pas dans ton quartier."
+        }
+      ]
+    },
+    {
+      "id": "a_retenir",
+      "kind": "takeaway",
+      "title": "À retenir",
+      "body": "Les idées se trouvent dans ton métier, dans les plaintes des gens, dans ce qui manque autour de toi, dans les déchets et dans ce qui vient de loin. La chaîne de valeurs te montre toutes les places possibles, pas seulement celle de ton diplôme. Là où tout le monde se bouscule, la place est mauvaise. Là où personne ne va, il y a peut-être une occasion."
+    },
+    {
+      "id": "journal_formation",
+      "kind": "exercise",
+      "title": "Mon journal de formation",
+      "label": "Prends quelques minutes pour garder une trace de ce que tu as appris.",
+      "items": [
+        {
+          "id": "journal_ce_que_je_retiens",
+          "kind": "textarea",
+          "prompt": "Parmi les six endroits où chercher une idée, lequel te semble le plus prometteur pour toi ? Pourquoi ?"
+        },
+        {
+          "id": "journal_reussi",
+          "kind": "textarea",
+          "prompt": "Qu'est-ce que tu as bien réussi ou bien compris ?"
+        },
+        {
+          "id": "journal_difficile",
+          "kind": "textarea",
+          "prompt": "Qu'est-ce qui a été difficile pour toi ?"
+        },
+        {
+          "id": "journal_mon_prochain_pas",
+          "kind": "textarea",
+          "prompt": "Cette semaine, à quel endroit vas-tu aller écouter les gens ou observer les activités autour de toi ?"
+        },
+        {
+          "id": "journal_ressenti",
+          "kind": "scale",
+          "group": "Comment je me sens",
+          "options": ["Pas à l'aise", "Moyen", "À l'aise", "Très à l'aise"],
+          "questions": [
+            {
+              "id": "ressenti_unite",
+              "text": "Comment te sens-tu après cette unité ?"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

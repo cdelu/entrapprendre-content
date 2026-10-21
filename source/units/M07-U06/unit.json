@@ -1,0 +1,390 @@
+{
+  "schemaVersion": 1,
+  "id": "M07-U06",
+  "moduleId": "M07",
+  "number": 6,
+  "title": "Présenter mon plan d'affaires",
+  "status": "published",
+  "estimatedMinutes": 50,
+  "objectives": [
+    "Préparer une présentation de ton projet en cinq minutes.",
+    "Préparer tes réponses aux questions qu'on va te poser.",
+    "Écrire tes chiffres à retenir et ton plan d'action pour la suite."
+  ],
+  "blocks": [
+    {
+      "id": "ce_qui_est_attendu",
+      "kind": "text",
+      "title": "Ce qui est attendu",
+      "body": "En classe, tu vas présenter ton projet en cinq minutes, puis répondre aux questions pendant environ trois minutes. Ce n'est pas un examen pour te piéger. C'est un entraînement pour la vraie vie : devant une microfinance, un fournisseur, un gros client ou un jury de concours. Ici, tu prépares ta présentation par écrit."
+    },
+    {
+      "id": "savoir_parler",
+      "kind": "statement",
+      "label": "POURQUOI C'EST IMPORTANT",
+      "body": "À projet égal, ceux qui savent parler de leur projet obtiennent des choses que les autres n'obtiennent pas."
+    },
+    {
+      "id": "plan_presentation",
+      "kind": "timeline",
+      "title": "Le plan de ta présentation : cinq minutes en tout",
+      "items": [
+        {
+          "label": "20 secondes",
+          "title": "Qui je suis",
+          "body": "Ton nom, ton métier, ta formation."
+        },
+        {
+          "label": "40 secondes",
+          "title": "Mon idée",
+          "body": "Ce que tu fais, et où."
+        },
+        {
+          "label": "45 secondes",
+          "title": "Mes clients",
+          "body": "Qui ils sont, et ce qu'ils veulent."
+        },
+        {
+          "label": "45 secondes",
+          "title": "Mon avantage",
+          "body": "Pourquoi les clients viennent chez toi, et pas chez un autre."
+        },
+        {
+          "label": "1 minute 30",
+          "title": "Mes chiffres",
+          "body": "Ce que te coûte un article, à quel prix tu le vends, combien tu dois en vendre par mois. C'est le moment le plus long, et c'est voulu : c'est celui qu'on écoute le plus attentivement."
+        },
+        {
+          "label": "45 secondes",
+          "title": "Mon argent de départ",
+          "body": "Combien il t'en faut, et d'où il vient."
+        },
+        {
+          "label": "15 secondes",
+          "title": "Ma première étape",
+          "body": "Ce que tu fais dès la semaine prochaine."
+        }
+      ]
+    },
+    {
+      "id": "conseils",
+      "kind": "list",
+      "title": "Six conseils pour bien présenter",
+      "items": [
+        {
+          "body": "Ne lis pas ton dossier. Garde-le devant toi, regarde-le pour un chiffre, mais parle aux gens."
+        },
+        {
+          "body": "Apporte tes produits. Deux ou trois articles finis valent tous les discours. Fais-les passer."
+        },
+        {
+          "body": "Connais par cœur ton coût, ton prix et ton seuil. Hésiter sur ces trois chiffres fait douter de tout le reste."
+        },
+        {
+          "body": "Parle assez fort, et pas trop vite. Toi, tu connais ton projet par cœur. Ceux qui t'écoutent le découvrent."
+        },
+        {
+          "body": "Répète à voix haute avant, deux ou trois fois, en regardant l'heure. C'est le seul moyen de tenir dans les cinq minutes."
+        },
+        {
+          "body": "Ne fais pas de promesses. « Je vais devenir le plus grand maroquinier de Niamey » n'impressionne personne. « Un portefeuille me coûte 3 245 FCFA, je le vends 4 500 FCFA » impressionne tout le monde."
+        }
+      ]
+    },
+    {
+      "id": "ma_fiche_consigne",
+      "kind": "text",
+      "title": "Ma fiche de préparation",
+      "body": "Pour chaque moment de ta présentation, écris ce que tu vas dire, avec tes mots à toi. Reprends tes chiffres dans tes réponses des unités précédentes ou dans ton dossier. Des phrases courtes suffisent : c'est un aide-mémoire, pas un texte à lire."
+    },
+    {
+      "id": "ma_fiche",
+      "kind": "exercise",
+      "title": "Ce que je vais dire",
+      "items": [
+        {
+          "id": "presentation_qui_je_suis",
+          "kind": "textarea",
+          "prompt": "Qui je suis : ton nom, ton métier, ta formation."
+        },
+        {
+          "id": "presentation_mon_idee",
+          "kind": "textarea",
+          "prompt": "Mon idée : ce que tu fais, et où."
+        },
+        {
+          "id": "presentation_mes_clients",
+          "kind": "textarea",
+          "prompt": "Mes clients : qui ils sont, et ce qu'ils veulent."
+        },
+        {
+          "id": "presentation_mon_avantage",
+          "kind": "textarea",
+          "prompt": "Mon avantage : écris la phrase que tu vas apprendre par cœur."
+        },
+        {
+          "id": "presentation_mes_chiffres",
+          "kind": "textarea",
+          "prompt": "Mes chiffres : écris ton coût pour un article, ton prix de vente, et ton seuil en nombre d'articles par mois."
+        },
+        {
+          "id": "presentation_argent_depart",
+          "kind": "textarea",
+          "prompt": "Mon argent de départ : combien il t'en faut, et d'où il vient."
+        },
+        {
+          "id": "presentation_premiere_etape",
+          "kind": "textarea",
+          "prompt": "Ma première étape : ce que tu fais dès la semaine prochaine."
+        }
+      ]
+    },
+    {
+      "id": "questions_intro",
+      "kind": "text",
+      "title": "Les questions qu'on va te poser",
+      "body": "Prépare tes réponses maintenant, pas pendant la présentation. Voici dix questions qu'on pose souvent. Touche chaque carte pour lire un conseil. Les réponses de Ramatou sont des exemples."
+    },
+    {
+      "id": "questions_probables",
+      "kind": "flashcards",
+      "title": "Dix questions probables · touche la carte pour voir le conseil",
+      "items": [
+        {
+          "title": "Combien te coûte un article ?",
+          "body": "Donne ton chiffre exact, sans hésiter. Ramatou répond : « Un portefeuille me coûte 3 245 FCFA. »"
+        },
+        {
+          "title": "À quel prix le vends-tu ? Pourquoi ce prix ?",
+          "body": "Donne ton prix, puis explique-le : au-dessus de ton coût, en dessous de ce que tes clients acceptent, et justifié par ton avantage. Ramatou vend à 4 500 FCFA : ses clients acceptent de payer de 4 000 à 5 000 FCFA pour un portefeuille bien fini."
+        },
+        {
+          "title": "Combien dois-tu en vendre chaque mois pour t'en sortir ?",
+          "body": "C'est ton seuil. Ramatou répond : « 25 articles par mois. »"
+        },
+        {
+          "title": "Pourquoi un client viendrait chez toi plutôt que chez ton voisin ?",
+          "body": "Dis ton avantage en une phrase. Ramatou : « Des finitions soignées et des délais toujours tenus. »"
+        },
+        {
+          "title": "Combien peux-tu en fabriquer par mois ?",
+          "body": "C'est ta capacité de production. Ramatou répond : « 40 articles par mois. » Ce chiffre doit être plus grand que ton seuil."
+        },
+        {
+          "title": "Qui sont tes trois premiers clients ? Peux-tu les nommer ?",
+          "body": "Donne de vrais noms, ou au moins de vraies personnes que tu as déjà rencontrées. Des clients connus inspirent plus confiance que « tout le monde »."
+        },
+        {
+          "title": "D'où vient ton argent de départ ? Que rembourses-tu, et combien par mois ?",
+          "body": "Donne chaque source et son montant. Ramatou : 100 000 FCFA d'économies et 60 000 FCFA prêtés par sa famille, qui ne lui demande pas de remboursement chaque mois. Si tu empruntes, dis combien tu rembourses chaque mois."
+        },
+        {
+          "title": "Que fais-tu si tu ne vends pas assez le premier mois ?",
+          "body": "Montre que tu as calculé un mauvais mois. Dis ce que tu as prévu pour tenir, et quel levier tu utiliserais."
+        },
+        {
+          "title": "Qu'est-ce qui pourrait faire échouer ton projet ?",
+          "body": "Sois honnête : nomme un vrai risque, puis ce que tu feras pour l'éviter. Cela montre que tu as réfléchi."
+        },
+        {
+          "title": "Quelle est ta première démarche cette semaine ?",
+          "body": "Donne une action précise, avec un jour. Par exemple : « Samedi, je vais voir mon fournisseur de cuir. »"
+        }
+      ]
+    },
+    {
+      "id": "je_ne_sais_pas",
+      "kind": "statement",
+      "label": "SI TU NE SAIS PAS",
+      "body": "Dis-le. « Je ne sais pas encore, je dois me renseigner auprès de… » est une bonne réponse. Inventer un chiffre est la pire."
+    },
+    {
+      "id": "mes_reponses",
+      "kind": "exercise",
+      "title": "Mes réponses aux questions probables",
+      "items": [
+        {
+          "id": "reponse_pourquoi_ce_prix",
+          "kind": "textarea",
+          "prompt": "Pourquoi as-tu choisi ce prix ? Écris ta réponse."
+        },
+        {
+          "id": "reponse_capacite",
+          "kind": "textarea",
+          "prompt": "Combien peux-tu fabriquer d'articles par mois ? Écris ta réponse."
+        },
+        {
+          "id": "reponse_trois_premiers_clients",
+          "kind": "textarea",
+          "prompt": "Qui sont tes trois premiers clients ? Écris leurs noms, ou qui ils sont."
+        },
+        {
+          "id": "reponse_remboursement",
+          "kind": "textarea",
+          "prompt": "Que rembourses-tu, et combien par mois ? Écris ta réponse."
+        },
+        {
+          "id": "reponse_mauvais_premier_mois",
+          "kind": "textarea",
+          "prompt": "Que fais-tu si tu ne vends pas assez le premier mois ? Écris ta réponse."
+        },
+        {
+          "id": "reponse_risque_echec",
+          "kind": "textarea",
+          "prompt": "Qu'est-ce qui pourrait faire échouer ton projet, et que feras-tu pour l'éviter ?"
+        },
+        {
+          "id": "presentation_a_apporter",
+          "kind": "scale",
+          "group": "Le jour de la présentation, j'apporte",
+          "options": ["Oui", "Pas encore"],
+          "questions": [
+            {
+              "id": "apporter_dossier",
+              "text": "Mon dossier."
+            },
+            {
+              "id": "apporter_produits",
+              "text": "Deux ou trois de mes produits."
+            },
+            {
+              "id": "apporter_fiche",
+              "text": "Ma fiche de préparation."
+            }
+          ]
+        },
+        {
+          "id": "presentation_apres_classe",
+          "kind": "textarea",
+          "prompt": "Après ta présentation en classe : qu'est-ce qui s'est bien passé ? Quelle question t'a mis en difficulté, et que répondrais-tu maintenant ?"
+        }
+      ]
+    },
+    {
+      "id": "et_maintenant_intro",
+      "kind": "text",
+      "title": "Et maintenant ?",
+      "body": "Tu es arrivé au bout de la formation. Ce n'est pas rien. Mais c'est maintenant que le vrai travail commence : un plan dans une chemise ne fabrique rien et ne vend rien. Et si tu ne crées pas ton entreprise tout de suite, ce n'est pas un échec. Ramatou a d'abord travaillé chez un artisan. Ce que tu as appris te servira aussi comme employé."
+    },
+    {
+      "id": "et_maintenant_mes_chiffres",
+      "kind": "exercise",
+      "title": "Mes chiffres à retenir",
+      "items": [
+        {
+          "id": "et_maintenant_activite_produit",
+          "kind": "textarea",
+          "prompt": "Recopie ici les chiffres à connaître par cœur. Reprends-les dans tes réponses des unités précédentes ou dans ton dossier. D'abord : ton activité et ton produit phare."
+        },
+        {
+          "id": "et_maintenant_cout_prix_gain",
+          "kind": "textarea",
+          "prompt": "Ce que te coûte ton produit phare, ce que tu le vends, et ce que tu gagnes dessus."
+        },
+        {
+          "id": "et_maintenant_seuil_objectif",
+          "kind": "textarea",
+          "prompt": "Ton seuil, en nombre d'articles à vendre chaque mois, et ce que tu veux gagner par mois."
+        },
+        {
+          "id": "et_maintenant_argent_depart",
+          "kind": "textarea",
+          "prompt": "Ton argent de départ."
+        },
+        {
+          "id": "et_maintenant_avantage",
+          "kind": "textarea",
+          "prompt": "Ton avantage, en une phrase."
+        }
+      ]
+    },
+    {
+      "id": "et_maintenant_plan_action",
+      "kind": "exercise",
+      "title": "Mon plan d'action",
+      "items": [
+        {
+          "id": "et_maintenant_cette_semaine",
+          "kind": "textarea",
+          "prompt": "Ce que tu fais cette semaine. Sois précis : « parler au tanneur du marché samedi » vaut mieux que « chercher un fournisseur ». Idées : mettre de l'argent de côté chaque semaine, aller demander conseil à un artisan installé, commencer ton cahier de recettes et de dépenses."
+        },
+        {
+          "id": "et_maintenant_ce_mois_ci",
+          "kind": "textarea",
+          "prompt": "Ce que tu fais ce mois-ci. Idées : te renseigner sur les démarches de déclaration, fabriquer trois articles à montrer, trouver tes deux premiers clients, faire ta pancarte."
+        },
+        {
+          "id": "et_maintenant_trois_mois",
+          "kind": "textarea",
+          "prompt": "Ce que tu fais dans les trois prochains mois. Idées : te renseigner sur un emplacement, rejoindre un groupement d'artisans, ouvrir un compte pour séparer l'argent de l'atelier."
+        },
+        {
+          "id": "et_maintenant_dans_l_annee",
+          "kind": "textarea",
+          "prompt": "Ce que tu fais dans l'année."
+        },
+        {
+          "id": "et_maintenant_a_apprendre",
+          "kind": "textarea",
+          "prompt": "Ce que tu dois encore apprendre : ce qui te manque, comment tu vas l'apprendre, et quand. Par exemple : tenir des comptes, coudre à la machine, améliorer tes finitions, mieux négocier, utiliser ton téléphone pour vendre."
+        },
+        {
+          "id": "et_maintenant_contacts",
+          "kind": "textarea",
+          "prompt": "Tes contacts utiles : toutes les personnes rencontrées pendant ta formation et ton enquête. Pour chacune, écris son nom, qui c'est (fournisseur, client, artisan, microfinance…), où la trouver, et son téléphone. Complète cette liste au fil du temps."
+        },
+        {
+          "id": "et_maintenant_engagement",
+          "kind": "textarea",
+          "prompt": "Ton engagement. Écris ton nom, ton projet, la première chose que tu feras cette semaine, et dans combien de mois tu reverras ce plan pour vérifier où tu en es et le corriger."
+        }
+      ]
+    },
+    {
+      "id": "a_retenir",
+      "kind": "takeaway",
+      "title": "À retenir",
+      "body": "Une bonne présentation tient en cinq minutes, et la plus grande part va aux chiffres. Ne lis pas, apporte tes produits, connais par cœur ton coût, ton prix et ton seuil. Si tu ne sais pas, dis-le : n'invente jamais un chiffre. Ensuite, le vrai travail commence : un petit pas précis, dès cette semaine."
+    },
+    {
+      "id": "journal_formation",
+      "kind": "exercise",
+      "title": "Mon journal de formation",
+      "label": "Prends quelques minutes pour garder une trace de ce que tu as appris.",
+      "items": [
+        {
+          "id": "journal_ce_que_je_retiens",
+          "kind": "textarea",
+          "prompt": "Qu'est-ce que tu retiens le plus de la préparation de ta présentation ?"
+        },
+        {
+          "id": "journal_reussi",
+          "kind": "textarea",
+          "prompt": "Qu'est-ce que tu as bien réussi ou bien compris ?"
+        },
+        {
+          "id": "journal_difficile",
+          "kind": "textarea",
+          "prompt": "Qu'est-ce qui a été difficile pour toi ?"
+        },
+        {
+          "id": "journal_mon_prochain_pas",
+          "kind": "textarea",
+          "prompt": "Quel petit pas vas-tu faire cette semaine ? Par exemple : répéter ta présentation à voix haute deux fois, en regardant l'heure."
+        },
+        {
+          "id": "journal_ressenti",
+          "kind": "scale",
+          "group": "Comment je me sens",
+          "options": ["Pas à l'aise", "Moyen", "À l'aise", "Très à l'aise"],
+          "questions": [
+            {
+              "id": "ressenti_unite",
+              "text": "Comment te sens-tu après cette unité ?"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

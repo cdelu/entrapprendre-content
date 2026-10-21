@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "catalogVersion": 1,
+  "catalogVersion": 2,
   "course": {
     "id": "ENTRAPPRENDRE",
     "title": "Entr'Apprendre",
@@ -11,13 +11,13 @@
     {
       "id": "P01",
       "number": 1,
-      "title": "Devenir Entreprenant",
+      "title": "Devenir entreprenant",
       "moduleIds": ["M01", "M02", "M03", "M04"]
     },
     {
       "id": "P02",
       "number": 2,
-      "title": "Construire mon Projet",
+      "title": "Construire mon projet",
       "moduleIds": ["M05", "M06", "M07"]
     }
   ],
@@ -86,59 +86,52 @@
       "partId": "P02",
       "generatesCertificate": true,
       "title": "Les chiffres de mon entreprise",
-      "unitIds": [
-        "M07-U01",
-        "M07-U02",
-        "M07-U03",
-        "M07-U04",
-        "M07-U05",
-        "M07-U06"
-      ]
+      "unitIds": ["M07-U01", "M07-U02", "M07-U03", "M07-U04", "M07-U05", "M07-U06"]
     }
   ],
   "units": [
-    { "id": "M01-U01", "number": 1, "moduleId": "M01", "title": "L'importance de l'entrepreneuriat dans la société", "contentVersion": 1, "downloadable": false, "packageStem": "M01-U01" },
-    { "id": "M01-U02", "number": 2, "moduleId": "M01", "title": "Les entreprises dans ta communauté", "contentVersion": 1, "downloadable": false, "packageStem": "M01-U02" },
-    { "id": "M01-U03", "number": 3, "moduleId": "M01", "title": "Les petites entreprises", "contentVersion": 1, "downloadable": false, "packageStem": "M01-U03" },
-    { "id": "M01-U04", "number": 4, "moduleId": "M01", "title": "Les entreprises sociales", "contentVersion": 1, "downloadable": false, "packageStem": "M01-U04" },
-    { "id": "M01-U05", "number": 5, "moduleId": "M01", "title": "Les entreprises vertes", "contentVersion": 1, "downloadable": false, "packageStem": "M01-U05" },
+    { "id": "M01-U01", "number": 1, "moduleId": "M01", "title": "L'importance de l'entrepreneuriat dans la société", "estimatedMinutes": 30, "contentVersion": 1, "downloadable": false, "packageStem": "M01-U01" },
+    { "id": "M01-U02", "number": 2, "moduleId": "M01", "title": "Les entreprises dans ta communauté", "estimatedMinutes": 25, "contentVersion": 1, "downloadable": false, "packageStem": "M01-U02" },
+    { "id": "M01-U03", "number": 3, "moduleId": "M01", "title": "Les petites entreprises", "estimatedMinutes": 30, "contentVersion": 1, "downloadable": false, "packageStem": "M01-U03" },
+    { "id": "M01-U04", "number": 4, "moduleId": "M01", "title": "Les entreprises sociales", "estimatedMinutes": 30, "contentVersion": 1, "downloadable": false, "packageStem": "M01-U04" },
+    { "id": "M01-U05", "number": 5, "moduleId": "M01", "title": "Les entreprises vertes", "estimatedMinutes": 40, "contentVersion": 1, "downloadable": false, "packageStem": "M01-U05" },
 
-    { "id": "M02-U01", "number": 1, "moduleId": "M02", "title": "Les compétences entrepreneuriales", "estimatedMinutes": 40, "hasAudio": true, "contentVersion": 3, "downloadable": false, "packageStem": "M02-U01" },
-    { "id": "M02-U02", "number": 2, "moduleId": "M02", "title": "Le travail indépendant et l'entrepreneuriat", "estimatedMinutes": 25, "hasAudio": false, "contentVersion": 1, "downloadable": false, "packageStem": "M02-U02" },
-    { "id": "M02-U03", "number": 3, "moduleId": "M02", "title": "La motivation de l'entrepreneur", "estimatedMinutes": 20, "hasAudio": false, "contentVersion": 1, "downloadable": false, "packageStem": "M02-U03" },
+    { "id": "M02-U01", "number": 1, "moduleId": "M02", "title": "Les compétences entrepreneuriales", "estimatedMinutes": 35, "contentVersion": 4, "downloadable": false, "packageStem": "M02-U01" },
+    { "id": "M02-U02", "number": 2, "moduleId": "M02", "title": "Le travail indépendant et l'entrepreneuriat", "estimatedMinutes": 30, "contentVersion": 2, "downloadable": false, "packageStem": "M02-U02" },
+    { "id": "M02-U03", "number": 3, "moduleId": "M02", "title": "La motivation de l'entrepreneur", "estimatedMinutes": 30, "contentVersion": 2, "downloadable": false, "packageStem": "M02-U03" },
 
-    { "id": "M03-U01", "number": 1, "moduleId": "M03", "title": "Se fixer des objectifs", "contentVersion": 1, "downloadable": false, "packageStem": "M03-U01" },
-    { "id": "M03-U02", "number": 2, "moduleId": "M03", "title": "Gérer son temps", "contentVersion": 1, "downloadable": false, "packageStem": "M03-U02" },
-    { "id": "M03-U03", "number": 3, "moduleId": "M03", "title": "Prendre des décisions", "contentVersion": 1, "downloadable": false, "packageStem": "M03-U03" },
-    { "id": "M03-U04", "number": 4, "moduleId": "M03", "title": "Repérer et gérer les risques", "contentVersion": 1, "downloadable": false, "packageStem": "M03-U04" },
+    { "id": "M03-U01", "number": 1, "moduleId": "M03", "title": "Se fixer des objectifs", "estimatedMinutes": 40, "contentVersion": 1, "downloadable": false, "packageStem": "M03-U01" },
+    { "id": "M03-U02", "number": 2, "moduleId": "M03", "title": "Gérer son temps", "estimatedMinutes": 35, "contentVersion": 1, "downloadable": false, "packageStem": "M03-U02" },
+    { "id": "M03-U03", "number": 3, "moduleId": "M03", "title": "Prendre des décisions", "estimatedMinutes": 30, "contentVersion": 1, "downloadable": false, "packageStem": "M03-U03" },
+    { "id": "M03-U04", "number": 4, "moduleId": "M03", "title": "Repérer et gérer les risques", "estimatedMinutes": 45, "contentVersion": 1, "downloadable": false, "packageStem": "M03-U04" },
 
-    { "id": "M04-U01", "number": 1, "moduleId": "M04", "title": "Écouter", "contentVersion": 1, "downloadable": false, "packageStem": "M04-U01" },
-    { "id": "M04-U02", "number": 2, "moduleId": "M04", "title": "Négocier", "contentVersion": 1, "downloadable": false, "packageStem": "M04-U02" },
-    { "id": "M04-U03", "number": 3, "moduleId": "M04", "title": "Diriger une équipe", "contentVersion": 1, "downloadable": false, "packageStem": "M04-U03" },
-    { "id": "M04-U04", "number": 4, "moduleId": "M04", "title": "Coopérer et travailler en équipe", "contentVersion": 1, "downloadable": false, "packageStem": "M04-U04" },
+    { "id": "M04-U01", "number": 1, "moduleId": "M04", "title": "Écouter", "estimatedMinutes": 35, "contentVersion": 1, "downloadable": false, "packageStem": "M04-U01" },
+    { "id": "M04-U02", "number": 2, "moduleId": "M04", "title": "Négocier", "estimatedMinutes": 40, "contentVersion": 1, "downloadable": false, "packageStem": "M04-U02" },
+    { "id": "M04-U03", "number": 3, "moduleId": "M04", "title": "Diriger une équipe", "estimatedMinutes": 35, "contentVersion": 1, "downloadable": false, "packageStem": "M04-U03" },
+    { "id": "M04-U04", "number": 4, "moduleId": "M04", "title": "Coopérer et travailler en équipe", "estimatedMinutes": 30, "contentVersion": 1, "downloadable": false, "packageStem": "M04-U04" },
 
-    { "id": "M05-U01", "number": 1, "moduleId": "M05", "title": "Qu'est-ce qu'une idée d'entreprise ?", "contentVersion": 1, "downloadable": false, "packageStem": "M05-U01" },
-    { "id": "M05-U02", "number": 2, "moduleId": "M05", "title": "Développer sa créativité", "contentVersion": 1, "downloadable": false, "packageStem": "M05-U02" },
-    { "id": "M05-U03", "number": 3, "moduleId": "M05", "title": "D'où viennent les idées ?", "contentVersion": 1, "downloadable": false, "packageStem": "M05-U03" },
-    { "id": "M05-U04", "number": 4, "moduleId": "M05", "title": "Ma liste d'idées", "contentVersion": 1, "downloadable": false, "packageStem": "M05-U04" },
-    { "id": "M05-U05", "number": 5, "moduleId": "M05", "title": "Choisir la bonne idée", "contentVersion": 1, "downloadable": false, "packageStem": "M05-U05" },
-    { "id": "M05-U06", "number": 6, "moduleId": "M05", "title": "Mon idée d'entreprise en clair", "contentVersion": 1, "downloadable": false, "packageStem": "M05-U06" },
+    { "id": "M05-U01", "number": 1, "moduleId": "M05", "title": "Qu'est-ce qu'une idée d'entreprise ?", "estimatedMinutes": 30, "contentVersion": 1, "downloadable": false, "packageStem": "M05-U01" },
+    { "id": "M05-U02", "number": 2, "moduleId": "M05", "title": "Développer sa créativité", "estimatedMinutes": 35, "contentVersion": 1, "downloadable": false, "packageStem": "M05-U02" },
+    { "id": "M05-U03", "number": 3, "moduleId": "M05", "title": "D'où viennent les idées ?", "estimatedMinutes": 50, "contentVersion": 1, "downloadable": false, "packageStem": "M05-U03" },
+    { "id": "M05-U04", "number": 4, "moduleId": "M05", "title": "Ma liste d'idées", "estimatedMinutes": 40, "contentVersion": 1, "downloadable": false, "packageStem": "M05-U04" },
+    { "id": "M05-U05", "number": 5, "moduleId": "M05", "title": "Choisir la bonne idée", "estimatedMinutes": 75, "contentVersion": 1, "downloadable": false, "packageStem": "M05-U05" },
+    { "id": "M05-U06", "number": 6, "moduleId": "M05", "title": "Mon idée d'entreprise en clair", "estimatedMinutes": 45, "contentVersion": 1, "downloadable": false, "packageStem": "M05-U06" },
 
-    { "id": "M06-U01", "number": 1, "moduleId": "M06", "title": "Qu'est-ce qu'un plan d'affaires ?", "contentVersion": 1, "downloadable": false, "packageStem": "M06-U01" },
-    { "id": "M06-U02", "number": 2, "moduleId": "M06", "title": "Mes clients et leurs besoins", "contentVersion": 1, "downloadable": false, "packageStem": "M06-U02" },
-    { "id": "M06-U03", "number": 3, "moduleId": "M06", "title": "Mes concurrents et mon avantage", "contentVersion": 1, "downloadable": false, "packageStem": "M06-U03" },
-    { "id": "M06-U04", "number": 4, "moduleId": "M06", "title": "Mon produit ou mon service", "contentVersion": 1, "downloadable": false, "packageStem": "M06-U04" },
-    { "id": "M06-U05", "number": 5, "moduleId": "M06", "title": "Où et comment je vends ?", "contentVersion": 1, "downloadable": false, "packageStem": "M06-U05" },
-    { "id": "M06-U06", "number": 6, "moduleId": "M06", "title": "Mon local et mon matériel", "contentVersion": 1, "downloadable": false, "packageStem": "M06-U06" },
-    { "id": "M06-U07", "number": 7, "moduleId": "M06", "title": "Mes fournisseurs et mes matières", "contentVersion": 1, "downloadable": false, "packageStem": "M06-U07" },
-    { "id": "M06-U08", "number": 8, "moduleId": "M06", "title": "Comment j'organise mon travail", "contentVersion": 1, "downloadable": false, "packageStem": "M06-U08" },
-    { "id": "M06-U09", "number": 9, "moduleId": "M06", "title": "Déclarer mon activité", "contentVersion": 1, "downloadable": false, "packageStem": "M06-U09" },
-    
-    { "id": "M07-U01", "number": 1, "moduleId": "M07", "title": "Combien me coûte un article ?", "contentVersion": 1, "downloadable": false, "packageStem": "M07-U01" },
-    { "id": "M07-U02", "number": 2, "moduleId": "M07", "title": "À quel prix je vends ?", "contentVersion": 1, "downloadable": false, "packageStem": "M07-U02" },
-    { "id": "M07-U03", "number": 3, "moduleId": "M07", "title": "Mon argent de départ et d'où il vient", "contentVersion": 1, "downloadable": false, "packageStem": "M07-U03" },
-    { "id": "M07-U04", "number": 4, "moduleId": "M07", "title": "Est-ce que ça marche ?", "contentVersion": 1, "downloadable": false, "packageStem": "M07-U04" },
-    { "id": "M07-U05", "number": 5, "moduleId": "M07", "title": "Mon dossier complet", "contentVersion": 1, "downloadable": false, "packageStem": "M07-U05" },
-    { "id": "M07-U06", "number": 6, "moduleId": "M07", "title": "Présenter mon plan d'affaires", "contentVersion": 1, "downloadable": false, "packageStem": "M07-U06" }
+    { "id": "M06-U01", "number": 1, "moduleId": "M06", "title": "Qu'est-ce qu'un plan d'affaires ?", "estimatedMinutes": 25, "contentVersion": 1, "downloadable": false, "packageStem": "M06-U01" },
+    { "id": "M06-U02", "number": 2, "moduleId": "M06", "title": "Mes clients et leurs besoins", "estimatedMinutes": 30, "contentVersion": 1, "downloadable": false, "packageStem": "M06-U02" },
+    { "id": "M06-U03", "number": 3, "moduleId": "M06", "title": "Mes concurrents et mon avantage", "estimatedMinutes": 35, "contentVersion": 1, "downloadable": false, "packageStem": "M06-U03" },
+    { "id": "M06-U04", "number": 4, "moduleId": "M06", "title": "Mon produit ou mon service", "estimatedMinutes": 40, "contentVersion": 1, "downloadable": false, "packageStem": "M06-U04" },
+    { "id": "M06-U05", "number": 5, "moduleId": "M06", "title": "Où et comment je vends ?", "estimatedMinutes": 35, "contentVersion": 1, "downloadable": false, "packageStem": "M06-U05" },
+    { "id": "M06-U06", "number": 6, "moduleId": "M06", "title": "Mon local et mon matériel", "estimatedMinutes": 40, "contentVersion": 1, "downloadable": false, "packageStem": "M06-U06" },
+    { "id": "M06-U07", "number": 7, "moduleId": "M06", "title": "Mes fournisseurs et mes matières", "estimatedMinutes": 40, "contentVersion": 1, "downloadable": false, "packageStem": "M06-U07" },
+    { "id": "M06-U08", "number": 8, "moduleId": "M06", "title": "Comment j'organise mon travail", "estimatedMinutes": 40, "contentVersion": 1, "downloadable": false, "packageStem": "M06-U08" },
+    { "id": "M06-U09", "number": 9, "moduleId": "M06", "title": "Déclarer mon activité", "estimatedMinutes": 35, "contentVersion": 1, "downloadable": false, "packageStem": "M06-U09" },
+
+    { "id": "M07-U01", "number": 1, "moduleId": "M07", "title": "Combien me coûte un article ?", "estimatedMinutes": 50, "contentVersion": 1, "downloadable": false, "packageStem": "M07-U01" },
+    { "id": "M07-U02", "number": 2, "moduleId": "M07", "title": "À quel prix je vends ?", "estimatedMinutes": 40, "contentVersion": 1, "downloadable": false, "packageStem": "M07-U02" },
+    { "id": "M07-U03", "number": 3, "moduleId": "M07", "title": "Mon argent de départ et d'où il vient", "estimatedMinutes": 45, "contentVersion": 1, "downloadable": false, "packageStem": "M07-U03" },
+    { "id": "M07-U04", "number": 4, "moduleId": "M07", "title": "Est-ce que ça marche ?", "estimatedMinutes": 50, "contentVersion": 1, "downloadable": false, "packageStem": "M07-U04" },
+    { "id": "M07-U05", "number": 5, "moduleId": "M07", "title": "Mon dossier complet", "estimatedMinutes": 40, "contentVersion": 1, "downloadable": false, "packageStem": "M07-U05" },
+    { "id": "M07-U06", "number": 6, "moduleId": "M07", "title": "Présenter mon plan d'affaires", "estimatedMinutes": 50, "contentVersion": 1, "downloadable": false, "packageStem": "M07-U06" }
   ]
 }

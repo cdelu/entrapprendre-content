@@ -1,0 +1,344 @@
+{
+  "schemaVersion": 1,
+  "id": "M07-U05",
+  "moduleId": "M07",
+  "number": 5,
+  "title": "Mon dossier complet",
+  "status": "published",
+  "estimatedMinutes": 40,
+  "objectives": [
+    "Rassembler toutes les pièces de ton plan d'affaires dans le bon ordre.",
+    "Écrire le résumé de ton projet avec des faits et des chiffres.",
+    "Vérifier que ton dossier ne se contredit pas.",
+    "Mettre ton dossier au propre."
+  ],
+  "blocks": [
+    {
+      "id": "rassembler",
+      "kind": "text",
+      "title": "Rassembler",
+      "body": "Sors toutes les pièces de ta chemise et mets-les dans l'ordre du dossier. Ce n'est pas l'ordre dans lequel tu les as écrites. Vérifie qu'il ne manque rien : une pièce absente, c'est la première question qu'on te posera."
+    },
+    {
+      "id": "ordre_dossier",
+      "kind": "list",
+      "title": "L'ordre de ton dossier",
+      "items": [
+        {
+          "body": "Mon résumé, que tu vas écrire aujourd'hui."
+        },
+        {
+          "body": "Ma fiche d'idée d'entreprise."
+        },
+        {
+          "body": "Mes clients et leurs besoins."
+        },
+        {
+          "body": "Mes concurrents et mon avantage."
+        },
+        {
+          "body": "Mon produit ou mon service."
+        },
+        {
+          "body": "Où et comment je vends."
+        },
+        {
+          "body": "Mon local et mon matériel."
+        },
+        {
+          "body": "Mes fournisseurs et mes matières."
+        },
+        {
+          "body": "Mon organisation du travail."
+        },
+        {
+          "body": "Déclarer mon activité."
+        },
+        {
+          "body": "Ce que me coûte un article."
+        },
+        {
+          "body": "Mon prix de vente."
+        },
+        {
+          "body": "Mon argent de départ."
+        },
+        {
+          "body": "Est-ce que ça marche ?"
+        }
+      ]
+    },
+    {
+      "id": "resume_role",
+      "kind": "text",
+      "title": "Écrire mon résumé",
+      "body": "Le résumé est la dernière chose que tu écris, et la première qu'on lira. Souvent la seule. En sept ou huit phrases, il dit qui tu es, ce que tu vends, à qui, à quel prix, de combien d'argent tu as besoin pour démarrer, d'où il vient, et ce que tu comptes gagner."
+    },
+    {
+      "id": "resume_ramatou",
+      "kind": "accordion",
+      "label": "Le résumé de Ramatou",
+      "intro": "Voici le résumé de Ramatou, en six parties. Touche chaque partie pour la lire.",
+      "items": [
+        {
+          "title": "Qui je suis",
+          "body": "Je m'appelle Ramatou, je suis maroquinière, formée au CMCAN. J'ouvre un atelier de maroquinerie dans la cour familiale, à Niamey."
+        },
+        {
+          "title": "Ce que je vends",
+          "body": "Je fabrique des portefeuilles, des ceintures, des petits sacs et des porte-documents en cuir, et des porte-clés faits avec mes chutes de coupe. Mon produit phare est le portefeuille."
+        },
+        {
+          "title": "Mes clients et où je vends",
+          "body": "Mes clients sont les habitants de mon quartier et les employés de bureau. Ils cherchent des articles solides et bien finis, à un prix qu'ils peuvent payer. Je vends chez moi, sur commande, et en dépôt dans deux boutiques."
+        },
+        {
+          "title": "Mes chiffres",
+          "body": "Un portefeuille me coûte 3 245 FCFA et je le vends 4 500 FCFA. Je dois en vendre 25 par mois pour gagner 60 000 FCFA, et je peux en fabriquer 40."
+        },
+        {
+          "title": "Mon argent de départ",
+          "body": "Pour démarrer, j'ai besoin de 160 000 FCFA : 100 000 FCFA de mes économies et 60 000 FCFA prêtés par ma famille. Je coudrai à la main les premiers mois, et j'achèterai une machine avec mes bénéfices."
+        },
+        {
+          "title": "Mon avantage",
+          "body": "Des finitions soignées et des délais toujours tenus."
+        }
+      ]
+    },
+    {
+      "id": "faits_et_chiffres",
+      "kind": "statement",
+      "label": "DES FAITS, PAS DES PROMESSES",
+      "body": "Remarque ce qu'il n'y a pas dans ce résumé : ni belles phrases, ni promesses. Seulement des faits et des chiffres. C'est ça qui donne confiance."
+    },
+    {
+      "id": "mon_resume_consigne",
+      "kind": "text",
+      "body": "Écris ton résumé en suivant le modèle de Ramatou, une ou deux phrases par partie. Sept ou huit phrases suffisent en tout. Reprends tes chiffres dans tes réponses des unités précédentes ou dans ton dossier."
+    },
+    {
+      "id": "mon_resume",
+      "kind": "exercise",
+      "title": "Mon résumé",
+      "items": [
+        {
+          "id": "resume_qui_je_suis",
+          "kind": "textarea",
+          "prompt": "Qui es-tu ? Ton nom, ton métier, ta formation, et où tu t'installes."
+        },
+        {
+          "id": "resume_ce_que_je_vends",
+          "kind": "textarea",
+          "prompt": "Que vends-tu ? Quel est ton produit phare ?"
+        },
+        {
+          "id": "resume_mes_clients",
+          "kind": "textarea",
+          "prompt": "Qui sont tes clients, que cherchent-ils, et où vends-tu ?"
+        },
+        {
+          "id": "resume_mes_chiffres",
+          "kind": "textarea",
+          "prompt": "Tes chiffres : ce que te coûte un article, ton prix de vente, ton seuil, ce que tu veux gagner par mois, et ce que tu peux fabriquer par mois."
+        },
+        {
+          "id": "resume_argent_depart",
+          "kind": "textarea",
+          "prompt": "Ton argent de départ : combien il t'en faut, et d'où il vient."
+        },
+        {
+          "id": "resume_mon_avantage",
+          "kind": "textarea",
+          "prompt": "Ton avantage, en une phrase."
+        },
+        {
+          "id": "resume_avis_camarade",
+          "kind": "textarea",
+          "prompt": "Fais lire ton résumé à un camarade et demande-lui : « Après ça, saurais-tu expliquer mon projet à quelqu'un d'autre ? » Écris ce qu'il a compris, et ce que tu vas réécrire."
+        }
+      ]
+    },
+    {
+      "id": "verifier_intro",
+      "kind": "text",
+      "title": "Vérifier que tout tient ensemble",
+      "body": "Un plan d'affaires peut avoir toutes ses pièces et pourtant se contredire. Réponds honnêtement à chaque phrase. Ce n'est pas une note. Chaque « Non » te montre une partie à revoir. C'est normal, et c'est le but."
+    },
+    {
+      "id": "ma_verification",
+      "kind": "exercise",
+      "title": "Ma vérification",
+      "items": [
+        {
+          "id": "verification_dossier",
+          "kind": "scale",
+          "group": "Mon plan d'affaires tient-il ensemble ?",
+          "options": ["Oui", "Non"],
+          "questions": [
+            {
+              "id": "prix_au_dessus_cout",
+              "text": "Mon prix de vente est au-dessus de mon coût."
+            },
+            {
+              "id": "prix_sous_plafond",
+              "text": "Mon prix est en dessous de ce que mes clients acceptent de payer."
+            },
+            {
+              "id": "ventes_sous_capacite",
+              "text": "Ce que je prévois de vendre est inférieur à ce que je peux fabriquer."
+            },
+            {
+              "id": "fabrication_seuil",
+              "text": "Je peux fabriquer autant d'articles que mon seuil le demande."
+            },
+            {
+              "id": "clients_seuil",
+              "text": "Je peux trouver autant de clients que mon seuil le demande."
+            },
+            {
+              "id": "sources_couvrent_depart",
+              "text": "Mes sources d'argent couvrent mon argent de départ."
+            },
+            {
+              "id": "de_quoi_vivre_prevu",
+              "text": "J'ai prévu de quoi vivre pendant deux ou trois mois."
+            },
+            {
+              "id": "survivre_mauvais_mois",
+              "text": "Je tiens un mauvais mois."
+            },
+            {
+              "id": "remboursement_compte",
+              "text": "Si j'emprunte, le remboursement est bien dans mon compte du mois."
+            },
+            {
+              "id": "produits_clients",
+              "text": "Mes produits correspondent bien aux clients que j'ai choisis."
+            },
+            {
+              "id": "vente_passage_clients",
+              "text": "Je vends là où mes clients passent déjà."
+            }
+          ]
+        },
+        {
+          "id": "verification_corrections",
+          "kind": "textarea",
+          "prompt": "Pour chaque « Non » : écris ce qui ne va pas, ce que tu changes, et l'unité à revoir."
+        }
+      ]
+    },
+    {
+      "id": "mettre_au_propre",
+      "kind": "list",
+      "title": "Mettre au propre",
+      "items": [
+        {
+          "body": "Recopie tes pages proprement, ou fais-les recopier si tu écris difficilement. Ce n'est pas de la triche : ce qui compte, c'est ton projet."
+        },
+        {
+          "body": "Écris lisiblement, et vérifie tes chiffres deux fois. Une erreur de calcul fait douter de tout le reste."
+        },
+        {
+          "body": "Ajoute une page de couverture : le nom de ton activité, ton nom, ton numéro de téléphone et la date."
+        },
+        {
+          "body": "Range tout dans une chemise, dans l'ordre, et fais une copie si tu peux. Un dossier prêté ne revient pas toujours."
+        }
+      ]
+    },
+    {
+      "id": "mon_dossier",
+      "kind": "exercise",
+      "title": "Mon dossier est-il prêt ?",
+      "items": [
+        {
+          "id": "dossier_pret",
+          "kind": "scale",
+          "group": "Mon dossier",
+          "options": ["Oui", "Pas encore"],
+          "questions": [
+            {
+              "id": "pieces_dans_ordre",
+              "text": "Toutes mes pièces sont là, dans l'ordre."
+            },
+            {
+              "id": "resume_ecrit",
+              "text": "Mon résumé est écrit."
+            },
+            {
+              "id": "chiffres_verifies",
+              "text": "Mes chiffres sont vérifiés."
+            },
+            {
+              "id": "couverture_faite",
+              "text": "Ma page de couverture est faite."
+            },
+            {
+              "id": "dossier_propre",
+              "text": "Mon dossier est propre et lisible."
+            }
+          ]
+        },
+        {
+          "id": "dossier_reste_a_faire",
+          "kind": "textarea",
+          "prompt": "Que te reste-t-il à faire pour que ton dossier soit prêt ? Écris quand tu vas le faire."
+        }
+      ]
+    },
+    {
+      "id": "ce_qui_vient",
+      "kind": "text",
+      "title": "Ce qui vient maintenant",
+      "body": "Ton plan d'affaires est terminé. Tu peux le montrer à ta famille, à un fournisseur, à une institution de microfinance ou à un jury de concours. Il te reste à le présenter à l'oral, devant ta classe. Tu t'y es déjà entraîné dans l'unité « Mon idée d'entreprise en clair », quand tu présentais ton idée en une minute."
+    },
+    {
+      "id": "a_retenir",
+      "kind": "takeaway",
+      "title": "À retenir",
+      "body": "Le résumé s'écrit en dernier et se lit en premier : des faits et des chiffres, pas des promesses. Un dossier peut être complet et se contredire : vérifie-le point par point. Chaque « Non » renvoie à une unité à revoir. Un dossier propre, lisible, avec une couverture, se lit. Et fais une copie."
+    },
+    {
+      "id": "journal_formation",
+      "kind": "exercise",
+      "title": "Mon journal de formation",
+      "label": "Prends quelques minutes pour garder une trace de ce que tu as appris.",
+      "items": [
+        {
+          "id": "journal_ce_que_je_retiens",
+          "kind": "textarea",
+          "prompt": "Qu'est-ce que la vérification de ton dossier t'a appris sur ton projet ?"
+        },
+        {
+          "id": "journal_reussi",
+          "kind": "textarea",
+          "prompt": "Qu'est-ce que tu as bien réussi ou bien compris ?"
+        },
+        {
+          "id": "journal_difficile",
+          "kind": "textarea",
+          "prompt": "Qu'est-ce qui a été difficile pour toi ?"
+        },
+        {
+          "id": "journal_mon_prochain_pas",
+          "kind": "textarea",
+          "prompt": "Quel petit pas vas-tu faire cette semaine ? Par exemple : faire ta page de couverture, ou faire une copie de ton dossier."
+        },
+        {
+          "id": "journal_ressenti",
+          "kind": "scale",
+          "group": "Comment je me sens",
+          "options": ["Pas à l'aise", "Moyen", "À l'aise", "Très à l'aise"],
+          "questions": [
+            {
+              "id": "ressenti_unite",
+              "text": "Comment te sens-tu après cette unité ?"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

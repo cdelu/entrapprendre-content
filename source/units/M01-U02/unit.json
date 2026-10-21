@@ -1,0 +1,137 @@
+{
+  "schemaVersion": 1,
+  "id": "M01-U02",
+  "moduleId": "M01",
+  "number": 2,
+  "title": "Les entreprises dans ta communauté",
+  "status": "published",
+  "estimatedMinutes": 25,
+  "objectives": [
+    "Comprendre ce que les entreprises apportent à ta communauté.",
+    "Observer des petites entreprises qui réussissent près de chez toi.",
+    "Réfléchir à l'effet d'une entreprise sur l'environnement."
+  ],
+  "blocks": [
+    {
+      "id": "apports_communaute",
+      "kind": "list",
+      "title": "Ce que les entreprises apportent à ta communauté",
+      "items": [
+        {
+          "body": "Une entreprise naît pour aider les gens à avoir ce dont ils ont besoin. L'entrepreneur regarde ce qui manque dans sa ville ou son village, puis trouve une solution. Une entreprise qui réussit, c'est une entreprise qui aide vraiment ses clients."
+        },
+        {
+          "body": "Les entreprises apportent de l'argent, mais aussi du travail et du soutien : à leurs propriétaires, à leurs employés et à toute la communauté. Sans entreprises, l'économie ne peut pas avancer."
+        },
+        {
+          "body": "Quand une entreprise démarre et grandit, elle donne du travail à d'autres personnes. Ces personnes gagnent un salaire pour vivre."
+        },
+        {
+          "body": "Les entreprises peuvent aussi travailler ensemble. Par exemple, une entreprise qui produit du bois le vend aux artisans qui fabriquent des meubles. C'est pareil entre le tanneur et le maroquinier. Tout le monde devient plus fort, et l'argent circule mieux dans la communauté."
+        },
+        {
+          "body": "Les entreprises doivent faire attention à ne pas polluer ni abîmer la nature autour d'elles. Protéger l'environnement, c'est important pour tout le monde."
+        }
+      ]
+    },
+    {
+      "id": "exemples_intro",
+      "kind": "text",
+      "title": "Regarder une entreprise de près",
+      "body": "Pour bien comprendre une petite entreprise, tu peux te poser quatre questions. Que vend-elle ? Pourquoi ça marche ? Quel est son effet sur l'environnement ? Qui la dirige ? Regarde ces trois exemples."
+    },
+    {
+      "id": "trois_exemples",
+      "kind": "tabs",
+      "title": "Trois exemples pour t'aider",
+      "items": [
+        {
+          "title": "Fruits",
+          "body": "Un petit commerce de fruits. Ce qu'il vend : des fruits frais, au marché ou dans le quartier. Pourquoi ça marche : les gens aiment manger sain et frais. Effet sur l'environnement : faible, mais il vaut mieux éviter le plastique pour emballer. Qui dirige : une femme ou un homme, qui travaille dur tous les jours."
+        },
+        {
+          "title": "Téléphones",
+          "body": "Un atelier de réparation de téléphones. Ce qu'il vend : la réparation de téléphones portables et des accessoires. Pourquoi ça marche : c'est très demandé, car beaucoup de jeunes ont un téléphone. Effet sur l'environnement : attention aux déchets électroniques, qui doivent être recyclés. Qui dirige : souvent un ou une jeune qui aime la technologie."
+        },
+        {
+          "title": "Coiffure",
+          "body": "Un salon de coiffure. Ce qu'il vend : la coupe et la coiffure pour hommes, femmes et enfants. Pourquoi ça marche : les clients l'apprécient, surtout quand le coiffeur est aimable et compétent. Effet sur l'environnement : il utilise de l'eau et des produits chimiques, il faut donc bien gérer les déchets. Qui dirige : un homme ou une femme."
+        }
+      ]
+    },
+    {
+      "id": "observer_consigne",
+      "kind": "text",
+      "title": "À toi d'observer",
+      "body": "Pense à trois petites entreprises que tu connais, que tu trouves intéressantes et qui marchent bien. Ce peut être un atelier, une boutique ou un service de ton quartier. Pour chacune, réponds aux quatre questions des exemples."
+    },
+    {
+      "id": "petites_entreprises_pres_de_chez_moi",
+      "kind": "exercise",
+      "title": "Les petites entreprises près de chez moi",
+      "items": [
+        {
+          "id": "entreprise_1",
+          "kind": "textarea",
+          "prompt": "Première entreprise : écris son nom ou son activité, ce qu'elle vend, pourquoi elle réussit, son effet sur l'environnement et qui la dirige."
+        },
+        {
+          "id": "entreprise_2",
+          "kind": "textarea",
+          "prompt": "Deuxième entreprise : écris son nom ou son activité, ce qu'elle vend, pourquoi elle réussit, son effet sur l'environnement et qui la dirige."
+        },
+        {
+          "id": "entreprise_3",
+          "kind": "textarea",
+          "prompt": "Troisième entreprise : écris son nom ou son activité, ce qu'elle vend, pourquoi elle réussit, son effet sur l'environnement et qui la dirige."
+        }
+      ]
+    },
+    {
+      "id": "a_retenir",
+      "kind": "takeaway",
+      "title": "À retenir",
+      "body": "Une entreprise qui réussit répond à un vrai besoin des gens. Elle donne du travail, fait circuler l'argent et peut travailler avec d'autres entreprises. Elle doit aussi faire attention à la nature autour d'elle."
+    },
+    {
+      "id": "journal_formation",
+      "kind": "exercise",
+      "title": "Mon journal de formation",
+      "label": "Prends quelques minutes pour garder une trace de ce que tu as appris.",
+      "items": [
+        {
+          "id": "journal_ce_que_je_retiens",
+          "kind": "textarea",
+          "prompt": "Parmi les entreprises que tu as observées, laquelle t'a le plus appris ? Qu'est-ce qu'elle fait de bien ?"
+        },
+        {
+          "id": "journal_reussi",
+          "kind": "textarea",
+          "prompt": "Qu'est-ce que tu as bien réussi ou bien compris ?"
+        },
+        {
+          "id": "journal_difficile",
+          "kind": "textarea",
+          "prompt": "Qu'est-ce qui a été difficile pour toi ?"
+        },
+        {
+          "id": "journal_mon_prochain_pas",
+          "kind": "textarea",
+          "prompt": "Cette semaine, quelle entreprise de ton quartier vas-tu observer de plus près, ou à qui vas-tu poser une question sur son travail ?"
+        },
+        {
+          "id": "journal_ressenti",
+          "kind": "scale",
+          "group": "Comment je me sens",
+          "options": ["Pas à l'aise", "Moyen", "À l'aise", "Très à l'aise"],
+          "questions": [
+            {
+              "id": "ressenti_unite",
+              "text": "Comment te sens-tu après cette unité ?"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
