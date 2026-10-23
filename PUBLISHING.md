@@ -16,7 +16,28 @@
 https://github.com/cdelu/entrapprendre-content/releases/latest/download/catalog.json
 ```
 
-Current stable release: [`content-v0.3.1`](https://github.com/cdelu/entrapprendre-content/releases/tag/content-v0.3.1).
+Resolve this endpoint or inspect GitHub Releases for the current stable release.
+
+### Browser-compatible catalogue
+
+GitHub release download redirects do not support browser CORS. The native
+FlutterFlow catalogue API therefore reads the byte-identical generated mirror:
+
+```text
+https://raw.githubusercontent.com/cdelu/entrapprendre-content/web-catalogue/catalog.json
+```
+
+`Sync browser catalogue` downloads **the latest stable release asset**, verifies
+its size, SHA-256 and generated navigation, then atomically updates the dedicated
+`web-catalogue` branch. This branch holds only `catalog.json`, not source or ZIPs.
+Do not hand-edit it or substitute `source/catalog.source.json`.
+
+Synchronization runs after successful publication, on release publication/edit
+(including stable promotion), and manually through Actions for recovery. A
+prerelease never becomes the mirror: the script always resolves `releases/latest`.
+Identical bytes cause no commit; failures preserve the previous public pointer.
+No tag, release asset, source JSON, or learner progress is modified.
+The raw endpoint can have a short CDN delay; retain the API's refresh query.
 
 ## Release assets
 

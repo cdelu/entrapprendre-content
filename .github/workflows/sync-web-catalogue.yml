@@ -1,0 +1,36 @@
+name: Sync browser catalogue
+
+on:
+  workflow_dispatch:
+  release:
+    types: [published, edited, released]
+  # Releases created using GITHUB_TOKEN do not emit a follow-on release run.
+  workflow_run:
+    workflows: [Publish content release]
+    types: [completed]
+
+permissions:
+  contents: write
+
+concurrency:
+  group: stable-web-catalogue
+  cancel-in-progress: false
+
+jobs:
+  sync:
+    if: github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Test catalogue mirror safeguards
+        run: python -m unittest discover -s .github/scripts -p 'test_*.py'
+      - name: Mirror verified latest stable catalogue
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: python .github/scripts/mirror_catalogue.py
