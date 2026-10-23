@@ -1,5 +1,34 @@
 # Rapport de validation — contenus complets (catalogue 2)
 
+## Verification update — 23 October 2026
+
+The patch was applied with `git am` in a separate worktree based on verified
+`origin/main` commit `c62beae842dbc7d94b353dc30e6b9eb67c69e55e`. The original
+checkout and its uncommitted README/PUBLISHING changes were left untouched.
+
+The first source validation found ten stale block-fixture pointers. All twelve
+implemented block examples and both exercise-item pointers now use the dedicated
+`schema/fixtures/supported-blocks.json` structural fixture, preserved from the
+pre-rewrite examples. No support status was promoted and neither the production
+validator nor builder was changed. Test fixtures are outside publishable source;
+the sample image/audio files were not restored to the course.
+
+| Local check | Result |
+| --- | --- |
+| `dart pub get --enforce-lockfile` | Passed; no dependency upgrade |
+| `dart format --output=none --set-exit-if-changed .` | Passed; zero files needing formatting |
+| `dart analyze` | Passed; no issues |
+| `dart run tool/validate_content.dart` | Passed |
+| `dart run tool/validate_content.dart --release` | Passed |
+| `dart run tool/smoke_audio_delivery.dart` | Passed; temporary build packages all 37 units and synthetic language-track assets |
+| `dart run tool/smoke_support_fixtures.dart` | Passed; 14 pointers, baseline/reordered lessons accepted, wrong-kind/missing fixtures rejected |
+
+These results supersede the earlier note below that Dart was unavailable.
+The audio smoke test uses opaque bytes and is not a playback test. Studio round
+trip, learner UI, Android offline checks and pedagogical acceptance remain pending.
+The course remains text-only; narration scripts are not recordings. No release,
+tag, merge or application change is included in this verification update.
+
 Date : 21 octobre 2026. Branche locale `content/manuel-complet`, partie de `origin/main` (c62beae).
 Source : *Manuel de l'Apprenant v2* (20 octobre) et, pour les corrigés et chiffres de référence,
 annexes 1, 3 et 4 du *Manuel du Formateur v2*.
