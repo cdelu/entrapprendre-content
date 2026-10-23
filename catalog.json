@@ -1,0 +1,1831 @@
+{
+  "schemaVersion": 1,
+  "catalogVersion": 2,
+  "course": {
+    "id": "ENTRAPPRENDRE",
+    "title": "Entr'Apprendre",
+    "language": "fr",
+    "defaultVariant": "light"
+  },
+  "parts": [
+    {
+      "id": "P01",
+      "number": 1,
+      "title": "Devenir entreprenant",
+      "moduleIds": [
+        "M01",
+        "M02",
+        "M03",
+        "M04"
+      ]
+    },
+    {
+      "id": "P02",
+      "number": 2,
+      "title": "Construire mon projet",
+      "moduleIds": [
+        "M05",
+        "M06",
+        "M07"
+      ]
+    }
+  ],
+  "modules": [
+    {
+      "id": "M01",
+      "number": 1,
+      "partId": "P01",
+      "title": "Qu'est-ce que l'entrepreneuriat ?",
+      "generatesCertificate": true,
+      "unitIds": [
+        "M01-U01",
+        "M01-U02",
+        "M01-U03",
+        "M01-U04",
+        "M01-U05"
+      ]
+    },
+    {
+      "id": "M02",
+      "number": 2,
+      "partId": "P01",
+      "title": "Qui sont les entrepreneurs ?",
+      "generatesCertificate": true,
+      "unitIds": [
+        "M02-U01",
+        "M02-U02",
+        "M02-U03"
+      ]
+    },
+    {
+      "id": "M03",
+      "number": 3,
+      "partId": "P01",
+      "generatesCertificate": true,
+      "title": "Les qualités personnelles de l'entrepreneur",
+      "unitIds": [
+        "M03-U01",
+        "M03-U02",
+        "M03-U03",
+        "M03-U04"
+      ]
+    },
+    {
+      "id": "M04",
+      "number": 4,
+      "partId": "P01",
+      "generatesCertificate": true,
+      "title": "Les qualités relationnelles de l'entrepreneur",
+      "unitIds": [
+        "M04-U01",
+        "M04-U02",
+        "M04-U03",
+        "M04-U04"
+      ]
+    },
+    {
+      "id": "M05",
+      "number": 5,
+      "partId": "P02",
+      "generatesCertificate": true,
+      "title": "Trouver mon idée",
+      "unitIds": [
+        "M05-U01",
+        "M05-U02",
+        "M05-U03",
+        "M05-U04",
+        "M05-U05",
+        "M05-U06"
+      ]
+    },
+    {
+      "id": "M06",
+      "number": 6,
+      "partId": "P02",
+      "generatesCertificate": true,
+      "title": "Mon marché et mon organisation",
+      "unitIds": [
+        "M06-U01",
+        "M06-U02",
+        "M06-U03",
+        "M06-U04",
+        "M06-U05",
+        "M06-U06",
+        "M06-U07",
+        "M06-U08",
+        "M06-U09"
+      ]
+    },
+    {
+      "id": "M07",
+      "number": 7,
+      "partId": "P02",
+      "generatesCertificate": true,
+      "title": "Les chiffres de mon entreprise",
+      "unitIds": [
+        "M07-U01",
+        "M07-U02",
+        "M07-U03",
+        "M07-U04",
+        "M07-U05",
+        "M07-U06"
+      ]
+    }
+  ],
+  "units": [
+    {
+      "id": "M01-U01",
+      "number": 1,
+      "moduleId": "M01",
+      "title": "L'importance de l'entrepreneuriat dans la société",
+      "estimatedMinutes": 30,
+      "contentVersion": 1,
+      "downloadable": true,
+      "packageStem": "M01-U01",
+      "hasAudio": false,
+      "packages": {
+        "light": {
+          "url": "https://github.com/cdelu/entrapprendre-content/releases/download/content-v0.5.0/M01-U01-core-v1.zip",
+          "sizeBytes": 3038,
+          "sha256": "c3b49c1cad65c5720900463de333bd96ed56a905314d401b3e495362fa397f30"
+        }
+      }
+    },
+    {
+      "id": "M01-U02",
+      "number": 2,
+      "moduleId": "M01",
+      "title": "Les entreprises dans ta communauté",
+      "estimatedMinutes": 25,
+      "contentVersion": 1,
+      "downloadable": true,
+      "packageStem": "M01-U02",
+      "hasAudio": false,
+      "packages": {
+        "light": {
+          "url": "https://github.com/cdelu/entrapprendre-content/releases/download/content-v0.5.0/M01-U02-core-v1.zip",
+          "sizeBytes": 2349,
+          "sha256": "f27a4be8203a41b0351f16ef3c8abfa95afa2f7d77d6b2aa3108632759a93880"
+        }
+      }
+    },
+    {
+      "id": "M01-U03",
+      "number": 3,
+      "moduleId": "M01",
+      "title": "Les petites entreprises",
+      "estimatedMinutes": 30,
+      "contentVersion": 1,
+      "downloadable": true,
+      "packageStem": "M01-U03",
+      "hasAudio": false,
+      "packages": {
+        "light": {
+          "url": "https://github.com/cdelu/entrapprendre-content/releases/download/content-v0.5.0/M01-U03-core-v1.zip",
+          "sizeBytes": 2657,
+          "sha256": "87caef71cff0759f8ce236cc7a0827dece2c20d14571b6f106466cf44e753e46"
+        }
+      }
+    },
+    {
+      "id": "M01-U04",
+      "number": 4,
+      "moduleId": "M01",
+      "title": "Les entreprises sociales",
+      "estimatedMinutes": 30,
+      "contentVersion": 1,
+      "downloadable": true,
+      "packageStem": "M01-U04",
+      "hasAudio": false,
+      "packages": {
+        "light": {
+          "url": "https://github.com/cdelu/entrapprendre-content/releases/download/content-v0.5.0/M01-U04-core-v1.zip",
+          "sizeBytes": 3162,
+          "sha256": "985f346cf2e8ddbab6f97993427acf2c670376c1147bf31ba40597595155c543"
+        }
+      }
+    },
+    {
+      "id": "M01-U05",
+      "number": 5,
+      "moduleId": "M01",
+      "title": "Les entreprises vertes",
+      "estimatedMinutes": 40,
+      "contentVersion": 1,
+      "downloadable": true,
+      "packageStem": "M01-U05",
+      "hasAudio": false,
+      "packages": {
+        "light": {
+          "url": "https://github.com/cdelu/entrapprendre-content/releases/download/content-v0.5.0/M01-U05-core-v1.zip",
+          "sizeBytes": 3810,
+          "sha256": "5e5f2ae156e18edb3f64b5c6a14de27c8c7e4e070e1cafe084a6a38af4bdd698"
+        }
+      }
+    },
+    {
+      "id": "M02-U01",
+      "number": 1,
+      "moduleId": "M02",
+      "title": "Les compétences entrepreneuriales",
+      "estimatedMinutes": 35,
+      "contentVersion": 4,
+      "downloadable": true,
+      "packageStem": "M02-U01",
+      "hasAudio": false,
+      "packages": {
+        "light": {
+          "url": "https://github.com/cdelu/entrapprendre-content/releases/download/content-v0.5.0/M02-U01-core-v4.zip",
+          "sizeBytes": 4068,
+          "sha256": "814f5447900a33b8ea0592612507baf0a21138b494e8a78fbf967fa34625d2d1"
+        }
+      }
+    },
+    {
+      "id": "M02-U02",
+      "number": 2,
+      "moduleId": "M02",
+      "title": "Le travail indépendant et l'entrepreneuriat",
+      "estimatedMinutes": 30,
+      "contentVersion": 2,
+      "downloadable": true,
+      "packageStem": "M02-U02",
+      "hasAudio": false,
+      "packages": {
+        "light": {
+          "url": "https://github.com/cdelu/entrapprendre-content/releases/download/content-v0.5.0/M02-U02-core-v2.zip",
+          "sizeBytes": 3511,
+          "sha256": "b0d5158e123950c031d41b272716038200b3d36852c541b9e24f713f5c2f843d"
+        }
+      }
+    },
+    {
+      "id": "M02-U03",
+      "number": 3,
+      "moduleId": "M02",
+      "title": "La motivation de l'entrepreneur",
+      "estimatedMinutes": 30,
+      "contentVersion": 2,
+      "downloadable": true,
+      "packageStem": "M02-U03",
+      "hasAudio": false,
+      "packages": {
+        "light": {
+          "url": "https://github.com/cdelu/entrapprendre-content/releases/download/content-v0.5.0/M02-U03-core-v2.zip",
+          "sizeBytes": 2887,
+          "sha256": "5f3f84c27b38ee84ea83068b2505d4412cf148968dee6f30ea9b8ecbaf703171"
+        }
+      }
+    },
+    {
+      "id": "M03-U01",
+      "number": 1,
+      "moduleId": "M03",
+      "title": "Se fixer des objectifs",
+      "estimatedMinutes": 40,
+      "contentVersion": 1,
+      "downloadable": true,
+      "packageStem": "M03-U01",
+      "hasAudio": false,
+      "packages": {
+        "light": {
+          "url": "https://github.com/cdelu/entrapprendre-content/releases/download/content-v0.5.0/M03-U01-core-v1.zip",
+          "sizeBytes": 4631,
+          "sha256": "de1c5f32f8ec60c774229942e551ef143caf06339e18c04c97682757b681e5c0"
+        }
+      }
+    },
+    {
+      "id": "M03-U02",
+      "number": 2,
+      "moduleId": "M03",
+      "title": "Gérer son temps",
+      "estimatedMinutes": 35,
+      "contentVersion": 1,
+      "downloadable": true,
+      "packageStem": "M03-U02",
+      "hasAudio": false,
+      "packages": {
+        "light": {
+          "url": "https://github.com/cdelu/entrapprendre-content/releases/download/content-v0.5.0/M03-U02-core-v1.zip",
+          "sizeBytes": 3189,
+          "sha256": "63922bdb2f41ac865d87d3d088fa533ef1d0b6aa9ddea8df57b9d642ee6fc6ca"
+        }
+      }
+    },
+    {
+      "id": "M03-U03",
+      "number": 3,
+      "moduleId": "M03",
+      "title": "Prendre des décisions",
+      "estimatedMinutes": 30,
+      "contentVersion": 1,
+      "downloadable": true,
+      "packageStem": "M03-U03",
+      "hasAudio": false,
+      "packages": {
+        "light": {
+          "url": "https://github.com/cdelu/entrapprendre-content/releases/download/content-v0.5.0/M03-U03-core-v1.zip",
+          "sizeBytes": 3710,
+          "sha256": "4ba89f279428f34a8c1260df86c47ade8e4fd955e282d3e63195a8e7514bb287"
+        }
+      }
+    },
+    {
+      "id": "M03-U04",
+      "number": 4,
+      "moduleId": "M03",
+      "title": "Repérer et gérer les risques",
+      "estimatedMinutes": 45,
+      "contentVersion": 1,
+      "downloadable": true,
+      "packageStem": "M03-U04",
+      "hasAudio": false,
+      "packages": {
+        "light": {
+          "url": "https://github.com/cdelu/entrapprendre-content/releases/download/content-v0.5.0/M03-U04-core-v1.zip",
+          "sizeBytes": 4987,
+          "sha256": "c911c7f8a0822debb9fbfa466c651a73cbb33809dea0978343bce14833f05adb"
+        }
+      }
+    },
+    {
+      "id": "M04-U01",
+      "number": 1,
+      "moduleId": "M04",
+      "title": "Écouter",
+      "estimatedMinutes": 35,
+      "contentVersion": 1,
+      "downloadable": true,
+      "packageStem": "M04-U01",
+      "hasAudio": false,
+      "packages": {
+        "light": {
+          "url": "https://github.com/cdelu/entrapprendre-content/releases/download/content-v0.5.0/M04-U01-core-v1.zip",
+          "sizeBytes": 4784,
+          "sha256": "39ebeda0b97b273f28b56407786e5e2cfe66df7bc326f731ca78ea9f3b83b0be"
+        }
+      }
+    },
+    {
+      "id": "M04-U02",
+      "number": 2,
+      "moduleId": "M04",
+      "title": "Négocier",
+      "estimatedMinutes": 40,
+      "contentVersion": 1,
+      "downloadable": true,
+      "packageStem": "M04-U02",
+      "hasAudio": false,
+      "packages": {
+        "light": {
+          "url": "https://github.com/cdelu/entrapprendre-content/releases/download/content-v0.5.0/M04-U02-core-v1.zip",
+          "sizeBytes": 4006,
+          "sha256": "10c46e314e953406b91452e6d61049d52e5cbf0c81f88a0ed1b938d741dd9ccf"
+        }
+      }
+    },
+    {
+      "id": "M04-U03",
+      "number": 3,
+      "moduleId": "M04",
+      "title": "Diriger une équipe",
+      "estimatedMinutes": 35,
+      "contentVersion": 1,
+      "downloadable": true,
+      "packageStem": "M04-U03",
+      "hasAudio": false,
+      "packages": {
+        "light": {
+          "url": "https://github.com/cdelu/entrapprendre-content/releases/download/content-v0.5.0/M04-U03-core-v1.zip",
+          "sizeBytes": 4168,
+          "sha256": "99b596da501d66820df81d98192629755c6f7ed8fbe5fca33cfa31b5e83fb6e2"
+        }
+      }
+    },
+    {
+      "id": "M04-U04",
+      "number": 4,
+      "moduleId": "M04",
+      "title": "Coopérer et travailler en équipe",
+      "estimatedMinutes": 30,
+      "contentVersion": 1,
+      "downloadable": true,
+      "packageStem": "M04-U04",
+      "hasAudio": false,
+      "packages": {
+        "light": {
+          "url": "https://github.com/cdelu/entrapprendre-content/releases/download/content-v0.5.0/M04-U04-core-v1.zip",
+          "sizeBytes": 2825,
+          "sha256": "a13eaf9b887cbb4ea4b1249a28c740cb42b5f248984cc24eaa82dbb65d986b29"
+        }
+      }
+    },
+    {
+      "id": "M05-U01",
+      "number": 1,
+      "moduleId": "M05",
+      "title": "Qu'est-ce qu'une idée d'entreprise ?",
+      "estimatedMinutes": 30,
+      "contentVersion": 1,
+      "downloadable": true,
+      "packageStem": "M05-U01",
+      "hasAudio": false,
+      "packages": {
+        "light": {
+          "url": "https://github.com/cdelu/entrapprendre-content/releases/download/content-v0.5.0/M05-U01-core-v1.zip",
+          "sizeBytes": 4035,
+          "sha256": "1cdd3aaa0210f14518094d8f2db72328a4e871eb755eb3ac7fda1d0c7cadff81"
+        }
+      }
+    },
+    {
+      "id": "M05-U02",
+      "number": 2,
+      "moduleId": "M05",
+      "title": "Développer sa créativité",
+      "estimatedMinutes": 35,
+      "contentVersion": 1,
+      "downloadable": true,
+      "packageStem": "M05-U02",
+      "hasAudio": false,
+      "packages": {
+        "light": {
+          "url": "https://github.com/cdelu/entrapprendre-content/releases/download/content-v0.5.0/M05-U02-core-v1.zip",
+          "sizeBytes": 3792,
+          "sha256": "5b08e2c6aecb244df65aa81097d087d8ae47cbee0b2293597e7784452574ed36"
+        }
+      }
+    },
+    {
+      "id": "M05-U03",
+      "number": 3,
+      "moduleId": "M05",
+      "title": "D'où viennent les idées ?",
+      "estimatedMinutes": 50,
+      "contentVersion": 1,
+      "downloadable": true,
+      "packageStem": "M05-U03",
+      "hasAudio": false,
+      "packages": {
+        "light": {
+          "url": "https://github.com/cdelu/entrapprendre-content/releases/download/content-v0.5.0/M05-U03-core-v1.zip",
+          "sizeBytes": 4923,
+          "sha256": "1a56f6f4e90e4ef63133d5e65441a3bbe6c642ff34892ec6af7ef7696836fcf1"
+        }
+      }
+    },
+    {
+      "id": "M05-U04",
+      "number": 4,
+      "moduleId": "M05",
+      "title": "Ma liste d'idées",
+      "estimatedMinutes": 40,
+      "contentVersion": 1,
+      "downloadable": true,
+      "packageStem": "M05-U04",
+      "hasAudio": false,
+      "packages": {
+        "light": {
+          "url": "https://github.com/cdelu/entrapprendre-content/releases/download/content-v0.5.0/M05-U04-core-v1.zip",
+          "sizeBytes": 2862,
+          "sha256": "418e0982427692fabcb4cebe3f05c479a0a65282e26de5d94d809035bdf23d7a"
+        }
+      }
+    },
+    {
+      "id": "M05-U05",
+      "number": 5,
+      "moduleId": "M05",
+      "title": "Choisir la bonne idée",
+      "estimatedMinutes": 75,
+      "contentVersion": 1,
+      "downloadable": true,
+      "packageStem": "M05-U05",
+      "hasAudio": false,
+      "packages": {
+        "light": {
+          "url": "https://github.com/cdelu/entrapprendre-content/releases/download/content-v0.5.0/M05-U05-core-v1.zip",
+          "sizeBytes": 4868,
+          "sha256": "d6acbf92f59c0cd0047ccca007726784373f498dfdd80926df9fdf50b6138e51"
+        }
+      }
+    },
+    {
+      "id": "M05-U06",
+      "number": 6,
+      "moduleId": "M05",
+      "title": "Mon idée d'entreprise en clair",
+      "estimatedMinutes": 45,
+      "contentVersion": 1,
+      "downloadable": true,
+      "packageStem": "M05-U06",
+      "hasAudio": false,
+      "packages": {
+        "light": {
+          "url": "https://github.com/cdelu/entrapprendre-content/releases/download/content-v0.5.0/M05-U06-core-v1.zip",
+          "sizeBytes": 4081,
+          "sha256": "48bf5590ca7ee476000d6f98ba7fad93b7b660170975066b25907186256a318d"
+        }
+      }
+    },
+    {
+      "id": "M06-U01",
+      "number": 1,
+      "moduleId": "M06",
+      "title": "Qu'est-ce qu'un plan d'affaires ?",
+      "estimatedMinutes": 25,
+      "contentVersion": 1,
+      "downloadable": true,
+      "packageStem": "M06-U01",
+      "hasAudio": false,
+      "packages": {
+        "light": {
+          "url": "https://github.com/cdelu/entrapprendre-content/releases/download/content-v0.5.0/M06-U01-core-v1.zip",
+          "sizeBytes": 4055,
+          "sha256": "f3de46cd4f2ff2f481e95c1b5b75f343d4b78aebc426d89ba94710c2b9e968cf"
+        }
+      }
+    },
+    {
+      "id": "M06-U02",
+      "number": 2,
+      "moduleId": "M06",
+      "title": "Mes clients et leurs besoins",
+      "estimatedMinutes": 30,
+      "contentVersion": 1,
+      "downloadable": true,
+      "packageStem": "M06-U02",
+      "hasAudio": false,
+      "packages": {
+        "light": {
+          "url": "https://github.com/cdelu/entrapprendre-content/releases/download/content-v0.5.0/M06-U02-core-v1.zip",
+          "sizeBytes": 3610,
+          "sha256": "0a11714263001826152102ef0eb803f618e613f19d60f59bb0be3f37213023c9"
+        }
+      }
+    },
+    {
+      "id": "M06-U03",
+      "number": 3,
+      "moduleId": "M06",
+      "title": "Mes concurrents et mon avantage",
+      "estimatedMinutes": 35,
+      "contentVersion": 1,
+      "downloadable": true,
+      "packageStem": "M06-U03",
+      "hasAudio": false,
+      "packages": {
+        "light": {
+          "url": "https://github.com/cdelu/entrapprendre-content/releases/download/content-v0.5.0/M06-U03-core-v1.zip",
+          "sizeBytes": 3943,
+          "sha256": "b4924f1752203ed8c19f69415ee911db17d88c45eea8ee26eaaa7febb1644da4"
+        }
+      }
+    },
+    {
+      "id": "M06-U04",
+      "number": 4,
+      "moduleId": "M06",
+      "title": "Mon produit ou mon service",
+      "estimatedMinutes": 40,
+      "contentVersion": 1,
+      "downloadable": true,
+      "packageStem": "M06-U04",
+      "hasAudio": false,
+      "packages": {
+        "light": {
+          "url": "https://github.com/cdelu/entrapprendre-content/releases/download/content-v0.5.0/M06-U04-core-v1.zip",
+          "sizeBytes": 4183,
+          "sha256": "d896119ed25bd8ff273b64b942101e0e00754594ee1c34844146d10ae9c71733"
+        }
+      }
+    },
+    {
+      "id": "M06-U05",
+      "number": 5,
+      "moduleId": "M06",
+      "title": "Où et comment je vends ?",
+      "estimatedMinutes": 35,
+      "contentVersion": 1,
+      "downloadable": true,
+      "packageStem": "M06-U05",
+      "hasAudio": false,
+      "packages": {
+        "light": {
+          "url": "https://github.com/cdelu/entrapprendre-content/releases/download/content-v0.5.0/M06-U05-core-v1.zip",
+          "sizeBytes": 4214,
+          "sha256": "6357a537f7ad87f209d54c305684d7957a8fbbfee20aac744b91d364a3e48547"
+        }
+      }
+    },
+    {
+      "id": "M06-U06",
+      "number": 6,
+      "moduleId": "M06",
+      "title": "Mon local et mon matériel",
+      "estimatedMinutes": 40,
+      "contentVersion": 1,
+      "downloadable": true,
+      "packageStem": "M06-U06",
+      "hasAudio": false,
+      "packages": {
+        "light": {
+          "url": "https://github.com/cdelu/entrapprendre-content/releases/download/content-v0.5.0/M06-U06-core-v1.zip",
+          "sizeBytes": 4783,
+          "sha256": "a22fbc8a5c82b281455eb188759717ecb846bb2d2a3bf7f51181589760de1998"
+        }
+      }
+    },
+    {
+      "id": "M06-U07",
+      "number": 7,
+      "moduleId": "M06",
+      "title": "Mes fournisseurs et mes matières",
+      "estimatedMinutes": 40,
+      "contentVersion": 1,
+      "downloadable": true,
+      "packageStem": "M06-U07",
+      "hasAudio": false,
+      "packages": {
+        "light": {
+          "url": "https://github.com/cdelu/entrapprendre-content/releases/download/content-v0.5.0/M06-U07-core-v1.zip",
+          "sizeBytes": 4671,
+          "sha256": "71f1d9232f5adefbedc333e87c5ff973a5641a1d385b06127dcd1fd85ae1064b"
+        }
+      }
+    },
+    {
+      "id": "M06-U08",
+      "number": 8,
+      "moduleId": "M06",
+      "title": "Comment j'organise mon travail",
+      "estimatedMinutes": 40,
+      "contentVersion": 1,
+      "downloadable": true,
+      "packageStem": "M06-U08",
+      "hasAudio": false,
+      "packages": {
+        "light": {
+          "url": "https://github.com/cdelu/entrapprendre-content/releases/download/content-v0.5.0/M06-U08-core-v1.zip",
+          "sizeBytes": 4820,
+          "sha256": "28b95fbb0ee7e350e3b31bd4125f965eba9845b5d5a9d86c2e7c547cf7c4df5d"
+        }
+      }
+    },
+    {
+      "id": "M06-U09",
+      "number": 9,
+      "moduleId": "M06",
+      "title": "Déclarer mon activité",
+      "estimatedMinutes": 35,
+      "contentVersion": 1,
+      "downloadable": true,
+      "packageStem": "M06-U09",
+      "hasAudio": false,
+      "packages": {
+        "light": {
+          "url": "https://github.com/cdelu/entrapprendre-content/releases/download/content-v0.5.0/M06-U09-core-v1.zip",
+          "sizeBytes": 4931,
+          "sha256": "c5bf50576df6fedb0a77df6232b7649337ece6d58c5d093a111b1b40941e19a3"
+        }
+      }
+    },
+    {
+      "id": "M07-U01",
+      "number": 1,
+      "moduleId": "M07",
+      "title": "Combien me coûte un article ?",
+      "estimatedMinutes": 50,
+      "contentVersion": 1,
+      "downloadable": true,
+      "packageStem": "M07-U01",
+      "hasAudio": false,
+      "packages": {
+        "light": {
+          "url": "https://github.com/cdelu/entrapprendre-content/releases/download/content-v0.5.0/M07-U01-core-v1.zip",
+          "sizeBytes": 5732,
+          "sha256": "64c340ee3565aa3949c28803436cedf882679a323c64ad64e207d884fead6169"
+        }
+      }
+    },
+    {
+      "id": "M07-U02",
+      "number": 2,
+      "moduleId": "M07",
+      "title": "À quel prix je vends ?",
+      "estimatedMinutes": 40,
+      "contentVersion": 1,
+      "downloadable": true,
+      "packageStem": "M07-U02",
+      "hasAudio": false,
+      "packages": {
+        "light": {
+          "url": "https://github.com/cdelu/entrapprendre-content/releases/download/content-v0.5.0/M07-U02-core-v1.zip",
+          "sizeBytes": 4368,
+          "sha256": "4db7bea59b7be63b65acdad8f1f1f7f0cbc08bd0f1da0cb47253342480e08222"
+        }
+      }
+    },
+    {
+      "id": "M07-U03",
+      "number": 3,
+      "moduleId": "M07",
+      "title": "Mon argent de départ et d'où il vient",
+      "estimatedMinutes": 45,
+      "contentVersion": 1,
+      "downloadable": true,
+      "packageStem": "M07-U03",
+      "hasAudio": false,
+      "packages": {
+        "light": {
+          "url": "https://github.com/cdelu/entrapprendre-content/releases/download/content-v0.5.0/M07-U03-core-v1.zip",
+          "sizeBytes": 5460,
+          "sha256": "c8f2410d236b2bf6fe08d9a7f0be7bff20d3778cd1c88fb3a296a5c9aa820757"
+        }
+      }
+    },
+    {
+      "id": "M07-U04",
+      "number": 4,
+      "moduleId": "M07",
+      "title": "Est-ce que ça marche ?",
+      "estimatedMinutes": 50,
+      "contentVersion": 1,
+      "downloadable": true,
+      "packageStem": "M07-U04",
+      "hasAudio": false,
+      "packages": {
+        "light": {
+          "url": "https://github.com/cdelu/entrapprendre-content/releases/download/content-v0.5.0/M07-U04-core-v1.zip",
+          "sizeBytes": 5520,
+          "sha256": "1be3434baa1ade0db702e3726b10bbfb2ac3e44cb64d05663a84e274348d73e9"
+        }
+      }
+    },
+    {
+      "id": "M07-U05",
+      "number": 5,
+      "moduleId": "M07",
+      "title": "Mon dossier complet",
+      "estimatedMinutes": 40,
+      "contentVersion": 1,
+      "downloadable": true,
+      "packageStem": "M07-U05",
+      "hasAudio": false,
+      "packages": {
+        "light": {
+          "url": "https://github.com/cdelu/entrapprendre-content/releases/download/content-v0.5.0/M07-U05-core-v1.zip",
+          "sizeBytes": 4139,
+          "sha256": "fc013ba76253c58f0d99a04ceb9919c2bc9e3ab9fa5116dfdfdb9547078a3521"
+        }
+      }
+    },
+    {
+      "id": "M07-U06",
+      "number": 6,
+      "moduleId": "M07",
+      "title": "Présenter mon plan d'affaires",
+      "estimatedMinutes": 50,
+      "contentVersion": 1,
+      "downloadable": true,
+      "packageStem": "M07-U06",
+      "hasAudio": false,
+      "packages": {
+        "light": {
+          "url": "https://github.com/cdelu/entrapprendre-content/releases/download/content-v0.5.0/M07-U06-core-v1.zip",
+          "sizeBytes": 5087,
+          "sha256": "fc8baa86c24637e2df0ea13bb84b1d6b396d35cc17f30f0a74506bf2cbbc7c0f"
+        }
+      }
+    }
+  ],
+  "navigationSummary": "7 modules · 37 unités",
+  "navigation": [
+    {
+      "id": "M01",
+      "number": 1,
+      "partId": "P01",
+      "partNumber": 1,
+      "partTitle": "Devenir entreprenant",
+      "showPartHeader": true,
+      "partDetail": "4 modules · 16 unités",
+      "title": "Qu'est-ce que l'entrepreneuriat ?",
+      "detail": "5 unités",
+      "generatesCertificate": true,
+      "units": [
+        {
+          "id": "M01-U01",
+          "number": 1,
+          "moduleId": "M01",
+          "title": "L'importance de l'entrepreneuriat dans la société",
+          "estimatedMinutes": 30,
+          "contentVersion": 1,
+          "downloadable": true,
+          "packageStem": "M01-U01",
+          "hasAudio": false,
+          "packages": {
+            "light": {
+              "url": "https://github.com/cdelu/entrapprendre-content/releases/download/content-v0.5.0/M01-U01-core-v1.zip",
+              "sizeBytes": 3038,
+              "sha256": "c3b49c1cad65c5720900463de333bd96ed56a905314d401b3e495362fa397f30"
+            }
+          },
+          "numberLabel": "01",
+          "statusLabel": "Prête à télécharger",
+          "detailLabel": "30 min"
+        },
+        {
+          "id": "M01-U02",
+          "number": 2,
+          "moduleId": "M01",
+          "title": "Les entreprises dans ta communauté",
+          "estimatedMinutes": 25,
+          "contentVersion": 1,
+          "downloadable": true,
+          "packageStem": "M01-U02",
+          "hasAudio": false,
+          "packages": {
+            "light": {
+              "url": "https://github.com/cdelu/entrapprendre-content/releases/download/content-v0.5.0/M01-U02-core-v1.zip",
+              "sizeBytes": 2349,
+              "sha256": "f27a4be8203a41b0351f16ef3c8abfa95afa2f7d77d6b2aa3108632759a93880"
+            }
+          },
+          "numberLabel": "02",
+          "statusLabel": "Prête à télécharger",
+          "detailLabel": "25 min"
+        },
+        {
+          "id": "M01-U03",
+          "number": 3,
+          "moduleId": "M01",
+          "title": "Les petites entreprises",
+          "estimatedMinutes": 30,
+          "contentVersion": 1,
+          "downloadable": true,
+          "packageStem": "M01-U03",
+          "hasAudio": false,
+          "packages": {
+            "light": {
+              "url": "https://github.com/cdelu/entrapprendre-content/releases/download/content-v0.5.0/M01-U03-core-v1.zip",
+              "sizeBytes": 2657,
+              "sha256": "87caef71cff0759f8ce236cc7a0827dece2c20d14571b6f106466cf44e753e46"
+            }
+          },
+          "numberLabel": "03",
+          "statusLabel": "Prête à télécharger",
+          "detailLabel": "30 min"
+        },
+        {
+          "id": "M01-U04",
+          "number": 4,
+          "moduleId": "M01",
+          "title": "Les entreprises sociales",
+          "estimatedMinutes": 30,
+          "contentVersion": 1,
+          "downloadable": true,
+          "packageStem": "M01-U04",
+          "hasAudio": false,
+          "packages": {
+            "light": {
+              "url": "https://github.com/cdelu/entrapprendre-content/releases/download/content-v0.5.0/M01-U04-core-v1.zip",
+              "sizeBytes": 3162,
+              "sha256": "985f346cf2e8ddbab6f97993427acf2c670376c1147bf31ba40597595155c543"
+            }
+          },
+          "numberLabel": "04",
+          "statusLabel": "Prête à télécharger",
+          "detailLabel": "30 min"
+        },
+        {
+          "id": "M01-U05",
+          "number": 5,
+          "moduleId": "M01",
+          "title": "Les entreprises vertes",
+          "estimatedMinutes": 40,
+          "contentVersion": 1,
+          "downloadable": true,
+          "packageStem": "M01-U05",
+          "hasAudio": false,
+          "packages": {
+            "light": {
+              "url": "https://github.com/cdelu/entrapprendre-content/releases/download/content-v0.5.0/M01-U05-core-v1.zip",
+              "sizeBytes": 3810,
+              "sha256": "5e5f2ae156e18edb3f64b5c6a14de27c8c7e4e070e1cafe084a6a38af4bdd698"
+            }
+          },
+          "numberLabel": "05",
+          "statusLabel": "Prête à télécharger",
+          "detailLabel": "40 min"
+        }
+      ]
+    },
+    {
+      "id": "M02",
+      "number": 2,
+      "partId": "P01",
+      "partNumber": 1,
+      "partTitle": "Devenir entreprenant",
+      "showPartHeader": false,
+      "partDetail": "4 modules · 16 unités",
+      "title": "Qui sont les entrepreneurs ?",
+      "detail": "3 unités",
+      "generatesCertificate": true,
+      "units": [
+        {
+          "id": "M02-U01",
+          "number": 1,
+          "moduleId": "M02",
+          "title": "Les compétences entrepreneuriales",
+          "estimatedMinutes": 35,
+          "contentVersion": 4,
+          "downloadable": true,
+          "packageStem": "M02-U01",
+          "hasAudio": false,
+          "packages": {
+            "light": {
+              "url": "https://github.com/cdelu/entrapprendre-content/releases/download/content-v0.5.0/M02-U01-core-v4.zip",
+              "sizeBytes": 4068,
+              "sha256": "814f5447900a33b8ea0592612507baf0a21138b494e8a78fbf967fa34625d2d1"
+            }
+          },
+          "numberLabel": "01",
+          "statusLabel": "Prête à télécharger",
+          "detailLabel": "35 min"
+        },
+        {
+          "id": "M02-U02",
+          "number": 2,
+          "moduleId": "M02",
+          "title": "Le travail indépendant et l'entrepreneuriat",
+          "estimatedMinutes": 30,
+          "contentVersion": 2,
+          "downloadable": true,
+          "packageStem": "M02-U02",
+          "hasAudio": false,
+          "packages": {
+            "light": {
+              "url": "https://github.com/cdelu/entrapprendre-content/releases/download/content-v0.5.0/M02-U02-core-v2.zip",
+              "sizeBytes": 3511,
+              "sha256": "b0d5158e123950c031d41b272716038200b3d36852c541b9e24f713f5c2f843d"
+            }
+          },
+          "numberLabel": "02",
+          "statusLabel": "Prête à télécharger",
+          "detailLabel": "30 min"
+        },
+        {
+          "id": "M02-U03",
+          "number": 3,
+          "moduleId": "M02",
+          "title": "La motivation de l'entrepreneur",
+          "estimatedMinutes": 30,
+          "contentVersion": 2,
+          "downloadable": true,
+          "packageStem": "M02-U03",
+          "hasAudio": false,
+          "packages": {
+            "light": {
+              "url": "https://github.com/cdelu/entrapprendre-content/releases/download/content-v0.5.0/M02-U03-core-v2.zip",
+              "sizeBytes": 2887,
+              "sha256": "5f3f84c27b38ee84ea83068b2505d4412cf148968dee6f30ea9b8ecbaf703171"
+            }
+          },
+          "numberLabel": "03",
+          "statusLabel": "Prête à télécharger",
+          "detailLabel": "30 min"
+        }
+      ]
+    },
+    {
+      "id": "M03",
+      "number": 3,
+      "partId": "P01",
+      "partNumber": 1,
+      "partTitle": "Devenir entreprenant",
+      "showPartHeader": false,
+      "partDetail": "4 modules · 16 unités",
+      "title": "Les qualités personnelles de l'entrepreneur",
+      "detail": "4 unités",
+      "generatesCertificate": true,
+      "units": [
+        {
+          "id": "M03-U01",
+          "number": 1,
+          "moduleId": "M03",
+          "title": "Se fixer des objectifs",
+          "estimatedMinutes": 40,
+          "contentVersion": 1,
+          "downloadable": true,
+          "packageStem": "M03-U01",
+          "hasAudio": false,
+          "packages": {
+            "light": {
+              "url": "https://github.com/cdelu/entrapprendre-content/releases/download/content-v0.5.0/M03-U01-core-v1.zip",
+              "sizeBytes": 4631,
+              "sha256": "de1c5f32f8ec60c774229942e551ef143caf06339e18c04c97682757b681e5c0"
+            }
+          },
+          "numberLabel": "01",
+          "statusLabel": "Prête à télécharger",
+          "detailLabel": "40 min"
+        },
+        {
+          "id": "M03-U02",
+          "number": 2,
+          "moduleId": "M03",
+          "title": "Gérer son temps",
+          "estimatedMinutes": 35,
+          "contentVersion": 1,
+          "downloadable": true,
+          "packageStem": "M03-U02",
+          "hasAudio": false,
+          "packages": {
+            "light": {
+              "url": "https://github.com/cdelu/entrapprendre-content/releases/download/content-v0.5.0/M03-U02-core-v1.zip",
+              "sizeBytes": 3189,
+              "sha256": "63922bdb2f41ac865d87d3d088fa533ef1d0b6aa9ddea8df57b9d642ee6fc6ca"
+            }
+          },
+          "numberLabel": "02",
+          "statusLabel": "Prête à télécharger",
+          "detailLabel": "35 min"
+        },
+        {
+          "id": "M03-U03",
+          "number": 3,
+          "moduleId": "M03",
+          "title": "Prendre des décisions",
+          "estimatedMinutes": 30,
+          "contentVersion": 1,
+          "downloadable": true,
+          "packageStem": "M03-U03",
+          "hasAudio": false,
+          "packages": {
+            "light": {
+              "url": "https://github.com/cdelu/entrapprendre-content/releases/download/content-v0.5.0/M03-U03-core-v1.zip",
+              "sizeBytes": 3710,
+              "sha256": "4ba89f279428f34a8c1260df86c47ade8e4fd955e282d3e63195a8e7514bb287"
+            }
+          },
+          "numberLabel": "03",
+          "statusLabel": "Prête à télécharger",
+          "detailLabel": "30 min"
+        },
+        {
+          "id": "M03-U04",
+          "number": 4,
+          "moduleId": "M03",
+          "title": "Repérer et gérer les risques",
+          "estimatedMinutes": 45,
+          "contentVersion": 1,
+          "downloadable": true,
+          "packageStem": "M03-U04",
+          "hasAudio": false,
+          "packages": {
+            "light": {
+              "url": "https://github.com/cdelu/entrapprendre-content/releases/download/content-v0.5.0/M03-U04-core-v1.zip",
+              "sizeBytes": 4987,
+              "sha256": "c911c7f8a0822debb9fbfa466c651a73cbb33809dea0978343bce14833f05adb"
+            }
+          },
+          "numberLabel": "04",
+          "statusLabel": "Prête à télécharger",
+          "detailLabel": "45 min"
+        }
+      ]
+    },
+    {
+      "id": "M04",
+      "number": 4,
+      "partId": "P01",
+      "partNumber": 1,
+      "partTitle": "Devenir entreprenant",
+      "showPartHeader": false,
+      "partDetail": "4 modules · 16 unités",
+      "title": "Les qualités relationnelles de l'entrepreneur",
+      "detail": "4 unités",
+      "generatesCertificate": true,
+      "units": [
+        {
+          "id": "M04-U01",
+          "number": 1,
+          "moduleId": "M04",
+          "title": "Écouter",
+          "estimatedMinutes": 35,
+          "contentVersion": 1,
+          "downloadable": true,
+          "packageStem": "M04-U01",
+          "hasAudio": false,
+          "packages": {
+            "light": {
+              "url": "https://github.com/cdelu/entrapprendre-content/releases/download/content-v0.5.0/M04-U01-core-v1.zip",
+              "sizeBytes": 4784,
+              "sha256": "39ebeda0b97b273f28b56407786e5e2cfe66df7bc326f731ca78ea9f3b83b0be"
+            }
+          },
+          "numberLabel": "01",
+          "statusLabel": "Prête à télécharger",
+          "detailLabel": "35 min"
+        },
+        {
+          "id": "M04-U02",
+          "number": 2,
+          "moduleId": "M04",
+          "title": "Négocier",
+          "estimatedMinutes": 40,
+          "contentVersion": 1,
+          "downloadable": true,
+          "packageStem": "M04-U02",
+          "hasAudio": false,
+          "packages": {
+            "light": {
+              "url": "https://github.com/cdelu/entrapprendre-content/releases/download/content-v0.5.0/M04-U02-core-v1.zip",
+              "sizeBytes": 4006,
+              "sha256": "10c46e314e953406b91452e6d61049d52e5cbf0c81f88a0ed1b938d741dd9ccf"
+            }
+          },
+          "numberLabel": "02",
+          "statusLabel": "Prête à télécharger",
+          "detailLabel": "40 min"
+        },
+        {
+          "id": "M04-U03",
+          "number": 3,
+          "moduleId": "M04",
+          "title": "Diriger une équipe",
+          "estimatedMinutes": 35,
+          "contentVersion": 1,
+          "downloadable": true,
+          "packageStem": "M04-U03",
+          "hasAudio": false,
+          "packages": {
+            "light": {
+              "url": "https://github.com/cdelu/entrapprendre-content/releases/download/content-v0.5.0/M04-U03-core-v1.zip",
+              "sizeBytes": 4168,
+              "sha256": "99b596da501d66820df81d98192629755c6f7ed8fbe5fca33cfa31b5e83fb6e2"
+            }
+          },
+          "numberLabel": "03",
+          "statusLabel": "Prête à télécharger",
+          "detailLabel": "35 min"
+        },
+        {
+          "id": "M04-U04",
+          "number": 4,
+          "moduleId": "M04",
+          "title": "Coopérer et travailler en équipe",
+          "estimatedMinutes": 30,
+          "contentVersion": 1,
+          "downloadable": true,
+          "packageStem": "M04-U04",
+          "hasAudio": false,
+          "packages": {
+            "light": {
+              "url": "https://github.com/cdelu/entrapprendre-content/releases/download/content-v0.5.0/M04-U04-core-v1.zip",
+              "sizeBytes": 2825,
+              "sha256": "a13eaf9b887cbb4ea4b1249a28c740cb42b5f248984cc24eaa82dbb65d986b29"
+            }
+          },
+          "numberLabel": "04",
+          "statusLabel": "Prête à télécharger",
+          "detailLabel": "30 min"
+        }
+      ]
+    },
+    {
+      "id": "M05",
+      "number": 5,
+      "partId": "P02",
+      "partNumber": 2,
+      "partTitle": "Construire mon projet",
+      "showPartHeader": true,
+      "partDetail": "3 modules · 21 unités",
+      "title": "Trouver mon idée",
+      "detail": "6 unités",
+      "generatesCertificate": true,
+      "units": [
+        {
+          "id": "M05-U01",
+          "number": 1,
+          "moduleId": "M05",
+          "title": "Qu'est-ce qu'une idée d'entreprise ?",
+          "estimatedMinutes": 30,
+          "contentVersion": 1,
+          "downloadable": true,
+          "packageStem": "M05-U01",
+          "hasAudio": false,
+          "packages": {
+            "light": {
+              "url": "https://github.com/cdelu/entrapprendre-content/releases/download/content-v0.5.0/M05-U01-core-v1.zip",
+              "sizeBytes": 4035,
+              "sha256": "1cdd3aaa0210f14518094d8f2db72328a4e871eb755eb3ac7fda1d0c7cadff81"
+            }
+          },
+          "numberLabel": "01",
+          "statusLabel": "Prête à télécharger",
+          "detailLabel": "30 min"
+        },
+        {
+          "id": "M05-U02",
+          "number": 2,
+          "moduleId": "M05",
+          "title": "Développer sa créativité",
+          "estimatedMinutes": 35,
+          "contentVersion": 1,
+          "downloadable": true,
+          "packageStem": "M05-U02",
+          "hasAudio": false,
+          "packages": {
+            "light": {
+              "url": "https://github.com/cdelu/entrapprendre-content/releases/download/content-v0.5.0/M05-U02-core-v1.zip",
+              "sizeBytes": 3792,
+              "sha256": "5b08e2c6aecb244df65aa81097d087d8ae47cbee0b2293597e7784452574ed36"
+            }
+          },
+          "numberLabel": "02",
+          "statusLabel": "Prête à télécharger",
+          "detailLabel": "35 min"
+        },
+        {
+          "id": "M05-U03",
+          "number": 3,
+          "moduleId": "M05",
+          "title": "D'où viennent les idées ?",
+          "estimatedMinutes": 50,
+          "contentVersion": 1,
+          "downloadable": true,
+          "packageStem": "M05-U03",
+          "hasAudio": false,
+          "packages": {
+            "light": {
+              "url": "https://github.com/cdelu/entrapprendre-content/releases/download/content-v0.5.0/M05-U03-core-v1.zip",
+              "sizeBytes": 4923,
+              "sha256": "1a56f6f4e90e4ef63133d5e65441a3bbe6c642ff34892ec6af7ef7696836fcf1"
+            }
+          },
+          "numberLabel": "03",
+          "statusLabel": "Prête à télécharger",
+          "detailLabel": "50 min"
+        },
+        {
+          "id": "M05-U04",
+          "number": 4,
+          "moduleId": "M05",
+          "title": "Ma liste d'idées",
+          "estimatedMinutes": 40,
+          "contentVersion": 1,
+          "downloadable": true,
+          "packageStem": "M05-U04",
+          "hasAudio": false,
+          "packages": {
+            "light": {
+              "url": "https://github.com/cdelu/entrapprendre-content/releases/download/content-v0.5.0/M05-U04-core-v1.zip",
+              "sizeBytes": 2862,
+              "sha256": "418e0982427692fabcb4cebe3f05c479a0a65282e26de5d94d809035bdf23d7a"
+            }
+          },
+          "numberLabel": "04",
+          "statusLabel": "Prête à télécharger",
+          "detailLabel": "40 min"
+        },
+        {
+          "id": "M05-U05",
+          "number": 5,
+          "moduleId": "M05",
+          "title": "Choisir la bonne idée",
+          "estimatedMinutes": 75,
+          "contentVersion": 1,
+          "downloadable": true,
+          "packageStem": "M05-U05",
+          "hasAudio": false,
+          "packages": {
+            "light": {
+              "url": "https://github.com/cdelu/entrapprendre-content/releases/download/content-v0.5.0/M05-U05-core-v1.zip",
+              "sizeBytes": 4868,
+              "sha256": "d6acbf92f59c0cd0047ccca007726784373f498dfdd80926df9fdf50b6138e51"
+            }
+          },
+          "numberLabel": "05",
+          "statusLabel": "Prête à télécharger",
+          "detailLabel": "75 min"
+        },
+        {
+          "id": "M05-U06",
+          "number": 6,
+          "moduleId": "M05",
+          "title": "Mon idée d'entreprise en clair",
+          "estimatedMinutes": 45,
+          "contentVersion": 1,
+          "downloadable": true,
+          "packageStem": "M05-U06",
+          "hasAudio": false,
+          "packages": {
+            "light": {
+              "url": "https://github.com/cdelu/entrapprendre-content/releases/download/content-v0.5.0/M05-U06-core-v1.zip",
+              "sizeBytes": 4081,
+              "sha256": "48bf5590ca7ee476000d6f98ba7fad93b7b660170975066b25907186256a318d"
+            }
+          },
+          "numberLabel": "06",
+          "statusLabel": "Prête à télécharger",
+          "detailLabel": "45 min"
+        }
+      ]
+    },
+    {
+      "id": "M06",
+      "number": 6,
+      "partId": "P02",
+      "partNumber": 2,
+      "partTitle": "Construire mon projet",
+      "showPartHeader": false,
+      "partDetail": "3 modules · 21 unités",
+      "title": "Mon marché et mon organisation",
+      "detail": "9 unités",
+      "generatesCertificate": true,
+      "units": [
+        {
+          "id": "M06-U01",
+          "number": 1,
+          "moduleId": "M06",
+          "title": "Qu'est-ce qu'un plan d'affaires ?",
+          "estimatedMinutes": 25,
+          "contentVersion": 1,
+          "downloadable": true,
+          "packageStem": "M06-U01",
+          "hasAudio": false,
+          "packages": {
+            "light": {
+              "url": "https://github.com/cdelu/entrapprendre-content/releases/download/content-v0.5.0/M06-U01-core-v1.zip",
+              "sizeBytes": 4055,
+              "sha256": "f3de46cd4f2ff2f481e95c1b5b75f343d4b78aebc426d89ba94710c2b9e968cf"
+            }
+          },
+          "numberLabel": "01",
+          "statusLabel": "Prête à télécharger",
+          "detailLabel": "25 min"
+        },
+        {
+          "id": "M06-U02",
+          "number": 2,
+          "moduleId": "M06",
+          "title": "Mes clients et leurs besoins",
+          "estimatedMinutes": 30,
+          "contentVersion": 1,
+          "downloadable": true,
+          "packageStem": "M06-U02",
+          "hasAudio": false,
+          "packages": {
+            "light": {
+              "url": "https://github.com/cdelu/entrapprendre-content/releases/download/content-v0.5.0/M06-U02-core-v1.zip",
+              "sizeBytes": 3610,
+              "sha256": "0a11714263001826152102ef0eb803f618e613f19d60f59bb0be3f37213023c9"
+            }
+          },
+          "numberLabel": "02",
+          "statusLabel": "Prête à télécharger",
+          "detailLabel": "30 min"
+        },
+        {
+          "id": "M06-U03",
+          "number": 3,
+          "moduleId": "M06",
+          "title": "Mes concurrents et mon avantage",
+          "estimatedMinutes": 35,
+          "contentVersion": 1,
+          "downloadable": true,
+          "packageStem": "M06-U03",
+          "hasAudio": false,
+          "packages": {
+            "light": {
+              "url": "https://github.com/cdelu/entrapprendre-content/releases/download/content-v0.5.0/M06-U03-core-v1.zip",
+              "sizeBytes": 3943,
+              "sha256": "b4924f1752203ed8c19f69415ee911db17d88c45eea8ee26eaaa7febb1644da4"
+            }
+          },
+          "numberLabel": "03",
+          "statusLabel": "Prête à télécharger",
+          "detailLabel": "35 min"
+        },
+        {
+          "id": "M06-U04",
+          "number": 4,
+          "moduleId": "M06",
+          "title": "Mon produit ou mon service",
+          "estimatedMinutes": 40,
+          "contentVersion": 1,
+          "downloadable": true,
+          "packageStem": "M06-U04",
+          "hasAudio": false,
+          "packages": {
+            "light": {
+              "url": "https://github.com/cdelu/entrapprendre-content/releases/download/content-v0.5.0/M06-U04-core-v1.zip",
+              "sizeBytes": 4183,
+              "sha256": "d896119ed25bd8ff273b64b942101e0e00754594ee1c34844146d10ae9c71733"
+            }
+          },
+          "numberLabel": "04",
+          "statusLabel": "Prête à télécharger",
+          "detailLabel": "40 min"
+        },
+        {
+          "id": "M06-U05",
+          "number": 5,
+          "moduleId": "M06",
+          "title": "Où et comment je vends ?",
+          "estimatedMinutes": 35,
+          "contentVersion": 1,
+          "downloadable": true,
+          "packageStem": "M06-U05",
+          "hasAudio": false,
+          "packages": {
+            "light": {
+              "url": "https://github.com/cdelu/entrapprendre-content/releases/download/content-v0.5.0/M06-U05-core-v1.zip",
+              "sizeBytes": 4214,
+              "sha256": "6357a537f7ad87f209d54c305684d7957a8fbbfee20aac744b91d364a3e48547"
+            }
+          },
+          "numberLabel": "05",
+          "statusLabel": "Prête à télécharger",
+          "detailLabel": "35 min"
+        },
+        {
+          "id": "M06-U06",
+          "number": 6,
+          "moduleId": "M06",
+          "title": "Mon local et mon matériel",
+          "estimatedMinutes": 40,
+          "contentVersion": 1,
+          "downloadable": true,
+          "packageStem": "M06-U06",
+          "hasAudio": false,
+          "packages": {
+            "light": {
+              "url": "https://github.com/cdelu/entrapprendre-content/releases/download/content-v0.5.0/M06-U06-core-v1.zip",
+              "sizeBytes": 4783,
+              "sha256": "a22fbc8a5c82b281455eb188759717ecb846bb2d2a3bf7f51181589760de1998"
+            }
+          },
+          "numberLabel": "06",
+          "statusLabel": "Prête à télécharger",
+          "detailLabel": "40 min"
+        },
+        {
+          "id": "M06-U07",
+          "number": 7,
+          "moduleId": "M06",
+          "title": "Mes fournisseurs et mes matières",
+          "estimatedMinutes": 40,
+          "contentVersion": 1,
+          "downloadable": true,
+          "packageStem": "M06-U07",
+          "hasAudio": false,
+          "packages": {
+            "light": {
+              "url": "https://github.com/cdelu/entrapprendre-content/releases/download/content-v0.5.0/M06-U07-core-v1.zip",
+              "sizeBytes": 4671,
+              "sha256": "71f1d9232f5adefbedc333e87c5ff973a5641a1d385b06127dcd1fd85ae1064b"
+            }
+          },
+          "numberLabel": "07",
+          "statusLabel": "Prête à télécharger",
+          "detailLabel": "40 min"
+        },
+        {
+          "id": "M06-U08",
+          "number": 8,
+          "moduleId": "M06",
+          "title": "Comment j'organise mon travail",
+          "estimatedMinutes": 40,
+          "contentVersion": 1,
+          "downloadable": true,
+          "packageStem": "M06-U08",
+          "hasAudio": false,
+          "packages": {
+            "light": {
+              "url": "https://github.com/cdelu/entrapprendre-content/releases/download/content-v0.5.0/M06-U08-core-v1.zip",
+              "sizeBytes": 4820,
+              "sha256": "28b95fbb0ee7e350e3b31bd4125f965eba9845b5d5a9d86c2e7c547cf7c4df5d"
+            }
+          },
+          "numberLabel": "08",
+          "statusLabel": "Prête à télécharger",
+          "detailLabel": "40 min"
+        },
+        {
+          "id": "M06-U09",
+          "number": 9,
+          "moduleId": "M06",
+          "title": "Déclarer mon activité",
+          "estimatedMinutes": 35,
+          "contentVersion": 1,
+          "downloadable": true,
+          "packageStem": "M06-U09",
+          "hasAudio": false,
+          "packages": {
+            "light": {
+              "url": "https://github.com/cdelu/entrapprendre-content/releases/download/content-v0.5.0/M06-U09-core-v1.zip",
+              "sizeBytes": 4931,
+              "sha256": "c5bf50576df6fedb0a77df6232b7649337ece6d58c5d093a111b1b40941e19a3"
+            }
+          },
+          "numberLabel": "09",
+          "statusLabel": "Prête à télécharger",
+          "detailLabel": "35 min"
+        }
+      ]
+    },
+    {
+      "id": "M07",
+      "number": 7,
+      "partId": "P02",
+      "partNumber": 2,
+      "partTitle": "Construire mon projet",
+      "showPartHeader": false,
+      "partDetail": "3 modules · 21 unités",
+      "title": "Les chiffres de mon entreprise",
+      "detail": "6 unités",
+      "generatesCertificate": true,
+      "units": [
+        {
+          "id": "M07-U01",
+          "number": 1,
+          "moduleId": "M07",
+          "title": "Combien me coûte un article ?",
+          "estimatedMinutes": 50,
+          "contentVersion": 1,
+          "downloadable": true,
+          "packageStem": "M07-U01",
+          "hasAudio": false,
+          "packages": {
+            "light": {
+              "url": "https://github.com/cdelu/entrapprendre-content/releases/download/content-v0.5.0/M07-U01-core-v1.zip",
+              "sizeBytes": 5732,
+              "sha256": "64c340ee3565aa3949c28803436cedf882679a323c64ad64e207d884fead6169"
+            }
+          },
+          "numberLabel": "01",
+          "statusLabel": "Prête à télécharger",
+          "detailLabel": "50 min"
+        },
+        {
+          "id": "M07-U02",
+          "number": 2,
+          "moduleId": "M07",
+          "title": "À quel prix je vends ?",
+          "estimatedMinutes": 40,
+          "contentVersion": 1,
+          "downloadable": true,
+          "packageStem": "M07-U02",
+          "hasAudio": false,
+          "packages": {
+            "light": {
+              "url": "https://github.com/cdelu/entrapprendre-content/releases/download/content-v0.5.0/M07-U02-core-v1.zip",
+              "sizeBytes": 4368,
+              "sha256": "4db7bea59b7be63b65acdad8f1f1f7f0cbc08bd0f1da0cb47253342480e08222"
+            }
+          },
+          "numberLabel": "02",
+          "statusLabel": "Prête à télécharger",
+          "detailLabel": "40 min"
+        },
+        {
+          "id": "M07-U03",
+          "number": 3,
+          "moduleId": "M07",
+          "title": "Mon argent de départ et d'où il vient",
+          "estimatedMinutes": 45,
+          "contentVersion": 1,
+          "downloadable": true,
+          "packageStem": "M07-U03",
+          "hasAudio": false,
+          "packages": {
+            "light": {
+              "url": "https://github.com/cdelu/entrapprendre-content/releases/download/content-v0.5.0/M07-U03-core-v1.zip",
+              "sizeBytes": 5460,
+              "sha256": "c8f2410d236b2bf6fe08d9a7f0be7bff20d3778cd1c88fb3a296a5c9aa820757"
+            }
+          },
+          "numberLabel": "03",
+          "statusLabel": "Prête à télécharger",
+          "detailLabel": "45 min"
+        },
+        {
+          "id": "M07-U04",
+          "number": 4,
+          "moduleId": "M07",
+          "title": "Est-ce que ça marche ?",
+          "estimatedMinutes": 50,
+          "contentVersion": 1,
+          "downloadable": true,
+          "packageStem": "M07-U04",
+          "hasAudio": false,
+          "packages": {
+            "light": {
+              "url": "https://github.com/cdelu/entrapprendre-content/releases/download/content-v0.5.0/M07-U04-core-v1.zip",
+              "sizeBytes": 5520,
+              "sha256": "1be3434baa1ade0db702e3726b10bbfb2ac3e44cb64d05663a84e274348d73e9"
+            }
+          },
+          "numberLabel": "04",
+          "statusLabel": "Prête à télécharger",
+          "detailLabel": "50 min"
+        },
+        {
+          "id": "M07-U05",
+          "number": 5,
+          "moduleId": "M07",
+          "title": "Mon dossier complet",
+          "estimatedMinutes": 40,
+          "contentVersion": 1,
+          "downloadable": true,
+          "packageStem": "M07-U05",
+          "hasAudio": false,
+          "packages": {
+            "light": {
+              "url": "https://github.com/cdelu/entrapprendre-content/releases/download/content-v0.5.0/M07-U05-core-v1.zip",
+              "sizeBytes": 4139,
+              "sha256": "fc013ba76253c58f0d99a04ceb9919c2bc9e3ab9fa5116dfdfdb9547078a3521"
+            }
+          },
+          "numberLabel": "05",
+          "statusLabel": "Prête à télécharger",
+          "detailLabel": "40 min"
+        },
+        {
+          "id": "M07-U06",
+          "number": 6,
+          "moduleId": "M07",
+          "title": "Présenter mon plan d'affaires",
+          "estimatedMinutes": 50,
+          "contentVersion": 1,
+          "downloadable": true,
+          "packageStem": "M07-U06",
+          "hasAudio": false,
+          "packages": {
+            "light": {
+              "url": "https://github.com/cdelu/entrapprendre-content/releases/download/content-v0.5.0/M07-U06-core-v1.zip",
+              "sizeBytes": 5087,
+              "sha256": "fc8baa86c24637e2df0ea13bb84b1d6b396d35cc17f30f0a74506bf2cbbc7c0f"
+            }
+          },
+          "numberLabel": "06",
+          "statusLabel": "Prête à télécharger",
+          "detailLabel": "50 min"
+        }
+      ]
+    }
+  ],
+  "progressSegments": [
+    {
+      "moduleNumber": 1,
+      "showModuleDivider": false
+    },
+    {
+      "moduleNumber": 1,
+      "showModuleDivider": false
+    },
+    {
+      "moduleNumber": 1,
+      "showModuleDivider": false
+    },
+    {
+      "moduleNumber": 1,
+      "showModuleDivider": false
+    },
+    {
+      "moduleNumber": 1,
+      "showModuleDivider": false
+    },
+    {
+      "moduleNumber": 2,
+      "showModuleDivider": true
+    },
+    {
+      "moduleNumber": 2,
+      "showModuleDivider": false
+    },
+    {
+      "moduleNumber": 2,
+      "showModuleDivider": false
+    },
+    {
+      "moduleNumber": 3,
+      "showModuleDivider": true
+    },
+    {
+      "moduleNumber": 3,
+      "showModuleDivider": false
+    },
+    {
+      "moduleNumber": 3,
+      "showModuleDivider": false
+    },
+    {
+      "moduleNumber": 3,
+      "showModuleDivider": false
+    },
+    {
+      "moduleNumber": 4,
+      "showModuleDivider": true
+    },
+    {
+      "moduleNumber": 4,
+      "showModuleDivider": false
+    },
+    {
+      "moduleNumber": 4,
+      "showModuleDivider": false
+    },
+    {
+      "moduleNumber": 4,
+      "showModuleDivider": false
+    },
+    {
+      "moduleNumber": 5,
+      "showModuleDivider": true
+    },
+    {
+      "moduleNumber": 5,
+      "showModuleDivider": false
+    },
+    {
+      "moduleNumber": 5,
+      "showModuleDivider": false
+    },
+    {
+      "moduleNumber": 5,
+      "showModuleDivider": false
+    },
+    {
+      "moduleNumber": 5,
+      "showModuleDivider": false
+    },
+    {
+      "moduleNumber": 5,
+      "showModuleDivider": false
+    },
+    {
+      "moduleNumber": 6,
+      "showModuleDivider": true
+    },
+    {
+      "moduleNumber": 6,
+      "showModuleDivider": false
+    },
+    {
+      "moduleNumber": 6,
+      "showModuleDivider": false
+    },
+    {
+      "moduleNumber": 6,
+      "showModuleDivider": false
+    },
+    {
+      "moduleNumber": 6,
+      "showModuleDivider": false
+    },
+    {
+      "moduleNumber": 6,
+      "showModuleDivider": false
+    },
+    {
+      "moduleNumber": 6,
+      "showModuleDivider": false
+    },
+    {
+      "moduleNumber": 6,
+      "showModuleDivider": false
+    },
+    {
+      "moduleNumber": 6,
+      "showModuleDivider": false
+    },
+    {
+      "moduleNumber": 7,
+      "showModuleDivider": true
+    },
+    {
+      "moduleNumber": 7,
+      "showModuleDivider": false
+    },
+    {
+      "moduleNumber": 7,
+      "showModuleDivider": false
+    },
+    {
+      "moduleNumber": 7,
+      "showModuleDivider": false
+    },
+    {
+      "moduleNumber": 7,
+      "showModuleDivider": false
+    },
+    {
+      "moduleNumber": 7,
+      "showModuleDivider": false
+    }
+  ]
+}
