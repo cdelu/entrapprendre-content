@@ -37,7 +37,7 @@
       "studioPreviewStatus": "absent",
       "runtimeCarried": true,
       "learnerWidget": "BlocTexteUnite",
-      "fixturePath": "source/units/M02-U01/unit.json#/blocks/0",
+      "fixturePath": "schema/fixtures/supported-blocks.json#/blocks/0",
       "fields": {
         "rendered": ["title", "body"],
         "structural": ["id", "kind"],
@@ -53,7 +53,7 @@
       "studioPreviewStatus": "absent",
       "runtimeCarried": true,
       "learnerWidget": "BlocAccordeonUnite",
-      "fixturePath": "source/units/M02-U01/unit.json#/blocks/1",
+      "fixturePath": "schema/fixtures/supported-blocks.json#/blocks/1",
       "fields": {
         "rendered": ["label", "intro", "items[].title", "items[].body"],
         "structural": ["id", "kind"],
@@ -70,7 +70,7 @@
       "studioPreviewStatus": "absent",
       "runtimeCarried": true,
       "learnerWidget": "BlocExerciceUnite",
-      "fixturePath": "source/units/M02-U01/unit.json#/blocks/2",
+      "fixturePath": "schema/fixtures/supported-blocks.json#/blocks/2",
       "fields": {
         "rendered": ["title", "items[]"],
         "structural": ["id", "kind"],
@@ -90,7 +90,7 @@
       "studioPreviewStatus": "absent",
       "runtimeCarried": true,
       "learnerWidget": "BlocRetenirUnite",
-      "fixturePath": "source/units/M02-U01/unit.json#/blocks/3",
+      "fixturePath": "schema/fixtures/supported-blocks.json#/blocks/3",
       "fields": {
         "rendered": ["title", "body"],
         "structural": ["id", "kind"],
@@ -106,7 +106,7 @@
       "studioPreviewStatus": "absent",
       "runtimeCarried": true,
       "learnerWidget": "BlocCartesUnite",
-      "fixturePath": "source/units/M02-U02/unit.json#/blocks/1",
+      "fixturePath": "schema/fixtures/supported-blocks.json#/blocks/4",
       "galleryPrototype": "EaBlocCarteRetournee",
       "fields": {
         "rendered": ["title", "items[].title", "items[].body"],
@@ -124,7 +124,7 @@
       "studioPreviewStatus": "absent",
       "runtimeCarried": true,
       "learnerWidget": "BlocOngletsUnite",
-      "fixturePath": "source/units/M02-U02/unit.json#/blocks/0",
+      "fixturePath": "schema/fixtures/supported-blocks.json#/blocks/5",
       "galleryPrototype": "EaBlocOnglets",
       "fields": {
         "rendered": ["title", "items[].title", "items[].body"],
@@ -146,7 +146,7 @@
       "studioPreviewStatus": "absent",
       "runtimeCarried": true,
       "learnerWidget": "BlocDeclarationUnite",
-      "fixturePath": "source/units/M02-U03/unit.json#/blocks/0",
+      "fixturePath": "schema/fixtures/supported-blocks.json#/blocks/6",
       "galleryPrototype": "EaBlocDeclaration",
       "fields": {
         "rendered": ["label", "body"],
@@ -164,7 +164,7 @@
       "studioPreviewStatus": "absent",
       "runtimeCarried": true,
       "learnerWidget": "BlocCitationUnite",
-      "fixturePath": "source/units/M02-U03/unit.json#/blocks/1",
+      "fixturePath": "schema/fixtures/supported-blocks.json#/blocks/7",
       "galleryPrototype": "EaBlocCitation",
       "fields": {
         "rendered": ["body", "label"],
@@ -182,7 +182,7 @@
       "studioPreviewStatus": "absent",
       "runtimeCarried": true,
       "learnerWidget": "BlocListeUnite",
-      "fixturePath": "source/units/M02-U03/unit.json#/blocks/2",
+      "fixturePath": "schema/fixtures/supported-blocks.json#/blocks/8",
       "galleryPrototype": "EaBlocListe",
       "fields": {
         "rendered": ["title", "items[].body"],
@@ -200,7 +200,7 @@
       "studioPreviewStatus": "absent",
       "runtimeCarried": true,
       "learnerWidget": "BlocImageUnite",
-      "fixturePath": "source/units/M02-U03/unit.json#/blocks/3",
+      "fixturePath": "schema/fixtures/supported-blocks.json#/blocks/9",
       "galleryPrototype": "EaBlocImage",
       "fields": {
         "rendered": ["title", "image.path", "body"],
@@ -222,7 +222,7 @@
       "studioPreviewStatus": "absent",
       "runtimeCarried": true,
       "learnerWidget": "BlocProcessusUnite",
-      "fixturePath": "source/units/M02-U03/unit.json#/blocks/4",
+      "fixturePath": "schema/fixtures/supported-blocks.json#/blocks/10",
       "galleryPrototype": "EaBlocProcessus",
       "fields": {
         "rendered": ["title", "items[].title", "items[].body"],
@@ -240,7 +240,7 @@
       "studioPreviewStatus": "absent",
       "runtimeCarried": true,
       "learnerWidget": "BlocChronologieUnite",
-      "fixturePath": "source/units/M02-U03/unit.json#/blocks/5",
+      "fixturePath": "schema/fixtures/supported-blocks.json#/blocks/11",
       "galleryPrototype": "EaBlocChronologie",
       "fields": {
         "rendered": ["title", "items[].label", "items[].title", "items[].body"],
@@ -296,7 +296,7 @@
       "studioPreviewStatus": "absent",
       "runtimeCarried": true,
       "learnerWidget": "ExerciceTexteUnite (EaChampSaisie, modeTexte)",
-      "fixturePath": "source/units/M02-U01/unit.json#/blocks/2/items/1",
+      "fixturePath": "schema/fixtures/supported-blocks.json#/blocks/2/items/1",
       "fields": {
         "rendered": ["prompt"],
         "structural": ["id", "kind"],
@@ -313,7 +313,7 @@
       "studioPreviewStatus": "absent",
       "runtimeCarried": true,
       "learnerWidget": "ExerciceEchelleUnite (EaChampSaisie, modeEchelle)",
-      "fixturePath": "source/units/M02-U01/unit.json#/blocks/2/items/0",
+      "fixturePath": "schema/fixtures/supported-blocks.json#/blocks/2/items/0",
       "fields": {
         "rendered": ["group", "options", "questions[].text"],
         "structural": ["id", "questions[].id", "kind"]

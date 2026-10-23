@@ -1,0 +1,233 @@
+{
+  "schemaVersion": 1,
+  "id": "M03-U03",
+  "moduleId": "M03",
+  "number": 3,
+  "title": "Prendre des décisions",
+  "status": "published",
+  "estimatedMinutes": 30,
+  "objectives": [
+    "Suivre une méthode en sept étapes pour régler un problème et décider.",
+    "Analyser un problème d'atelier : causes, solutions, choix.",
+    "Savoir quand décider en groupe et comment faire un remue-méninges.",
+    "Vérifier ce que tu sais vraiment sur la prise de décision."
+  ],
+  "blocks": [
+    {
+      "id": "introduction",
+      "kind": "text",
+      "title": "Décider, ça s'apprend",
+      "body": "Un entrepreneur prend des décisions importantes, qui pèsent lourd sur l'avenir de son entreprise. Bien décider est une compétence précieuse. Elle s'améliore avec l'expérience, à mesure que tu fais face à des situations de plus en plus difficiles."
+    },
+    {
+      "id": "sept_etapes",
+      "kind": "process",
+      "title": "Sept étapes pour régler un problème et décider",
+      "items": [
+        {
+          "title": "Repère le vrai problème",
+          "body": "Commence par dire clairement ce qu'il faut régler."
+        },
+        {
+          "title": "Cherche les causes",
+          "body": "Comprends pourquoi le problème existe. Cela t'aidera à trouver la bonne solution."
+        },
+        {
+          "title": "Liste les solutions possibles",
+          "body": "Note les différentes façons de régler le problème."
+        },
+        {
+          "title": "Pèse chaque solution",
+          "body": "Regarde les avantages et les inconvénients de chacune."
+        },
+        {
+          "title": "Choisis la meilleure",
+          "body": "Décide-toi pour celle qui te semble la plus efficace."
+        },
+        {
+          "title": "Passe à l'action",
+          "body": "Applique ta décision."
+        },
+        {
+          "title": "Vérifie que ça marche",
+          "body": "Surveille les résultats pour être sûr que le problème est réglé."
+        }
+      ]
+    },
+    {
+      "id": "ce_quil_faut_savoir",
+      "kind": "list",
+      "title": "Ce qu'il faut savoir",
+      "items": [
+        {
+          "body": "Cette méthode est logique, mais pour réussir, il faut aussi mener les choses jusqu'au bout."
+        },
+        {
+          "body": "Une fois ta décision prise, avance sans hésiter, avec fermeté et confiance."
+        },
+        {
+          "body": "Les entrepreneurs n'ont pas trop peur de se tromper. Ils acceptent de prendre des risques pour atteindre leurs objectifs."
+        },
+        {
+          "body": "Le temps compte : il faut parfois décider vite, surtout quand l'entreprise grandit."
+        },
+        {
+          "body": "On décide souvent sans connaître l'avenir et sans avoir toutes les informations. Sois prêt à apprendre et à corriger."
+        },
+        {
+          "body": "Plus tu t'exerces, meilleures sont tes décisions, et plus tu prends confiance."
+        }
+      ]
+    },
+    {
+      "id": "situation_employe",
+      "kind": "text",
+      "title": "Un problème dans ton entreprise",
+      "body": "Imagine : tu diriges une petite entreprise de quatre employés. Deux travaillent à plein temps, deux à temps partiel. L'un des employés à plein temps arrive souvent en retard et demande beaucoup de congés. Son comportement crée des tensions et du mécontentement chez les autres. Utilise les étapes de la méthode pour réfléchir avant d'agir."
+    },
+    {
+      "id": "tableau_decision",
+      "kind": "exercise",
+      "title": "Analyse le problème de l'employé en retard",
+      "items": [
+        {
+          "id": "causes_possibles",
+          "kind": "textarea",
+          "prompt": "Quelles peuvent être les causes de ses retards et de ses nombreuses demandes de congés ? Écris-en plusieurs."
+        },
+        {
+          "id": "solutions_possibles",
+          "kind": "textarea",
+          "prompt": "Quelles solutions possibles vois-tu ? Écris-en au moins trois."
+        },
+        {
+          "id": "evaluation_solutions",
+          "kind": "textarea",
+          "prompt": "Pour chaque solution, écris un avantage et un inconvénient."
+        },
+        {
+          "id": "solution_choisie",
+          "kind": "textarea",
+          "prompt": "Quelle solution choisis-tu ? Pourquoi ? Comment vérifieras-tu qu'elle marche ?"
+        }
+      ]
+    },
+    {
+      "id": "decider_en_groupe",
+      "kind": "text",
+      "title": "Décider en groupe",
+      "body": "Un vieux dicton dit : « Deux têtes valent mieux qu'une. » À plusieurs, on a plus d'idées et souvent de meilleures solutions. Et ceux qui ont participé à la décision sont plus motivés pour l'appliquer, car ils se sentent responsables. Souvent, il n'y a pas une seule bonne réponse : c'est à toi de choisir celle qui convient le mieux."
+    },
+    {
+      "id": "decider_seul",
+      "kind": "text",
+      "title": "Parfois, mieux vaut décider seul",
+      "body": "Décider seul est parfois préférable, par exemple quand il faut aller très vite. En groupe, fais attention à ce qu'une seule personne ne domine pas tout le monde. Par peur de déplaire aux plus forts, certains n'osent pas dire ce qu'ils pensent vraiment."
+    },
+    {
+      "id": "remue_meninges",
+      "kind": "text",
+      "title": "Le remue-méninges",
+      "body": "Le remue-méninges, c'est chercher des solutions en groupe en faisant « bouger » les idées. Une personne présente le problème. Chacun dit toutes les idées qui lui viennent, et personne ne critique. On note tout, puis on examine les idées une par une pour garder les meilleures. Même une idée bizarre peut mener à une bonne solution."
+    },
+    {
+      "id": "remue_meninges_quand",
+      "kind": "text",
+      "title": "Quand faire un remue-méninges ?",
+      "body": "Une séance dure entre 30 et 45 minutes. Il vaut mieux que les participants n'aient pas réfléchi au problème avant, pour arriver avec des idées fraîches. C'est utile pour les problèmes qui demandent de la créativité : trouver un nom pour un produit, inventer une nouvelle façon de l'utiliser, ou perdre moins de temps sur une tâche."
+    },
+    {
+      "id": "vrai_faux_decision",
+      "kind": "flashcards",
+      "title": "Que sais-tu vraiment sur la prise de décision ? · lis la phrase, dis-toi « vrai » ou « faux », puis touche la carte",
+      "items": [
+        {
+          "title": "Savoir bien décider, c'est inné : soit on l'a, soit on ne l'a pas.",
+          "body": "Faux. Décider est une compétence. Elle s'améliore avec l'expérience, à mesure qu'on fait face à des situations plus difficiles."
+        },
+        {
+          "title": "Chaque problème a une seule bonne solution.",
+          "body": "Faux. Le plus souvent, plusieurs solutions sont acceptables. Celui qui décide choisit celle qui convient le mieux à sa situation."
+        },
+        {
+          "title": "Prendre sa première idée est en général la meilleure façon de décider.",
+          "body": "Faux. C'est une erreur fréquente. La méthode en sept étapes demande de lister plusieurs solutions avant de choisir."
+        },
+        {
+          "title": "Il est plus difficile de décider quand on comprend mal le problème.",
+          "body": "Vrai. Les deux premières étapes de la méthode, repérer le vrai problème et chercher ses causes, servent justement à bien le comprendre."
+        },
+        {
+          "title": "Il faut toujours décider le plus vite possible.",
+          "body": "Faux. Le temps compte, et il faut parfois décider vite. Mais pas toujours : la vitesse dépend de ce qui est en jeu."
+        },
+        {
+          "title": "Bien décider demande souvent d'essayer plusieurs solutions et de corriger ses erreurs.",
+          "body": "Vrai. La septième étape, vérifier les résultats, sert justement à corriger ce qui ne marche pas."
+        },
+        {
+          "title": "Avant de choisir, il vaut mieux réfléchir à toutes les options possibles.",
+          "body": "Vrai. C'est la troisième étape : lister les solutions possibles."
+        },
+        {
+          "title": "Pour un problème difficile, demander l'avis des autres aide à mieux décider.",
+          "body": "Vrai. « Deux têtes valent mieux qu'une » : on a plus d'idées et de meilleures solutions. C'est tout l'intérêt du remue-méninges."
+        },
+        {
+          "title": "Plus on se renseigne sur un problème, mieux on peut décider.",
+          "body": "Vrai. On décide souvent sans avoir toutes les informations. Mais chercher ce qu'on peut savoir améliore toujours la décision."
+        },
+        {
+          "title": "Une bonne décision prévoit à l'avance ses effets positifs et négatifs.",
+          "body": "Vrai. C'est la quatrième étape : peser les avantages et les inconvénients de chaque solution."
+        }
+      ]
+    },
+    {
+      "id": "a_retenir",
+      "kind": "takeaway",
+      "title": "À retenir",
+      "body": "Pour bien décider, repère le vrai problème et ses causes, liste plusieurs solutions, pèse-les, choisis, agis, puis vérifie. Pour les problèmes difficiles, demande l'avis des autres. Plus tu t'exerces, plus tu décides avec confiance."
+    },
+    {
+      "id": "journal_formation",
+      "kind": "exercise",
+      "title": "Mon journal de formation",
+      "label": "Prends quelques minutes pour garder une trace de ce que tu as appris.",
+      "items": [
+        {
+          "id": "journal_ce_que_je_retiens",
+          "kind": "textarea",
+          "prompt": "Quelle étape de la méthode pour décider te sera la plus utile ? Pourquoi ?"
+        },
+        {
+          "id": "journal_reussi",
+          "kind": "textarea",
+          "prompt": "Qu'est-ce que tu as bien réussi ou bien compris ?"
+        },
+        {
+          "id": "journal_difficile",
+          "kind": "textarea",
+          "prompt": "Qu'est-ce qui a été difficile pour toi ?"
+        },
+        {
+          "id": "journal_mon_prochain_pas",
+          "kind": "textarea",
+          "prompt": "Cette semaine, quel petit problème de ton atelier ou de ta vie vas-tu régler avec les sept étapes ?"
+        },
+        {
+          "id": "journal_ressenti",
+          "kind": "scale",
+          "group": "Comment je me sens",
+          "options": ["Pas à l'aise", "Moyen", "À l'aise", "Très à l'aise"],
+          "questions": [
+            {
+              "id": "ressenti_unite",
+              "text": "Comment te sens-tu après cette unité ?"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

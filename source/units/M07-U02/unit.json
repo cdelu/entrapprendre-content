@@ -1,0 +1,303 @@
+{
+  "schemaVersion": 1,
+  "id": "M07-U02",
+  "moduleId": "M07",
+  "number": 2,
+  "title": "À quel prix je vends ?",
+  "status": "published",
+  "estimatedMinutes": 40,
+  "objectives": [
+    "Trouver ta zone de prix entre ton coût et ce que tes clients acceptent de payer.",
+    "Choisir ton prix de vente et calculer ce que tu gagnes sur chaque article.",
+    "Préparer ta réponse quand un client trouve ton prix trop cher.",
+    "Fixer des prix selon les clients, toujours au-dessus de ton coût."
+  ],
+  "blocks": [
+    {
+      "id": "introduction",
+      "kind": "text",
+      "title": "Fixer son prix, ce n'est pas deviner",
+      "body": "Pour fixer ton prix, il te faut trois chiffres. Tu en as déjà deux : ton coût et le prix de tes concurrents. Le troisième, c'est ce que tes clients acceptent de payer."
+    },
+    {
+      "id": "trois_chiffres",
+      "kind": "process",
+      "title": "Les trois chiffres de Ramatou pour son portefeuille",
+      "items": [
+        {
+          "title": "Son coût : le prix plancher",
+          "body": "Un portefeuille lui coûte 3 245 FCFA, calculé dans l'unité « Combien me coûte un article ? ». C'est son prix plancher, le plus bas possible. En dessous, elle perd de l'argent à chaque vente. Aucune exception."
+        },
+        {
+          "title": "Le prix des concurrents",
+          "body": "Relevé dans l'unité « Mes concurrents et mon avantage ». Les maroquiniers du quartier vendent entre 3 000 et 3 500 FCFA, avec des finitions irrégulières. Les articles importés coûtent 2 000 FCFA et s'abîment vite. Les boutiques de la ville affichent 8 000 FCFA et plus."
+        },
+        {
+          "title": "Ce que le client accepte : le prix plafond",
+          "body": "Ce chiffre ne s'invente pas, il se demande. Pendant son enquête, Ramatou a appris que les gens du quartier mettraient 4 000 à 5 000 FCFA pour un portefeuille solide, bien fini et fait sur place. C'est son prix plafond : au-dessus, ils n'achètent plus."
+        }
+      ]
+    },
+    {
+      "id": "zone_prix",
+      "kind": "text",
+      "title": "Ta zone de prix",
+      "body": "Ton prix se choisit entre le plancher et le plafond. Ramatou a choisi 4 500 FCFA. Son bénéfice, ce qu'elle gagne en plus de son salaire, est donc de 4 500 − 3 245 = 1 255 FCFA par portefeuille. C'est plus cher que les maroquiniers du quartier, parce que son avantage, c'est la finition et le délai tenu."
+    },
+    {
+      "id": "cout_trop_haut",
+      "kind": "text",
+      "title": "Et si ton coût dépasse ce que le client accepte ?",
+      "body": "Cela arrive souvent. Ce n'est pas un échec, c'est une information précieuse : ton projet, tel qu'il est, ne peut pas marcher. Il doit changer. Tu as quatre solutions."
+    },
+    {
+      "id": "quatre_solutions",
+      "kind": "list",
+      "title": "Quatre solutions si ton coût est trop haut",
+      "items": [
+        {
+          "body": "Produire davantage, pour partager tes frais sur plus d'articles. Souviens-toi : à 60 articles par mois, le portefeuille de Ramatou ne coûtait plus que 2 588 FCFA."
+        },
+        {
+          "body": "Réduire tes frais : pas de local, du matériel d'occasion, une machine partagée, des matières achetées à plusieurs."
+        },
+        {
+          "body": "Changer de clients : viser un groupe qui paie mieux, par exemple les employés de bureau plutôt que les élèves."
+        },
+        {
+          "body": "Changer de produit, ou même d'idée. C'est dur à entendre, mais mieux vaut le découvrir maintenant que dans six mois, avec un prêt à rembourser."
+        }
+      ]
+    },
+    {
+      "id": "jamais_sous_cout",
+      "kind": "statement",
+      "label": "À NE JAMAIS FAIRE",
+      "body": "Vendre en dessous de ton coût en espérant que « ça va s'arranger ». Ça ne s'arrange pas : chaque vente creuse le trou."
+    },
+    {
+      "id": "mes_trois_chiffres",
+      "kind": "exercise",
+      "title": "Mes trois chiffres",
+      "items": [
+        {
+          "id": "prix_mon_cout",
+          "kind": "textarea",
+          "prompt": "Ton coût pour un article, calculé dans l'unité « Combien me coûte un article ? »."
+        },
+        {
+          "id": "prix_concurrents",
+          "kind": "textarea",
+          "prompt": "Le prix de tes concurrents. Écris le prix le plus bas et le prix le plus haut que tu as relevés."
+        },
+        {
+          "id": "prix_plafond_clients",
+          "kind": "textarea",
+          "prompt": "Jusqu'à combien tes clients acceptent-ils de payer ? Écris le montant et qui te l'a dit."
+        },
+        {
+          "id": "prix_cout_sous_plafond",
+          "kind": "textarea",
+          "prompt": "Ton coût est-il en dessous de ce que le client accepte de payer ? Écris les deux chiffres, puis oui ou non."
+        },
+        {
+          "id": "prix_solution_choisie",
+          "kind": "textarea",
+          "prompt": "Si ton coût est trop haut : laquelle des quatre solutions vas-tu choisir, et comment vas-tu faire ?"
+        }
+      ]
+    },
+    {
+      "id": "justifier_prix",
+      "kind": "text",
+      "title": "Justifier son prix",
+      "body": "Si tu es plus cher que l'article importé, on te le dira. Prépare ta réponse à l'avance et appuie-toi sur ton avantage. Par exemple, un client dit : « C'est cher, au marché j'en trouve à 2 000 FCFA. » L'artisan répond : « Celui du marché tiendra six mois. Le mien tiendra des années, et si une couture lâche, je la répare gratuitement. Regarde la finition. »"
+    },
+    {
+      "id": "expliquer_pas_baisser",
+      "kind": "statement",
+      "label": "UN PRIX SE DÉFEND",
+      "body": "Un prix ne se défend pas en baissant, il se défend en expliquant. Attention au piège : si tu baisses ton prix pour battre un concurrent, il baissera le sien, et vous perdrez tous les deux."
+    },
+    {
+      "id": "marge_negociation",
+      "kind": "text",
+      "title": "Garde une marge pour négocier",
+      "body": "Les clients vont marchander, c'est normal. Garde une marge de négociation, c'est-à-dire un petit écart entre le prix que tu annonces et ton coût, pour pouvoir baisser un peu sans perdre. Ramatou peut descendre à 4 000 FCFA pour un client fidèle : elle gagne encore 4 000 − 3 245 = 755 FCFA. Mais à 3 245 FCFA, elle ne gagne plus rien, et en dessous, elle perd."
+    },
+    {
+      "id": "ajouter_plutot",
+      "kind": "text",
+      "title": "Ajouter plutôt que baisser",
+      "body": "Souviens-toi de la vente de mangues, dans l'unité « Négocier » : il vaut souvent mieux ajouter quelque chose que baisser son prix. Un porte-clés offert avec un portefeuille coûte à Ramatou quelques chutes de cuir. Une remise de 500 FCFA, elle, sort directement de son bénéfice."
+    },
+    {
+      "id": "mon_prix",
+      "kind": "exercise",
+      "title": "Mon prix",
+      "items": [
+        {
+          "id": "prix_de_vente",
+          "kind": "textarea",
+          "prompt": "Ton prix de vente pour un article."
+        },
+        {
+          "id": "benefice_par_article",
+          "kind": "textarea",
+          "prompt": "Ton bénéfice sur un article. Écris ton calcul : prix de vente − coût."
+        },
+        {
+          "id": "raisons_du_prix",
+          "kind": "textarea",
+          "prompt": "Écris trois raisons qui justifient ton prix."
+        },
+        {
+          "id": "prix_minimum_negociation",
+          "kind": "textarea",
+          "prompt": "Jusqu'où peux-tu descendre en négociant, sans perdre d'argent ? Écris le montant."
+        },
+        {
+          "id": "offrir_plutot_baisser",
+          "kind": "textarea",
+          "prompt": "Qu'est-ce que tu peux offrir au client plutôt que baisser ton prix ?"
+        }
+      ]
+    },
+    {
+      "id": "prix_selon_clients",
+      "kind": "accordion",
+      "label": "Un prix, ou plusieurs ?",
+      "intro": "Tu peux avoir des prix différents selon les clients, à condition de rester au-dessus de ton coût. Voici les prix de Ramatou pour son portefeuille, qui lui coûte 3 245 FCFA.",
+      "items": [
+        {
+          "title": "Client au détail : 4 500 FCFA",
+          "body": "C'est son prix normal. Elle gagne 4 500 − 3 245 = 1 255 FCFA."
+        },
+        {
+          "title": "Client fidèle ou commande de plusieurs pièces : 4 000 FCFA",
+          "body": "Elle gagne moins, mais les ventes sont régulières. 4 000 − 3 245 = 755 FCFA."
+        },
+        {
+          "title": "Revendeur ou boutique : 3 800 FCFA",
+          "body": "Elle gagne moins, mais il achète en quantité et elle n'a pas à chercher le client. 3 800 − 3 245 = 555 FCFA."
+        },
+        {
+          "title": "Offre de lancement, les premières semaines : 4 000 FCFA",
+          "body": "Pour lancer les ventes et se faire connaître. 4 000 − 3 245 = 755 FCFA."
+        }
+      ]
+    },
+    {
+      "id": "regle_cout",
+      "kind": "text",
+      "body": "Remarque que même le prix pour le revendeur, 3 800 FCFA, reste au-dessus des 3 245 FCFA du coût. C'est la seule règle qui ne se discute pas."
+    },
+    {
+      "id": "mes_prix_clients",
+      "kind": "exercise",
+      "title": "Mes prix selon les clients",
+      "items": [
+        {
+          "id": "prix_detail",
+          "kind": "textarea",
+          "prompt": "Pour un client au détail : écris ton prix et pourquoi."
+        },
+        {
+          "id": "prix_client_fidele",
+          "kind": "textarea",
+          "prompt": "Pour un client fidèle ou une grosse commande : écris ton prix et pourquoi."
+        },
+        {
+          "id": "prix_revendeur",
+          "kind": "textarea",
+          "prompt": "Pour un revendeur ou une boutique : écris ton prix et pourquoi."
+        },
+        {
+          "id": "prix_lancement",
+          "kind": "textarea",
+          "prompt": "Pour ton offre de lancement : écris ton prix et pourquoi. Vérifie que chacun de tes prix reste au-dessus de ton coût."
+        }
+      ]
+    },
+    {
+      "id": "defendre_consigne",
+      "kind": "text",
+      "title": "Je défends mon prix",
+      "body": "En classe, vous jouez la scène à deux. L'un est le client : il trouve le prix trop cher et parle d'un article importé moins cher. L'autre est l'artisan : il défend son prix sans le baisser. Puis vous échangez les rôles. Ici, prépare-toi par écrit."
+    },
+    {
+      "id": "je_defends_mon_prix",
+      "kind": "exercise",
+      "title": "Je prépare la défense de mon prix",
+      "items": [
+        {
+          "id": "defense_objection_client",
+          "kind": "textarea",
+          "prompt": "Qu'est-ce qu'un client pourrait te dire pour trouver ton prix trop cher ?"
+        },
+        {
+          "id": "defense_ma_reponse",
+          "kind": "textarea",
+          "prompt": "Écris ta réponse, sans baisser ton prix. Appuie-toi sur ton avantage."
+        },
+        {
+          "id": "defense_apres_jeu",
+          "kind": "textarea",
+          "prompt": "Après la scène en classe : qu'est-ce qui a marché ? Qu'est-ce que tu dirais autrement la prochaine fois ?"
+        }
+      ]
+    },
+    {
+      "id": "piece_dossier",
+      "kind": "text",
+      "title": "Pour ton dossier",
+      "body": "Recopie tes réponses sur papier et range-les dans ta chemise : c'est la pièce « Mon prix de vente »."
+    },
+    {
+      "id": "a_retenir",
+      "kind": "takeaway",
+      "title": "À retenir",
+      "body": "Ton coût est ton prix plancher : jamais en dessous. Ce que le client accepte de payer est ton prix plafond : il se demande, il ne se devine pas. Si ton coût dépasse le plafond, ton projet doit changer. Un prix se défend en expliquant. Garde une marge pour négocier, et préfère ajouter plutôt que baisser."
+    },
+    {
+      "id": "journal_formation",
+      "kind": "exercise",
+      "title": "Mon journal de formation",
+      "label": "Prends quelques minutes pour garder une trace de ce que tu as appris.",
+      "items": [
+        {
+          "id": "journal_ce_que_je_retiens",
+          "kind": "textarea",
+          "prompt": "Qu'est-ce que tu retiens le plus sur la façon de fixer ton prix ?"
+        },
+        {
+          "id": "journal_reussi",
+          "kind": "textarea",
+          "prompt": "Qu'est-ce que tu as bien réussi ou bien compris ?"
+        },
+        {
+          "id": "journal_difficile",
+          "kind": "textarea",
+          "prompt": "Qu'est-ce qui a été difficile pour toi ?"
+        },
+        {
+          "id": "journal_mon_prochain_pas",
+          "kind": "textarea",
+          "prompt": "Quel petit pas vas-tu faire cette semaine ? Par exemple : demander à trois clients combien ils paieraient ton article."
+        },
+        {
+          "id": "journal_ressenti",
+          "kind": "scale",
+          "group": "Comment je me sens",
+          "options": ["Pas à l'aise", "Moyen", "À l'aise", "Très à l'aise"],
+          "questions": [
+            {
+              "id": "ressenti_unite",
+              "text": "Comment te sens-tu après cette unité ?"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

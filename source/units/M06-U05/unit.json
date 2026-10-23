@@ -1,0 +1,314 @@
+{
+  "schemaVersion": 1,
+  "id": "M06-U05",
+  "moduleId": "M06",
+  "number": 5,
+  "title": "Où et comment je vends ?",
+  "status": "published",
+  "estimatedMinutes": 35,
+  "objectives": [
+    "Comparer cinq façons de vendre et choisir par laquelle commencer.",
+    "Choisir trois actions pour te faire connaître.",
+    "Utiliser ton téléphone pour montrer et vendre tes produits.",
+    "Résumer en trois phrases où et comment tu vends."
+  ],
+  "blocks": [
+    {
+      "id": "ou_tu_vends",
+      "kind": "text",
+      "title": "Où tu vends",
+      "body": "Le meilleur produit du monde ne se vend pas si personne ne le voit. Pour un artisan, il y a cinq façons de vendre. Et rien n'empêche de les combiner."
+    },
+    {
+      "id": "cinq_facons",
+      "kind": "accordion",
+      "label": "Cinq façons de vendre",
+      "intro": "Touche chaque façon de vendre pour voir ce qu'elle coûte, son avantage et son inconvénient.",
+      "items": [
+        {
+          "title": "Chez toi, dans la cour ou à l'atelier",
+          "body": "Ça ne coûte rien. L'avantage : pas de loyer, et tu travailles et vends au même endroit. L'inconvénient : il y a peu de passage, alors il faut faire venir les clients."
+        },
+        {
+          "title": "Une place au marché",
+          "body": "Ça coûte un loyer chaque mois. L'avantage : beaucoup de passage, on te voit. L'inconvénient : c'est cher, et il faut y être tous les jours."
+        },
+        {
+          "title": "En dépôt chez un revendeur",
+          "body": "Tu laisses tes articles chez un revendeur, qui les vend pour toi. Ça coûte une part sur chaque vente. L'avantage : tu atteins des clients sans bouger. L'inconvénient : tu gagnes moins par article, et ce n'est pas toi qui mènes la vente."
+        },
+        {
+          "title": "Les foires et les événements",
+          "body": "Ça coûte un droit de stand, de temps en temps. L'avantage : beaucoup de monde, et de nouveaux clients. L'inconvénient : ça ne dure que quelques jours par an."
+        },
+        {
+          "title": "Sur commande, avec livraison",
+          "body": "Ça coûte le transport. L'avantage : aucun invendu, car tu produis ce qui est déjà vendu. L'inconvénient : il faut être connu pour recevoir des commandes."
+        }
+      ]
+    },
+    {
+      "id": "questions_choisir_lieu",
+      "kind": "list",
+      "title": "Pour choisir, pose-toi trois questions",
+      "items": [
+        {
+          "body": "Où mes clients passent-ils déjà ?"
+        },
+        {
+          "body": "Combien ça me coûte par mois ?"
+        },
+        {
+          "body": "Est-ce que je peux me le permettre maintenant ?"
+        }
+      ]
+    },
+    {
+      "id": "piege_marche",
+      "kind": "text",
+      "title": "Le piège de la place au marché",
+      "body": "Beaucoup de jeunes veulent une place au marché tout de suite. C'est souvent une erreur de départ : le loyer tombe chaque mois, que tu vendes ou non. Commencer chez soi et sur commande, puis louer quand les ventes le justifient, c'est presque toujours plus sage."
+    },
+    {
+      "id": "depart_ramatou",
+      "kind": "text",
+      "title": "Comment Ramatou a démarré",
+      "body": "Ramatou a démarré dans la cour familiale. Au début, elle prenait des commandes par téléphone. Plus tard, elle a laissé des articles en dépôt dans deux boutiques. Elle n'a pensé à une place au marché qu'après deux ans."
+    },
+    {
+      "id": "ou_vendre_consigne",
+      "kind": "text",
+      "title": "À toi : où vas-tu vendre ?",
+      "body": "Pour chacune des cinq façons de vendre, dis si tu vas l'utiliser. Puis écris ce que te coûteraient par mois celles que tu choisis, et réponds aux trois questions."
+    },
+    {
+      "id": "ou_je_vais_vendre",
+      "kind": "exercise",
+      "title": "Où je vais vendre",
+      "items": [
+        {
+          "id": "facons_de_vendre",
+          "kind": "scale",
+          "group": "Vas-tu vendre de cette façon ?",
+          "options": ["Oui, dès le début", "Plus tard", "Non"],
+          "questions": [
+            {
+              "id": "vendre_atelier",
+              "text": "Chez moi, à l'atelier."
+            },
+            {
+              "id": "vendre_marche",
+              "text": "Une place au marché."
+            },
+            {
+              "id": "vendre_depot",
+              "text": "En dépôt chez un revendeur."
+            },
+            {
+              "id": "vendre_foires",
+              "text": "Les foires et les événements."
+            },
+            {
+              "id": "vendre_commande",
+              "text": "Sur commande, avec livraison."
+            }
+          ]
+        },
+        {
+          "id": "vente_cout_par_mois",
+          "kind": "textarea",
+          "prompt": "Pour chaque façon de vendre que tu vas utiliser, écris ce qu'elle te coûtera par mois, en FCFA."
+        },
+        {
+          "id": "vente_premier_mois",
+          "kind": "textarea",
+          "prompt": "Par quoi commences-tu, le premier mois ?"
+        },
+        {
+          "id": "vente_plus_tard",
+          "kind": "textarea",
+          "prompt": "Qu'est-ce que tu ajouteras quand les ventes marcheront ?"
+        },
+        {
+          "id": "vente_pourquoi_lieu",
+          "kind": "textarea",
+          "prompt": "Pourquoi cet endroit convient-il à ton groupe de clients principal ?"
+        }
+      ]
+    },
+    {
+      "id": "se_faire_connaitre",
+      "kind": "list",
+      "title": "Six moyens de te faire connaître",
+      "items": [
+        {
+          "body": "Le bouche-à-oreille. C'est le plus puissant, et il est gratuit. Mais il ne s'achète pas : il se gagne en livrant à l'heure et en faisant du bon travail. Un client content en amène trois ; un client déçu en fait fuir dix."
+        },
+        {
+          "body": "Une pancarte à l'entrée de ta concession ou de ton atelier, avec ce que tu fais et ton numéro. Elle coûte peu et travaille pour toi jour et nuit."
+        },
+        {
+          "body": "Montrer tes produits. Garde toujours deux ou trois articles finis sur toi ou à portée de main. Un produit qu'on touche se vend mieux qu'un produit qu'on décrit."
+        },
+        {
+          "body": "Une offre de lancement : un prix spécial les premières semaines, ou un petit article offert pour un gros achat. Elle aide à faire les premières ventes."
+        },
+        {
+          "body": "Fidéliser, c'est-à-dire faire revenir tes clients. Un client qui revient pour la dixième fois est plus facile à convaincre qu'un nouveau client."
+        },
+        {
+          "body": "Des partenariats. Une boutique, un revendeur ou un tailleur voisin t'envoie ses clients, et tu lui envoies les tiens."
+        }
+      ]
+    },
+    {
+      "id": "telephone_intro",
+      "kind": "text",
+      "title": "Ton téléphone est ton meilleur outil de vente",
+      "body": "Pas besoin d'être un expert. Quatre usages simples du téléphone changent tout."
+    },
+    {
+      "id": "usages_telephone",
+      "kind": "process",
+      "title": "Quatre usages du téléphone",
+      "items": [
+        {
+          "title": "Photographier tes produits",
+          "body": "Prends tes photos dehors, à la lumière du jour, sur un fond propre. Un tissu uni suffit. Une bonne photo d'un bon produit vaut mieux qu'une photo floue d'un excellent produit."
+        },
+        {
+          "title": "Montrer et recevoir des commandes",
+          "body": "Utilise les groupes et les messages pour montrer tes nouveautés et recevoir des commandes. C'est comme ça que Ramatou a trouvé une partie de ses clients."
+        },
+        {
+          "title": "Garder les numéros de tes clients",
+          "body": "Note le numéro de chaque client, avec ce qu'il a acheté. Quand tu sors un nouveau modèle, tu sais à qui l'annoncer."
+        },
+        {
+          "title": "Te faire payer par téléphone",
+          "body": "Si le service existe chez toi, utilise-le. C'est plus sûr que de garder de l'argent liquide à l'atelier. Et tu peux vendre à quelqu'un d'un autre quartier."
+        }
+      ]
+    },
+    {
+      "id": "mise_en_garde",
+      "kind": "statement",
+      "label": "MISE EN GARDE",
+      "body": "Ne dépense pas d'argent en publicité avant d'avoir des produits à montrer et la capacité de livrer. Attirer des clients qu'on fait attendre, c'est fabriquer sa mauvaise réputation."
+    },
+    {
+      "id": "faire_connaitre_consigne",
+      "kind": "text",
+      "title": "Choisis trois actions",
+      "body": "Choisis trois actions seulement pour te faire connaître. Pour chacune, écris ce que tu vas faire, ce que ça coûte, et engage-toi sur une date."
+    },
+    {
+      "id": "me_faire_connaitre",
+      "kind": "exercise",
+      "title": "Comment je me fais connaître",
+      "items": [
+        {
+          "id": "action_connaitre_1",
+          "kind": "textarea",
+          "prompt": "Première action : écris ce que tu vas faire, ce que ça coûte, et quand."
+        },
+        {
+          "id": "action_connaitre_2",
+          "kind": "textarea",
+          "prompt": "Deuxième action : écris ce que tu vas faire, ce que ça coûte, et quand."
+        },
+        {
+          "id": "action_connaitre_3",
+          "kind": "textarea",
+          "prompt": "Troisième action : écris ce que tu vas faire, ce que ça coûte, et quand."
+        }
+      ]
+    },
+    {
+      "id": "vente_resume_consigne",
+      "kind": "text",
+      "title": "Ta vente en résumé",
+      "body": "Complète ces trois phrases. Recopie-les ensuite sur papier et range-les dans ta chemise : c'est la pièce « Où et comment je vends » de ton dossier."
+    },
+    {
+      "id": "ma_vente_resume",
+      "kind": "exercise",
+      "title": "Ma vente en résumé",
+      "items": [
+        {
+          "id": "resume_lieu_vente",
+          "kind": "textarea",
+          "prompt": "Complète la phrase : « Je vends principalement… ». Dis où."
+        },
+        {
+          "id": "resume_clients_me_trouvent",
+          "kind": "textarea",
+          "prompt": "Complète la phrase : « Mes clients me trouvent grâce à… »."
+        },
+        {
+          "id": "resume_premiere_action",
+          "kind": "textarea",
+          "prompt": "Complète la phrase : « Pour me faire connaître, je vais d'abord… »."
+        }
+      ]
+    },
+    {
+      "id": "ou_tu_en_es",
+      "kind": "text",
+      "title": "Où tu en es",
+      "body": "Ton étude de marché est terminée. Tu sais qui sont tes clients, ce qu'ils veulent, qui sont tes concurrents, ce que tu vends et comment tu le vends."
+    },
+    {
+      "id": "etude_technique_suite",
+      "kind": "text",
+      "title": "La suite : l'étude technique",
+      "body": "Dans l'étude technique, tu vas vérifier si tu es capable de produire : avec quel local, quel matériel, quelles matières et quelle organisation."
+    },
+    {
+      "id": "a_retenir",
+      "kind": "takeaway",
+      "title": "À retenir",
+      "body": "Choisis ton lieu de vente là où tes clients passent déjà. Un loyer tombe chaque mois, que tu vendes ou non : commence petit. Le bouche-à-oreille est gratuit, mais il se gagne en tenant tes délais. Ton téléphone sert à photographier, montrer, recevoir des commandes et te faire payer. Ne fais pas de publicité avant d'être capable de livrer."
+    },
+    {
+      "id": "journal_formation",
+      "kind": "exercise",
+      "title": "Mon journal de formation",
+      "label": "Prends quelques minutes pour garder une trace de ce que tu as appris.",
+      "items": [
+        {
+          "id": "journal_ce_que_je_retiens",
+          "kind": "textarea",
+          "prompt": "Qu'est-ce que tu retiens sur la façon de vendre et de te faire connaître ?"
+        },
+        {
+          "id": "journal_reussi",
+          "kind": "textarea",
+          "prompt": "Qu'est-ce que tu as bien réussi ou bien compris ?"
+        },
+        {
+          "id": "journal_difficile",
+          "kind": "textarea",
+          "prompt": "Qu'est-ce qui a été difficile pour toi ?"
+        },
+        {
+          "id": "journal_mon_prochain_pas",
+          "kind": "textarea",
+          "prompt": "Quelle première action vas-tu faire cette semaine pour te faire connaître ? Par exemple : photographier un article à la lumière du jour."
+        },
+        {
+          "id": "journal_ressenti",
+          "kind": "scale",
+          "group": "Comment je me sens",
+          "options": ["Pas à l'aise", "Moyen", "À l'aise", "Très à l'aise"],
+          "questions": [
+            {
+              "id": "ressenti_unite",
+              "text": "Comment te sens-tu après cette unité ?"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

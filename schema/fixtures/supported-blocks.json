@@ -1,0 +1,198 @@
+{
+  "schemaVersion": 1,
+  "id": "FIXTURE-BLOCKS",
+  "moduleId": "FIXTURE",
+  "number": 1,
+  "title": "Exemples structurels des formats pris en charge",
+  "status": "draft",
+  "estimatedMinutes": 1,
+  "objectives": [
+    "Vérifier la structure des formats, sans publier cette unité."
+  ],
+  "blocks": [
+    {
+      "id": "introduction",
+      "kind": "text",
+      "title": "Les qualités s'apprennent",
+      "body": "Une personne entreprenante observe, agit et apprend de ce qui lui arrive. Dans cette unité, tu vas découvrir ces qualités et réfléchir à celles que tu veux renforcer."
+    },
+    {
+      "id": "portrait",
+      "kind": "accordion",
+      "label": "Le portrait · touche chaque partie",
+      "intro": "Imagine une personne entreprenante dans son atelier.",
+      "items": [
+        {
+          "title": "Les yeux",
+          "body": "Elle observe autour d'elle et repère les occasions."
+        },
+        {
+          "title": "Les mains",
+          "body": "Elle passe à l'action et améliore son travail."
+        },
+        {
+          "title": "Les oreilles",
+          "body": "Elle écoute ses clients, ses collègues et ses partenaires."
+        }
+      ]
+    },
+    {
+      "id": "faire_le_point",
+      "kind": "exercise",
+      "title": "Fais le point",
+      "items": [
+        {
+          "id": "qualites_personnelles",
+          "kind": "scale",
+          "group": "Tes qualités personnelles",
+          "options": [
+            "Oui",
+            "Pas encore"
+          ],
+          "questions": [
+            {
+              "id": "prendre_initiative",
+              "text": "Est-ce que tu prends parfois l'initiative sans attendre qu'on te le demande ?"
+            }
+          ]
+        },
+        {
+          "id": "qualite_a_travailler",
+          "kind": "textarea",
+          "prompt": "Quelle qualité veux-tu travailler en premier ?",
+          "hint": "Écris une ou deux lignes."
+        }
+      ]
+    },
+    {
+      "id": "a_retenir",
+      "kind": "takeaway",
+      "title": "À retenir",
+      "body": "Les qualités entrepreneuriales ne sont pas des notes. Elles peuvent se développer avec la pratique."
+    },
+    {
+      "id": "mots_du_metier",
+      "kind": "flashcards",
+      "title": "Les mots du métier · touche la carte pour voir la réponse",
+      "items": [
+        {
+          "title": "Un client",
+          "body": "La personne qui achète ton travail et qui te paie."
+        },
+        {
+          "title": "Un fournisseur",
+          "body": "La personne qui te vend le cuir, le fil ou les outils."
+        },
+        {
+          "title": "Une charge",
+          "body": "Ce que tu dépenses pour travailler : matière, loyer, transport."
+        },
+        {
+          "title": "Une marge",
+          "body": "Ce qu'il te reste quand tu as payé toutes tes charges."
+        }
+      ]
+    },
+    {
+      "id": "deux_chemins",
+      "kind": "tabs",
+      "title": "Deux façons de travailler pour soi",
+      "items": [
+        {
+          "title": "Travailleur indépendant",
+          "body": "Tu vends ton propre travail. Tu fixes tes prix et tu choisis tes clients. Ton atelier tourne surtout grâce à tes mains."
+        },
+        {
+          "title": "Entrepreneur",
+          "body": "Tu fais grandir une activité au-delà de tes mains. Tu confies du travail à d'autres, tu achètes de la matière à l'avance, tu prends des risques calculés."
+        },
+        {
+          "title": "Les deux à la fois",
+          "body": "Beaucoup d'artisans commencent seuls, puis prennent un apprenti. On passe d'un chemin à l'autre petit à petit."
+        }
+      ]
+    },
+    {
+      "id": "idee_forte",
+      "kind": "statement",
+      "label": "IDÉE FORTE",
+      "body": "La motivation ne vient pas toute seule le matin. Elle se prépare la veille."
+    },
+    {
+      "id": "parole_artisane",
+      "kind": "quote",
+      "body": "Le jour où j'ai compris pour qui je travaillais, je me suis levée plus tôt.",
+      "label": "Amina · artisane maroquinière"
+    },
+    {
+      "id": "ce_qui_pousse",
+      "kind": "list",
+      "title": "Ce qui pousse à continuer",
+      "items": [
+        {
+          "body": "Gagner de quoi faire vivre ta famille."
+        },
+        {
+          "body": "Faire un travail dont tu es fier."
+        },
+        {
+          "body": "Apprendre un geste que peu de gens savent faire."
+        },
+        {
+          "body": "Décider toi-même de tes journées."
+        }
+      ]
+    },
+    {
+      "id": "atelier",
+      "kind": "image",
+      "title": "Ton atelier raconte ton travail",
+      "body": "Un plan de travail rangé fait gagner du temps à chaque commande.",
+      "image": {
+        "path": "media/atelier.jpg",
+        "alt": "Un plan de travail de maroquinier avec les outils rangés côte à côte."
+      }
+    },
+    {
+      "id": "retrouver_elan",
+      "kind": "process",
+      "title": "Retrouver l'élan quand il baisse",
+      "items": [
+        {
+          "title": "Nommer",
+          "body": "Dis à voix haute ce qui te pèse. La fatigue, l'argent, un client difficile."
+        },
+        {
+          "title": "Réduire",
+          "body": "Choisis une seule tâche pour aujourd'hui, la plus petite."
+        },
+        {
+          "title": "Finir",
+          "body": "Termine-la avant d'en commencer une autre. Finir remet en marche."
+        }
+      ]
+    },
+    {
+      "id": "semaine_type",
+      "kind": "timeline",
+      "title": "Une semaine où l'envie revient",
+      "items": [
+        {
+          "label": "Lundi",
+          "title": "Ranger l'atelier",
+          "body": "Une heure suffit. Tu vois tout de suite ce qui te manque."
+        },
+        {
+          "label": "Mercredi",
+          "title": "Voir un client",
+          "body": "Écouter une demande réelle remet le travail en perspective."
+        },
+        {
+          "label": "Vendredi",
+          "title": "Regarder ce qui est fait",
+          "body": "Pose les pièces finies devant toi. C'est ta semaine."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,254 @@
+{
+  "schemaVersion": 1,
+  "id": "M05-U02",
+  "moduleId": "M05",
+  "number": 2,
+  "title": "Développer sa créativité",
+  "status": "published",
+  "estimatedMinutes": 35,
+  "objectives": [
+    "Faire le point sur tes habitudes créatives.",
+    "Comprendre que la créativité s'apprend et se travaille.",
+    "Utiliser des façons simples de trouver plus d'idées.",
+    "Transformer un problème en idée d'activité."
+  ],
+  "blocks": [
+    {
+      "id": "habitudes_consigne",
+      "kind": "text",
+      "title": "Où en es-tu aujourd'hui ?",
+      "body": "Ce n'est pas un test et il n'y a pas de bonne réponse. Le but est de voir où tu en es, pour choisir quoi travailler. Pour chaque phrase, choisis « Souvent », « Parfois » ou « Rarement ». Réponds franchement."
+    },
+    {
+      "id": "mes_habitudes_creatives",
+      "kind": "exercise",
+      "title": "Mes habitudes créatives",
+      "items": [
+        {
+          "id": "habitudes",
+          "kind": "scale",
+          "group": "Mes habitudes",
+          "options": ["Souvent", "Parfois", "Rarement"],
+          "questions": [
+            {
+              "id": "regler_probleme",
+              "text": "Quand je vois un problème, je me demande comment on pourrait le régler."
+            },
+            {
+              "id": "noter_idees",
+              "text": "Je note mes idées quelque part, au lieu de les laisser filer."
+            },
+            {
+              "id": "parler_idees",
+              "text": "Je parle de mes idées aux autres pour les améliorer."
+            },
+            {
+              "id": "essayer_nouveau",
+              "text": "J'essaie de nouvelles façons de faire, même quand l'ancienne marche."
+            },
+            {
+              "id": "chercher_autre_chose",
+              "text": "Quand une idée ne marche pas, je cherche autre chose au lieu d'abandonner."
+            },
+            {
+              "id": "observer_artisans",
+              "text": "Je regarde travailler d'autres artisans pour apprendre d'eux."
+            },
+            {
+              "id": "oser_proposer",
+              "text": "J'ose proposer une idée, même sans être sûr qu'elle soit bonne."
+            },
+            {
+              "id": "ecouter_clients",
+              "text": "J'écoute ce que disent les clients, y compris leurs critiques."
+            }
+          ]
+        },
+        {
+          "id": "exercice_du_mois",
+          "kind": "textarea",
+          "prompt": "Regarde les phrases où tu as répondu « Rarement ». Choisis-en une seule. Ce mois-ci, à quoi vas-tu t'entraîner ?"
+        }
+      ]
+    },
+    {
+      "id": "pas_une_note",
+      "kind": "statement",
+      "label": "UNE HABITUDE, ÇA CHANGE",
+      "body": "La créativité n'est pas une note. C'est un ensemble d'habitudes. Et une habitude, ça change."
+    },
+    {
+      "id": "pas_reservee_artistes",
+      "kind": "text",
+      "title": "La créativité n'est pas réservée aux artistes",
+      "body": "On pense souvent aux stylistes, aux artistes, aux dessinateurs. Pourtant, tous les métiers ont besoin de créativité. Un entrepreneur s'en sert tous les jours : pour résoudre un problème, imaginer un nouveau produit, trouver une meilleure façon de vendre. Et surtout pour faire beaucoup avec peu de moyens, comme dans la plupart des ateliers."
+    },
+    {
+      "id": "comme_un_muscle",
+      "kind": "text",
+      "title": "Ça se travaille, comme un muscle",
+      "body": "Beaucoup de gens se croient « pas créatifs ». Ils laissent passer leurs bonnes idées, ou n'osent pas les dire. Pourtant, la créativité s'apprend. Nos habitudes de pensée nous enferment, mais avec de la pratique, tout le monde progresse."
+    },
+    {
+      "id": "neuf_points_consigne",
+      "kind": "text",
+      "title": "Le jeu des neuf points",
+      "body": "Prends une feuille et un crayon. Dessine neuf points en carré : trois rangées de trois points. Ton défi : relier les neuf points avec quatre lignes droites, sans lever le crayon. Cherche pendant cinq minutes avant de lire la suite. Beaucoup de gens n'y arrivent pas, et toujours pour la même raison."
+    },
+    {
+      "id": "neuf_points_solution",
+      "kind": "text",
+      "title": "La solution",
+      "body": "Pose ton crayon sur le point en haut à gauche. Descends tout droit sur la colonne de gauche, et continue plus bas, hors du carré, de la même distance qu'entre deux points. De là, monte en diagonale vers la droite : tu passes par le point du milieu en bas, puis par le point du milieu à droite. Continue jusqu'à la hauteur de la rangée du haut, hors du carré."
+    },
+    {
+      "id": "neuf_points_fin",
+      "kind": "text",
+      "title": "La fin du tracé",
+      "body": "Reviens tout droit vers la gauche, le long de la rangée du haut, jusqu'au point en haut à gauche. Pour finir, descends en diagonale jusqu'au point en bas à droite, en passant par le point du centre. Tu as relié les neuf points avec quatre lignes."
+    },
+    {
+      "id": "neuf_points_lecon",
+      "kind": "text",
+      "title": "Pourquoi c'est difficile",
+      "body": "Pour réussir, il faut sortir du carré. Personne n'a dit qu'il fallait rester dedans : c'est nous qui nous donnons cette règle sans y penser. C'est la même chose pour les idées d'entreprise. Souvent, la bonne idée est juste en dehors de ce qu'on a l'habitude de faire."
+    },
+    {
+      "id": "developper_creativite",
+      "kind": "list",
+      "title": "Six façons de développer ta créativité",
+      "items": [
+        {
+          "body": "Repère les gens inventifs autour de toi. Pas seulement les artistes : le mécanicien qui répare avec ce qu'il a, la vendeuse qui trouve toujours un moyen de vendre son stock. Regarde comment ils font, et pose-leur des questions."
+        },
+        {
+          "body": "Trouve tes bons moments. Certains ont leurs meilleures idées le matin, d'autres en marchant, d'autres en discutant. Repère les tiens et sers-t'en."
+        },
+        {
+          "body": "Bouge. Marcher ou travailler de tes mains libère l'esprit. Rester assis à forcer donne rarement de bonnes idées."
+        },
+        {
+          "body": "Tiens un carnet d'idées. Note tout ce qui te passe par la tête, même ce qui paraît bête : un croquis, un mot, une remarque de client. Ne te censure pas, tu trieras plus tard."
+        },
+        {
+          "body": "Vois les problèmes comme des occasions. Chaque chose qui manque ou qui marche mal autour de toi est une idée d'entreprise possible pour quelqu'un."
+        },
+        {
+          "body": "Parle de tes idées aux autres. Une idée dite à voix haute grandit. Une idée gardée pour soi tourne en rond."
+        }
+      ]
+    },
+    {
+      "id": "probleme_idee_consigne",
+      "kind": "text",
+      "title": "D'un problème à une idée",
+      "body": "Voici des problèmes courants au Niger. En classe, vous cherchez en groupe. Ici, écris pour chaque problème au moins une activité qu'on pourrait créer pour y répondre. Il n'y a pas de mauvaise réponse : cherche d'abord beaucoup d'idées, tu trieras ensuite."
+    },
+    {
+      "id": "probleme_idee",
+      "kind": "exercise",
+      "title": "D'un problème à une idée d'activité",
+      "items": [
+        {
+          "id": "idee_ordures",
+          "kind": "textarea",
+          "prompt": "Les ordures s'accumulent dans le quartier. Quelle activité pourrait-on créer ?"
+        },
+        {
+          "id": "idee_coupures_courant",
+          "kind": "textarea",
+          "prompt": "Le courant coupe souvent. Quelle activité pourrait-on créer ?"
+        },
+        {
+          "id": "idee_chutes_cuir",
+          "kind": "textarea",
+          "prompt": "Les chutes de cuir de l'atelier partent à la poubelle. Quelle activité pourrait-on créer ?"
+        },
+        {
+          "id": "idee_reparation_sandales",
+          "kind": "textarea",
+          "prompt": "Les sandales s'abîment vite et personne ne les répare bien. Quelle activité pourrait-on créer ?"
+        },
+        {
+          "id": "idee_emploi_jeunes",
+          "kind": "textarea",
+          "prompt": "Les jeunes formés ne trouvent pas de travail. Quelle activité pourrait-on créer ?"
+        },
+        {
+          "id": "idee_transport_marche",
+          "kind": "textarea",
+          "prompt": "Transporter sa marchandise au marché coûte cher. Quelle activité pourrait-on créer ?"
+        }
+      ]
+    },
+    {
+      "id": "mes_problemes_consigne",
+      "kind": "text",
+      "title": "À toi maintenant",
+      "body": "Pense à deux problèmes que tu vois autour de toi. Pour chacun, trouve une activité possible. Garde bien tes réponses : elles iront dans ta liste d'idées, dans l'unité « Ma liste d'idées »."
+    },
+    {
+      "id": "mes_problemes",
+      "kind": "exercise",
+      "title": "Les problèmes que je vois autour de moi",
+      "items": [
+        {
+          "id": "mon_probleme_1",
+          "kind": "textarea",
+          "prompt": "Premier problème : écris le problème que tu vois, puis l'activité que tu pourrais créer pour y répondre."
+        },
+        {
+          "id": "mon_probleme_2",
+          "kind": "textarea",
+          "prompt": "Deuxième problème : écris le problème que tu vois, puis l'activité que tu pourrais créer pour y répondre."
+        }
+      ]
+    },
+    {
+      "id": "a_retenir",
+      "kind": "takeaway",
+      "title": "À retenir",
+      "body": "La créativité n'est pas un don de naissance : elle se travaille. Les meilleures idées d'entreprise viennent souvent d'un problème que personne n'a résolu. Note tes idées quand elles viennent, même les plus bizarres. Et parle-en : une idée partagée devient meilleure."
+    },
+    {
+      "id": "journal_formation",
+      "kind": "exercise",
+      "title": "Mon journal de formation",
+      "label": "Prends quelques minutes pour garder une trace de ce que tu as appris.",
+      "items": [
+        {
+          "id": "journal_ce_que_je_retiens",
+          "kind": "textarea",
+          "prompt": "Qu'est-ce que le jeu des neuf points t'a appris sur ta façon de chercher des idées ?"
+        },
+        {
+          "id": "journal_reussi",
+          "kind": "textarea",
+          "prompt": "Qu'est-ce que tu as bien réussi ou bien compris ?"
+        },
+        {
+          "id": "journal_difficile",
+          "kind": "textarea",
+          "prompt": "Qu'est-ce qui a été difficile pour toi ?"
+        },
+        {
+          "id": "journal_mon_prochain_pas",
+          "kind": "textarea",
+          "prompt": "Cette semaine, quelle façon de développer ta créativité vas-tu essayer ? Par exemple : commencer un carnet d'idées."
+        },
+        {
+          "id": "journal_ressenti",
+          "kind": "scale",
+          "group": "Comment je me sens",
+          "options": ["Pas à l'aise", "Moyen", "À l'aise", "Très à l'aise"],
+          "questions": [
+            {
+              "id": "ressenti_unite",
+              "text": "Comment te sens-tu après cette unité ?"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

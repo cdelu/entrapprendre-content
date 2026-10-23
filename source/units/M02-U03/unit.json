@@ -5,96 +5,156 @@
   "number": 3,
   "title": "La motivation de l'entrepreneur",
   "status": "published",
-  "estimatedMinutes": 20,
+  "estimatedMinutes": 30,
   "objectives": [
-    "Nommer ce qui te pousse à travailler pour toi.",
-    "Reconnaître les moments où la motivation baisse, et quoi faire alors."
+    "Comprendre pourquoi un état d'esprit positif et la motivation aident à réussir.",
+    "Expliquer ce que veut dire « voir grand ».",
+    "Repérer tes habitudes et choisir celles que tu veux changer."
   ],
   "blocks": [
     {
-      "id": "idee_forte",
+      "id": "etat_esprit",
+      "kind": "text",
+      "title": "Un état d'esprit positif",
+      "body": "Ton état d'esprit, c'est ta façon de voir les choses. Un état d'esprit positif aide l'entrepreneur à rester concentré sur ce qu'il veut faire et sur les résultats qu'il espère. La motivation, c'est l'envie et l'énergie qui te poussent à agir. Elle naît de cet état d'esprit."
+    },
+    {
+      "id": "apprendre_de_tout",
       "kind": "statement",
       "label": "IDÉE FORTE",
-      "body": "La motivation ne vient pas toute seule le matin. Elle se prépare la veille."
+      "body": "Un entrepreneur motivé essaie d'apprendre quelque chose de chaque expérience, bonne ou mauvaise."
     },
     {
-      "id": "parole_artisane",
-      "kind": "quote",
-      "body": "Le jour où j'ai compris pour qui je travaillais, je me suis levée plus tôt.",
-      "label": "Amina · artisane maroquinière"
+      "id": "se_construit",
+      "kind": "text",
+      "title": "Il se construit avec le temps",
+      "body": "Un état d'esprit positif ne vient pas tout de suite. Il se construit petit à petit. Voici dix choses qui peuvent t'aider à le développer."
     },
     {
-      "id": "ce_qui_pousse",
+      "id": "dix_facons",
       "kind": "list",
-      "title": "Ce qui pousse à continuer",
-      "items": [
-        { "body": "Gagner de quoi faire vivre ta famille." },
-        { "body": "Faire un travail dont tu es fier." },
-        { "body": "Apprendre un geste que peu de gens savent faire." },
-        { "body": "Décider toi-même de tes journées." }
-      ]
-    },
-    {
-      "id": "atelier",
-      "kind": "image",
-      "title": "Ton atelier raconte ton travail",
-      "body": "Un plan de travail rangé fait gagner du temps à chaque commande.",
-      "image": {
-        "path": "media/atelier.jpg",
-        "alt": "Un plan de travail de maroquinier avec les outils rangés côte à côte."
-      }
-    },
-    {
-      "id": "retrouver_elan",
-      "kind": "process",
-      "title": "Retrouver l'élan quand il baisse",
+      "title": "Dix façons de développer un état d'esprit positif",
       "items": [
         {
-          "title": "Nommer",
-          "body": "Dis à voix haute ce qui te pèse. La fatigue, l'argent, un client difficile."
+          "body": "Tire une leçon de chaque expérience, même de tes erreurs."
         },
         {
-          "title": "Réduire",
-          "body": "Choisis une seule tâche pour aujourd'hui, la plus petite."
+          "body": "Occupe-toi avec des activités qui font du bien, comme le sport ou la lecture."
         },
         {
-          "title": "Finir",
-          "body": "Termine-la avant d'en commencer une autre. Finir remet en marche."
+          "body": "Fixe-toi des objectifs que tu peux atteindre et qui te sont utiles."
+        },
+        {
+          "body": "Fréquente d'autres entrepreneurs et échange avec eux."
+        },
+        {
+          "body": "Inspire-toi de ceux qui ont réussi, et n'hésite pas à leur demander conseil."
+        },
+        {
+          "body": "Éloigne les pensées négatives."
+        },
+        {
+          "body": "Saisis les occasions d'améliorer ta vie, ton travail et ta communauté."
+        },
+        {
+          "body": "Prends soin de ton environnement : un cadre positif t'aide à mieux travailler."
+        },
+        {
+          "body": "Crois en toi : la réussite vient à ceux qui tirent le meilleur de leurs talents."
+        },
+        {
+          "body": "Passe à l'action : une fois ta décision prise, agis pour régler le problème."
         }
       ]
     },
     {
-      "id": "semaine_type",
-      "kind": "timeline",
-      "title": "Une semaine où l'envie revient",
-      "items": [
-        {
-          "label": "Lundi",
-          "title": "Ranger l'atelier",
-          "body": "Une heure suffit. Tu vois tout de suite ce qui te manque."
-        },
-        {
-          "label": "Mercredi",
-          "title": "Voir un client",
-          "body": "Écouter une demande réelle remet le travail en perspective."
-        },
-        {
-          "label": "Vendredi",
-          "title": "Regarder ce qui est fait",
-          "body": "Pose les pièces finies devant toi. C'est ta semaine."
-        }
-      ]
+      "id": "bon_cote",
+      "kind": "text",
+      "title": "Voir la vie du bon côté",
+      "body": "Les entrepreneurs voient la vie du bon côté. Ils trouvent de la satisfaction dans leur travail et sont fiers de ce qu'ils accomplissent. Toi aussi, prends chaque jour un moment pour repenser à ce que tu as réussi."
     },
     {
-      "id": "ta_raison",
+      "id": "voir_grand",
+      "kind": "text",
+      "title": "Voir grand",
+      "body": "Voir grand, c'est regarder plus loin que les tâches de tous les jours. C'est savoir où tu veux aller et quels grands objectifs tu veux atteindre. Ensuite, tu réfléchis aux actions pour y arriver. On appelle cela avoir une vue d'ensemble."
+    },
+    {
+      "id": "esprit_clair",
+      "kind": "text",
+      "title": "Garder l'esprit clair",
+      "body": "Ceux qui ont une vue d'ensemble deviennent souvent des chefs d'entreprise et des responsables dans leur communauté. Apprends aussi à passer d'un problème à un autre sans t'éparpiller, c'est-à-dire sans faire mille choses à moitié. Garde l'esprit clair et organisé."
+    },
+    {
+      "id": "travail_passionnant",
+      "kind": "statement",
+      "label": "IDÉE FORTE",
+      "body": "Les entrepreneurs qui réussissent sont très motivés, aiment leur travail et sont décidés à réussir. C'est cette motivation et cet état d'esprit qui rendent leur travail passionnant."
+    },
+    {
+      "id": "bonnes_habitudes",
+      "kind": "text",
+      "title": "Les bonnes habitudes",
+      "body": "La façon d'agir d'un entrepreneur montre comment il se voit lui-même et comment il voit le monde autour de lui. Par exemple, certains prennent l'habitude de commencer tôt le matin et de bien utiliser ces heures. Quand tu répètes une bonne habitude, elle finit par devenir naturelle."
+    },
+    {
+      "id": "habitudes_et_objectifs",
+      "kind": "text",
+      "title": "Tes habitudes et tes objectifs",
+      "body": "Les bonnes habitudes poussent à mieux travailler. Compare tes habitudes d'aujourd'hui à tes objectifs de demain. Tu auras peut-être besoin d'en prendre de nouvelles pour réussir. Les entrepreneurs qui réussissent continuent de changer et de progresser."
+    },
+    {
+      "id": "habitudes_consigne",
+      "kind": "text",
+      "title": "Change tes habitudes",
+      "body": "Repense à tes habitudes de tous les jours. Certaines t'aident à avancer, d'autres te freinent. Choisis trois habitudes que tu aimerais changer, et dis par quoi tu vas les remplacer. Par exemple, « Je me lève tard » peut devenir « Je me lève tôt pour ouvrir mon atelier à l'heure »."
+    },
+    {
+      "id": "mes_habitudes",
       "kind": "exercise",
-      "title": "Ta raison à toi",
+      "title": "Mes habitudes",
       "items": [
         {
-          "id": "raison_principale",
+          "id": "habitude_1",
           "kind": "textarea",
-          "prompt": "Pour qui, ou pour quoi, est-ce que tu travailles ?",
-          "hint": "Une ou deux lignes suffisent."
+          "prompt": "Première habitude : écris l'habitude que tu veux changer, puis par quoi tu vas la remplacer."
+        },
+        {
+          "id": "habitude_2",
+          "kind": "textarea",
+          "prompt": "Deuxième habitude : écris l'habitude que tu veux changer, puis par quoi tu vas la remplacer."
+        },
+        {
+          "id": "habitude_3",
+          "kind": "textarea",
+          "prompt": "Troisième habitude : écris l'habitude que tu veux changer, puis par quoi tu vas la remplacer."
+        }
+      ]
+    },
+    {
+      "id": "reflexion_motivation",
+      "kind": "exercise",
+      "title": "Réfléchis à ta motivation",
+      "items": [
+        {
+          "id": "pourquoi_etat_esprit",
+          "kind": "textarea",
+          "prompt": "Pourquoi un état d'esprit positif est-il essentiel pour réussir ?"
+        },
+        {
+          "id": "pourquoi_motivation",
+          "kind": "textarea",
+          "prompt": "Pourquoi un entrepreneur a-t-il besoin d'être très motivé ?"
+        },
+        {
+          "id": "trois_lecons",
+          "kind": "textarea",
+          "prompt": "Cite trois leçons importantes que tu retiens de cette unité. Explique comment elles peuvent t'aider à garder un bon état d'esprit."
+        },
+        {
+          "id": "sens_vue_ensemble",
+          "kind": "textarea",
+          "prompt": "Que veut dire « avoir une vue d'ensemble » ? Explique avec tes mots."
         }
       ]
     },
@@ -102,7 +162,47 @@
       "id": "a_retenir",
       "kind": "takeaway",
       "title": "À retenir",
-      "body": "La motivation se travaille comme un geste du métier : par petites reprises, pas d'un seul coup."
+      "body": "Un état d'esprit positif et la motivation se construisent avec le temps. Apprends de chaque expérience, bonne ou mauvaise. Vois grand, garde l'esprit clair, et prends de bonnes habitudes, une à la fois."
+    },
+    {
+      "id": "journal_formation",
+      "kind": "exercise",
+      "title": "Mon journal de formation",
+      "label": "Prends quelques minutes pour garder une trace de ce que tu as appris.",
+      "items": [
+        {
+          "id": "journal_ce_que_je_retiens",
+          "kind": "textarea",
+          "prompt": "Parmi les dix façons de développer un état d'esprit positif, laquelle veux-tu essayer en premier ? Pourquoi ?"
+        },
+        {
+          "id": "journal_reussi",
+          "kind": "textarea",
+          "prompt": "Qu'est-ce que tu as bien réussi ou bien compris ?"
+        },
+        {
+          "id": "journal_difficile",
+          "kind": "textarea",
+          "prompt": "Qu'est-ce qui a été difficile pour toi ?"
+        },
+        {
+          "id": "journal_mon_prochain_pas",
+          "kind": "textarea",
+          "prompt": "Quelle habitude vas-tu commencer à changer cette semaine ? Que vas-tu faire concrètement ?"
+        },
+        {
+          "id": "journal_ressenti",
+          "kind": "scale",
+          "group": "Comment je me sens",
+          "options": ["Pas à l'aise", "Moyen", "À l'aise", "Très à l'aise"],
+          "questions": [
+            {
+              "id": "ressenti_unite",
+              "text": "Comment te sens-tu après cette unité ?"
+            }
+          ]
+        }
+      ]
     }
   ]
 }

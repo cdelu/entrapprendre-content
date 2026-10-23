@@ -1,0 +1,321 @@
+{
+  "schemaVersion": 1,
+  "id": "M06-U04",
+  "moduleId": "M06",
+  "number": 4,
+  "title": "Mon produit ou mon service",
+  "status": "published",
+  "estimatedMinutes": 40,
+  "objectives": [
+    "Décrire précisément chaque produit que tu vends.",
+    "Choisir trois à cinq produits pour démarrer, dont un produit phare.",
+    "Choisir le niveau de qualité que tes clients veulent et peuvent payer.",
+    "Décider de ta présentation, de ta marque et de ta promesse après la vente."
+  ],
+  "blocks": [
+    {
+      "id": "dire_precisement",
+      "kind": "text",
+      "title": "Dis précisément ce que tu vends",
+      "body": "« Des articles en cuir », ce n'est pas une réponse. Un client, un fournisseur ou une microfinance veut savoir exactement ce que tu vends."
+    },
+    {
+      "id": "cinq_precisions",
+      "kind": "list",
+      "title": "Pour chaque produit, sache dire",
+      "items": [
+        {
+          "body": "Ce que c'est."
+        },
+        {
+          "body": "À quoi ça sert."
+        },
+        {
+          "body": "Dans quelle matière il est fait."
+        },
+        {
+          "body": "En quelles tailles ou en quels modèles."
+        },
+        {
+          "body": "À quel niveau de qualité."
+        }
+      ]
+    },
+    {
+      "id": "precis_pour_calculer",
+      "kind": "text",
+      "title": "Être précis pour pouvoir calculer",
+      "body": "Plus tu es précis, plus tu es crédible. Et plus tu pourras calculer tes coûts. On ne calcule pas le coût d'un « article en cuir ». On calcule le coût d'un portefeuille de telle taille, dans tel cuir."
+    },
+    {
+      "id": "un_seul_produit",
+      "kind": "text",
+      "title": "Combien de produits ? Première erreur",
+      "body": "Il y a deux erreurs opposées. La première : tout miser sur un seul produit. C'est ce qui a coulé Mamadou avec ses sandales décorées. Si ce produit ne se vend pas, ou si dix autres artisans s'y mettent, tu n'as rien d'autre."
+    },
+    {
+      "id": "vingt_produits",
+      "kind": "text",
+      "title": "Combien de produits ? Deuxième erreur",
+      "body": "La deuxième erreur : partir avec vingt produits. Tu ne les maîtriseras pas tous. Ton argent restera bloqué dans des matières variées. Et tu ne seras bon dans rien en particulier."
+    },
+    {
+      "id": "bon_compte",
+      "kind": "statement",
+      "label": "LE BON COMPTE",
+      "body": "Trois à cinq produits pour démarrer. Parmi eux, un produit phare : celui que tu fais mieux que personne, celui par lequel les clients te connaîtront."
+    },
+    {
+      "id": "gamme_ramatou",
+      "kind": "accordion",
+      "label": "La gamme de Ramatou",
+      "intro": "Ta gamme, c'est l'ensemble des produits que tu vends. Voici celle de Ramatou. Touche chaque produit pour voir sa description et ses clients.",
+      "items": [
+        {
+          "title": "Les portefeuilles, son produit phare",
+          "body": "En cuir de chèvre, en deux modèles : homme et femme. Pour les gens du quartier et les employés de bureau."
+        },
+        {
+          "title": "Les ceintures",
+          "body": "En cuir épais, tailles au choix, avec une boucle simple ou travaillée. Pour tous ses clients."
+        },
+        {
+          "title": "Les petits sacs à main",
+          "body": "En cuir souple, avec une bandoulière, en deux tailles. Pour les gens du quartier."
+        },
+        {
+          "title": "Les porte-documents",
+          "body": "En cuir rigide, avec une finition soignée et une fermeture solide. Pour les employés de bureau."
+        },
+        {
+          "title": "Les porte-clés et les étuis",
+          "body": "Fabriqués avec les chutes de coupe. Pour tous ses clients, et pour les cadeaux."
+        }
+      ]
+    },
+    {
+      "id": "argent_des_chutes",
+      "kind": "text",
+      "title": "De l'argent gagné sur des déchets",
+      "body": "Regarde le dernier produit de Ramatou. Les porte-clés ne coûtent presque rien en matière : ils sont faits avec les chutes, ces petits morceaux de cuir qui restent après la coupe et qui partiraient à la poubelle. C'est de l'argent gagné sur des déchets."
+    },
+    {
+      "id": "gamme_consigne",
+      "kind": "text",
+      "title": "À toi : ta gamme",
+      "body": "Choisis trois à cinq produits pour démarrer. Pour chacun, écris une description précise, avec la matière, la taille et le modèle, et le groupe de clients que tu vises. Puis choisis ton produit phare."
+    },
+    {
+      "id": "ma_gamme",
+      "kind": "exercise",
+      "title": "Ma gamme de produits",
+      "items": [
+        {
+          "id": "produit_1",
+          "kind": "textarea",
+          "prompt": "Produit 1 : écris son nom, sa description précise (matière, taille, modèle) et pour quel groupe de clients."
+        },
+        {
+          "id": "produit_2",
+          "kind": "textarea",
+          "prompt": "Produit 2 : écris son nom, sa description précise (matière, taille, modèle) et pour quel groupe de clients."
+        },
+        {
+          "id": "produit_3",
+          "kind": "textarea",
+          "prompt": "Produit 3 : écris son nom, sa description précise (matière, taille, modèle) et pour quel groupe de clients."
+        },
+        {
+          "id": "produits_4_et_5",
+          "kind": "textarea",
+          "prompt": "Produits 4 et 5, si tu en as : écris pour chacun son nom, sa description précise et pour quel groupe de clients."
+        },
+        {
+          "id": "produit_phare_choix",
+          "kind": "textarea",
+          "prompt": "Lequel de ces produits est ton produit phare ? Pourquoi celui-là ?"
+        }
+      ]
+    },
+    {
+      "id": "quelle_qualite",
+      "kind": "text",
+      "title": "Quelle qualité ?",
+      "body": "La bonne réponse n'est pas « la meilleure possible ». La bonne qualité, c'est le niveau que ton groupe de clients veut et peut payer."
+    },
+    {
+      "id": "eleve_fonctionnaire",
+      "kind": "text",
+      "title": "Un élève, un fonctionnaire",
+      "body": "Un élève veut un sac qui tienne toute l'année scolaire, à un prix qu'il peut payer. Un fonctionnaire veut un porte-documents qui fasse sérieux au bureau, et il paiera pour la finition. Mets la finition du fonctionnaire sur le sac de l'élève, et tu travailles à perte. Fais l'inverse, et tu perds le client."
+    },
+    {
+      "id": "phare_consigne",
+      "kind": "text",
+      "title": "Ton produit phare en détail",
+      "body": "Décris maintenant ton produit phare le plus précisément possible. C'est sur lui que tu feras tes premiers calculs de coût."
+    },
+    {
+      "id": "produit_phare_detail",
+      "kind": "exercise",
+      "title": "Mon produit phare en détail",
+      "items": [
+        {
+          "id": "phare_ce_que_cest",
+          "kind": "textarea",
+          "prompt": "Qu'est-ce que c'est, exactement ?"
+        },
+        {
+          "id": "phare_usage_client",
+          "kind": "textarea",
+          "prompt": "À quoi sert-il, pour le client ?"
+        },
+        {
+          "id": "phare_matiere_dimensions",
+          "kind": "textarea",
+          "prompt": "Quelle matière utilises-tu, et quelles sont ses dimensions ?"
+        },
+        {
+          "id": "phare_modeles_variantes",
+          "kind": "textarea",
+          "prompt": "Quels modèles ou quelles variantes proposes-tu ?"
+        },
+        {
+          "id": "phare_niveau_qualite",
+          "kind": "textarea",
+          "prompt": "Quel niveau de qualité vises-tu, et pourquoi ce niveau ?"
+        },
+        {
+          "id": "phare_chutes",
+          "kind": "textarea",
+          "prompt": "Que fabriques-tu avec tes chutes ?"
+        }
+      ]
+    },
+    {
+      "id": "presentation_compte",
+      "kind": "text",
+      "title": "La présentation compte autant que le produit",
+      "body": "Le même portefeuille ne se vend pas au même prix s'il est posé sur un carton poussiéreux, ou s'il est présenté propre dans une petite pochette. Et une belle présentation ne coûte presque rien."
+    },
+    {
+      "id": "trois_gestes_presentation",
+      "kind": "list",
+      "title": "Trois gestes qui ne coûtent presque rien",
+      "items": [
+        {
+          "body": "Nettoie l'article et fais-le briller avant de le donner."
+        },
+        {
+          "body": "Mets-le dans une pochette simple en tissu ou en papier. Évite le plastique : c'est mieux pour l'environnement, et ça fait plus soigné."
+        },
+        {
+          "body": "Mets ta marque sur le cuir : tes initiales, un petit motif, ou une empreinte au fer à marquer."
+        }
+      ]
+    },
+    {
+      "id": "nom_de_marque",
+      "kind": "text",
+      "title": "Un nom qui veut dire quelque chose",
+      "body": "Un nom qui veut dire quelque chose se retient. Au Niger, la marque Jagga doit son nom à une expression qui signifie « la force d'une femme ». Zamany et Le Concret sont d'autres exemples de jeunes marques nigériennes qu'on reconnaît. Trouve ton nom à toi, et écris-le sur ton dossier."
+    },
+    {
+      "id": "apres_la_vente",
+      "kind": "text",
+      "title": "Ce que tu fais après la vente",
+      "body": "Pour un artisan, le service après la vente est un avantage énorme, et presque gratuit. Le client qui sait qu'il peut revenir si une couture lâche achète plus facilement. Et il revient acheter autre chose."
+    },
+    {
+      "id": "promesse_ramatou",
+      "kind": "statement",
+      "label": "LA PROMESSE DE RAMATOU",
+      "body": "« Je répare gratuitement les coutures pendant deux mois. » C'est simple et clair. Et ça ne lui coûte presque rien, puisque ses coutures tiennent."
+    },
+    {
+      "id": "promesse_tenir",
+      "kind": "text",
+      "title": "Décide à l'avance, et tiens parole",
+      "body": "Décide à l'avance ce que tu promets à tes clients. Mais ne promets rien que tu ne puisses tenir : une promesse non respectée fait plus de mal que pas de promesse du tout."
+    },
+    {
+      "id": "presentation_promesse",
+      "kind": "exercise",
+      "title": "Ma présentation et ma promesse",
+      "items": [
+        {
+          "id": "presentation_client",
+          "kind": "textarea",
+          "prompt": "Comment vas-tu présenter tes produits au client ?"
+        },
+        {
+          "id": "emballage",
+          "kind": "textarea",
+          "prompt": "Quel sera ton emballage ?"
+        },
+        {
+          "id": "marque",
+          "kind": "textarea",
+          "prompt": "Quelle sera ta marque : un nom, tes initiales, un motif ? Si ton nom a un sens, explique-le."
+        },
+        {
+          "id": "promesse_apres_vente",
+          "kind": "textarea",
+          "prompt": "Que promets-tu au client après la vente ? Vérifie que tu peux vraiment tenir cette promesse."
+        }
+      ]
+    },
+    {
+      "id": "ranger_dossier",
+      "kind": "text",
+      "title": "Pour ton dossier",
+      "body": "Recopie tes réponses sur papier et range-les dans ta chemise. C'est la pièce « Mon produit ou mon service » de ton dossier."
+    },
+    {
+      "id": "a_retenir",
+      "kind": "takeaway",
+      "title": "À retenir",
+      "body": "« Des articles en cuir » ne suffit pas : décris chaque produit précisément, sinon tu ne pourras pas calculer son coût. Démarre avec trois à cinq produits, dont un produit phare. La bonne qualité, c'est celle que ton client veut et peut payer, ni moins, ni plus. La présentation se voit avant le produit et ne coûte presque rien. Ne promets que ce que tu peux tenir."
+    },
+    {
+      "id": "journal_formation",
+      "kind": "exercise",
+      "title": "Mon journal de formation",
+      "label": "Prends quelques minutes pour garder une trace de ce que tu as appris.",
+      "items": [
+        {
+          "id": "journal_ce_que_je_retiens",
+          "kind": "textarea",
+          "prompt": "Qu'est-ce que tu retiens sur la façon de choisir, de décrire et de présenter tes produits ?"
+        },
+        {
+          "id": "journal_reussi",
+          "kind": "textarea",
+          "prompt": "Qu'est-ce que tu as bien réussi ou bien compris ?"
+        },
+        {
+          "id": "journal_difficile",
+          "kind": "textarea",
+          "prompt": "Qu'est-ce qui a été difficile pour toi ?"
+        },
+        {
+          "id": "journal_mon_prochain_pas",
+          "kind": "textarea",
+          "prompt": "Quel petit pas vas-tu faire cette semaine pour ton produit phare ? Par exemple : mesurer ton modèle, ou dessiner ta marque."
+        },
+        {
+          "id": "journal_ressenti",
+          "kind": "scale",
+          "group": "Comment je me sens",
+          "options": ["Pas à l'aise", "Moyen", "À l'aise", "Très à l'aise"],
+          "questions": [
+            {
+              "id": "ressenti_unite",
+              "text": "Comment te sens-tu après cette unité ?"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

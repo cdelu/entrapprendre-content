@@ -1,0 +1,278 @@
+{
+  "schemaVersion": 1,
+  "id": "M04-U02",
+  "moduleId": "M04",
+  "number": 2,
+  "title": "Négocier",
+  "status": "published",
+  "estimatedMinutes": 40,
+  "objectives": [
+    "Analyser une négociation simple au marché.",
+    "Préparer une négociation en six étapes.",
+    "Reconnaître les qualités d'un bon négociateur.",
+    "Chercher un accord où les deux personnes gagnent."
+  ],
+  "blocks": [
+    {
+      "id": "negocier_tous_les_jours",
+      "kind": "text",
+      "title": "Une négociation au marché de Niamey",
+      "body": "Négocier, c'est discuter pour arriver à un accord. Tu le fais souvent : avec un client, avec un fournisseur, au marché. Lis ce dialogue, ou mieux, lis-le à voix haute avec quelqu'un, comme au théâtre."
+    },
+    {
+      "id": "dialogue_debut",
+      "kind": "text",
+      "body": "Ce jour-là, Zeinabou va au marché pour acheter des mangues. Elle s'arrête devant l'étal de Hamidou, vendeur de fruits et légumes. Zeinabou : « Bonjour Hamidou ! Tu vends les mangues comment aujourd'hui ? » Hamidou : « Bonjour ma sœur ! Cinq mangues pour 200 francs. Elles sont bien mûres et bien sucrées. »"
+    },
+    {
+      "id": "dialogue_milieu",
+      "kind": "text",
+      "body": "Zeinabou : « 200 francs ? Un peu cher. Là-bas, j'ai vu cinq mangues à 150 francs. » Hamidou : « Ah, ma sœur, regarde les miennes : bien choisies, pas abîmées, et vraiment sucrées. » Zeinabou : « Je vois bien. Mais je peux mettre 150 francs. Que peux-tu faire ? »"
+    },
+    {
+      "id": "dialogue_fin",
+      "kind": "text",
+      "body": "Hamidou : « Pour une cliente fidèle comme toi : six mangues pour 200 francs. Tu en as une de plus. » Zeinabou : « D'accord, ça me va. Donne-moi six. » Hamidou : « Merci ma sœur ! Choisis-les bien. À bientôt ! »"
+    },
+    {
+      "id": "analyse_dialogue",
+      "kind": "exercise",
+      "title": "Ce qui s'est passé au marché",
+      "items": [
+        {
+          "id": "arguments_zeinabou",
+          "kind": "textarea",
+          "prompt": "Quels arguments Zeinabou a-t-elle utilisés pour faire baisser le prix ?"
+        },
+        {
+          "id": "arguments_hamidou",
+          "kind": "textarea",
+          "prompt": "Comment Hamidou a-t-il répondu ? Quels arguments a-t-il donnés pour défendre son prix ?"
+        },
+        {
+          "id": "mangue_en_plus",
+          "kind": "textarea",
+          "prompt": "Hamidou n'a pas baissé son prix : il a ajouté une mangue. Pourquoi est-ce une bonne idée pour lui ? Et pour la cliente ?"
+        },
+        {
+          "id": "bien_passee",
+          "kind": "textarea",
+          "prompt": "La négociation s'est-elle bien passée ? Pourquoi ?"
+        },
+        {
+          "id": "mots_relation",
+          "kind": "textarea",
+          "prompt": "Quels mots ou quelles expressions ont aidé à garder une bonne relation entre les deux ?"
+        },
+        {
+          "id": "negocier_autrement",
+          "kind": "textarea",
+          "prompt": "Aurais-tu négocié autrement ? Comment ?"
+        },
+        {
+          "id": "plus_important",
+          "kind": "textarea",
+          "prompt": "Selon toi, qu'est-ce qui compte le plus dans une négociation : le prix, la qualité, ou la relation avec la personne ? Pourquoi ? Tu peux aussi en parler en classe."
+        }
+      ]
+    },
+    {
+      "id": "preparer_intro",
+      "kind": "text",
+      "title": "Une négociation se prépare",
+      "body": "Avec un client, un fournisseur ou au marché, une négociation réussie se prépare à l'avance. Si tu es bien préparé, tu as plus confiance en toi et beaucoup plus de chances de réussir. Voici six étapes pour te préparer."
+    },
+    {
+      "id": "six_etapes",
+      "kind": "process",
+      "title": "Bien préparer sa négociation",
+      "items": [
+        {
+          "title": "Fixe tes objectifs",
+          "body": "Que veux-tu obtenir ? Sur quels points peux-tu céder, et sur lesquels ne peux-tu pas céder ?"
+        },
+        {
+          "title": "Renseigne-toi sur l'autre",
+          "body": "Son expérience, sa réputation, ce qu'il cherche. Plus tu le connais, mieux tu comprends ses besoins."
+        },
+        {
+          "title": "Pense à ses besoins",
+          "body": "Qu'est-ce qui est important pour lui ? Certains points ne comptent pas pour toi, et inversement. Défends ce qui compte vraiment pour toi et accepte de lâcher sur les détails."
+        },
+        {
+          "title": "Prévois les difficultés",
+          "body": "Pense à l'avance aux objections qu'on pourrait te faire. Tu éviteras les mauvaises surprises."
+        },
+        {
+          "title": "Cherche une solution où les deux gagnent",
+          "body": "Trouve des idées qui apportent des avantages aux deux. Quand chacun gagne quelque chose, on parle d'accord « gagnant-gagnant ». Chacun a alors envie de le respecter."
+        },
+        {
+          "title": "Réunis tes informations",
+          "body": "Prix, quantités, qualité, conditions de paiement… Arrive avec un plan clair, dans ta tête ou sur papier."
+        }
+      ]
+    },
+    {
+      "id": "trois_qualites",
+      "kind": "list",
+      "title": "Les qualités d'un bon négociateur",
+      "items": [
+        {
+          "body": "L'honnêteté. Elle construit la confiance. Sans confiance, on ne peut pas discuter ouvertement."
+        },
+        {
+          "body": "L'empathie, c'est-à-dire comprendre ce que l'autre pense et ressent. Cela aide à trouver un terrain d'entente."
+        },
+        {
+          "body": "La patience. Reste calme même quand la discussion traîne ou devient tendue. La patience aide aussi à mieux écouter."
+        }
+      ]
+    },
+    {
+      "id": "mener_discussion",
+      "kind": "accordion",
+      "label": "Comment bien mener la discussion",
+      "intro": "Le jour de la négociation, ces six conseils t'aideront. Touche chaque conseil pour le lire.",
+      "items": [
+        {
+          "title": "Parle clairement",
+          "body": "Sois simple et direct. Les longs discours font perdre l'attention."
+        },
+        {
+          "title": "Garde tes objectifs en tête",
+          "body": "Ne prends pas les choses pour toi personnellement et ne te laisse pas emporter par tes émotions."
+        },
+        {
+          "title": "Reste calme",
+          "body": "Même si la discussion devient tendue, ne perds jamais ton sang-froid."
+        },
+        {
+          "title": "Détends l'atmosphère",
+          "body": "Un sourire ou un mot léger aide souvent à trouver un accord."
+        },
+        {
+          "title": "Fais une pause si besoin",
+          "body": "Si ça bloque, propose de vous arrêter un moment, le temps d'un thé. Chacun se calme et revient avec des idées neuves."
+        },
+        {
+          "title": "Vise l'accord gagnant-gagnant",
+          "body": "Le but n'est pas de « battre » l'autre. C'est de trouver un accord qui arrange les deux. Parfois, il faut céder sur un point secondaire pour obtenir l'essentiel."
+        }
+      ]
+    },
+    {
+      "id": "situations",
+      "kind": "accordion",
+      "label": "À ton tour de négocier",
+      "intro": "En classe, vous jouez une de ces scènes à deux, devant le groupe. Ici, tu prépares ta négociation par écrit. Lis les trois situations et choisis-en une.",
+      "items": [
+        {
+          "title": "Situation A : le client trouve le sac trop cher",
+          "body": "Un client veut acheter un sac que tu as fabriqué, mais il trouve ton prix trop élevé."
+        },
+        {
+          "title": "Situation B : acheter du cuir chez le tanneur",
+          "body": "Tu achètes du cuir chez un tanneur. Tu veux obtenir un meilleur prix, car tu comptes revenir souvent."
+        },
+        {
+          "title": "Situation C : une commande trop pressée",
+          "body": "Un client veut sa commande dans trois jours. Mais il te faut une semaine pour bien la faire."
+        }
+      ]
+    },
+    {
+      "id": "preparer_negociation",
+      "kind": "exercise",
+      "title": "Je prépare ma négociation",
+      "items": [
+        {
+          "id": "situation_choisie",
+          "kind": "textarea",
+          "prompt": "Quelle situation as-tu choisie : A, B ou C ? Avec qui vas-tu négocier ?"
+        },
+        {
+          "id": "prep_objectifs",
+          "kind": "textarea",
+          "prompt": "Étape 1 : que veux-tu obtenir ? Sur quel point peux-tu céder, et sur lequel ne veux-tu pas céder ?"
+        },
+        {
+          "id": "prep_l_autre",
+          "kind": "textarea",
+          "prompt": "Étape 2 : que sais-tu de l'autre personne ? Qu'est-ce qu'elle cherche ?"
+        },
+        {
+          "id": "prep_ses_besoins",
+          "kind": "textarea",
+          "prompt": "Étape 3 : qu'est-ce qui est important pour elle ? Quel détail peux-tu lui laisser ?"
+        },
+        {
+          "id": "prep_difficultes",
+          "kind": "textarea",
+          "prompt": "Étape 4 : quelles objections risque-t-elle de te faire ? Que vas-tu répondre ?"
+        },
+        {
+          "id": "prep_gagnant_gagnant",
+          "kind": "textarea",
+          "prompt": "Étape 5 : quelle solution pourrait arranger les deux ? Pense à la mangue en plus de Hamidou."
+        },
+        {
+          "id": "prep_informations",
+          "kind": "textarea",
+          "prompt": "Étape 6 : quelles informations dois-tu avoir en tête ? Écris par exemple le prix, la quantité, la qualité, le délai ou les conditions de paiement."
+        },
+        {
+          "id": "apres_la_scene",
+          "kind": "textarea",
+          "prompt": "Si tu joues la scène en classe ou avec quelqu'un, note ensuite ce qui a bien marché et ce que tu pourrais améliorer."
+        }
+      ]
+    },
+    {
+      "id": "a_retenir",
+      "kind": "takeaway",
+      "title": "À retenir",
+      "body": "Une bonne négociation se prépare : sache ce que tu veux, pense aux besoins de l'autre et cherche un accord où les deux gagnent. Reste honnête, patient et calme. Négocier s'apprend avec la pratique : plus tu le fais, plus tu es à l'aise."
+    },
+    {
+      "id": "journal_formation",
+      "kind": "exercise",
+      "title": "Mon journal de formation",
+      "label": "Prends quelques minutes pour garder une trace de ce que tu as appris.",
+      "items": [
+        {
+          "id": "journal_ce_que_je_retiens",
+          "kind": "textarea",
+          "prompt": "Quelle étape ou quel conseil pour négocier te sera le plus utile dans ton métier ? Pourquoi ?"
+        },
+        {
+          "id": "journal_reussi",
+          "kind": "textarea",
+          "prompt": "Qu'est-ce que tu as bien réussi ou bien compris ?"
+        },
+        {
+          "id": "journal_difficile",
+          "kind": "textarea",
+          "prompt": "Qu'est-ce qui a été difficile pour toi ?"
+        },
+        {
+          "id": "journal_mon_prochain_pas",
+          "kind": "textarea",
+          "prompt": "Cette semaine, à quelle occasion vas-tu essayer de négocier en préparant d'abord tes objectifs ? Au marché, avec un client, avec un fournisseur ?"
+        },
+        {
+          "id": "journal_ressenti",
+          "kind": "scale",
+          "group": "Comment je me sens",
+          "options": ["Pas à l'aise", "Moyen", "À l'aise", "Très à l'aise"],
+          "questions": [
+            {
+              "id": "ressenti_unite",
+              "text": "Comment te sens-tu après cette unité ?"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,221 @@
+{
+  "schemaVersion": 1,
+  "id": "M05-U01",
+  "moduleId": "M05",
+  "number": 1,
+  "title": "Qu'est-ce qu'une idée d'entreprise ?",
+  "status": "published",
+  "estimatedMinutes": 30,
+  "objectives": [
+    "Dire ce qu'est une idée d'entreprise claire.",
+    "Comprendre pourquoi on vérifie une idée avant d'y mettre son argent.",
+    "Répondre aux cinq questions d'une bonne idée d'entreprise.",
+    "Écrire une première version de ton idée."
+  ],
+  "blocks": [
+    {
+      "id": "introduction_module",
+      "kind": "text",
+      "title": "Trouver mon idée",
+      "body": "Ce module va t'aider à trouver ton idée d'entreprise, puis à choisir la meilleure. Une bonne idée ne tombe pas du ciel : elle se cherche autour de toi, dans ton métier et dans les besoins des gens. Et surtout, elle se vérifie avant d'y mettre ton argent."
+    },
+    {
+      "id": "definition",
+      "kind": "text",
+      "title": "Une idée d'entreprise, c'est quoi ?",
+      "body": "C'est la description courte et claire de ce que tu veux faire : ce que tu vas vendre, à qui, et comment. « Je voudrais travailler le cuir », ce n'est pas encore une idée d'entreprise. Ça le devient quand tu peux l'expliquer en quelques phrases à quelqu'un qui ne te connaît pas."
+    },
+    {
+      "id": "pourquoi_commencer_la",
+      "kind": "text",
+      "title": "Pourquoi commencer par là ?",
+      "body": "Créer une entreprise demande du travail et de l'argent. Si tu démarres avec une idée floue, tu risques de perdre les deux. Pour bien comprendre, écoute deux histoires : celle de Ramatou et celle de Mamadou."
+    },
+    {
+      "id": "ramatou_verifie",
+      "kind": "text",
+      "title": "Ramatou, maroquinière à Niamey",
+      "body": "Après sa formation, Ramatou travaille plusieurs mois dans un petit atelier d'articles en cuir. Elle gagne peu, mais elle perfectionne sa découpe, sa couture et ses finitions. Un jour, une cliente lui dit qu'elle ne trouve pas de sacs fabriqués sur place qui soient à la fois solides, bien finis et abordables. Des voisins disent la même chose : les articles en cuir sont chers, peu variés ou mal finis."
+    },
+    {
+      "id": "ramatou_enquete",
+      "kind": "text",
+      "title": "Ramatou va voir par elle-même",
+      "body": "Ramatou visite plusieurs points de vente. Elle discute avec des clients, des artisans et des revendeurs. Elle constate que les gens veulent des articles simples, solides et bien présentés. Elle fait la liste des produits les plus demandés : ceintures, portefeuilles, sandales, petits sacs. Avant d'investir, elle montre quelques modèles à ses voisins et à d'anciennes camarades de formation. Plusieurs passent commande."
+    },
+    {
+      "id": "ramatou_demarre",
+      "kind": "text",
+      "title": "Ramatou démarre petit",
+      "body": "Elle démarre avec ses économies et un petit prêt de sa famille : du cuir, du fil, de la colle, des boucles et quelques outils, dans un coin de la cour familiale. Elle travaille seule, et seulement sur commande, pour ne pas avoir d'invendus."
+    },
+    {
+      "id": "ramatou_grandit",
+      "kind": "text",
+      "title": "Les clients de Ramatou reviennent",
+      "body": "Grâce à la qualité de son travail, à ses prix raisonnables et au respect des délais, ses clients reviennent et parlent d'elle. Six mois plus tard, elle a assez de commandes pour penser à une machine à coudre le cuir d'occasion et à une apprentie."
+    },
+    {
+      "id": "mamadou_se_lance",
+      "kind": "text",
+      "title": "Mamadou, cordonnier",
+      "body": "Mamadou est formé à la fabrication de sandales. Il veut lancer son activité pour aider sa famille. Son oncle lui prête 75 000 FCFA. Au départ, il pense faire plusieurs produits : sandales, ceintures, porte-clés, petits portefeuilles. Puis un voisin lui dit qu'il y a une forte demande de sandales décorées, surtout pour les fêtes. Mamadou croit qu'il va gagner vite. Il change d'idée et décide de ne faire que ça."
+    },
+    {
+      "id": "mamadou_sans_verifier",
+      "kind": "text",
+      "title": "Mamadou fonce sans vérifier",
+      "body": "Il dépense presque tout le prêt en cuir, semelles, colle et accessoires. Il fabrique un seul modèle, sans avoir demandé à personne si ce modèle plaît, ni à quel prix les gens l'achèteraient. Il manque encore d'expérience pour produire beaucoup : les finitions sont irrégulières et certaines sandales ont des défauts. Pour aller plus vite, il fait appel à un jeune du quartier, et ses coûts augmentent."
+    },
+    {
+      "id": "mamadou_resultat",
+      "kind": "text",
+      "title": "Le marché est plein",
+      "body": "Pendant ce temps, d'autres artisans se mettent eux aussi aux sandales décorées. Il y en a trop sur le marché. Quand Mamadou veut vendre, il trouve peu d'acheteurs. Il doit vendre à bas prix à des revendeurs. Au final, il gagne très peu et il a du mal à rembourser son oncle."
+    },
+    {
+      "id": "comparer_histoires",
+      "kind": "exercise",
+      "title": "Compare les deux histoires",
+      "items": [
+        {
+          "id": "ramatou_avant_depenser",
+          "kind": "textarea",
+          "prompt": "Qu'est-ce que Ramatou a fait avant de dépenser son argent ? Cite au moins trois choses."
+        },
+        {
+          "id": "mamadou_pas_verifie",
+          "kind": "textarea",
+          "prompt": "Qu'est-ce que Mamadou n'a pas vérifié avant de se lancer ?"
+        },
+        {
+          "id": "mamadou_changer_idee",
+          "kind": "textarea",
+          "prompt": "Mamadou a changé d'idée sur le conseil d'un voisin. Selon toi, son erreur, c'était de changer d'idée, ou de le faire sans vérifier ? Explique pourquoi."
+        },
+        {
+          "id": "ramatou_sur_commande",
+          "kind": "textarea",
+          "prompt": "Au début, Ramatou travaillait seulement sur commande. Quel risque cela lui a-t-il évité ?"
+        },
+        {
+          "id": "conseil_mamadou",
+          "kind": "textarea",
+          "prompt": "Si tu pouvais donner un seul conseil à Mamadou avant qu'il commence, lequel serait-ce ?"
+        }
+      ]
+    },
+    {
+      "id": "cinq_questions",
+      "kind": "accordion",
+      "label": "Les cinq questions d'une bonne idée d'entreprise",
+      "intro": "Une idée d'entreprise est claire quand tu peux répondre à ces cinq questions. Touche chaque question pour voir ce que Ramatou et Mamadou ont répondu.",
+      "items": [
+        {
+          "title": "À quel besoin je réponds ?",
+          "body": "Ramatou : des articles en cuir solides, bien finis et abordables, qu'on ne trouve pas facilement. Mamadou : des sandales confortables, jolies et à prix raisonnable."
+        },
+        {
+          "title": "Qu'est-ce que je vends ?",
+          "body": "Ramatou : des sacs, des ceintures, des portefeuilles, des porte-documents et de petits accessoires. Mamadou : des sandales et des chaussures simples, et aussi la réparation."
+        },
+        {
+          "title": "Qui sont mes clients ?",
+          "body": "Ramatou : des femmes, des hommes, des élèves, des fonctionnaires et des commerçants qui cherchent du solide et du pratique. Mamadou : les habitants du quartier, les jeunes, les familles et les commerçants."
+        },
+        {
+          "title": "Comment je vends ?",
+          "body": "Ramatou : sur commande, par le bouche-à-oreille, à l'atelier, dans les foires locales et sur les réseaux sociaux. Mamadou : en vente directe à l'atelier, sur commande, en dépôt chez des revendeurs, et avec la réparation rapide."
+        },
+        {
+          "title": "Quel effet sur l'environnement ?",
+          "body": "Ramatou : bien choisir le cuir, réduire les chutes et réutiliser les restes pour de petits accessoires. Mamadou : utiliser les matières avec soin, bien gérer la colle et garder l'atelier propre."
+        }
+      ]
+    },
+    {
+      "id": "et_toi_consigne",
+      "kind": "text",
+      "title": "Et toi ?",
+      "body": "Même si ton idée est encore floue, essaie de répondre aux cinq questions. Écris ce que tu peux. Si tu n'arrives pas à tout remplir, ce n'est pas grave : tu sais maintenant quelles informations il te manque. Tu compléteras au fil du module."
+    },
+    {
+      "id": "ma_premiere_idee",
+      "kind": "exercise",
+      "title": "Ma première idée d'entreprise",
+      "items": [
+        {
+          "id": "premiere_idee_besoin",
+          "kind": "textarea",
+          "prompt": "À quel besoin réponds-tu ? Écris ce qui manque aux gens et que tu veux leur apporter."
+        },
+        {
+          "id": "premiere_idee_produits",
+          "kind": "textarea",
+          "prompt": "Qu'est-ce que tu vends ? Écris tes produits ou tes services."
+        },
+        {
+          "id": "premiere_idee_clients",
+          "kind": "textarea",
+          "prompt": "Qui sont tes clients ? Écris quelles personnes vont acheter."
+        },
+        {
+          "id": "premiere_idee_vente",
+          "kind": "textarea",
+          "prompt": "Comment vends-tu ? Par exemple : à l'atelier, sur commande, au marché, par le bouche-à-oreille."
+        },
+        {
+          "id": "premiere_idee_environnement",
+          "kind": "textarea",
+          "prompt": "Quel effet ton activité a-t-elle sur l'environnement ? Et que peux-tu faire pour le réduire ?"
+        }
+      ]
+    },
+    {
+      "id": "a_retenir",
+      "kind": "takeaway",
+      "title": "À retenir",
+      "body": "Une bonne idée d'entreprise répond à un besoin réel, pas à une supposition. Avant d'y mettre ton argent, observe le marché et teste tes produits. Commence petit, quitte à grandir ensuite. Ne mise pas tout sur un seul produit ou un seul client. Ton idée est claire quand tu peux répondre aux cinq questions."
+    },
+    {
+      "id": "journal_formation",
+      "kind": "exercise",
+      "title": "Mon journal de formation",
+      "label": "Prends quelques minutes pour garder une trace de ce que tu as appris.",
+      "items": [
+        {
+          "id": "journal_ce_que_je_retiens",
+          "kind": "textarea",
+          "prompt": "Qu'est-ce que l'histoire de Ramatou et celle de Mamadou t'ont appris pour ton propre projet ?"
+        },
+        {
+          "id": "journal_reussi",
+          "kind": "textarea",
+          "prompt": "Qu'est-ce que tu as bien réussi ou bien compris ?"
+        },
+        {
+          "id": "journal_difficile",
+          "kind": "textarea",
+          "prompt": "Qu'est-ce qui a été difficile pour toi ?"
+        },
+        {
+          "id": "journal_mon_prochain_pas",
+          "kind": "textarea",
+          "prompt": "Cette semaine, à quelle personne de ton entourage vas-tu demander ce qui lui manque, pour mieux répondre aux cinq questions ?"
+        },
+        {
+          "id": "journal_ressenti",
+          "kind": "scale",
+          "group": "Comment je me sens",
+          "options": ["Pas à l'aise", "Moyen", "À l'aise", "Très à l'aise"],
+          "questions": [
+            {
+              "id": "ressenti_unite",
+              "text": "Comment te sens-tu après cette unité ?"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,368 @@
+{
+  "schemaVersion": 1,
+  "id": "M04-U01",
+  "moduleId": "M04",
+  "number": 1,
+  "title": "Écouter",
+  "status": "published",
+  "estimatedMinutes": 35,
+  "objectives": [
+    "Comprendre ce que bien écouter apporte à un entrepreneur.",
+    "Faire le point sur ta façon d'écouter, à l'atelier ou en stage.",
+    "Utiliser les quatre étapes d'une bonne écoute.",
+    "Observer comment une personne montre qu'elle écoute."
+  ],
+  "blocks": [
+    {
+      "id": "intro_module",
+      "kind": "text",
+      "title": "Les qualités relationnelles",
+      "body": "Dans ce module, tu vas travailler tes qualités relationnelles : savoir écouter, négocier, diriger une équipe et travailler avec les autres. Elles ne sont pas innées. Elles s'apprennent et se renforcent avec le temps et l'expérience. On ne construit jamais une entreprise seul : bien s'entendre avec les autres aide à avancer."
+    },
+    {
+      "id": "pourquoi_ecouter",
+      "kind": "text",
+      "title": "Pourquoi bien écouter ?",
+      "body": "Beaucoup de gens préfèrent parler plutôt qu'écouter. On veut dire ce qu'on pense, on veut qu'on nous remarque. Mais si tu n'écoutes pas les autres, pourquoi est-ce qu'ils t'écouteraient ? Pour un entrepreneur, savoir écouter est une compétence essentielle."
+    },
+    {
+      "id": "ce_que_ecouter_apporte",
+      "kind": "list",
+      "title": "Ce que l'écoute t'apporte",
+      "items": [
+        {
+          "body": "De meilleures relations avec tes clients, tes partenaires et ton équipe."
+        },
+        {
+          "body": "De nouvelles occasions : en écoutant, tu comprends où sont les besoins et comment améliorer ton travail."
+        },
+        {
+          "body": "Plus de clients : les gens aiment travailler avec quelqu'un qui les écoute vraiment."
+        },
+        {
+          "body": "Moins de conflits : tu comprends mieux les problèmes et tu trouves des solutions."
+        },
+        {
+          "body": "Plus d'idées : écouter ouvre l'esprit."
+        },
+        {
+          "body": "Plus de respect : une personne qui écoute bien devient quelqu'un qu'on écoute à son tour."
+        }
+      ]
+    },
+    {
+      "id": "ecoute_consigne",
+      "kind": "text",
+      "title": "Est-ce que je sais bien écouter ?",
+      "body": "Pense à ta façon d'écouter en cours, à l'atelier ou en stage. Ce n'est pas un test et il n'y a pas de note. Pour chaque phrase, choisis « Souvent », « Parfois » ou « Rarement ». Réponds franchement : c'est pour toi."
+    },
+    {
+      "id": "ma_facon_ecouter",
+      "kind": "exercise",
+      "title": "Ma façon d'écouter",
+      "items": [
+        {
+          "id": "comprendre_pourquoi",
+          "kind": "scale",
+          "group": "Je comprends pourquoi il faut écouter",
+          "options": ["Souvent", "Parfois", "Rarement"],
+          "questions": [
+            {
+              "id": "sais_pourquoi",
+              "text": "Je sais pourquoi j'écoute : pour apprendre, éviter les erreurs et bien faire mon travail."
+            },
+            {
+              "id": "bon_artisan",
+              "text": "Je sais que bien écouter m'aidera à devenir un bon artisan."
+            }
+          ]
+        },
+        {
+          "id": "faire_attention",
+          "kind": "scale",
+          "group": "Je fais attention quand on me parle",
+          "options": ["Souvent", "Parfois", "Rarement"],
+          "questions": [
+            {
+              "id": "rester_concentre",
+              "text": "Malgré le bruit autour de moi, les machines ou les bavardages, je fais mon possible pour rester concentré."
+            },
+            {
+              "id": "ce_que_dit",
+              "text": "Je fais attention à ce que la personne dit, pas à son allure ou à son accent."
+            },
+            {
+              "id": "jusqu_au_bout",
+              "text": "J'écoute jusqu'au bout, même quand je ne suis pas d'accord."
+            },
+            {
+              "id": "laisser_finir",
+              "text": "Je laisse mon formateur ou mon patron finir son explication avant de poser une question."
+            },
+            {
+              "id": "montrer_ecoute",
+              "text": "Je montre que j'écoute : un hochement de tête, un « oui », un regard attentif."
+            },
+            {
+              "id": "prendre_note",
+              "text": "Quand c'est utile, je note un mot ou je fais un petit dessin dans mon cahier pour ne pas oublier, par exemple les étapes d'une couture ou une mesure de cuir."
+            }
+          ]
+        },
+        {
+          "id": "bien_comprendre",
+          "kind": "scale",
+          "group": "Je cherche à bien comprendre",
+          "options": ["Souvent", "Parfois", "Rarement"],
+          "questions": [
+            {
+              "id": "ton_visage",
+              "text": "Je fais attention au ton de la voix et au visage, pour sentir si la personne est fâchée, pressée ou contente."
+            },
+            {
+              "id": "vraiment_dire",
+              "text": "Je me demande : « Qu'est-ce qu'il veut vraiment me dire ? Ai-je besoin d'en savoir plus ? »"
+            },
+            {
+              "id": "a_sa_place",
+              "text": "J'essaie de me mettre à la place de celui qui parle. Par exemple : si j'étais le client, qu'est-ce que je voudrais ?"
+            }
+          ]
+        },
+        {
+          "id": "verifier_compris",
+          "kind": "scale",
+          "group": "Je vérifie ce que j'ai compris",
+          "options": ["Souvent", "Parfois", "Rarement"],
+          "questions": [
+            {
+              "id": "redire_mots",
+              "text": "Je redis avec mes mots ce qu'on vient de m'expliquer. Par exemple : « Donc je dois d'abord coller, puis coudre, c'est ça ? »"
+            },
+            {
+              "id": "demander_repeter",
+              "text": "Si je n'ai pas compris, je demande : « Vous pouvez répéter ? » ou « Comment on fait ça ? »"
+            }
+          ]
+        },
+        {
+          "id": "situations_ecoute",
+          "kind": "textarea",
+          "prompt": "Dans quelles deux situations écoutes-tu le mieux ? Par exemple : quand ton patron montre une technique, quand un client passe commande."
+        },
+        {
+          "id": "distractions",
+          "kind": "textarea",
+          "prompt": "Qu'est-ce qui te distrait souvent pendant une explication ? Par exemple : le téléphone, les copains, le bruit de la machine."
+        },
+        {
+          "id": "petit_effort",
+          "kind": "textarea",
+          "prompt": "Quel petit effort peux-tu faire cette semaine pour mieux écouter ? Par exemple : lever la main au lieu de parler, prendre une note, demander une précision."
+        }
+      ]
+    },
+    {
+      "id": "quatre_etapes",
+      "kind": "process",
+      "title": "Les quatre étapes d'une bonne écoute",
+      "items": [
+        {
+          "title": "Sache pourquoi tu écoutes",
+          "body": "Demande-toi ce que tu cherches à comprendre. Cela t'aide à te concentrer sur l'essentiel et à garder ton énergie pour ce qui compte vraiment."
+        },
+        {
+          "title": "Accompagne celui qui parle",
+          "body": "Tourne-toi vers lui et penche-toi un peu en avant. Montre que tu suis, avec un « oui » ou un hochement de tête. Écarte ce qui te distrait, surtout ton téléphone. Au téléphone, ne fais rien d'autre en même temps."
+        },
+        {
+          "title": "Construis le sens",
+          "body": "Écoute les mots, mais regarde aussi le visage et les gestes. Essaie de voir les choses du point de vue de l'autre. C'est comme ça qu'on comprend vraiment un message."
+        },
+        {
+          "title": "Vérifie que tu as compris",
+          "body": "Redis avec tes mots ce que tu as entendu, pour confirmer. Répète-le dans ta tête pour le retenir. Et demande ce qui te manque."
+        }
+      ]
+    },
+    {
+      "id": "dix_conseils",
+      "kind": "flashcards",
+      "title": "Dix conseils pour mieux écouter · touche la carte pour voir l'explication",
+      "items": [
+        {
+          "title": "Donne toute ton attention",
+          "body": "Regarde la personne qui parle et ne fais rien d'autre en même temps."
+        },
+        {
+          "title": "Ne prépare pas ta réponse",
+          "body": "Pendant qu'on te parle, ralentis. Écoute jusqu'au bout au lieu d'essayer de deviner ce que l'autre va dire."
+        },
+        {
+          "title": "Ne coupe jamais la parole",
+          "body": "Si tu n'es pas sûr que la personne a fini, demande gentiment : « Tu as terminé ? » Puis réfléchis un moment avant de répondre."
+        },
+        {
+          "title": "Montre que tu écoutes",
+          "body": "Par ton regard, un hochement de tête ou un mot d'encouragement."
+        },
+        {
+          "title": "Redis avec tes mots",
+          "body": "Reprends les points importants avec tes propres mots. Tu montres ainsi que tu as bien compris."
+        },
+        {
+          "title": "Pose des questions",
+          "body": "Les gens aiment qu'on s'intéresse à ce qu'ils disent."
+        },
+        {
+          "title": "Prends une note",
+          "body": "Quand l'information est importante, écris-la : une mesure, une date, une consigne."
+        },
+        {
+          "title": "Reste ouvert",
+          "body": "Même quand l'autre ne pense pas comme toi. Garde une voix calme et respectueuse, pas forte ni agressive. Les autres se sentiront libres de parler."
+        },
+        {
+          "title": "Parle moins, écoute plus",
+          "body": "Souviens-toi : tu as deux oreilles et une seule bouche."
+        },
+        {
+          "title": "Laisse les autres briller",
+          "body": "Chacun veut être écouté et reconnu. Donne-leur cette place : c'est ainsi qu'on fait grandir une équipe."
+        }
+      ]
+    },
+    {
+      "id": "observation_consigne",
+      "kind": "text",
+      "title": "Observe une personne qui écoute",
+      "body": "En classe, vous jouez peut-être cette scène à trois : une personne parle, une autre écoute, la troisième observe. Ici, c'est toi l'observateur. Choisis une vraie conversation autour de toi : ton patron avec un client, deux collègues à l'atelier, un vendeur au marché. Regarde bien la personne qui écoute."
+    },
+    {
+      "id": "observer_ecoute",
+      "kind": "exercise",
+      "title": "Ce que j'ai observé",
+      "items": [
+        {
+          "id": "situation_observee",
+          "kind": "textarea",
+          "prompt": "Quelle conversation as-tu observée ? Qui parlait, et qui écoutait ?"
+        },
+        {
+          "id": "signes_ecoute",
+          "kind": "scale",
+          "group": "La personne qui écoute a-t-elle…",
+          "options": ["Oui", "Non"],
+          "questions": [
+            {
+              "id": "regarde_personne",
+              "text": "regardé la personne qui parle ?"
+            },
+            {
+              "id": "corps_tourne",
+              "text": "tourné son corps vers elle ?"
+            },
+            {
+              "id": "buste_penche",
+              "text": "penché un peu le buste vers elle ?"
+            },
+            {
+              "id": "montre_suivre",
+              "text": "montré qu'elle suivait, avec des « oui » ou des hochements de tête ?"
+            },
+            {
+              "id": "evite_distractions",
+              "text": "évité les distractions, comme le téléphone ou les bavardages ?"
+            }
+          ]
+        },
+        {
+          "id": "signes_comprehension",
+          "kind": "textarea",
+          "prompt": "À ton avis, la personne qui écoutait a-t-elle bien compris ? À quoi l'as-tu vu ? Par exemple : elle a reposé une question, elle a redit les choses avec ses mots."
+        },
+        {
+          "id": "remarques_observation",
+          "kind": "textarea",
+          "prompt": "Qu'est-ce qui a bien marché dans cette écoute ? Qu'est-ce qui pourrait être amélioré ?"
+        }
+      ]
+    },
+    {
+      "id": "a_ton_tour_consigne",
+      "kind": "text",
+      "title": "À ton tour d'écouter",
+      "body": "Maintenant, inverse les rôles. La prochaine fois qu'on t'explique quelque chose, à l'atelier ou en stage, c'est toi qui écoutes. Essaie d'appliquer les quatre étapes. Ensuite, fais le point."
+    },
+    {
+      "id": "mon_ecoute",
+      "kind": "exercise",
+      "title": "Quand c'est moi qui écoute",
+      "items": [
+        {
+          "id": "points_retenus",
+          "kind": "scale",
+          "group": "Ce que j'ai retenu",
+          "options": ["Très peu", "Quelques-uns", "Beaucoup", "Presque tous"],
+          "questions": [
+            {
+              "id": "points_importants",
+              "text": "Combien de points importants as-tu retenus de cette explication ?"
+            }
+          ]
+        },
+        {
+          "id": "ce_qui_a_aide",
+          "kind": "textarea",
+          "prompt": "Qu'est-ce qui t'a aidé à bien écouter ? Qu'est-ce que tu feras autrement la prochaine fois ?"
+        }
+      ]
+    },
+    {
+      "id": "a_retenir",
+      "kind": "takeaway",
+      "title": "À retenir",
+      "body": "Bien écouter, c'est savoir pourquoi tu écoutes, accompagner celui qui parle, chercher le vrai sens du message et vérifier que tu as compris. Parle moins, écoute plus : tes clients, ton patron et ton équipe le remarqueront."
+    },
+    {
+      "id": "journal_formation",
+      "kind": "exercise",
+      "title": "Mon journal de formation",
+      "label": "Prends quelques minutes pour garder une trace de ce que tu as appris.",
+      "items": [
+        {
+          "id": "journal_ce_que_je_retiens",
+          "kind": "textarea",
+          "prompt": "Quel conseil pour mieux écouter te sera le plus utile ? Pourquoi ?"
+        },
+        {
+          "id": "journal_reussi",
+          "kind": "textarea",
+          "prompt": "Qu'est-ce que tu as bien réussi ou bien compris ?"
+        },
+        {
+          "id": "journal_difficile",
+          "kind": "textarea",
+          "prompt": "Qu'est-ce qui a été difficile pour toi ?"
+        },
+        {
+          "id": "journal_mon_prochain_pas",
+          "kind": "textarea",
+          "prompt": "Quel petit pas vas-tu faire cette semaine pour mieux écouter, à l'atelier ou avec un client ?"
+        },
+        {
+          "id": "journal_ressenti",
+          "kind": "scale",
+          "group": "Comment je me sens",
+          "options": ["Pas à l'aise", "Moyen", "À l'aise", "Très à l'aise"],
+          "questions": [
+            {
+              "id": "ressenti_unite",
+              "text": "Comment te sens-tu après cette unité ?"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

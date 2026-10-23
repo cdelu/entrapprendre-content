@@ -1,0 +1,343 @@
+{
+  "schemaVersion": 1,
+  "id": "M06-U06",
+  "moduleId": "M06",
+  "number": 6,
+  "title": "Mon local et mon matériel",
+  "status": "published",
+  "estimatedMinutes": 40,
+  "objectives": [
+    "Choisir un lieu de travail adapté pour démarrer.",
+    "Séparer le matériel indispensable pour démarrer de celui qui viendra plus tard.",
+    "Prévoir les dépenses de départ que l'on oublie souvent.",
+    "Noter combien d'années chaque outil va durer."
+  ],
+  "blocks": [
+    {
+      "id": "introduction",
+      "kind": "text",
+      "title": "Est-ce que je peux produire ?",
+      "body": "Tu sais maintenant qu'il y a des clients pour ton entreprise. Il faut voir si tu es capable de produire : où, avec qui, avec quelles matières. Dans cette unité, tu réfléchis au lieu où tu vas travailler et au matériel dont tu as besoin."
+    },
+    {
+      "id": "ou_travailler",
+      "kind": "accordion",
+      "label": "Où je vais travailler",
+      "intro": "Il y a quatre possibilités. Pour démarrer, la moins chère est souvent la plus sage. Touche chaque lieu pour voir ce qu'il coûte et ce qu'il faut savoir.",
+      "items": [
+        {
+          "title": "Chez moi",
+          "body": "Une pièce, un coin de la cour ou un appentis. Ça ne coûte rien, ou presque. C'est le plus simple pour commencer. Mais fais attention au bruit, à l'odeur de la colle et au passage de la famille."
+        },
+        {
+          "title": "Un local loué",
+          "body": "Tu paies un loyer chaque mois, plus une caution au départ. La caution, c'est une somme que tu laisses au propriétaire en garantie. Un local fait sérieux pour les clients. Mais le loyer tombe même les mois où tu vends peu."
+        },
+        {
+          "title": "Une place partagée",
+          "body": "Un atelier collectif ou une coopérative d'artisans. Tu paies une part des frais. Vous partagez le loyer, et parfois les machines. Mais il faut bien s'entendre."
+        },
+        {
+          "title": "Chez un artisan installé",
+          "body": "Tu travailles dans son atelier. Ça ne coûte rien, ou une part de tes ventes. Tu continues d'apprendre et tu ne paies pas de loyer. Mais tu n'es pas chez toi."
+        }
+      ]
+    },
+    {
+      "id": "cinq_verifications",
+      "kind": "list",
+      "title": "Avant de choisir, vérifie cinq choses",
+      "items": [
+        {
+          "body": "La place : y a-t-il assez d'espace pour travailler et pour ranger ?"
+        },
+        {
+          "body": "La lumière : la découpe et la finition demandent d'y voir clair."
+        },
+        {
+          "body": "L'eau et le courant, si ton travail en a besoin."
+        },
+        {
+          "body": "La sécurité : ton matériel est-il à l'abri la nuit ?"
+        },
+        {
+          "body": "L'accès : les clients et les livraisons peuvent-ils arriver jusqu'à toi ?"
+        }
+      ]
+    },
+    {
+      "id": "sante_atelier",
+      "kind": "text",
+      "title": "Pense à ta santé",
+      "body": "Les colles et les produits de traitement du cuir dégagent des vapeurs. Travaille toujours dans un endroit aéré, jamais dans une pièce fermée. Garde aussi ton espace rangé et propre : c'est plus sûr, tu gagnes du temps, et un atelier propre donne confiance au client qui entre."
+    },
+    {
+      "id": "deux_listes",
+      "kind": "text",
+      "title": "Le matériel : deux listes",
+      "body": "Sépare bien deux listes : le matériel qu'il te faut pour démarrer, et celui qui viendra plus tard. C'est ce qui fait la différence entre un projet que tu peux réaliser et un projet impossible à financer."
+    },
+    {
+      "id": "outils_par_metier",
+      "kind": "tabs",
+      "title": "Les outils de base, selon le métier",
+      "items": [
+        {
+          "title": "Tannerie",
+          "body": "Un bac ou une fosse de trempage, un couteau d'écharnage pour enlever la chair restée sur la peau, et des cadres de séchage. Pour te protéger : des gants, des bottes, un tablier et un masque."
+        },
+        {
+          "title": "Maroquinerie",
+          "body": "Une table de coupe, un cutter, des ciseaux, une règle en métal, des emporte-pièces, des alènes et des aiguilles, et une machine à coudre le cuir."
+        },
+        {
+          "title": "Cordonnerie",
+          "body": "Une forme à chaussures, un marteau de cordonnier, des pinces, des alènes, une râpe et une machine à coudre."
+        },
+        {
+          "title": "Botterie",
+          "body": "Des formes, une machine à coudre le cuir épais, un marteau, des pinces et des outils de finition."
+        }
+      ]
+    },
+    {
+      "id": "protection",
+      "kind": "statement",
+      "label": "PROTÈGE-TOI",
+      "body": "Selon ton métier, prévois des gants, un tablier, un masque. Ce n'est pas du luxe, et ça ne coûte pas cher. Un artisan blessé ou malade ne produit plus rien, et personne ne le remplacera."
+    },
+    {
+      "id": "quatre_facons",
+      "kind": "list",
+      "title": "Quatre façons d'avoir un outil",
+      "items": [
+        {
+          "body": "Acheter neuf : c'est cher, mais l'outil dure et il est garanti."
+        },
+        {
+          "body": "Acheter d'occasion : c'est bien moins cher, à condition de faire examiner la machine par quelqu'un qui s'y connaît."
+        },
+        {
+          "body": "Louer : c'est utile pour une machine dont tu n'as besoin que de temps en temps."
+        },
+        {
+          "body": "Partager ou emprunter : tu t'entends avec un autre artisan pour une machine que ni l'un ni l'autre ne peut payer seul."
+        }
+      ]
+    },
+    {
+      "id": "depenses_oubliees_intro",
+      "kind": "text",
+      "title": "Ce qu'on oublie toujours",
+      "body": "Certaines dépenses ne sont pas du matériel. Pourtant, il faut les payer dès le démarrage, et elles surprennent tout le monde. Prépare-toi à celles de la liste suivante."
+    },
+    {
+      "id": "depenses_oubliees",
+      "kind": "list",
+      "title": "Les dépenses de départ qu'on oublie",
+      "items": [
+        {
+          "body": "La caution du local : souvent plusieurs mois de loyer payés d'avance."
+        },
+        {
+          "body": "Les cautions pour l'eau, le courant et le téléphone."
+        },
+        {
+          "body": "Une assurance, si tu loues un local ou si tu as des machines."
+        },
+        {
+          "body": "Les petites réparations du lieu : une porte, une serrure, un point d'eau, l'électricité."
+        },
+        {
+          "body": "Le transport du matériel jusqu'à l'atelier."
+        },
+        {
+          "body": "Les frais pour déclarer ton activité. Tu en parleras dans l'unité « Déclarer mon activité »."
+        }
+      ]
+    },
+    {
+      "id": "duree_de_vie",
+      "kind": "text",
+      "title": "Combien de temps ça va durer ?",
+      "body": "Pour chaque outil, note aussi combien d'années il va durer. Une paire de ciseaux dure deux ou trois ans. Une machine à coudre le cuir bien entretenue dure cinq ans ou plus. Ça paraît un détail, mais tu en auras besoin pour tes calculs dans le module « Les chiffres de mon entreprise »."
+    },
+    {
+      "id": "remplacer_machine",
+      "kind": "text",
+      "title": "Une machine, il faudra la remplacer",
+      "body": "Prends une machine qui coûte 180 000 FCFA et qui dure cinq ans. Ce n'est pas une dépense faite une fois pour toutes. Tu dois regagner cette somme un peu chaque mois, pour pouvoir la remplacer le jour où elle sera usée. Tu verras ce calcul dans l'unité « Combien me coûte un article ? »."
+    },
+    {
+      "id": "lieu_consigne",
+      "kind": "text",
+      "title": "Compare tes lieux possibles",
+      "body": "Pense à deux ou trois endroits où tu pourrais travailler. Pour chacun, réponds aux mêmes questions. Ensuite, choisis celui qui te convient le mieux pour démarrer."
+    },
+    {
+      "id": "mon_lieu_de_travail",
+      "kind": "exercise",
+      "title": "Mon lieu de travail",
+      "items": [
+        {
+          "id": "lieu_possibilite_1",
+          "kind": "textarea",
+          "prompt": "Premier lieu possible : où est-il ? Combien coûte-t-il par mois, et quelle caution faut-il payer au départ ? Y a-t-il assez de place, de la lumière, l'eau et le courant ? Le matériel y est-il en sécurité ? Les clients peuvent-ils y venir ?"
+        },
+        {
+          "id": "lieu_possibilite_2",
+          "kind": "textarea",
+          "prompt": "Deuxième lieu possible : réponds aux mêmes questions. Où ? Coût par mois ? Caution au départ ? Place, lumière, eau et courant ? Sécurité du matériel ? Accès pour les clients ?"
+        },
+        {
+          "id": "lieu_possibilite_3",
+          "kind": "textarea",
+          "prompt": "Si tu as un troisième lieu possible, réponds encore aux mêmes questions."
+        },
+        {
+          "id": "mon_choix_lieu",
+          "kind": "textarea",
+          "prompt": "Quel lieu choisis-tu pour démarrer ? Pourquoi ?"
+        }
+      ]
+    },
+    {
+      "id": "materiel_consigne",
+      "kind": "text",
+      "title": "Fais ta liste de matériel",
+      "body": "Commence par ce qu'il te faut pour démarrer, puis ce que tu achèteras plus tard. Pour chaque outil, écris aussi combien d'années il va durer. Garde bien ces durées : tu en auras besoin dans le module « Les chiffres de mon entreprise »."
+    },
+    {
+      "id": "ma_liste_materiel",
+      "kind": "exercise",
+      "title": "Ma liste de matériel",
+      "items": [
+        {
+          "id": "materiel_demarrage",
+          "kind": "textarea",
+          "prompt": "Le matériel pour démarrer : pour chaque outil, écris son nom, comment tu l'obtiens (neuf, d'occasion, loué ou partagé) et son prix."
+        },
+        {
+          "id": "materiel_duree",
+          "kind": "textarea",
+          "prompt": "Pour chacun de ces outils, écris combien d'années il va durer."
+        },
+        {
+          "id": "materiel_total",
+          "kind": "textarea",
+          "prompt": "Additionne les prix : combien te coûte en tout le matériel pour démarrer ?"
+        },
+        {
+          "id": "materiel_plus_tard",
+          "kind": "textarea",
+          "prompt": "Ce que tu achèteras plus tard : pour chaque outil, écris son prix estimé et quand tu penses pouvoir l'acheter."
+        }
+      ]
+    },
+    {
+      "id": "oublis_consigne",
+      "kind": "text",
+      "title": "Chiffre ce que tu ne dois pas oublier",
+      "body": "Reprends la liste des dépenses qu'on oublie. Pour chacune, écris combien elle te coûtera. Si une dépense ne te concerne pas, écris zéro. Si tu ne connais pas encore un montant, renseigne-toi et complète plus tard."
+    },
+    {
+      "id": "ce_que_je_ne_dois_pas_oublier",
+      "kind": "exercise",
+      "title": "Ce que je ne dois pas oublier",
+      "items": [
+        {
+          "id": "oubli_caution_local",
+          "kind": "textarea",
+          "prompt": "Combien te coûtera la caution du local ?"
+        },
+        {
+          "id": "oubli_cautions_services",
+          "kind": "textarea",
+          "prompt": "Combien te coûteront les cautions pour l'eau, le courant et le téléphone ?"
+        },
+        {
+          "id": "oubli_assurance",
+          "kind": "textarea",
+          "prompt": "As-tu besoin d'une assurance ? Si oui, combien coûte-t-elle ?"
+        },
+        {
+          "id": "oubli_reparations",
+          "kind": "textarea",
+          "prompt": "Combien prévois-tu pour les réparations du lieu ?"
+        },
+        {
+          "id": "oubli_transport",
+          "kind": "textarea",
+          "prompt": "Combien coûtera le transport du matériel jusqu'à l'atelier ?"
+        },
+        {
+          "id": "oubli_declaration",
+          "kind": "textarea",
+          "prompt": "Combien coûtent les frais de déclaration de ton activité ? Si tu ne sais pas encore, tu le chercheras dans l'unité « Déclarer mon activité »."
+        },
+        {
+          "id": "oubli_autre",
+          "kind": "textarea",
+          "prompt": "Y a-t-il une autre dépense de départ ? Écris-la avec son montant."
+        },
+        {
+          "id": "oubli_total",
+          "kind": "textarea",
+          "prompt": "Additionne toutes ces dépenses : quel est le total ?"
+        }
+      ]
+    },
+    {
+      "id": "piece_du_dossier",
+      "kind": "text",
+      "title": "Pour ton dossier",
+      "body": "Recopie tes réponses et range-les dans ta chemise : c'est la pièce « Mon local et mon matériel ». Les totaux serviront directement à calculer ton argent de départ, dans l'unité « Mon argent de départ et d'où il vient »."
+    },
+    {
+      "id": "a_retenir",
+      "kind": "takeaway",
+      "title": "À retenir",
+      "body": "Pour démarrer, travailler chez soi est presque toujours plus sage que louer. Vérifie la place, la lumière, l'eau et le courant, la sécurité et l'accès, et travaille dans un endroit aéré. Sépare le matériel indispensable de celui qui viendra plus tard : l'occasion, la location et le partage aident à démarrer avec peu. Et note combien d'années chaque outil durera."
+    },
+    {
+      "id": "journal_formation",
+      "kind": "exercise",
+      "title": "Mon journal de formation",
+      "label": "Prends quelques minutes pour garder une trace de ce que tu as appris.",
+      "items": [
+        {
+          "id": "journal_ce_que_je_retiens",
+          "kind": "textarea",
+          "prompt": "Qu'est-ce que tu retiens sur le choix de ton lieu de travail et de ton matériel ?"
+        },
+        {
+          "id": "journal_reussi",
+          "kind": "textarea",
+          "prompt": "Qu'est-ce que tu as bien réussi ou bien compris ?"
+        },
+        {
+          "id": "journal_difficile",
+          "kind": "textarea",
+          "prompt": "Qu'est-ce qui a été difficile pour toi ?"
+        },
+        {
+          "id": "journal_mon_prochain_pas",
+          "kind": "textarea",
+          "prompt": "Quel petit pas vas-tu faire cette semaine ? Par exemple : demander le prix d'un outil d'occasion, ou aller voir un lieu où tu pourrais travailler."
+        },
+        {
+          "id": "journal_ressenti",
+          "kind": "scale",
+          "group": "Comment je me sens",
+          "options": ["Pas à l'aise", "Moyen", "À l'aise", "Très à l'aise"],
+          "questions": [
+            {
+              "id": "ressenti_unite",
+              "text": "Comment te sens-tu après cette unité ?"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

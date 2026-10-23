@@ -1,0 +1,277 @@
+{
+  "schemaVersion": 1,
+  "id": "M03-U01",
+  "moduleId": "M03",
+  "number": 1,
+  "title": "Se fixer des objectifs",
+  "status": "published",
+  "estimatedMinutes": 40,
+  "objectives": [
+    "Reconnaître les quatre qualités d'un bon objectif.",
+    "Classer des objectifs par priorité : A, B ou C.",
+    "Écrire tes propres objectifs, personnels ou professionnels.",
+    "Tirer des leçons du parcours de Fatoumata."
+  ],
+  "blocks": [
+    {
+      "id": "introduction_module",
+      "kind": "text",
+      "title": "Les qualités personnelles de l'entrepreneur",
+      "body": "Dans ce module, tu vas apprendre à te fixer des objectifs, à gérer ton temps, à prendre des décisions et à faire face aux risques. Ces qualités ne sont pas un don de naissance. Elles s'apprennent et se renforcent avec la pratique. Bien t'organiser et bien te conduire, c'est le premier pas vers la réussite de ton activité."
+    },
+    {
+      "id": "tes_propres_objectifs",
+      "kind": "text",
+      "title": "Tes objectifs, pas ceux des autres",
+      "body": "Pour réussir, fixe-toi tes propres objectifs : ceux qui correspondent à ce que tu veux vraiment. Tu as plus de chances de les atteindre s'ils viennent de toi, et pas de ce que les autres attendent de toi. Il faut y croire et y mettre tout ton cœur."
+    },
+    {
+      "id": "exemple_fatoumata",
+      "kind": "text",
+      "title": "L'exemple de Fatoumata",
+      "body": "Fatoumata est une jeune Nigérienne en situation de handicap moteur : elle a du mal à se déplacer. Son entourage doutait d'elle, mais elle a suivi ses rêves. Elle voulait créer son activité, être indépendante, aider sa famille et être respectée. Parce qu'elle croyait en ses objectifs, elle a avancé pas à pas jusqu'à de vrais résultats."
+    },
+    {
+      "id": "quatre_qualites",
+      "kind": "accordion",
+      "label": "Les quatre qualités d'un bon objectif",
+      "intro": "Un bon objectif réunit quatre qualités. Touche chacune pour voir comment Fatoumata les a appliquées.",
+      "items": [
+        {
+          "title": "Il est précis",
+          "body": "Un objectif doit être clair, précis et écrit. Au lieu de dire « je veux réussir », Fatoumata a écrit : « Je veux ouvrir un petit atelier de maroquinerie rentable à Niamey, pour fabriquer et vendre des sacs, portefeuilles, ceintures et sandales, et subvenir aux besoins de ma famille. »"
+        },
+        {
+          "title": "Il est mesurable",
+          "body": "Tu dois pouvoir savoir quand tu l'as atteint. Fatoumata voyait qu'elle progressait quand elle vendait régulièrement, remboursait son prêt et recevait des commandes de clients fidèles. Un objectif mesurable te montre tes progrès et te donne l'occasion de fêter tes réussites."
+        },
+        {
+          "title": "Il a une échéance",
+          "body": "Une échéance, c'est une date limite. Elle t'aide à rester motivé et à ne pas tout remettre à plus tard. Fatoumata s'était fixé des étapes : améliorer ses finitions en trois mois, vendre ses premiers produits en six mois, acheter de nouveaux outils avant la fin de la première année."
+        },
+        {
+          "title": "Il y en a à court et à long terme",
+          "body": "De petits objectifs proches mènent à un grand objectif lointain. Apprendre une nouvelle couture, trouver un meilleur fournisseur de cuir, tenir un cahier de comptes : ce sont des petits pas vers le grand but de Fatoumata, devenir une entrepreneure reconnue dans la filière cuirs et peaux."
+        }
+      ]
+    },
+    {
+      "id": "priorites_abc",
+      "kind": "text",
+      "title": "Classer ses objectifs : A, B, C",
+      "body": "Tu ne peux pas tout faire en même temps. Pour savoir par où commencer, donne une lettre à chaque objectif. A veut dire priorité haute : c'est le plus important. B veut dire priorité moyenne. C veut dire priorité basse : cela peut attendre."
+    },
+    {
+      "id": "amadou_presentation",
+      "kind": "text",
+      "title": "Amadou cherche sa voie",
+      "body": "Amadou est un jeune Nigérien formé aux métiers du cuir. Il sait découper, coudre à la main, réparer des sandales, fabriquer des ceintures et de petits accessoires. Il aime les défis, mais une fois une technique maîtrisée, il s'en lasse vite. Il n'a pas encore choisi de spécialité."
+    },
+    {
+      "id": "amadou_reve",
+      "kind": "text",
+      "title": "Le rêve d'Amadou",
+      "body": "Son budget est petit : il devra acheter ses outils peu à peu et se concentrer sur un métier précis. Depuis longtemps, c'est la maroquinerie qui l'attire. Il a déjà fait des sacs, des portefeuilles et des sandales pour des amis et des voisins. Son rêve : ouvrir un jour son petit atelier de maroquinerie à Niamey."
+    },
+    {
+      "id": "pistes_amadou",
+      "kind": "list",
+      "title": "Des pistes pour aider Amadou",
+      "items": [
+        {
+          "body": "Choisir une spécialité."
+        },
+        {
+          "body": "Améliorer ses techniques de maroquinerie, surtout ses finitions."
+        },
+        {
+          "body": "Acheter peu à peu les outils essentiels."
+        },
+        {
+          "body": "Trouver de bons fournisseurs de cuir."
+        },
+        {
+          "body": "Trouver ses premiers clients."
+        },
+        {
+          "body": "Fixer des prix adaptés."
+        },
+        {
+          "body": "Tenir un cahier de dépenses et de recettes, c'est-à-dire noter l'argent qui sort et l'argent qui entre."
+        },
+        {
+          "body": "Participer à des foires locales."
+        },
+        {
+          "body": "Réfléchir à déclarer son activité."
+        },
+        {
+          "body": "Préparer un petit plan d'affaires."
+        }
+      ]
+    },
+    {
+      "id": "objectifs_amadou",
+      "kind": "exercise",
+      "title": "Aide Amadou à se fixer des objectifs",
+      "items": [
+        {
+          "id": "amadou_court_terme",
+          "kind": "textarea",
+          "prompt": "Écris des objectifs à court terme pour Amadou, pour les prochains mois. Pense aux quatre qualités d'un bon objectif : il est précis, il est mesurable, il a une échéance, et il y en a à court et à long terme. Ajoute à côté de chacun sa priorité : A, B ou C."
+        },
+        {
+          "id": "amadou_moyen_long_terme",
+          "kind": "textarea",
+          "prompt": "Écris maintenant des objectifs à moyen et à long terme pour Amadou, sur une ou plusieurs années. Reste réaliste. Ajoute aussi la priorité de chacun : A, B ou C."
+        }
+      ]
+    },
+    {
+      "id": "mes_objectifs_consigne",
+      "kind": "text",
+      "title": "À toi maintenant",
+      "body": "Pense à ce que tu veux atteindre dans les prochaines années, dans ta vie ou dans ton travail. Écris tes objectifs, vérifie qu'ils ont les quatre qualités, puis classe-les par priorité."
+    },
+    {
+      "id": "mes_objectifs",
+      "kind": "exercise",
+      "title": "Fixe tes objectifs",
+      "items": [
+        {
+          "id": "quatre_objectifs",
+          "kind": "textarea",
+          "prompt": "Écris quatre objectifs importants que tu veux atteindre dans les prochaines années. Ils peuvent être personnels ou professionnels."
+        },
+        {
+          "id": "objectifs_reecrits",
+          "kind": "textarea",
+          "prompt": "Tes objectifs sont-ils précis, mesurables, avec une échéance, à court ou à long terme ? Réécris ceux qui doivent l'être."
+        },
+        {
+          "id": "objectifs_priorites",
+          "kind": "textarea",
+          "prompt": "Donne à chaque objectif une priorité : A, B ou C. Puis regarde tes objectifs B : doivent-ils passer en A ou en C ? Écris ta liste finale."
+        },
+        {
+          "id": "objectifs_lecons",
+          "kind": "textarea",
+          "prompt": "Qu'est-ce que cet exercice t'a appris ? Explique comment tes objectifs sont liés à une entreprise qui te motive."
+        }
+      ]
+    },
+    {
+      "id": "fatoumata_debut",
+      "kind": "text",
+      "title": "Le parcours de Fatoumata : un début difficile",
+      "body": "Enfant, Fatoumata avait du mal à se déplacer et ne pouvait pas aller régulièrement à l'école. Plus tard, des employeurs doutaient de ses capacités, et elle n'a trouvé que de petits travaux mal payés. Mais ses objectifs étaient clairs : avoir sa propre activité, être indépendante, aider sa famille, payer l'école de ses petites sœurs et être reconnue."
+    },
+    {
+      "id": "fatoumata_lancement",
+      "kind": "text",
+      "title": "Se former et se lancer",
+      "body": "Fatoumata s'est intéressée aux métiers du cuir. Elle a observé des artisans, puis suivi une formation en maroquinerie : découpe, couture, collage, finition et vente. Pour se lancer, elle a réuni 350 000 FCFA : 150 000 de sa famille, 50 000 d'amis et 150 000 prêtés par une microfinance, un organisme qui prête de petites sommes. De quoi acheter outils, cuir, fil, colle et boucles."
+    },
+    {
+      "id": "fatoumata_reussite",
+      "kind": "text",
+      "title": "Grandir pas à pas",
+      "body": "La première année, elle a vendu de petits articles dans son quartier, lors d'événements et sur les réseaux sociaux. Son travail soigné et ses délais tenus lui ont gagné la confiance des clients. Après deux ans, elle a acheté de nouveaux outils, amélioré ses modèles et reçu de plus grosses commandes. Elle a aussi appris à noter dans un cahier ses dépenses, ses recettes et son bénéfice, c'est-à-dire ce qui reste une fois les dépenses payées."
+    },
+    {
+      "id": "fatoumata_aujourdhui",
+      "kind": "text",
+      "title": "Fatoumata aujourd'hui",
+      "body": "Après trois ans, Fatoumata a remboursé son prêt et gagne un revenu régulier. Elle a même acheté un tricycle motorisé adapté pour se déplacer et transporter ses produits. Aujourd'hui, à 25 ans, elle est respectée comme une jeune femme courageuse et compétente. Elle n'a jamais cru que son handicap devait l'empêcher de réaliser ses rêves."
+    },
+    {
+      "id": "fatoumata_lecon",
+      "kind": "statement",
+      "label": "CE QUE MONTRE FATOUMATA",
+      "body": "Avec des objectifs clairs, du courage, de la formation, de l'organisation et un bon accompagnement, on peut réussir dans la filière cuirs et peaux, avec ou sans handicap."
+    },
+    {
+      "id": "etude_fatoumata",
+      "kind": "exercise",
+      "title": "Réfléchis au parcours de Fatoumata",
+      "items": [
+        {
+          "id": "fatoumata_objectifs",
+          "kind": "textarea",
+          "prompt": "Quels étaient les objectifs de Fatoumata ?"
+        },
+        {
+          "id": "fatoumata_actions",
+          "kind": "textarea",
+          "prompt": "Quelles actions a-t-elle menées pour atteindre ses objectifs ?"
+        },
+        {
+          "id": "fatoumata_mesure",
+          "kind": "textarea",
+          "prompt": "Comment savait-elle qu'elle atteignait ses objectifs ?"
+        },
+        {
+          "id": "fatoumata_soutiens",
+          "kind": "textarea",
+          "prompt": "Qui pourrait l'aider à atteindre ses objectifs ?"
+        },
+        {
+          "id": "fatoumata_obstacles",
+          "kind": "textarea",
+          "prompt": "Quels obstacles a-t-elle rencontrés ? Pour chacun, propose une solution."
+        },
+        {
+          "id": "fatoumata_nouveaux_objectifs",
+          "kind": "textarea",
+          "prompt": "Quels objectifs à court terme et à long terme pourrait-elle encore se fixer pour développer son atelier ?"
+        }
+      ]
+    },
+    {
+      "id": "a_retenir",
+      "kind": "takeaway",
+      "title": "À retenir",
+      "body": "Un bon objectif vient de toi. Il est précis, mesurable, il a une échéance, et les petits objectifs proches mènent aux grands. Classe tes objectifs en A, B ou C, et commence par les A."
+    },
+    {
+      "id": "journal_formation",
+      "kind": "exercise",
+      "title": "Mon journal de formation",
+      "label": "Prends quelques minutes pour garder une trace de ce que tu as appris.",
+      "items": [
+        {
+          "id": "journal_ce_que_je_retiens",
+          "kind": "textarea",
+          "prompt": "Qu'est-ce que tu retiens sur la façon de bien fixer un objectif ?"
+        },
+        {
+          "id": "journal_reussi",
+          "kind": "textarea",
+          "prompt": "Qu'est-ce que tu as bien réussi ou bien compris ?"
+        },
+        {
+          "id": "journal_difficile",
+          "kind": "textarea",
+          "prompt": "Qu'est-ce qui a été difficile pour toi ?"
+        },
+        {
+          "id": "journal_mon_prochain_pas",
+          "kind": "textarea",
+          "prompt": "Quel petit pas vas-tu faire cette semaine pour avancer vers un de tes objectifs A ?"
+        },
+        {
+          "id": "journal_ressenti",
+          "kind": "scale",
+          "group": "Comment je me sens",
+          "options": ["Pas à l'aise", "Moyen", "À l'aise", "Très à l'aise"],
+          "questions": [
+            {
+              "id": "ressenti_unite",
+              "text": "Comment te sens-tu après cette unité ?"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

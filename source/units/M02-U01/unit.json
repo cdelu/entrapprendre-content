@@ -5,46 +5,162 @@
   "number": 1,
   "title": "Les compétences entrepreneuriales",
   "status": "published",
-  "estimatedMinutes": 40,
+  "estimatedMinutes": 35,
   "objectives": [
-    "Reconnaître plusieurs qualités d'une personne entreprenante.",
-    "Repérer les qualités que tu as déjà et celles que tu veux développer."
+    "Reconnaître les qualités d'une personne entreprenante.",
+    "Comprendre que réussir ne dépend pas du fait d'être un homme ou une femme.",
+    "Faire le point sur tes qualités et choisir comment les renforcer."
   ],
   "blocks": [
     {
       "id": "introduction",
       "kind": "text",
       "title": "Les qualités s'apprennent",
-      "body": "Une personne entreprenante observe, agit et apprend de ce qui lui arrive. Dans cette unité, tu vas découvrir ces qualités et réfléchir à celles que tu veux renforcer.",
-      "audio": {
-        "path": "media/file_example_MP3_700KB.mp3",
-        "transcript": "Audio d'introduction de l'unité."
-      }
+      "body": "Certaines qualités aident à créer et à faire tourner une entreprise. Tu en as sans doute déjà quelques-unes. Les autres, tu peux les développer avec le temps et la pratique."
     },
     {
       "id": "portrait",
       "kind": "accordion",
-      "label": "Le portrait · touche chaque partie",
-      "intro": "Imagine une personne entreprenante dans son atelier.",
+      "label": "Le portrait d'une personne entreprenante",
+      "intro": "Imagine une personne entreprenante des pieds à la tête. Chaque partie de son corps représente une qualité. Touche chaque partie pour la découvrir.",
       "items": [
         {
-          "title": "Les yeux",
-          "body": "Elle observe autour d'elle et repère les occasions."
+          "title": "Le cerveau",
+          "body": "Pour réfléchir et prendre les bonnes décisions."
         },
         {
-          "title": "Les mains",
-          "body": "Elle passe à l'action et améliore son travail."
+          "title": "Les yeux",
+          "body": "Pour voir loin, se fixer un but, repérer les occasions et garder un œil sur ce que font les concurrents."
         },
         {
           "title": "Les oreilles",
-          "body": "Elle écoute ses clients, ses collègues et ses partenaires."
+          "body": "Pour écouter les bons conseils et sentir le changement autour de soi."
+        },
+        {
+          "title": "Le nez",
+          "body": "Pour flairer les nouvelles occasions et sentir les problèmes avant qu'ils grandissent."
+        },
+        {
+          "title": "La bouche",
+          "body": "Pour bien communiquer et parler aux autres avec respect."
+        },
+        {
+          "title": "Le sourire",
+          "body": "Pour garder le moral et profiter des bons moments."
+        },
+        {
+          "title": "Le cou et le dos",
+          "body": "Pour se tenir droit, avoir confiance en soi et croire en ses capacités."
+        },
+        {
+          "title": "Les épaules",
+          "body": "Pour porter les responsabilités."
+        },
+        {
+          "title": "Les bras",
+          "body": "Pour accueillir et rassembler son équipe, car c'est elle qui fait le succès."
+        },
+        {
+          "title": "Les mains",
+          "body": "Pour travailler dur, se servir de son savoir-faire, et serrer la main quand on conclut une bonne affaire."
+        },
+        {
+          "title": "Les jambes et les pieds",
+          "body": "Pour avancer d'un pas sûr, sauter par-dessus les obstacles et prendre de l'avance."
         }
       ]
     },
     {
+      "id": "dernier_secret",
+      "kind": "statement",
+      "label": "LE DERNIER SECRET",
+      "body": "Une personne entreprenante apprend de chacune de ses erreurs au lieu de se décourager."
+    },
+    {
+      "id": "dix_qualites",
+      "kind": "flashcards",
+      "title": "Dix qualités qui aident à entreprendre · touche la carte pour voir l'explication",
+      "items": [
+        {
+          "title": "Travailler dur",
+          "body": "Gérer une entreprise demande beaucoup d'énergie. Il faut parfois travailler de longues heures et se donner à fond."
+        },
+        {
+          "title": "La confiance en soi",
+          "body": "Croire en soi et en sa capacité à atteindre ses objectifs. Quand on veut vraiment quelque chose et qu'on travaille pour, on finit souvent par l'obtenir."
+        },
+        {
+          "title": "La créativité",
+          "body": "Avoir des idées nouvelles pour trouver des produits, des services ou de meilleures façons de travailler."
+        },
+        {
+          "title": "Le sens des objectifs",
+          "body": "Se fixer des buts réalistes et travailler avec détermination pour les atteindre."
+        },
+        {
+          "title": "La persévérance",
+          "body": "Toute entreprise a ses problèmes. Ne pas lâcher est l'une des clés de la réussite."
+        },
+        {
+          "title": "Savoir affronter l'échec",
+          "body": "Reconnaître ses échecs, en tirer des leçons et repartir de l'avant."
+        },
+        {
+          "title": "Savoir écouter",
+          "body": "Oser demander de l'aide et accepter les conseils des autres."
+        },
+        {
+          "title": "Faire face à l'incertitude",
+          "body": "Être entrepreneur est moins sûr qu'un emploi salarié. Il faut vivre avec cette incertitude sans trop se stresser."
+        },
+        {
+          "title": "L'honnêteté et la fiabilité",
+          "body": "Être droit, juste, et faire ce qu'on a promis de faire."
+        },
+        {
+          "title": "Savoir prendre des risques",
+          "body": "Accepter de prendre des risques, mais des risques réfléchis et mesurés."
+        }
+      ]
+    },
+    {
+      "id": "entreprendre_pour_tous",
+      "kind": "text",
+      "title": "Entreprendre, c'est pour tout le monde",
+      "body": "L'entrepreneuriat n'est réservé à personne. Les femmes, les hommes et les personnes en situation de handicap peuvent tous entreprendre, chacun à sa manière. Ce qui compte, ce sont les qualités, et elles s'apprennent."
+    },
+    {
+      "id": "femmes_hommes",
+      "kind": "exercise",
+      "title": "Femmes, hommes et entrepreneuriat",
+      "items": [
+        {
+          "id": "difference_selon_metier",
+          "kind": "textarea",
+          "prompt": "Existe-t-il des types d'entreprises où être un homme ou une femme devrait vraiment faire une différence ? Pourquoi ?"
+        },
+        {
+          "id": "regard_societe",
+          "kind": "textarea",
+          "prompt": "Est-ce que les gens autour de toi regardent les femmes et les hommes entrepreneurs de la même façon ? Donne un exemple."
+        },
+        {
+          "id": "difficultes_femmes",
+          "kind": "textarea",
+          "prompt": "Penses-tu qu'une femme a plus de mal à réussir en affaires ? Pourquoi ?"
+        }
+      ]
+    },
+    {
+      "id": "profil_consigne",
+      "kind": "text",
+      "title": "Fais le point sur ton profil",
+      "body": "Ce n'est pas un test et il n'y a pas de note. Pour chaque phrase, choisis « Oui » ou « Pas encore ». « Pas encore » veut dire que la qualité s'apprend : tu peux la travailler."
+    },
+    {
       "id": "faire_le_point",
       "kind": "exercise",
-      "title": "Fais le point",
+      "title": "Mon profil d'entrepreneur",
       "items": [
         {
           "id": "qualites_personnelles",
@@ -53,16 +169,109 @@
           "options": ["Oui", "Pas encore"],
           "questions": [
             {
-              "id": "prendre_initiative",
-              "text": "Est-ce que tu prends parfois l'initiative sans attendre qu'on te le demande ?"
+              "id": "engagement",
+              "text": "Es-tu prêt ou prête à faire passer ton entreprise avant presque tout, et à y consacrer ton temps et tes efforts ?"
+            },
+            {
+              "id": "motivation",
+              "text": "Sais-tu clairement pourquoi tu veux ta propre entreprise ?"
+            },
+            {
+              "id": "prise_risques",
+              "text": "Acceptes-tu de prendre des risques, et même de risquer ton argent pour ton entreprise ?"
+            },
+            {
+              "id": "prise_decisions",
+              "text": "Peux-tu prendre des décisions difficiles par toi-même, sans les remettre à plus tard ?"
+            },
+            {
+              "id": "gerer_stress",
+              "text": "Gardes-tu ta motivation et le plaisir de travailler, même sous pression ?"
+            },
+            {
+              "id": "resoudre_problemes",
+              "text": "Sais-tu trouver la vraie cause d'un problème et le régler ?"
+            },
+            {
+              "id": "sens_objectifs",
+              "text": "Arrives-tu à voir où va ton entreprise, sans te perdre dans les petits détails ?"
+            },
+            {
+              "id": "soutien",
+              "text": "As-tu une famille, des amis ou des connaissances qui soutiendront ton projet ?"
+            },
+            {
+              "id": "situation_financiere",
+              "text": "As-tu mis de l'argent de côté, ou peux-tu compter sur des proches ou une microfinance si tu en as besoin ?"
+            }
+          ]
+        },
+        {
+          "id": "competences",
+          "kind": "scale",
+          "group": "Tes compétences",
+          "options": ["Oui", "Pas encore"],
+          "questions": [
+            {
+              "id": "competences_techniques",
+              "text": "As-tu le savoir-faire du métier ? Par exemple, pour ouvrir un atelier de maroquinerie, il faut savoir travailler le cuir."
+            },
+            {
+              "id": "gestion_entreprise",
+              "text": "Sais-tu vendre, calculer tes coûts, tenir tes comptes ?"
+            },
+            {
+              "id": "connaissance_secteur",
+              "text": "Connais-tu bien le type d'activité que tu veux lancer ?"
+            },
+            {
+              "id": "negociation",
+              "text": "Sais-tu discuter pour obtenir ce que tu veux, tout en laissant l'autre y trouver son compte ?"
+            }
+          ]
+        },
+        {
+          "id": "environnement_communaute",
+          "kind": "scale",
+          "group": "L'environnement et la communauté",
+          "options": ["Oui", "Pas encore"],
+          "questions": [
+            {
+              "id": "effets_environnement",
+              "text": "Connais-tu les effets de ton activité sur la nature et sur les ressources dont elle dépend ?"
+            },
+            {
+              "id": "place_communaute",
+              "text": "As-tu de bonnes relations avec ta communauté et l'envie d'y contribuer ?"
             }
           ]
         },
         {
           "id": "qualite_a_travailler",
           "kind": "textarea",
-          "prompt": "Quelle qualité veux-tu travailler en premier ?",
-          "hint": "Écris une ou deux lignes."
+          "prompt": "Regarde les phrases où tu as choisi « Pas encore ». Lesquelles comptent le plus pour ta réussite ? Écris-les, et dis comment tu comptes progresser."
+        }
+      ]
+    },
+    {
+      "id": "plan_action",
+      "kind": "exercise",
+      "title": "Ton plan d'action",
+      "items": [
+        {
+          "id": "plan_qualites_personnelles",
+          "kind": "textarea",
+          "prompt": "Une qualité personnelle que tu veux renforcer, et ce que tu vas faire pour cela."
+        },
+        {
+          "id": "plan_competences",
+          "kind": "textarea",
+          "prompt": "Une compétence que tu veux renforcer, et ce que tu vas faire pour cela. Par exemple : apprendre à tenir un cahier de comptes."
+        },
+        {
+          "id": "plan_environnement",
+          "kind": "textarea",
+          "prompt": "Une préoccupation pour l'environnement dans ton métier, et ce que tu vas faire pour y répondre. Par exemple : garder les chutes de cuir au lieu de les jeter."
         }
       ]
     },
@@ -70,31 +279,45 @@
       "id": "a_retenir",
       "kind": "takeaway",
       "title": "À retenir",
-      "body": "Les qualités entrepreneuriales ne sont pas des notes. Elles peuvent se développer avec la pratique."
+      "body": "Les qualités d'entrepreneur ne sont pas des notes. Elles se développent avec la pratique. Repère celles que tu as déjà, choisis-en une à travailler, et commence par un petit pas."
     },
     {
       "id": "journal_formation",
       "kind": "exercise",
       "title": "Mon journal de formation",
-      "label": "Prends quelques minutes pour garder une trace de ce que tu apprends.",
+      "label": "Prends quelques minutes pour garder une trace de ce que tu as appris.",
       "items": [
         {
           "id": "journal_ce_que_je_retiens",
           "kind": "textarea",
-          "prompt": "Qu’est-ce que tu retiens surtout de cette unité ?",
-          "hint": "Écris une idée importante avec tes propres mots."
+          "prompt": "Quelle qualité d'entrepreneur t'a le plus parlé dans cette unité ? Pourquoi ?"
         },
         {
-          "id": "journal_mon_experience",
+          "id": "journal_reussi",
           "kind": "textarea",
-          "prompt": "À quelle situation de ta vie ou de ton travail cela te fait-il penser ?",
-          "hint": "Raconte brièvement un exemple concret."
+          "prompt": "Qu'est-ce que tu as bien réussi ou bien compris ?"
+        },
+        {
+          "id": "journal_difficile",
+          "kind": "textarea",
+          "prompt": "Qu'est-ce qui a été difficile pour toi ?"
         },
         {
           "id": "journal_mon_prochain_pas",
           "kind": "textarea",
-          "prompt": "Quel petit pas veux-tu essayer après cette unité ?",
-          "hint": "Choisis une action simple et réalisable."
+          "prompt": "Quel petit pas vas-tu faire cette semaine pour renforcer une de tes qualités ?"
+        },
+        {
+          "id": "journal_ressenti",
+          "kind": "scale",
+          "group": "Comment je me sens",
+          "options": ["Pas à l'aise", "Moyen", "À l'aise", "Très à l'aise"],
+          "questions": [
+            {
+              "id": "ressenti_unite",
+              "text": "Comment te sens-tu après cette unité ?"
+            }
+          ]
         }
       ]
     }

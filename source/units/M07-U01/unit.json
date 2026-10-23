@@ -1,0 +1,471 @@
+{
+  "schemaVersion": 1,
+  "id": "M07-U01",
+  "moduleId": "M07",
+  "number": 1,
+  "title": "Combien me coûte un article ?",
+  "status": "published",
+  "estimatedMinutes": 50,
+  "objectives": [
+    "Calculer ce que coûtent les matières d'un article.",
+    "Faire la liste des frais de ton atelier chaque mois, sans oublier ton matériel et ton propre travail.",
+    "Calculer le coût total d'un article, le prix en dessous duquel tu ne dois jamais vendre.",
+    "Voir comment ce coût baisse quand tu produis plus."
+  ],
+  "blocks": [
+    {
+      "id": "intro_module",
+      "kind": "text",
+      "title": "Les chiffres de mon entreprise",
+      "body": "Ce module répond à la question la plus importante : est-ce que ton entreprise peut vraiment te faire vivre ? Tu vas calculer ce que te coûte un article, fixer ton prix, et savoir combien d'argent il te faut pour démarrer. À la fin, ton dossier sera complet, prêt à être montré et présenté."
+    },
+    {
+      "id": "pourquoi_calculer",
+      "kind": "text",
+      "title": "Pourquoi tant d'artisans ne gagnent presque rien",
+      "body": "Beaucoup d'artisans travaillent dur et vendent bien, mais ne gagnent presque rien. Souvent, ils regardent le prix du cuir, ajoutent « un peu », et fixent leur prix. Ils oublient le transport, le courant, les outils qui s'usent, la machine à remplacer, et leur propre travail."
+    },
+    {
+      "id": "cout_de_revient",
+      "kind": "statement",
+      "label": "UN MOT À CONNAÎTRE",
+      "body": "Ce que te coûte vraiment un article, tout compris, s'appelle le « coût de revient ». Dans cette unité, on dit simplement « le coût ». C'est ce calcul qui décide si ton entreprise te fait vivre ou t'épuise."
+    },
+    {
+      "id": "quatre_etapes",
+      "kind": "process",
+      "title": "Le calcul se fait en quatre étapes",
+      "items": [
+        {
+          "title": "Les matières pour un article",
+          "body": "Tu calcules ce que coûtent le cuir, la doublure, les boutons… pour un seul article."
+        },
+        {
+          "title": "Les frais de l'atelier, chaque mois",
+          "body": "Tu additionnes toutes les dépenses qui reviennent chaque mois, que tu fabriques beaucoup ou peu."
+        },
+        {
+          "title": "La part des frais sur chaque article",
+          "body": "Tu partages les frais du mois entre tous les articles que tu fabriques dans le mois."
+        },
+        {
+          "title": "Le coût total d'un article",
+          "body": "Tu additionnes les matières et la part des frais. C'est ton coût."
+        }
+      ]
+    },
+    {
+      "id": "matieres_explication",
+      "kind": "text",
+      "title": "Étape 1 : les matières pour un article",
+      "body": "Reprends ta liste de l'unité « Mes fournisseurs et mes matières » : les matières dont la quantité augmente quand tu produis plus. Pour chacune, le calcul est simple : le prix d'achat divisé par le nombre d'articles que tu en tires. Dans les calculs, le signe ÷ veut dire « divisé par », le signe × veut dire « fois »."
+    },
+    {
+      "id": "matieres_ramatou",
+      "kind": "process",
+      "title": "L'exemple de Ramatou : les matières d'un portefeuille",
+      "items": [
+        {
+          "title": "Le cuir de chèvre",
+          "body": "Une peau coûte 3 500 FCFA. Ramatou en tire 4 portefeuilles. 3 500 ÷ 4 = 875 FCFA par portefeuille."
+        },
+        {
+          "title": "Le tissu de doublure",
+          "body": "Un mètre coûte 1 200 FCFA. Il suffit pour 6 portefeuilles. 1 200 ÷ 6 = 200 FCFA par portefeuille."
+        },
+        {
+          "title": "Les boutons pression",
+          "body": "Un bouton coûte 50 FCFA et il en faut deux. 50 × 2 = 100 FCFA par portefeuille."
+        },
+        {
+          "title": "La pochette d'emballage",
+          "body": "Une pochette coûte 100 FCFA. Il en faut une par portefeuille : 100 FCFA."
+        },
+        {
+          "title": "Le total des matières",
+          "body": "875 + 200 + 100 + 100 = 1 275 FCFA pour un portefeuille."
+        }
+      ]
+    },
+    {
+      "id": "petites_quantites",
+      "kind": "text",
+      "body": "Le fil, la colle et la teinture ne sont pas dans ce calcul : pour un seul article, les quantités sont trop petites pour être mesurées. Ramatou les compte dans les frais de son atelier, à l'étape suivante."
+    },
+    {
+      "id": "mes_matieres",
+      "kind": "exercise",
+      "title": "Les matières de mon produit phare",
+      "items": [
+        {
+          "id": "produit_phare",
+          "kind": "textarea",
+          "prompt": "Quel est ton produit phare, celui que tu vendras le plus ?"
+        },
+        {
+          "id": "cout_matiere_1",
+          "kind": "textarea",
+          "prompt": "Première matière. Écris son nom, son prix d'achat, le nombre d'articles que tu en tires, puis ton calcul : prix d'achat ÷ nombre d'articles = coût pour un article."
+        },
+        {
+          "id": "cout_matiere_2",
+          "kind": "textarea",
+          "prompt": "Deuxième matière. Écris son nom, son prix d'achat, le nombre d'articles que tu en tires, et ton calcul."
+        },
+        {
+          "id": "cout_matiere_3",
+          "kind": "textarea",
+          "prompt": "Troisième matière. Écris son nom, son prix d'achat, le nombre d'articles que tu en tires, et ton calcul."
+        },
+        {
+          "id": "cout_matieres_autres",
+          "kind": "textarea",
+          "prompt": "Les autres matières, s'il y en a : boutons, fermetures, emballage… Écris le calcul pour chacune."
+        },
+        {
+          "id": "total_matieres_article",
+          "kind": "textarea",
+          "prompt": "Le total des matières pour un article. Écris ton calcul : additionne le coût de chaque matière."
+        }
+      ]
+    },
+    {
+      "id": "frais_ramatou",
+      "kind": "accordion",
+      "label": "Étape 2 : les frais de l'atelier de Ramatou, chaque mois",
+      "intro": "Les frais de l'atelier, ce sont les dépenses qui reviennent tous les mois, que tu fabriques beaucoup ou peu. Touche chaque ligne pour voir le montant de Ramatou.",
+      "items": [
+        {
+          "title": "Le loyer",
+          "body": "0 FCFA. Ramatou travaille dans la cour familiale."
+        },
+        {
+          "title": "L'eau et l'électricité",
+          "body": "3 000 FCFA par mois."
+        },
+        {
+          "title": "Le transport",
+          "body": "5 000 FCFA par mois, pour les achats et les livraisons."
+        },
+        {
+          "title": "Le téléphone",
+          "body": "3 000 FCFA par mois."
+        },
+        {
+          "title": "Le petit matériel qui s'use",
+          "body": "4 000 FCFA par mois : lames, aiguilles, papier abrasif, colle, fil et teinture."
+        },
+        {
+          "title": "Le remplacement du matériel",
+          "body": "3 800 FCFA par mois. Le calcul est expliqué juste après."
+        },
+        {
+          "title": "Ce qu'elle veut gagner pour vivre",
+          "body": "60 000 FCFA par mois. C'est le prix de son travail."
+        },
+        {
+          "title": "Le total des frais",
+          "body": "0 + 3 000 + 5 000 + 3 000 + 4 000 + 3 800 + 60 000 = 78 800 FCFA par mois."
+        }
+      ]
+    },
+    {
+      "id": "remplacement_materiel",
+      "kind": "text",
+      "title": "Le remplacement du matériel",
+      "body": "On l'oublie presque toujours. Ta machine ne durera pas toujours. Le jour où elle casse, si tu n'as rien mis de côté, ton atelier s'arrête. Alors chaque mois, mets de côté une petite somme : le prix de l'outil divisé par le nombre d'années qu'il durera, puis divisé par 12 mois."
+    },
+    {
+      "id": "remplacement_ramatou",
+      "kind": "process",
+      "title": "L'exemple de Ramatou : ce qu'elle met de côté pour son matériel",
+      "items": [
+        {
+          "title": "La machine, par an",
+          "body": "Une machine à coudre le cuir d'occasion coûte 180 000 FCFA et dure 5 ans. 180 000 ÷ 5 = 36 000 FCFA par an."
+        },
+        {
+          "title": "La machine, par mois",
+          "body": "36 000 ÷ 12 = 3 000 FCFA par mois."
+        },
+        {
+          "title": "La table et les outils, par an",
+          "body": "La table de coupe et les outils coûtent 40 000 FCFA et durent 4 ans. 40 000 ÷ 4 = 10 000 FCFA par an."
+        },
+        {
+          "title": "La table et les outils, par mois",
+          "body": "10 000 ÷ 12 = un peu plus de 833 FCFA. Pour simplifier, Ramatou compte environ 800 FCFA par mois."
+        },
+        {
+          "title": "Le total à mettre de côté",
+          "body": "3 000 + 800 = 3 800 FCFA par mois. Ce n'est pas de l'argent perdu : c'est ta machine de demain."
+        }
+      ]
+    },
+    {
+      "id": "ton_travail",
+      "kind": "statement",
+      "label": "TON TRAVAIL N'EST PAS GRATUIT",
+      "body": "C'est l'oubli le plus grave. Si tu ne comptes pas ton travail, ton prix couvrira tes dépenses mais ne te fera pas vivre. Décide dès maintenant ce que tu veux gagner chaque mois, et mets-le dans tes frais, comme un loyer."
+    },
+    {
+      "id": "salaire_benefice",
+      "kind": "text",
+      "title": "Ton salaire et ton bénéfice",
+      "body": "Ramatou a choisi 60 000 FCFA par mois. Ce n'est pas son bénéfice : c'est son salaire, le prix de son travail. Le bénéfice, c'est ce qui restera en plus, une fois tout payé, son salaire compris."
+    },
+    {
+      "id": "mon_materiel",
+      "kind": "exercise",
+      "title": "Ce que je mets de côté pour mon matériel",
+      "items": [
+        {
+          "id": "remplacement_materiel_calcul",
+          "kind": "textarea",
+          "prompt": "Reprends ta liste de matériel de l'unité « Mon local et mon matériel ». Pour chaque machine ou outil, écris le prix, le nombre d'années qu'il durera, puis ton calcul : prix ÷ années = par an, puis par an ÷ 12 = par mois."
+        },
+        {
+          "id": "remplacement_materiel_total",
+          "kind": "textarea",
+          "prompt": "Le total à mettre de côté chaque mois. Écris ton calcul : additionne les montants par mois de chaque outil."
+        }
+      ]
+    },
+    {
+      "id": "mes_frais_consigne",
+      "kind": "text",
+      "body": "Maintenant, écris tous tes frais du mois, ligne par ligne. Si une ligne ne te concerne pas, écris 0. Pour les taxes et la patente, renseigne-toi : tu en as parlé dans l'unité « Déclarer mon activité »."
+    },
+    {
+      "id": "mes_frais",
+      "kind": "exercise",
+      "title": "Les frais de mon atelier chaque mois",
+      "items": [
+        {
+          "id": "frais_loyer",
+          "kind": "textarea",
+          "prompt": "Le loyer, par mois."
+        },
+        {
+          "id": "frais_eau_electricite",
+          "kind": "textarea",
+          "prompt": "L'eau et l'électricité, par mois."
+        },
+        {
+          "id": "frais_transport",
+          "kind": "textarea",
+          "prompt": "Le transport pour tes achats et tes livraisons, par mois."
+        },
+        {
+          "id": "frais_telephone",
+          "kind": "textarea",
+          "prompt": "Le téléphone, par mois."
+        },
+        {
+          "id": "frais_petit_materiel",
+          "kind": "textarea",
+          "prompt": "Le petit matériel qui s'use, par mois : lames, aiguilles, colle, fil, teinture…"
+        },
+        {
+          "id": "frais_remplacement_materiel",
+          "kind": "textarea",
+          "prompt": "Le remplacement du matériel, par mois : écris le total que tu viens de calculer."
+        },
+        {
+          "id": "frais_salaire_aide",
+          "kind": "textarea",
+          "prompt": "Le salaire de ton aide, si tu en as un, par mois."
+        },
+        {
+          "id": "frais_taxes_patente",
+          "kind": "textarea",
+          "prompt": "Les taxes et la patente, ramenées à un mois."
+        },
+        {
+          "id": "frais_ma_remuneration",
+          "kind": "textarea",
+          "prompt": "Ce que tu veux gagner pour vivre, par mois."
+        },
+        {
+          "id": "frais_autres",
+          "kind": "textarea",
+          "prompt": "D'autres frais du mois, s'il y en a. Écris ce que c'est et le montant."
+        },
+        {
+          "id": "frais_total_mois",
+          "kind": "textarea",
+          "prompt": "Le total de tes frais par mois. Écris ton calcul : additionne toutes les lignes."
+        }
+      ]
+    },
+    {
+      "id": "part_frais",
+      "kind": "text",
+      "title": "Étape 3 : la part des frais sur chaque article",
+      "body": "Les frais du mois se partagent entre tous les articles fabriqués dans le mois. Ramatou fabrique environ 40 articles par mois : c'est sa capacité de production, vue dans l'unité « Comment j'organise mon travail ». Son calcul : 78 800 ÷ 40 = 1 970 FCFA par article."
+    },
+    {
+      "id": "cout_total_ramatou",
+      "kind": "text",
+      "title": "Étape 4 : le coût total d'un portefeuille",
+      "body": "Ramatou additionne les matières et la part des frais : 1 275 + 1 970 = 3 245 FCFA. Un portefeuille lui coûte donc 3 245 FCFA. Remarque que les frais de l'atelier pèsent plus lourd que les matières. C'est le cas dans presque tous les petits ateliers."
+    },
+    {
+      "id": "piege_cuir",
+      "kind": "text",
+      "title": "Le piège du prix du cuir",
+      "body": "Le cuir d'un portefeuille coûte 875 FCFA, mais le portefeuille coûte 3 245 FCFA, presque quatre fois plus. Si Ramatou le vendait 2 000 FCFA en pensant « j'ai mis 875 FCFA de cuir, je gagne bien », elle perdrait 3 245 − 2 000 = 1 245 FCFA sur chaque portefeuille, sans le savoir."
+    },
+    {
+      "id": "mon_cout",
+      "kind": "exercise",
+      "title": "Le coût de mon article",
+      "items": [
+        {
+          "id": "cout_frais_par_mois",
+          "kind": "textarea",
+          "prompt": "Le total de tes frais par mois."
+        },
+        {
+          "id": "cout_articles_par_mois",
+          "kind": "textarea",
+          "prompt": "Le nombre d'articles que tu fabriques par mois, vu dans l'unité « Comment j'organise mon travail »."
+        },
+        {
+          "id": "cout_frais_par_article",
+          "kind": "textarea",
+          "prompt": "Les frais pour un article. Écris ton calcul : total des frais par mois ÷ nombre d'articles par mois."
+        },
+        {
+          "id": "cout_matieres_par_article",
+          "kind": "textarea",
+          "prompt": "Le coût des matières pour un article, que tu as calculé plus haut."
+        },
+        {
+          "id": "cout_total_article",
+          "kind": "textarea",
+          "prompt": "Le coût total d'un article. Écris ton calcul : frais pour un article + matières pour un article."
+        }
+      ]
+    },
+    {
+      "id": "jamais_en_dessous",
+      "kind": "statement",
+      "label": "LE CHIFFRE LE PLUS IMPORTANT",
+      "body": "Ton coût total est le nombre le plus important de ton plan d'affaires. Écris-le en gros sur ta feuille. Tu ne peux jamais vendre en dessous."
+    },
+    {
+      "id": "produire_plus",
+      "kind": "process",
+      "title": "Et si Ramatou produisait 60 articles par mois ?",
+      "items": [
+        {
+          "title": "Les frais ne bougent pas",
+          "body": "Ses frais du mois restent les mêmes : 78 800 FCFA. Ils se partagent simplement sur plus d'articles."
+        },
+        {
+          "title": "La part des frais baisse",
+          "body": "78 800 ÷ 60 = environ 1 313 FCFA par article, au lieu de 1 970 FCFA."
+        },
+        {
+          "title": "Le coût baisse",
+          "body": "1 275 + 1 313 = 2 588 FCFA pour un portefeuille, au lieu de 3 245 FCFA."
+        },
+        {
+          "title": "La différence",
+          "body": "3 245 − 2 588 = 657 FCFA de moins par portefeuille. Un atelier bien occupé peut baisser ses prix sans se ruiner. Un atelier qui tourne à vide coûte cher."
+        }
+      ]
+    },
+    {
+      "id": "refaire_calcul",
+      "kind": "text",
+      "title": "Ce calcul se refait",
+      "body": "Tes coûts changent quand le prix du cuir monte, quand tu prends un local, quand tu achètes une machine ou quand tu embauches. Alors ton prix doit changer aussi. Refais ce calcul au moins une fois par an."
+    },
+    {
+      "id": "produire_plus_consigne",
+      "kind": "text",
+      "body": "À ton tour. Imagine que tu produis une fois et demie plus d'articles par mois. Pour trouver ce nombre, multiplie par 1,5. Par exemple, Ramatou : 40 × 1,5 = 60 articles. Tes frais du mois ne changent pas."
+    },
+    {
+      "id": "si_je_produisais_plus",
+      "kind": "exercise",
+      "title": "Et si je produisais plus ?",
+      "items": [
+        {
+          "id": "plus_nombre_articles",
+          "kind": "textarea",
+          "prompt": "Le nouveau nombre d'articles par mois. Écris ton calcul : nombre d'articles × 1,5."
+        },
+        {
+          "id": "plus_frais_par_article",
+          "kind": "textarea",
+          "prompt": "Les frais pour un article. Écris ton calcul : total des frais par mois ÷ nouveau nombre d'articles."
+        },
+        {
+          "id": "plus_cout_total",
+          "kind": "textarea",
+          "prompt": "Le nouveau coût total d'un article. Écris ton calcul : frais pour un article + matières."
+        },
+        {
+          "id": "plus_baisse_cout",
+          "kind": "textarea",
+          "prompt": "De combien ton coût a-t-il baissé ? Écris ton calcul : ancien coût − nouveau coût."
+        }
+      ]
+    },
+    {
+      "id": "piece_dossier",
+      "kind": "text",
+      "title": "Pour ton dossier",
+      "body": "Recopie ces calculs sur papier et range-les dans ta chemise : c'est la pièce « Ce que me coûte un article ». Tu t'en serviras dès l'unité suivante, « À quel prix je vends ? »."
+    },
+    {
+      "id": "a_retenir",
+      "kind": "takeaway",
+      "title": "À retenir",
+      "body": "Le coût d'un article, ce sont les matières plus la part des frais de l'atelier, et ces frais pèsent souvent plus lourd que le cuir. Mets de côté chaque mois pour ton matériel : prix ÷ années ÷ 12. Compte ton travail dans tes frais. Plus tu produis, plus le coût baisse. Ne vends jamais en dessous de ton coût."
+    },
+    {
+      "id": "journal_formation",
+      "kind": "exercise",
+      "title": "Mon journal de formation",
+      "label": "Prends quelques minutes pour garder une trace de ce que tu as appris.",
+      "items": [
+        {
+          "id": "journal_ce_que_je_retiens",
+          "kind": "textarea",
+          "prompt": "Qu'est-ce qui t'a le plus surpris dans le calcul du coût d'un article ? Pourquoi ?"
+        },
+        {
+          "id": "journal_reussi",
+          "kind": "textarea",
+          "prompt": "Qu'est-ce que tu as bien réussi ou bien compris ?"
+        },
+        {
+          "id": "journal_difficile",
+          "kind": "textarea",
+          "prompt": "Qu'est-ce qui a été difficile pour toi ?"
+        },
+        {
+          "id": "journal_mon_prochain_pas",
+          "kind": "textarea",
+          "prompt": "Quel petit pas vas-tu faire cette semaine pour vérifier tes chiffres ? Par exemple : demander le prix d'une peau à ton fournisseur."
+        },
+        {
+          "id": "journal_ressenti",
+          "kind": "scale",
+          "group": "Comment je me sens",
+          "options": ["Pas à l'aise", "Moyen", "À l'aise", "Très à l'aise"],
+          "questions": [
+            {
+              "id": "ressenti_unite",
+              "text": "Comment te sens-tu après cette unité ?"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

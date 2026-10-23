@@ -1,0 +1,175 @@
+{
+  "schemaVersion": 1,
+  "id": "M01-U04",
+  "moduleId": "M01",
+  "number": 4,
+  "title": "Les entreprises sociales",
+  "status": "published",
+  "estimatedMinutes": 30,
+  "objectives": [
+    "Comprendre ce qu'est une entreprise sociale.",
+    "Connaître les cinq caractéristiques d'une entreprise sociale.",
+    "Découvrir des exemples dans la filière cuirs et peaux au Niger.",
+    "Imaginer des idées d'entreprises sociales près de chez toi."
+  ],
+  "blocks": [
+    {
+      "id": "definition",
+      "kind": "text",
+      "title": "Qu'est-ce qu'une entreprise sociale ?",
+      "body": "Une entreprise sociale veut aider la société ou protéger l'environnement, tout en faisant des affaires pour gagner de l'argent. Son but premier est de résoudre un problème de la société ou de la nature. Mais elle gagne aussi de l'argent, pour pouvoir durer dans le temps."
+    },
+    {
+      "id": "caracteristiques",
+      "kind": "accordion",
+      "label": "Cinq choses à retenir sur les entreprises sociales",
+      "intro": "Touche chaque titre pour découvrir ce qui rend une entreprise sociale différente.",
+      "items": [
+        {
+          "title": "Une mission sociale",
+          "body": "Elle ne cherche pas seulement le profit, c'est-à-dire l'argent gagné. Elle veut d'abord aider la société : lutter contre la pauvreté, améliorer l'éducation ou protéger la nature."
+        },
+        {
+          "title": "Un modèle économique",
+          "body": "Le modèle économique, c'est la façon dont une entreprise gagne de l'argent. L'entreprise sociale vend des produits ou des services. Ainsi, elle peut continuer sans dépendre uniquement des dons. Parfois, elle reçoit aussi des aides ou des investissements."
+        },
+        {
+          "title": "Un impact que l'on peut mesurer",
+          "body": "L'impact, c'est l'effet de son travail. Elle suit ses résultats : combien de personnes elle a aidées, quelles ressources naturelles elle a protégées, quels changements positifs elle a apportés."
+        },
+        {
+          "title": "De l'innovation",
+          "body": "Elle trouve souvent des idées nouvelles pour résoudre les problèmes : de nouvelles techniques, de nouvelles méthodes, ou des partenariats avec d'autres groupes."
+        },
+        {
+          "title": "De l'inclusion",
+          "body": "Elle fait participer aux décisions les personnes concernées par ses actions. Personne n'est laissé de côté. Cela l'aide à mieux répondre aux vrais besoins de la communauté."
+        }
+      ]
+    },
+    {
+      "id": "exemples_filiere",
+      "kind": "accordion",
+      "label": "Quelques exemples dans la filière cuirs et peaux au Niger",
+      "intro": "La filière cuirs et peaux, ce sont toutes les personnes qui travaillent le cuir, de la peau de l'animal jusqu'à l'article fini. Touche chaque exemple pour le découvrir.",
+      "items": [
+        {
+          "title": "Le Centre des Métiers du Cuir et d'Art du Niger (CMCAN)",
+          "body": "C'est un centre de formation. Il accompagne les jeunes, femmes et hommes, dans l'apprentissage des métiers du cuir : maroquinerie, cordonnerie, botterie, tannerie. Il les aide à trouver un emploi ou à se lancer à leur compte."
+        },
+        {
+          "title": "Les coopératives et groupements d'artisans du cuir",
+          "body": "Ce sont des artisans qui s'unissent. En travaillant ensemble, ils achètent mieux leurs matières premières, améliorent la qualité de leurs produits, partagent des équipements et trouvent de nouveaux marchés."
+        },
+        {
+          "title": "L'Association Interprofessionnelle Cuirs et Peaux (AIPCP)",
+          "body": "Elle réunit les différents acteurs de la filière : tanneurs, artisans, collecteurs, entreprises. Elle peut aider à organiser le secteur, faire circuler l'information, défendre les intérêts des professionnels et améliorer la qualité des produits."
+        },
+        {
+          "title": "Les petites entreprises de maroquinerie",
+          "body": "Des entreprises comme Zamany, Jagga ou Le Concret montrent qu'on peut mettre en valeur les cuirs et peaux du Niger avec des produits plus modernes et mieux finis. Elles créent des emplois, forment des jeunes et font connaître le savoir-faire local."
+        },
+        {
+          "title": "La tannerie de Gamkalé",
+          "body": "En améliorant ses techniques de tannage, la gestion de ses déchets et la sécurité au travail, une tannerie peut devenir un exemple d'entreprise plus responsable. Elle produit alors des cuirs de meilleure qualité, tout en protégeant les travailleurs et l'environnement."
+        }
+      ]
+    },
+    {
+      "id": "plus_que_vendre",
+      "kind": "text",
+      "title": "Plus que vendre",
+      "body": "Ces exemples montrent qu'entreprendre et innover peut améliorer les revenus des jeunes, des artisans et des très petites entreprises, tout en mettant en valeur les ressources du Niger. Dans la filière du cuir, une entreprise sociale ne cherche pas seulement à vendre. Elle veut aussi créer des emplois décents, renforcer les compétences, protéger l'environnement, améliorer la qualité et soutenir le développement local."
+    },
+    {
+      "id": "idees_inspiration",
+      "kind": "list",
+      "title": "Des idées d'entreprises sociales pour t'inspirer",
+      "items": [
+        {
+          "body": "Une microfinance sociale. Une microfinance fait de petits prêts. Celle-ci accorde de petits crédits sans garantie aux jeunes entrepreneurs et aux agriculteurs du coin."
+        },
+        {
+          "body": "Une entreprise qui collecte et recycle les déchets de ta ville, pour protéger l'environnement."
+        },
+        {
+          "body": "Une activité agricole qui forme et soutient les petits producteurs, pour améliorer leurs récoltes et leurs ventes."
+        }
+      ]
+    },
+    {
+      "id": "imaginer_consigne",
+      "kind": "text",
+      "title": "À toi d'imaginer",
+      "body": "Pense à des activités ou à des services qui pourraient aider ta communauté tout en te faisant gagner de l'argent. Regarde bien les besoins de ta ville ou de ton village. Puis écris trois idées d'entreprises sociales que tu pourrais créer près de chez toi."
+    },
+    {
+      "id": "mes_idees_sociales",
+      "kind": "exercise",
+      "title": "Mes idées d'entreprises sociales",
+      "items": [
+        {
+          "id": "idee_sociale_1",
+          "kind": "textarea",
+          "prompt": "Première idée : que ferait ton entreprise sociale ? À quel besoin de ta communauté répondrait-elle ?"
+        },
+        {
+          "id": "idee_sociale_2",
+          "kind": "textarea",
+          "prompt": "Deuxième idée : que ferait ton entreprise sociale ? À quel besoin de ta communauté répondrait-elle ?"
+        },
+        {
+          "id": "idee_sociale_3",
+          "kind": "textarea",
+          "prompt": "Troisième idée : que ferait ton entreprise sociale ? À quel besoin de ta communauté répondrait-elle ?"
+        }
+      ]
+    },
+    {
+      "id": "a_retenir",
+      "kind": "takeaway",
+      "title": "À retenir",
+      "body": "Une entreprise sociale veut d'abord aider la société ou protéger la nature. Elle vend quand même des produits ou des services, pour pouvoir durer. Dans la filière du cuir, elle crée des emplois, forme les jeunes et prend soin de l'environnement."
+    },
+    {
+      "id": "journal_formation",
+      "kind": "exercise",
+      "title": "Mon journal de formation",
+      "label": "Prends quelques minutes pour garder une trace de ce que tu as appris.",
+      "items": [
+        {
+          "id": "journal_ce_que_je_retiens",
+          "kind": "textarea",
+          "prompt": "Avec tes mots, qu'est-ce qu'une entreprise sociale ? Quel exemple t'a le plus marqué ?"
+        },
+        {
+          "id": "journal_reussi",
+          "kind": "textarea",
+          "prompt": "Qu'est-ce que tu as bien réussi ou bien compris ?"
+        },
+        {
+          "id": "journal_difficile",
+          "kind": "textarea",
+          "prompt": "Qu'est-ce qui a été difficile pour toi ?"
+        },
+        {
+          "id": "journal_mon_prochain_pas",
+          "kind": "textarea",
+          "prompt": "Quel petit pas vas-tu faire cette semaine pour être utile à ta communauté ? Par exemple, montrer un geste du métier à un autre apprenti ou à une autre apprentie."
+        },
+        {
+          "id": "journal_ressenti",
+          "kind": "scale",
+          "group": "Comment je me sens",
+          "options": ["Pas à l'aise", "Moyen", "À l'aise", "Très à l'aise"],
+          "questions": [
+            {
+              "id": "ressenti_unite",
+              "text": "Comment te sens-tu après cette unité ?"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

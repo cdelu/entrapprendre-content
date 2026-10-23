@@ -1,0 +1,230 @@
+{
+  "schemaVersion": 1,
+  "id": "M01-U05",
+  "moduleId": "M01",
+  "number": 5,
+  "title": "Les entreprises vertes",
+  "status": "published",
+  "estimatedMinutes": 40,
+  "objectives": [
+    "Trouver des façons de rendre un atelier de maroquinerie plus vert.",
+    "Appliquer la règle des 3R : réduire, réutiliser, recycler.",
+    "Comprendre ce qu'est une entreprise verte.",
+    "Expliquer pourquoi il est intéressant, pour une entreprise, de passer au vert."
+  ],
+  "blocks": [
+    {
+      "id": "atelier_vert",
+      "kind": "text",
+      "title": "Rendre l'atelier plus vert",
+      "body": "Imagine un petit atelier de maroquinerie. Il fabrique et répare des sacs, des sandales et des ceintures en cuir. Peux-tu l'aider à devenir plus « vert », c'est-à-dire plus respectueux de la nature ? D'abord, regarde tout ce que l'atelier utilise pour fonctionner."
+    },
+    {
+      "id": "ce_que_l_atelier_utilise",
+      "kind": "list",
+      "title": "Ce que l'atelier utilise",
+      "items": [
+        {
+          "body": "Les machines, les équipements et les bâtiments."
+        },
+        {
+          "body": "Le terrain."
+        },
+        {
+          "body": "Le cuir et les autres matières premières."
+        },
+        {
+          "body": "Les colles, les teintures et les produits de traitement du cuir."
+        },
+        {
+          "body": "L'eau."
+        },
+        {
+          "body": "L'énergie, par exemple l'électricité."
+        },
+        {
+          "body": "Le transport."
+        }
+      ]
+    },
+    {
+      "id": "trois_questions",
+      "kind": "text",
+      "title": "Trois questions à te poser",
+      "body": "Pour chaque chose de la liste, pose-toi trois questions. Peut-on en utiliser moins ? Peut-on l'utiliser autrement, de façon plus efficace ? Peut-on la remplacer par quelque chose de plus respectueux de la nature ? Pas besoin de répondre pour chaque chose : écris les idées qui te semblent possibles."
+    },
+    {
+      "id": "atelier_plus_vert",
+      "kind": "exercise",
+      "title": "Mes idées pour un atelier plus vert",
+      "items": [
+        {
+          "id": "utiliser_moins",
+          "kind": "textarea",
+          "prompt": "Utiliser moins : de quelles choses l'atelier peut-il utiliser moins, comme l'eau ou l'énergie ? Comment ? Être efficace, c'est utiliser moins sans empêcher l'atelier de bien tourner."
+        },
+        {
+          "id": "utiliser_autrement",
+          "kind": "textarea",
+          "prompt": "Utiliser autrement : comment l'atelier peut-il mieux fonctionner ? Par exemple, mieux découper le cuir pour gaspiller moins de matière, ou installer un interrupteur pour ne pas laisser la lumière allumée. Écris la chose et ton idée."
+        },
+        {
+          "id": "remplacer",
+          "kind": "textarea",
+          "prompt": "Remplacer : quelles choses l'atelier peut-il remplacer par des solutions plus respectueuses de la nature ? Par quoi ? Par exemple, par quoi remplacer des colles ou des produits pour le cuir qui sentent fort et polluent ?"
+        }
+      ]
+    },
+    {
+      "id": "dechets_consigne",
+      "kind": "text",
+      "title": "Les déchets de l'atelier",
+      "body": "L'atelier produit aussi des déchets et de la pollution, par exemple des chutes de cuir, des restes de colle ou des emballages. Pour chaque déchet, demande-toi : peut-on en produire moins ? Peut-on le réutiliser ? Peut-on le recycler ?"
+    },
+    {
+      "id": "dechets_atelier",
+      "kind": "exercise",
+      "title": "Moins de déchets à l'atelier",
+      "items": [
+        {
+          "id": "mes_dechets",
+          "kind": "textarea",
+          "prompt": "Écris les déchets que produit l'atelier. Pour chacun, dis si on peut en produire moins, le réutiliser ou le recycler, et comment."
+        }
+      ]
+    },
+    {
+      "id": "regle_3r_intro",
+      "kind": "text",
+      "title": "Bien gérer ses déchets : la règle des 3R",
+      "body": "Pour t'occuper de tes déchets d'une façon qui aide à la fois la nature et ton entreprise, pense à la règle des 3R. On l'appelle ainsi parce qu'elle a trois étapes qui commencent toutes par la lettre R : réduire, réutiliser, recycler. On les suit dans cet ordre."
+    },
+    {
+      "id": "regle_3r",
+      "kind": "process",
+      "title": "La règle des 3R, étape par étape",
+      "items": [
+        {
+          "title": "Réduire",
+          "body": "Utilise le moins de choses possible. Par exemple, peux-tu emballer un produit avec moins de matière ? On produit moins de déchets quand on consomme moins, ou quand on choisit des produits solides qui durent longtemps."
+        },
+        {
+          "title": "Réutiliser",
+          "body": "Sers-toi à nouveau de tout ce qui peut resservir, au lieu de le jeter. Avec un peu de créativité, beaucoup d'objets peuvent redevenir utiles !"
+        },
+        {
+          "title": "Recycler",
+          "body": "Ce que tu ne peux ni réutiliser ni donner, confie-le au recyclage. Recycler, c'est transformer un déchet en nouvelle matière première. Par exemple, de vieilles bouteilles en verre servent à fabriquer d'autres objets en verre. Cela évite de prendre de nouvelles matières dans la nature et économise de l'énergie."
+        },
+        {
+          "title": "Se débarrasser proprement du reste",
+          "body": "Les déchets qu'on ne peut ni réutiliser ni recycler, il faut s'en débarrasser proprement, sans polluer."
+        }
+      ]
+    },
+    {
+      "id": "entreprises_et_nature",
+      "kind": "text",
+      "title": "Les entreprises ont besoin de la nature",
+      "body": "Une entreprise peut abîmer la nature : en polluant l'air et l'eau, en jetant mal ses déchets ou en épuisant les ressources. Mais elle a aussi besoin de la nature pour travailler : la terre, l'eau, l'énergie. Quand il y a des catastrophes, de la pollution, un changement du climat ou un manque de ressources, les entreprises en souffrent aussi."
+    },
+    {
+      "id": "entreprise_verte",
+      "kind": "text",
+      "title": "Qu'est-ce qu'une entreprise verte ?",
+      "body": "Une entreprise verte fait attention. Elle économise les ressources rares, protège la nature, limite la pollution et les déchets. Elle propose des produits ou des services plus respectueux de l'environnement. Certaines fournissent même de l'énergie propre, comme l'énergie solaire, à d'autres entreprises."
+    },
+    {
+      "id": "bon_pour_les_affaires",
+      "kind": "text",
+      "title": "Un bon choix, aussi pour les affaires",
+      "body": "Devenir vert peut être un très bon choix pour les affaires. Avec des produits ou des services propres, une entreprise protège la nature tout en gagnant de l'argent. Souvent, des méthodes plus vertes permettent aussi de faire des économies et de travailler plus efficacement. Le commerce vert est un secteur qui grandit vite !"
+    },
+    {
+      "id": "exemples_verts",
+      "kind": "accordion",
+      "label": "Des exemples d'entreprises vertes",
+      "intro": "Touche chaque exemple pour le découvrir.",
+      "items": [
+        {
+          "title": "Le recyclage et la récupération",
+          "body": "Collecter des matières usagées, comme le plastique, le métal, les chutes de cuir ou de tissu, pour les revendre ou en faire de nouveaux objets. Dans un atelier de cuir, les chutes peuvent servir à fabriquer de petits articles : porte-clés, étuis, bracelets."
+        },
+        {
+          "title": "Les kits solaires",
+          "body": "Vendre, installer ou réparer de petits panneaux solaires. Posés sur un toit, ils donnent de l'électricité à une maison, une boutique ou un atelier, même là où le courant manque ou coupe souvent. C'est un besoin réel et une activité qui grandit vite."
+        },
+        {
+          "title": "La réparation plutôt que le jetable",
+          "body": "Réparer des chaussures, des sacs, des appareils ou des vélos, c'est déjà un métier vert : on fait durer les objets au lieu de les jeter. Beaucoup d'artisans du cuir le font tous les jours sans le savoir."
+        },
+        {
+          "title": "Les sacs et emballages réutilisables",
+          "body": "Fabriquer et vendre des sacs solides en tissu ou en cuir, pour remplacer les sachets plastique qui polluent les rues et les marchés."
+        },
+        {
+          "title": "Le compost et le biogaz",
+          "body": "Avec des déchets agricoles ou des ordures, on peut produire du compost, c'est-à-dire de l'engrais naturel, à vendre aux cultivateurs. On peut aussi produire du biogaz pour cuisiner. C'est une activité utile en ville comme au village."
+        }
+      ]
+    },
+    {
+      "id": "raisons_vert",
+      "kind": "exercise",
+      "title": "Pourquoi passer au vert ?",
+      "items": [
+        {
+          "id": "raisons_passer_au_vert",
+          "kind": "textarea",
+          "prompt": "Écris trois ou quatre raisons pour lesquelles il est intéressant, pour une entreprise, de passer au vert. Pense à la nature, mais aussi aux affaires."
+        }
+      ]
+    },
+    {
+      "id": "a_retenir",
+      "kind": "takeaway",
+      "title": "À retenir",
+      "body": "Pour rendre ton atelier plus vert, demande-toi : puis-je utiliser moins, utiliser autrement ou remplacer ? Pour tes déchets, pense aux 3R : réduire, réutiliser, recycler. Être une entreprise verte protège la nature et peut aussi faire gagner de l'argent."
+    },
+    {
+      "id": "journal_formation",
+      "kind": "exercise",
+      "title": "Mon journal de formation",
+      "label": "Prends quelques minutes pour garder une trace de ce que tu as appris.",
+      "items": [
+        {
+          "id": "journal_ce_que_je_retiens",
+          "kind": "textarea",
+          "prompt": "Quelle idée pour rendre un atelier plus vert te semble la plus facile à appliquer ? Pourquoi ?"
+        },
+        {
+          "id": "journal_reussi",
+          "kind": "textarea",
+          "prompt": "Qu'est-ce que tu as bien réussi ou bien compris ?"
+        },
+        {
+          "id": "journal_difficile",
+          "kind": "textarea",
+          "prompt": "Qu'est-ce qui a été difficile pour toi ?"
+        },
+        {
+          "id": "journal_mon_prochain_pas",
+          "kind": "textarea",
+          "prompt": "Quel petit pas vas-tu faire cette semaine pour réduire, réutiliser ou recycler à l'atelier ? Par exemple, garder tes chutes de cuir au lieu de les jeter."
+        },
+        {
+          "id": "journal_ressenti",
+          "kind": "scale",
+          "group": "Comment je me sens",
+          "options": ["Pas à l'aise", "Moyen", "À l'aise", "Très à l'aise"],
+          "questions": [
+            {
+              "id": "ressenti_unite",
+              "text": "Comment te sens-tu après cette unité ?"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
