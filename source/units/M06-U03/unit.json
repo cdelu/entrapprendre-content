@@ -70,6 +70,15 @@
       ]
     },
     {
+      "id": "image_trois_concurrents",
+      "kind": "image",
+      "title": "Trois sortes de concurrents",
+      "image": {
+        "path": "media/m06u03-trois-concurrents.webp",
+        "alt": "Trois étals côte à côte : un maroquinier du quartier, un vendeur de sacs importés entassés et une boutique de ville bien rangée."
+      }
+    },
+    {
       "id": "concurrents_consigne",
       "kind": "text",
       "title": "À toi d'observer",

@@ -19,6 +19,15 @@
       "body": "Ton état d'esprit, c'est ta façon de voir les choses. Un état d'esprit positif aide l'entrepreneur à rester concentré sur ce qu'il veut faire et sur les résultats qu'il espère. La motivation, c'est l'envie et l'énergie qui te poussent à agir. Elle naît de cet état d'esprit."
     },
     {
+      "id": "image_fierte_du_travail",
+      "kind": "image",
+      "title": "Être fier de son travail",
+      "image": {
+        "path": "media/m02u03-fierte-du-travail.webp",
+        "alt": "Un jeune artisan examine avec fierté une ceinture qu'il vient de terminer."
+      }
+    },
+    {
       "id": "apprendre_de_tout",
       "kind": "statement",
       "label": "IDÉE FORTE",
@@ -78,6 +87,16 @@
       "kind": "text",
       "title": "Voir grand",
       "body": "Voir grand, c'est regarder plus loin que les tâches de tous les jours. C'est savoir où tu veux aller et quels grands objectifs tu veux atteindre. Ensuite, tu réfléchis aux actions pour y arriver. On appelle cela avoir une vue d'ensemble."
+    },
+    {
+      "id": "image_voir_grand",
+      "kind": "image",
+      "title": "Voir grand",
+      "body": "Regarder plus loin que les tâches de tous les jours.",
+      "image": {
+        "path": "media/m02u03-voir-grand.webp",
+        "alt": "Une jeune femme debout sur un toit regarde au loin la ville de Niamey et le fleuve Niger au coucher du soleil."
+      }
     },
     {
       "id": "esprit_clair",

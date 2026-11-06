@@ -20,6 +20,16 @@
       "body": "Imagine un petit atelier de maroquinerie. Il fabrique et répare des sacs, des sandales et des ceintures en cuir. Peux-tu l'aider à devenir plus « vert », c'est-à-dire plus respectueux de la nature ? D'abord, regarde tout ce que l'atelier utilise pour fonctionner."
     },
     {
+      "id": "image_atelier_et_ressources",
+      "kind": "image",
+      "title": "Ce que l'atelier utilise",
+      "body": "Des machines, du cuir, de la colle, de l'eau, de l'énergie : tout cela coûte et pèse sur la nature.",
+      "image": {
+        "path": "media/m01u05-atelier-et-ressources.webp",
+        "alt": "L'intérieur d'un petit atelier de maroquinerie : une machine à coudre, des peaux de cuir, des pots de colle et de teinture, un bidon d'eau, une ampoule allumée et des chutes de cuir par terre."
+      }
+    },
+    {
       "id": "ce_que_l_atelier_utilise",
       "kind": "list",
       "title": "Ce que l'atelier utilise",
@@ -123,6 +133,16 @@
       ]
     },
     {
+      "id": "image_regle_des_3r",
+      "kind": "image",
+      "title": "La règle des 3R en images",
+      "body": "Réduire, réutiliser, recycler.",
+      "image": {
+        "path": "media/m01u05-regle-des-3r.webp",
+        "alt": "Trois scènes côte à côte. À gauche, un artisan place ses patrons serrés sur une peau pour gaspiller moins. Au milieu, des chutes de cuir deviennent des porte-clés. À droite, les dernières chutes sont mises dans un sac pour le recyclage."
+      }
+    },
+    {
       "id": "entreprises_et_nature",
       "kind": "text",
       "title": "Les entreprises ont besoin de la nature",
@@ -139,6 +159,15 @@
       "kind": "text",
       "title": "Un bon choix, aussi pour les affaires",
       "body": "Devenir vert peut être un très bon choix pour les affaires. Avec des produits ou des services propres, une entreprise protège la nature tout en gagnant de l'argent. Souvent, des méthodes plus vertes permettent aussi de faire des économies et de travailler plus efficacement. Le commerce vert est un secteur qui grandit vite !"
+    },
+    {
+      "id": "image_panneau_solaire",
+      "kind": "image",
+      "title": "Une entreprise verte, c'est aussi une bonne affaire",
+      "image": {
+        "path": "media/m01u05-panneau-solaire.webp",
+        "alt": "Un jeune technicien installe un petit panneau solaire sur le toit d'un atelier."
+      }
     },
     {
       "id": "exemples_verts",

@@ -79,6 +79,16 @@
       ]
     },
     {
+      "id": "image_chaine_du_cuir",
+      "kind": "image",
+      "title": "La chaîne du cuir",
+      "body": "De la peau chez le boucher jusqu'au client.",
+      "image": {
+        "path": "media/m05u03-chaine-du-cuir.webp",
+        "alt": "Une suite de cinq scènes de gauche à droite : un boucher avec une peau de chèvre, un collecteur avec des peaux sur une charrette, un tanneur près des bassins, un artisan qui coud un sac, un vendeur qui remet le sac à une cliente."
+      }
+    },
+    {
       "id": "valeur_ajoutee",
       "kind": "text",
       "title": "Plus tu avances, plus la valeur grandit",
@@ -118,6 +128,16 @@
           "body": "Tu vends aux artisans ce dont ils ont besoin pour travailler : du cuir, du fil, de la colle, des boucles, des outils."
         }
       ]
+    },
+    {
+      "id": "image_quatre_facons",
+      "kind": "image",
+      "title": "Quatre façons de travailler avec le cuir",
+      "body": "Fabriquer, réparer, revendre, fournir.",
+      "image": {
+        "path": "media/m05u03-quatre-facons.webp",
+        "alt": "Quatre petites scènes : un artisan fabrique un sac, un cordonnier répare une chaussure, une vendeuse revend des articles sur un étal, un fournisseur vend du fil et des boucles à un artisan."
+      }
     },
     {
       "id": "changer_de_facon",
@@ -238,6 +258,15 @@
       "kind": "text",
       "title": "Le tour du quartier",
       "body": "En petits groupes, vous sortez faire le tour de votre quartier ou des environs du marché. Comptez toutes les activités liées au cuir que vous voyez. Pendant la sortie ou juste après, note ici combien tu en as vu de chaque sorte."
+    },
+    {
+      "id": "image_tour_du_quartier",
+      "kind": "image",
+      "title": "Le tour du quartier",
+      "image": {
+        "path": "media/m05u03-tour-du-quartier.webp",
+        "alt": "Trois apprenants marchent dans une rue du marché et notent dans un carnet les ateliers de cordonnerie et les vendeurs d'articles en cuir qu'ils voient."
+      }
     },
     {
       "id": "tour_du_quartier",

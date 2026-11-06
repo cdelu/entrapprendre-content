@@ -30,6 +30,16 @@
       "body": "Une équipe, c'est un peu comme des animaux attelés à une charrette. Si l'un tire moins, les autres doivent tirer plus fort, et la charrette avance de travers. Quand quelqu'un a une difficulté, les autres l'aident pour que le groupe continue d'avancer. Chacun doit y mettre de l'énergie et de la bonne volonté."
     },
     {
+      "id": "image_attelage",
+      "kind": "image",
+      "title": "Comme un attelage",
+      "body": "Si l'un tire moins, la charrette avance de travers.",
+      "image": {
+        "path": "media/m04u04-attelage.webp",
+        "alt": "Une charrette tirée par deux ânes. L'un tire fort, l'autre traîne, et la charrette part de travers sur la route."
+      }
+    },
+    {
       "id": "atelier_en_chaine",
       "kind": "text",
       "title": "En classe : l'atelier en chaîne",
@@ -75,6 +85,15 @@
           "body": "Le groupe compare les résultats des deux tours et discute de ce qui a changé."
         }
       ]
+    },
+    {
+      "id": "image_atelier_en_chaine",
+      "kind": "image",
+      "title": "L'atelier en chaîne",
+      "image": {
+        "path": "media/m04u04-atelier-en-chaine.webp",
+        "alt": "Cinq apprenants assis en ligne fabriquent des enveloppes en papier. Chacun a un poste : mesurer, découper, plier et coller, contrôler, compter. Deux s'entraident."
+      }
     },
     {
       "id": "reflexion_consigne",

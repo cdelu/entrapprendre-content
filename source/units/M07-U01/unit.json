@@ -26,6 +26,15 @@
       "body": "Beaucoup d'artisans travaillent dur et vendent bien, mais ne gagnent presque rien. Souvent, ils regardent le prix du cuir, ajoutent « un peu », et fixent leur prix. Ils oublient le transport, le courant, les outils qui s'usent, la machine à remplacer, et leur propre travail."
     },
     {
+      "id": "image_faire_ses_calculs",
+      "kind": "image",
+      "title": "Compter avant de vendre",
+      "image": {
+        "path": "media/m07u01-faire-ses-calculs.webp",
+        "alt": "Un jeune artisan, assis à son établi, fait des calculs dans un cahier avec une calculatrice, à côté d'un portefeuille et d'un morceau de cuir."
+      }
+    },
+    {
       "id": "cout_de_revient",
       "kind": "statement",
       "label": "UN MOT À CONNAÎTRE",
@@ -86,6 +95,16 @@
           "body": "875 + 200 + 100 + 100 = 1 275 FCFA pour un portefeuille."
         }
       ]
+    },
+    {
+      "id": "image_matieres_portefeuille",
+      "kind": "image",
+      "title": "Les matières d'un portefeuille",
+      "body": "Le cuir, la doublure, les boutons pression, la pochette.",
+      "image": {
+        "path": "media/m07u01-matieres-portefeuille.webp",
+        "alt": "Les matières pour un portefeuille posées sur une table : un morceau de cuir de chèvre, un tissu de doublure, des boutons pression et une petite pochette d'emballage."
+      }
     },
     {
       "id": "petites_quantites",

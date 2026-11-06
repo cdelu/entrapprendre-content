@@ -19,6 +19,16 @@
       "body": "Après ta formation, tu peux travailler de deux façons. Comme salarié, tu es employé par quelqu'un qui te verse un salaire. Comme indépendant, tu travailles à ton compte : tu es ton propre patron. Dans cette unité, tu vas réfléchir à ce qui te convient le mieux."
     },
     {
+      "id": "image_salarie_ou_independant",
+      "kind": "image",
+      "title": "Salarié ou à ton compte ?",
+      "body": "Deux façons de travailler après ta formation.",
+      "image": {
+        "path": "media/m02u02-salarie-ou-independant.webp",
+        "alt": "Deux scènes. À gauche, un jeune homme travaille comme employé dans un grand atelier et reçoit son salaire. À droite, une jeune femme travaille seule dans son propre petit atelier."
+      }
+    },
+    {
       "id": "metiers_apres_formation",
       "kind": "exercise",
       "title": "Quel travail aimerais-tu faire ?",

@@ -32,6 +32,15 @@
       "body": "Enquêter, ce n'est pas compliqué : c'est aller parler aux gens. Quatre sortes de personnes valent le déplacement."
     },
     {
+      "id": "image_enquete_de_terrain",
+      "kind": "image",
+      "title": "Aller parler aux gens",
+      "image": {
+        "path": "media/m05u05-enquete-de-terrain.webp",
+        "alt": "Un jeune apprenant, un carnet à la main, pose des questions à une vendeuse d'articles en cuir au marché. Elle lui répond avec intérêt."
+      }
+    },
+    {
       "id": "quatre_personnes",
       "kind": "accordion",
       "label": "À qui parler ?",
@@ -205,6 +214,15 @@
       "kind": "text",
       "title": "Un exemple : l'atelier de réparation d'Ibrahim",
       "body": "Ibrahim pense ouvrir un atelier de réparation de chaussures près du marché. Après son enquête, il remplit son FFOM. Touche chaque onglet pour le lire."
+    },
+    {
+      "id": "image_ibrahim_reparateur",
+      "kind": "image",
+      "title": "L'atelier de réparation d'Ibrahim",
+      "image": {
+        "path": "media/m05u05-ibrahim-reparateur.webp",
+        "alt": "Ibrahim, un jeune cordonnier, répare une chaussure sur un petit stand près de l'entrée animée d'un marché."
+      }
     },
     {
       "id": "ffom_ibrahim",

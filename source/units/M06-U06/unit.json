@@ -66,6 +66,16 @@
       ]
     },
     {
+      "id": "image_lieu_bien_eclaire",
+      "kind": "image",
+      "title": "Un bon lieu de travail",
+      "body": "De la place, de la lumière, et un endroit sûr.",
+      "image": {
+        "path": "media/m06u06-lieu-bien-eclaire.webp",
+        "alt": "Un petit atelier propre et bien éclairé près d'une porte ouverte, avec une table de coupe, des outils rangés au mur et une étagère pour le cuir."
+      }
+    },
+    {
       "id": "sante_atelier",
       "kind": "text",
       "title": "Pense à ta santé",
@@ -101,10 +111,29 @@
       ]
     },
     {
+      "id": "image_outils_maroquinerie",
+      "kind": "image",
+      "title": "Les outils du maroquinier",
+      "image": {
+        "path": "media/m06u06-outils-maroquinerie.webp",
+        "alt": "Des outils de maroquinerie rangés sur une table : un cutter, des ciseaux, une règle en métal, des emporte-pièces, des alènes et des aiguilles."
+      }
+    },
+    {
       "id": "protection",
       "kind": "statement",
       "label": "PROTÈGE-TOI",
       "body": "Selon ton métier, prévois des gants, un tablier, un masque. Ce n'est pas du luxe, et ça ne coûte pas cher. Un artisan blessé ou malade ne produit plus rien, et personne ne le remplacera."
+    },
+    {
+      "id": "image_se_proteger",
+      "kind": "image",
+      "title": "Protège-toi",
+      "body": "Des gants, un tablier, un masque, et un endroit aéré.",
+      "image": {
+        "path": "media/m06u06-se-proteger.webp",
+        "alt": "Une artisane colle des pièces de cuir. Elle porte des gants, un tablier et un masque, près d'une fenêtre ouverte."
+      }
     },
     {
       "id": "quatre_facons",

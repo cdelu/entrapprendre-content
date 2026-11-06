@@ -74,6 +74,16 @@
       "body": "Voici cinq jeunes qui hésitent à se lancer. Lis chaque histoire et mets-toi à leur place. Ensuite, choisis l'histoire qui te parle le plus et donne ton conseil."
     },
     {
+      "id": "image_cinq_jeunes",
+      "kind": "image",
+      "title": "Cinq jeunes qui hésitent",
+      "body": "Saliou, Fatou, Mohamed, Aïssatou et Boubacar.",
+      "image": {
+        "path": "media/m03u04-cinq-jeunes.webp",
+        "alt": "Cinq jeunes artisans côte à côte, chacun avec un objet de son métier : un jeune homme avec une ceinture, une jeune femme avec des sandales, un jeune homme avec une aiguille, une jeune femme avec un sac et un bracelet, un jeune homme en tablier de tanneur."
+      }
+    },
+    {
       "id": "cinq_histoires",
       "kind": "tabs",
       "title": "Les cinq histoires",

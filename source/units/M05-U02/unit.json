@@ -84,6 +84,15 @@
       "body": "On pense souvent aux stylistes, aux artistes, aux dessinateurs. Pourtant, tous les métiers ont besoin de créativité. Un entrepreneur s'en sert tous les jours : pour résoudre un problème, imaginer un nouveau produit, trouver une meilleure façon de vendre. Et surtout pour faire beaucoup avec peu de moyens, comme dans la plupart des ateliers."
     },
     {
+      "id": "image_dessiner_un_modele",
+      "kind": "image",
+      "title": "La créativité sert tous les jours",
+      "image": {
+        "path": "media/m05u02-dessiner-un-modele.webp",
+        "alt": "Une jeune artisane dessine un nouveau modèle de sac dans un carnet, à côté de chutes de cuir de couleurs différentes."
+      }
+    },
+    {
       "id": "comme_un_muscle",
       "kind": "text",
       "title": "Ça se travaille, comme un muscle",
@@ -106,6 +115,16 @@
       "kind": "text",
       "title": "La fin du tracé",
       "body": "Reviens tout droit vers la gauche, le long de la rangée du haut, jusqu'au point en haut à gauche. Pour finir, descends en diagonale jusqu'au point en bas à droite, en passant par le point du centre. Tu as relié les neuf points avec quatre lignes."
+    },
+    {
+      "id": "image_neuf_points_solution",
+      "kind": "image",
+      "title": "La solution des neuf points",
+      "body": "Pour réussir, il faut sortir du carré.",
+      "image": {
+        "path": "media/m05u02-neuf-points-solution.webp",
+        "alt": "Neuf points disposés en carré, reliés par quatre lignes droites tracées sans lever le crayon. Deux lignes dépassent du carré."
+      }
     },
     {
       "id": "neuf_points_lecon",

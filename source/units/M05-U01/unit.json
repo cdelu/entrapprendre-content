@@ -38,6 +38,15 @@
       "body": "Après sa formation, Ramatou travaille plusieurs mois dans un petit atelier d'articles en cuir. Elle gagne peu, mais elle perfectionne sa découpe, sa couture et ses finitions. Un jour, une cliente lui dit qu'elle ne trouve pas de sacs fabriqués sur place qui soient à la fois solides, bien finis et abordables. Des voisins disent la même chose : les articles en cuir sont chers, peu variés ou mal finis."
     },
     {
+      "id": "image_ramatou",
+      "kind": "image",
+      "title": "Ramatou, maroquinière à Niamey",
+      "image": {
+        "path": "media/m05u01-ramatou.webp",
+        "alt": "Ramatou, une jeune maroquinière, écoute une cliente qui lui dit qu'elle ne trouve pas de sac solide et bien fini à un prix abordable."
+      }
+    },
+    {
       "id": "ramatou_enquete",
       "kind": "text",
       "title": "Ramatou va voir par elle-même",
@@ -48,6 +57,16 @@
       "kind": "text",
       "title": "Ramatou démarre petit",
       "body": "Elle démarre avec ses économies et un petit prêt de sa famille : du cuir, du fil, de la colle, des boucles et quelques outils, dans un coin de la cour familiale. Elle travaille seule, et seulement sur commande, pour ne pas avoir d'invendus."
+    },
+    {
+      "id": "image_ramatou_cour_familiale",
+      "kind": "image",
+      "title": "Ramatou démarre petit",
+      "body": "Un coin de la cour familiale, quelques outils, et seulement sur commande.",
+      "image": {
+        "path": "media/m05u01-ramatou-cour-familiale.webp",
+        "alt": "Ramatou travaille seule à une petite table dans un coin de la cour familiale, à l'ombre d'un arbre. Autour d'elle, un peu de cuir, du fil, de la colle et quelques outils."
+      }
     },
     {
       "id": "ramatou_grandit",
@@ -72,6 +91,15 @@
       "kind": "text",
       "title": "Le marché est plein",
       "body": "Pendant ce temps, d'autres artisans se mettent eux aussi aux sandales décorées. Il y en a trop sur le marché. Quand Mamadou veut vendre, il trouve peu d'acheteurs. Il doit vendre à bas prix à des revendeurs. Au final, il gagne très peu et il a du mal à rembourser son oncle."
+    },
+    {
+      "id": "image_mamadou_sandales",
+      "kind": "image",
+      "title": "Trop de sandales sur le marché",
+      "image": {
+        "path": "media/m05u01-mamadou-sandales.webp",
+        "alt": "Mamadou, un jeune cordonnier, est assis devant une pile de sandales décorées toutes pareilles. Autour de lui, d'autres vendeurs proposent les mêmes sandales. Peu de clients."
+      }
     },
     {
       "id": "comparer_histoires",

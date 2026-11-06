@@ -76,6 +76,15 @@
       "body": "Ramatou a démarré dans la cour familiale. Au début, elle prenait des commandes par téléphone. Plus tard, elle a laissé des articles en dépôt dans deux boutiques. Elle n'a pensé à une place au marché qu'après deux ans."
     },
     {
+      "id": "image_commande_par_telephone",
+      "kind": "image",
+      "title": "Vendre depuis la cour",
+      "image": {
+        "path": "media/m06u05-commande-par-telephone.webp",
+        "alt": "Ramatou, dans la cour familiale, prend une commande au téléphone. Quelques articles finis sont posés sur une natte à côté d'elle."
+      }
+    },
+    {
       "id": "ou_vendre_consigne",
       "kind": "text",
       "title": "À toi : où vas-tu vendre ?",
@@ -189,6 +198,16 @@
           "body": "Si le service existe chez toi, utilise-le. C'est plus sûr que de garder de l'argent liquide à l'atelier. Et tu peux vendre à quelqu'un d'un autre quartier."
         }
       ]
+    },
+    {
+      "id": "image_photographier_produit",
+      "kind": "image",
+      "title": "Photographier tes produits",
+      "body": "Un fond simple, la lumière du jour, et le produit bien propre.",
+      "image": {
+        "path": "media/m06u05-photographier-produit.webp",
+        "alt": "Des mains tiennent un téléphone et photographient un sac en cuir posé sur un tissu uni, à la lumière du jour."
+      }
     },
     {
       "id": "mise_en_garde",

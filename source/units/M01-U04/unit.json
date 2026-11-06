@@ -20,6 +20,15 @@
       "body": "Une entreprise sociale veut aider la société ou protéger l'environnement, tout en faisant des affaires pour gagner de l'argent. Son but premier est de résoudre un problème de la société ou de la nature. Mais elle gagne aussi de l'argent, pour pouvoir durer dans le temps."
     },
     {
+      "id": "image_atelier_solidaire",
+      "kind": "image",
+      "title": "Faire des affaires pour aider les autres",
+      "image": {
+        "path": "media/m01u04-atelier-solidaire.webp",
+        "alt": "Un groupe d'artisanes et d'artisans travaille ensemble dans un atelier partagé. Une femme plus âgée montre à une jeune comment coudre le cuir."
+      }
+    },
+    {
       "id": "caracteristiques",
       "kind": "accordion",
       "label": "Cinq choses à retenir sur les entreprises sociales",
