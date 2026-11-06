@@ -86,6 +86,15 @@
       "body": "Imagine : tu diriges une petite entreprise de quatre employés. Deux travaillent à plein temps, deux à temps partiel. L'un des employés à plein temps arrive souvent en retard et demande beaucoup de congés. Son comportement crée des tensions et du mécontentement chez les autres. Utilise les étapes de la méthode pour réfléchir avant d'agir."
     },
     {
+      "id": "image_employe_en_retard",
+      "kind": "image",
+      "title": "Un employé souvent en retard",
+      "image": {
+        "path": "media/m03u03-employe-en-retard.webp",
+        "alt": "Dans un petit atelier, la patronne regarde l'horloge pendant qu'un employé arrive en retard à la porte. Les autres sont déjà au travail."
+      }
+    },
+    {
       "id": "tableau_decision",
       "kind": "exercise",
       "title": "Analyse le problème de l'employé en retard",
@@ -129,6 +138,16 @@
       "kind": "text",
       "title": "Le remue-méninges",
       "body": "Le remue-méninges, c'est chercher des solutions en groupe en faisant « bouger » les idées. Une personne présente le problème. Chacun dit toutes les idées qui lui viennent, et personne ne critique. On note tout, puis on examine les idées une par une pour garder les meilleures. Même une idée bizarre peut mener à une bonne solution."
+    },
+    {
+      "id": "image_remue_meninges",
+      "kind": "image",
+      "title": "Le remue-méninges",
+      "body": "Chacun dit ses idées, personne ne critique.",
+      "image": {
+        "path": "media/m03u03-remue-meninges.webp",
+        "alt": "Un groupe de jeunes apprenants assis en cercle partage des idées avec enthousiasme. Une personne note les idées sur une grande feuille."
+      }
     },
     {
       "id": "remue_meninges_quand",

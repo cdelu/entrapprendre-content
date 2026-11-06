@@ -20,6 +20,15 @@
       "body": "Chaque responsable a sa façon de guider une équipe. Voici quatre styles de direction. Pour chacun, tu vas voir ce que le responsable dit et comment il se comporte. Touche chaque onglet pour découvrir un style."
     },
     {
+      "id": "image_diriger_equipe",
+      "kind": "image",
+      "title": "Diriger une équipe",
+      "image": {
+        "path": "media/m04u03-diriger-equipe.webp",
+        "alt": "Une responsable d'atelier montre un patron à son équipe de quatre personnes autour d'une table et leur demande leur avis."
+      }
+    },
+    {
       "id": "quatre_styles",
       "kind": "tabs",
       "title": "Quatre façons de diriger",

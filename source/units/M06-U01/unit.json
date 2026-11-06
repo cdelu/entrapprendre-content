@@ -98,6 +98,16 @@
       "body": "Dès aujourd'hui, prends une chemise ou un cahier réservé à ton projet. Ranges-y chaque fiche au fur et à mesure. Ta fiche d'idée d'entreprise est la pièce numéro un. Évite les feuilles volantes : après tant d'heures de travail, une feuille perdue, c'est un exercice à refaire."
     },
     {
+      "id": "image_chemise_de_projet",
+      "kind": "image",
+      "title": "Ta chemise de projet",
+      "body": "Range chaque fiche au fur et à mesure.",
+      "image": {
+        "path": "media/m06u01-chemise-de-projet.webp",
+        "alt": "Des mains rangent une feuille dans une chemise en carton posée sur un établi, à côté d'un téléphone et d'un crayon."
+      }
+    },
+    {
       "id": "recopier_sur_papier",
       "kind": "text",
       "title": "Du téléphone au papier",

@@ -20,6 +20,15 @@
       "body": "Souviens-toi de Moussa, le maroquinier de l'unité « Les petites entreprises ». Il travaillait bien et avait des clients, mais il n'avait pas déclaré son activité. Il avait peur des démarches, des coûts et des taxes. Il disait : « Pour le moment, j'arrive à vendre, alors je ne vois pas l'utilité de déclarer mon activité. »"
     },
     {
+      "id": "image_moussa_commande",
+      "kind": "image",
+      "title": "Le choix de Moussa",
+      "image": {
+        "path": "media/m06u09-moussa-commande.webp",
+        "alt": "Moussa, dans son petit atelier, regarde avec regret un client en costume qui repart : il ne peut pas lui fournir de facture pour une grosse commande."
+      }
+    },
+    {
       "id": "un_calcul",
       "kind": "text",
       "title": "Un calcul à bien faire",
@@ -97,6 +106,15 @@
       "kind": "text",
       "title": "Où te renseigner",
       "body": "Au Niger, les démarches pour créer une entreprise passent par un guichet unique, c'est-à-dire un seul bureau qui regroupe les formalités. C'est le Centre de Formalités des Entreprises, le CFE, de la Chambre de Commerce et d'Industrie du Niger. Son but est de rendre les démarches plus simples."
+    },
+    {
+      "id": "image_guichet_unique",
+      "kind": "image",
+      "title": "Se renseigner au guichet",
+      "image": {
+        "path": "media/m06u09-guichet-unique.webp",
+        "alt": "Un jeune artisan, des papiers à la main, parle à une employée derrière un guichet dans un bureau administratif."
+      }
     },
     {
       "id": "maison_entreprise",

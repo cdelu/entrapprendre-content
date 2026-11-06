@@ -67,6 +67,15 @@
       "body": "Rassemble toutes tes idées, d'où qu'elles viennent. Vise six idées, pas besoin de plus. Essaie d'avoir au moins deux façons de faire différentes : par exemple fabriquer un article, mais aussi réparer ou fournir. Pour dire d'où vient l'idée, écris simplement : mon métier, une plainte entendue, la chaîne de valeurs, le tour du quartier ou le remue-méninges."
     },
     {
+      "id": "image_carnet_d_idees",
+      "kind": "image",
+      "title": "Ma liste d'idées",
+      "image": {
+        "path": "media/m05u04-carnet-d-idees.webp",
+        "alt": "Un carnet ouvert avec six petits dessins d'idées : un sac, une sandale réparée, des porte-clés, une ceinture, une boîte de fournitures et une moto de livraison."
+      }
+    },
+    {
       "id": "liste_idees",
       "kind": "exercise",
       "title": "Mes six idées",

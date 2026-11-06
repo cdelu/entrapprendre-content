@@ -38,6 +38,16 @@
       "body": "Tes clients ne se ressemblent pas. Regroupe-les par familles, selon ce qu'ils veulent et ce qu'ils peuvent payer. On appelle ça des groupes de clients. Tu entendras peut-être aussi le mot « segmentation » : c'est la même chose."
     },
     {
+      "id": "image_groupes_de_clients",
+      "kind": "image",
+      "title": "Des clients qui ne se ressemblent pas",
+      "body": "Les gens du quartier, les élèves, les employés de bureau, les revendeurs.",
+      "image": {
+        "path": "media/m06u02-groupes-de-clients.webp",
+        "alt": "Quatre clients différents : une femme du quartier avec son panier, un étudiant avec un sac à dos, une employée de bureau avec des dossiers et un revendeur avec des cartons."
+      }
+    },
+    {
       "id": "groupes_ramatou",
       "kind": "accordion",
       "label": "Les groupes de clients de Ramatou",

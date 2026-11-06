@@ -20,6 +20,15 @@
       "body": "Sors toutes les pièces de ta chemise et mets-les dans l'ordre du dossier. Ce n'est pas l'ordre dans lequel tu les as écrites. Vérifie qu'il ne manque rien : une pièce absente, c'est la première question qu'on te posera."
     },
     {
+      "id": "image_dossier_complet",
+      "kind": "image",
+      "title": "Ton dossier complet",
+      "image": {
+        "path": "media/m07u05-dossier-complet.webp",
+        "alt": "Un dossier de plan d'affaires bien rangé dans une chemise, avec une page de couverture, posé sur une table à côté d'un portefeuille en cuir."
+      }
+    },
+    {
       "id": "ordre_dossier",
       "kind": "list",
       "title": "L'ordre de ton dossier",

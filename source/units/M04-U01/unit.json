@@ -26,6 +26,15 @@
       "body": "Beaucoup de gens préfèrent parler plutôt qu'écouter. On veut dire ce qu'on pense, on veut qu'on nous remarque. Mais si tu n'écoutes pas les autres, pourquoi est-ce qu'ils t'écouteraient ? Pour un entrepreneur, savoir écouter est une compétence essentielle."
     },
     {
+      "id": "image_ecouter_la_cliente",
+      "kind": "image",
+      "title": "Écouter son client",
+      "image": {
+        "path": "media/m04u01-ecouter-la-cliente.webp",
+        "alt": "Un jeune artisan écoute attentivement une cliente qui lui explique le sac qu'elle veut. Il la regarde et hoche la tête."
+      }
+    },
+    {
       "id": "ce_que_ecouter_apporte",
       "kind": "list",
       "title": "Ce que l'écoute t'apporte",

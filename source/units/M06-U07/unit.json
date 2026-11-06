@@ -103,6 +103,16 @@
       ]
     },
     {
+      "id": "image_chez_le_fournisseur",
+      "kind": "image",
+      "title": "Choisir son fournisseur",
+      "body": "Regarde la qualité, pas seulement le prix.",
+      "image": {
+        "path": "media/m06u07-chez-le-fournisseur.webp",
+        "alt": "Un jeune artisan examine la qualité d'une peau de chèvre tannée chez un fournisseur de cuir."
+      }
+    },
+    {
       "id": "deux_fournisseurs",
       "kind": "text",
       "title": "Toujours deux fournisseurs",
@@ -155,6 +165,16 @@
           "body": "Range tout au même endroit, toujours le même. Tu l'as vu dans l'unité « Gérer son temps » : un atelier rangé fait gagner des heures."
         }
       ]
+    },
+    {
+      "id": "image_ranger_le_cuir",
+      "kind": "image",
+      "title": "Garder le cuir en bon état",
+      "body": "Au sec, à l'abri du soleil, sur une étagère.",
+      "image": {
+        "path": "media/m06u07-ranger-le-cuir.webp",
+        "alt": "Des peaux de cuir roulées et rangées sur une étagère en hauteur, couvertes d'un tissu, dans une pièce sèche."
+      }
     },
     {
       "id": "matieres_consigne",

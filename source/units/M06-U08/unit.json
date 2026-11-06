@@ -55,6 +55,16 @@
       ]
     },
     {
+      "id": "image_ramatou_fabrique",
+      "kind": "image",
+      "title": "Ramatou fabrique un portefeuille",
+      "body": "1 h 30 du cuir au paquet.",
+      "image": {
+        "path": "media/m06u08-ramatou-fabrique.webp",
+        "alt": "Ramatou à son établi coud un portefeuille. Autour d'elle, les outils de chaque étape : règle, cutter, ponceuse, pot de colle, aiguilles, cire et pochettes d'emballage."
+      }
+    },
+    {
       "id": "total_et_chrono",
       "kind": "text",
       "title": "Au total : 1 h 30",
@@ -251,6 +261,15 @@
           "body": "Ne fais jamais travailler un enfant en âge d'aller à l'école. C'est interdit, et c'est lui voler son avenir, alors que toi, tu construis le tien."
         }
       ]
+    },
+    {
+      "id": "image_former_une_apprentie",
+      "kind": "image",
+      "title": "Former une apprentie",
+      "image": {
+        "path": "media/m06u08-former-une-apprentie.webp",
+        "alt": "Ramatou montre à une jeune apprentie comment découper le cuir en sécurité. Toutes deux portent un tablier."
+      }
     },
     {
       "id": "seul_consigne",

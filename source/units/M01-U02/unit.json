@@ -41,6 +41,16 @@
       "body": "Pour bien comprendre une petite entreprise, tu peux te poser quatre questions. Que vend-elle ? Pourquoi ça marche ? Quel est son effet sur l'environnement ? Qui la dirige ? Regarde ces trois exemples."
     },
     {
+      "id": "image_trois_petites_entreprises",
+      "kind": "image",
+      "title": "Trois petites entreprises du quartier",
+      "body": "Un commerce de fruits, un réparateur de téléphones, un salon de coiffure.",
+      "image": {
+        "path": "media/m01u02-trois-petites-entreprises.webp",
+        "alt": "Trois petites entreprises côte à côte : un étal de fruits frais, un atelier de réparation de téléphones et un salon de coiffure avec un client."
+      }
+    },
+    {
       "id": "trois_exemples",
       "kind": "tabs",
       "title": "Trois exemples pour t'aider",

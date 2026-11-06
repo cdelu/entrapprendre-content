@@ -40,6 +40,16 @@
       "body": "Moussa est un jeune Nigérien formé aux métiers du cuir au Centre des Métiers du Cuir et d'Art du Niger, le CMCAN. Il n'a pas trouvé d'emploi salarié stable. Alors il s'est installé à Niamey comme artisan maroquinier indépendant. Avec quelques outils de base, il fabrique et répare des sacs, des sandales, des ceintures et des portefeuilles."
     },
     {
+      "id": "image_atelier_de_moussa",
+      "kind": "image",
+      "title": "L'atelier de Moussa",
+      "body": "Avec quelques outils de base, Moussa fabrique et répare des articles en cuir.",
+      "image": {
+        "path": "media/m01u03-atelier-de-moussa.webp",
+        "alt": "Moussa, un jeune artisan, travaille dans un petit atelier ouvert sur la rue. Il répare une sandale. Des sacs et des ceintures sont accrochés au mur."
+      }
+    },
+    {
       "id": "moussa_clients",
       "kind": "text",
       "title": "Ses clients et son travail",

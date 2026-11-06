@@ -91,6 +91,16 @@
       "body": "Une astuce simple relie tous ces conseils. Chaque matin, fais la liste de ce que tu as à faire, et donne une lettre à chaque tâche. A : très important, à faire en priorité. B : important, à faire si possible. C : moins important, seulement s'il reste du temps."
     },
     {
+      "id": "image_liste_du_matin",
+      "kind": "image",
+      "title": "Chaque matin, ta liste",
+      "body": "Commence par les tâches les plus importantes.",
+      "image": {
+        "path": "media/m03u02-liste-du-matin.webp",
+        "alt": "Des mains écrivent une liste de tâches dans un carnet posé sur un établi, à côté d'un morceau de cuir et d'outils. Trois lignes sont marquées d'un point vert, orange et gris."
+      }
+    },
+    {
       "id": "ma_journee_consigne",
       "kind": "text",
       "title": "Prépare ta journée",

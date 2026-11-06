@@ -20,6 +20,16 @@
       "body": "L'entrepreneuriat, c'est le fait de créer et de faire vivre une entreprise. En créant des entreprises, les entrepreneurs créent des emplois, apportent des idées nouvelles et font vivre leur région. Ils répondent aux besoins des gens, parfois avec de nouveaux produits, de nouveaux services ou de nouvelles façons de travailler."
     },
     {
+      "id": "image_rue_commercante",
+      "kind": "image",
+      "title": "Une rue qui vit grâce aux entreprises",
+      "body": "Chaque petite entreprise crée du travail et rend service au quartier.",
+      "image": {
+        "path": "media/m01u01-rue-commercante.webp",
+        "alt": "Une rue animée de Niamey avec un atelier de cuir, un tailleur, un étal de fruits et un réparateur de téléphones. Des clients achètent et discutent."
+      }
+    },
+    {
       "id": "autonomie",
       "kind": "text",
       "title": "Bon pour toi et pour ta communauté",
@@ -30,6 +40,15 @@
       "kind": "text",
       "title": "Entreprendre, c'est pour tout le monde",
       "body": "L'entrepreneuriat n'est réservé à personne. Les femmes, les hommes et les personnes en situation de handicap peuvent tous entreprendre, chacun à sa manière. Cette diversité est une richesse : elle apporte des points de vue, des idées et des solutions différentes, adaptées à chaque réalité. C'est pourquoi il faut soutenir toutes et tous dans leur envie d'entreprendre."
+    },
+    {
+      "id": "image_pour_tout_le_monde",
+      "kind": "image",
+      "title": "Entreprendre, c'est pour tout le monde",
+      "image": {
+        "path": "media/m01u01-pour-tout-le-monde.webp",
+        "alt": "Trois jeunes entrepreneurs fiers devant leur activité : une jeune femme maroquinière, un jeune homme cordonnier et un jeune homme en fauteuil roulant qui tient un petit commerce."
+      }
     },
     {
       "id": "types_entreprises",

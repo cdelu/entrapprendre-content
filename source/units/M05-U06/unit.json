@@ -168,6 +168,15 @@
       "body": "En classe, vous travaillez à deux. Tu présentes ton idée à ton camarade en une minute, sans lire ta fiche. Puis vous échangez les rôles. Celui ou celle qui écoute dit ensuite ce qu'il ou elle a compris, ce qui n'était pas clair, et quelle question un client se poserait."
     },
     {
+      "id": "image_presenter_en_une_minute",
+      "kind": "image",
+      "title": "Présenter son idée en une minute",
+      "image": {
+        "path": "media/m05u06-presenter-en-une-minute.webp",
+        "alt": "Deux apprenants face à face. L'une présente son idée en montrant un portefeuille, l'autre écoute."
+      }
+    },
+    {
       "id": "presenter_mon_idee",
       "kind": "exercise",
       "title": "Ce que mon camarade m'a dit",

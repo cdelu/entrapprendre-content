@@ -25,6 +25,16 @@
       "body": "Ce jour-là, Zeinabou va au marché pour acheter des mangues. Elle s'arrête devant l'étal de Hamidou, vendeur de fruits et légumes. Zeinabou : « Bonjour Hamidou ! Tu vends les mangues comment aujourd'hui ? » Hamidou : « Bonjour ma sœur ! Cinq mangues pour 200 francs. Elles sont bien mûres et bien sucrées. »"
     },
     {
+      "id": "image_zeinabou_et_hamidou",
+      "kind": "image",
+      "title": "Au marché",
+      "body": "Zeinabou négocie avec Hamidou.",
+      "image": {
+        "path": "media/m04u02-zeinabou-et-hamidou.webp",
+        "alt": "Au marché de Niamey, Zeinabou, une femme, discute en souriant avec Hamidou, un vendeur de fruits, devant un étal de mangues."
+      }
+    },
+    {
       "id": "dialogue_milieu",
       "kind": "text",
       "body": "Zeinabou : « 200 francs ? Un peu cher. Là-bas, j'ai vu cinq mangues à 150 francs. » Hamidou : « Ah, ma sœur, regarde les miennes : bien choisies, pas abîmées, et vraiment sucrées. » Zeinabou : « Je vois bien. Mais je peux mettre 150 francs. Que peux-tu faire ? »"
@@ -180,6 +190,15 @@
           "body": "Un client veut sa commande dans trois jours. Mais il te faut une semaine pour bien la faire."
         }
       ]
+    },
+    {
+      "id": "image_chez_le_tanneur",
+      "kind": "image",
+      "title": "Négocier avec un fournisseur",
+      "image": {
+        "path": "media/m04u02-chez-le-tanneur.webp",
+        "alt": "Une jeune artisane discute du prix avec un tanneur devant une pile de peaux tannées."
+      }
     },
     {
       "id": "preparer_negociation",

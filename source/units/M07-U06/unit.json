@@ -19,6 +19,16 @@
       "body": "En classe, tu vas présenter ton projet en cinq minutes, puis répondre aux questions pendant environ trois minutes. Ce n'est pas un examen pour te piéger. C'est un entraînement pour la vraie vie : devant une microfinance, un fournisseur, un gros client ou un jury de concours. Ici, tu prépares ta présentation par écrit."
     },
     {
+      "id": "image_presentation_jury",
+      "kind": "image",
+      "title": "Présenter son projet",
+      "body": "Cinq minutes pour présenter, puis les questions.",
+      "image": {
+        "path": "media/m07u06-presentation-jury.webp",
+        "alt": "Une jeune apprenante présente son projet devant trois personnes assises à une table. Elle montre un sac qu'elle a fabriqué."
+      }
+    },
+    {
       "id": "savoir_parler",
       "kind": "statement",
       "label": "POURQUOI C'EST IMPORTANT",
@@ -265,6 +275,16 @@
       "kind": "text",
       "title": "Et maintenant ?",
       "body": "Tu es arrivé au bout de la formation. Ce n'est pas rien. Mais c'est maintenant que le vrai travail commence : un plan dans une chemise ne fabrique rien et ne vend rien. Et si tu ne crées pas ton entreprise tout de suite, ce n'est pas un échec. Ramatou a d'abord travaillé chez un artisan. Ce que tu as appris te servira aussi comme employé."
+    },
+    {
+      "id": "image_et_maintenant",
+      "kind": "image",
+      "title": "Et maintenant ?",
+      "body": "Le vrai travail commence.",
+      "image": {
+        "path": "media/m07u06-et-maintenant.webp",
+        "alt": "Un jeune artisan ouvre la porte de son atelier au lever du soleil, prêt à commencer sa journée."
+      }
     },
     {
       "id": "et_maintenant_mes_chiffres",

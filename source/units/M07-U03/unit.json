@@ -41,6 +41,15 @@
       "body": "Un jeune réunit juste assez pour acheter sa machine. Deux semaines plus tard, il n'a plus un franc pour acheter du cuir. C'est là que beaucoup de projets meurent."
     },
     {
+      "id": "image_atelier_vide",
+      "kind": "image",
+      "title": "La machine est là, l'atelier est vide",
+      "image": {
+        "path": "media/m07u03-atelier-vide.webp",
+        "alt": "Un jeune homme, inquiet, est assis à côté d'une machine à coudre neuve dans un atelier aux étagères vides."
+      }
+    },
+    {
       "id": "combien_de_mois",
       "kind": "text",
       "title": "Combien de mois faut-il prévoir ?",

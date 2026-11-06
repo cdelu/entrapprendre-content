@@ -32,6 +32,16 @@
       "body": "Fatoumata est une jeune Nigérienne en situation de handicap moteur : elle a du mal à se déplacer. Son entourage doutait d'elle, mais elle a suivi ses rêves. Elle voulait créer son activité, être indépendante, aider sa famille et être respectée. Parce qu'elle croyait en ses objectifs, elle a avancé pas à pas jusqu'à de vrais résultats."
     },
     {
+      "id": "image_fatoumata_a_l_atelier",
+      "kind": "image",
+      "title": "Fatoumata",
+      "body": "Fatoumata a suivi ses objectifs, pas à pas.",
+      "image": {
+        "path": "media/m03u01-fatoumata-a-l-atelier.webp",
+        "alt": "Fatoumata, une jeune femme qui se déplace avec des béquilles, est assise à son établi et coud un sac en cuir. Ses béquilles sont posées à côté d'elle."
+      }
+    },
+    {
       "id": "quatre_qualites",
       "kind": "accordion",
       "label": "Les quatre qualités d'un bon objectif",
@@ -66,6 +76,15 @@
       "kind": "text",
       "title": "Amadou cherche sa voie",
       "body": "Amadou est un jeune Nigérien formé aux métiers du cuir. Il sait découper, coudre à la main, réparer des sandales, fabriquer des ceintures et de petits accessoires. Il aime les défis, mais une fois une technique maîtrisée, il s'en lasse vite. Il n'a pas encore choisi de spécialité."
+    },
+    {
+      "id": "image_amadou_hesite",
+      "kind": "image",
+      "title": "Amadou cherche sa voie",
+      "image": {
+        "path": "media/m03u01-amadou-hesite.webp",
+        "alt": "Amadou, un jeune artisan, regarde devant lui plusieurs objets qu'il sait faire : des sandales, des ceintures et de petits accessoires. Il se demande lequel choisir."
+      }
     },
     {
       "id": "amadou_reve",
@@ -183,6 +202,16 @@
       "kind": "text",
       "title": "Fatoumata aujourd'hui",
       "body": "Après trois ans, Fatoumata a remboursé son prêt et gagne un revenu régulier. Elle a même acheté un tricycle motorisé adapté pour se déplacer et transporter ses produits. Aujourd'hui, à 25 ans, elle est respectée comme une jeune femme courageuse et compétente. Elle n'a jamais cru que son handicap devait l'empêcher de réaliser ses rêves."
+    },
+    {
+      "id": "image_fatoumata_tricycle",
+      "kind": "image",
+      "title": "Fatoumata aujourd'hui",
+      "body": "Son tricycle adapté lui permet de livrer ses clients.",
+      "image": {
+        "path": "media/m03u01-fatoumata-tricycle.webp",
+        "alt": "Fatoumata conduit son tricycle motorisé adapté, chargé de paquets de produits en cuir, dans une rue de Niamey. Elle sourit."
+      }
     },
     {
       "id": "fatoumata_lecon",

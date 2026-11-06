@@ -94,6 +94,16 @@
       ]
     },
     {
+      "id": "image_gamme_de_ramatou",
+      "kind": "image",
+      "title": "La gamme de Ramatou",
+      "body": "Portefeuilles, ceintures, petits sacs, porte-documents et porte-clés.",
+      "image": {
+        "path": "media/m06u04-gamme-de-ramatou.webp",
+        "alt": "Les produits de Ramatou posés sur un tissu : deux portefeuilles en cuir de chèvre, une ceinture, un petit sac à bandoulière, un porte-documents et des porte-clés faits avec des chutes."
+      }
+    },
+    {
       "id": "argent_des_chutes",
       "kind": "text",
       "title": "De l'argent gagné sur des déchets",
@@ -213,6 +223,15 @@
           "body": "Mets ta marque sur le cuir : tes initiales, un petit motif, ou une empreinte au fer à marquer."
         }
       ]
+    },
+    {
+      "id": "image_presentation_produit",
+      "kind": "image",
+      "title": "Une belle présentation",
+      "image": {
+        "path": "media/m06u04-presentation-produit.webp",
+        "alt": "À gauche, un portefeuille posé sur un carton sale. À droite, le même portefeuille propre, dans une petite pochette en tissu, avec une petite marque gravée."
+      }
     },
     {
       "id": "nom_de_marque",

@@ -19,6 +19,16 @@
       "body": "Certaines qualités aident à créer et à faire tourner une entreprise. Tu en as sans doute déjà quelques-unes. Les autres, tu peux les développer avec le temps et la pratique."
     },
     {
+      "id": "image_portrait_entreprenante",
+      "kind": "image",
+      "title": "Une personne entreprenante, des pieds à la tête",
+      "body": "Chaque partie du corps représente une qualité. Découvre-les ci-dessous.",
+      "image": {
+        "path": "media/m02u01-portrait-entreprenante.webp",
+        "alt": "Une jeune artisane debout, vue en entier de la tête aux pieds. Elle porte un tablier de cuir, sourit et tient un sac qu'elle a fabriqué."
+      }
+    },
+    {
       "id": "portrait",
       "kind": "accordion",
       "label": "Le portrait d'une personne entreprenante",
